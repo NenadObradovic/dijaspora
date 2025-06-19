@@ -1,5 +1,6 @@
 import PizZip from 'pizzip';
 import Docxtemplater from 'docxtemplater';
+import ImageModule from "docxtemplater-image-module-free";
 import fileSaver from 'file-saver';
 
 export const generateDocx = async ( templatePath, formData, fileName ) => {
@@ -7,20 +8,65 @@ export const generateDocx = async ( templatePath, formData, fileName ) => {
 	const content  = await response.arrayBuffer();
 
 	const zip = new PizZip( content );
+
+	const base64ToUint8Array = base64 => {
+		const binary_string = atob( base64 );
+		const len           = binary_string.length;
+		const bytes         = new Uint8Array( len );
+		for ( let i = 0; i < len; i++ ) {
+			bytes[i] = binary_string.charCodeAt( i );
+		}
+
+		return bytes;
+	};
+
+	const imageModule = new ImageModule( {
+		centered: false,
+		getImage( tagValue ) {
+			return base64ToUint8Array( tagValue.split( ',' )[1] );
+		},
+		getSize( img, tagValue, tagName ) {
+			return [154, 68];
+		},
+	} );
+
 	const doc = new Docxtemplater(
 		zip,
 		{
 			paragraphLoop: true,
 			linebreaks: true,
+			modules: [imageModule],
 		}
 	);
 
-	doc.setData( {
-		ime_prezime: formData.ime_prezime,
-		ime_roditelja: formData.ime_roditelja,
-		adresa: formData.adresa,
-		email: formData.email,
-	} );
+	const jmbgParts = {};
+	for ( let i = 0; i < 13; i++ ) {
+		jmbgParts[`jmbg_${i + 1}`] = formData.jmbg.charAt( i );
+	}
+
+	const getCurrentDate = () => {
+		const today = new Date();
+		const day   = String( today.getDate() ).padStart( 2, '0' );
+		const month = String( today.getMonth() + 1 ).padStart( 2, '0' );
+		const year  = today.getFullYear();
+
+		return `${day}.${month}.${year}`;
+	};
+
+	doc.setData(
+		{
+			ime_prezime: formData.full_name,
+			ime_roditelja: formData.parent_name,
+			...jmbgParts,
+			adresa: formData.address,
+			adresa_inostranstvo: formData.address_abroad,
+			grad: `${formData.city}, ${formData.country}`,
+			telefon: formData.telephone,
+			email: formData.email,
+			datum: getCurrentDate(),
+			potpis: formData.signature,
+		},
+	);
 
 	try {
 		doc.render();
