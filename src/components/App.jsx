@@ -5,12 +5,13 @@ import { generateDocx } from '../utils/generateDocx.js';
 import { EMAIL_SUBJECT, EMAIL_BODY_VOTER, EMAIL_BODY_NON_VOTER } from '../constants/emailContants.js';
 
 const App = () => {
-	const [formData, setFormData] = useState(null);
-	const [updateVoter, setUpdateVoter] = useState(false);
-	const [docGenerated, setDocGenerated] = useState(false);
+	const [formData, setFormData]         = useState( null );
+	const [updateVoter, setUpdateVoter]   = useState( false );
+	const [docGenerated, setDocGenerated] = useState( false );
 
-	const handleFormSubmit = async (data) => {
-		setFormData(data);
+	const handleFormSubmit = async ( data, isUpdateVoter ) => {
+		setFormData( data );
+		setUpdateVoter( isUpdateVoter );
 
 		if ( updateVoter ) {
 			await Promise.all( [
@@ -33,7 +34,7 @@ const App = () => {
 			);
 		}
 
-		setDocGenerated(true);
+		setDocGenerated( true );
 	};
 
 	const handleSendEmail = () => {
@@ -51,14 +52,10 @@ const App = () => {
 	return (
 		<>
 			<h1>Glasanje iz inostranstva</h1>
-			<label>
-				Generiši zahtev za upis u birački spisak?
-				<input type="checkbox" checked={updateVoter} onChange={() => setUpdateVoter(!updateVoter)} />
-			</label>
-			<VotingForm onSubmit={handleFormSubmit} />
+			<VotingForm onSubmit={handleFormSubmit}/>
 			{docGenerated && (
 				<>
-					<EmailTemplate updateVoter={updateVoter} />
+					<EmailTemplate updateVoter={updateVoter}/>
 					<button onClick={handleSendEmail}>Pošalji mejl ambasadi</button>
 				</>
 			)}
