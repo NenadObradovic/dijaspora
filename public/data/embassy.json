@@ -1,0 +1,36 @@
+{
+  "availableCountries": [
+    "Srbija",
+    "USA"
+  ],
+  "citiesByCountry": {
+    "Srbija": {
+      "address": [
+        "Beograd",
+        "Novi Sad",
+        "Zagreb"
+      ],
+      "email": [
+        "email@email.com",
+        "email1@email.com"
+      ],
+      "telephone": [
+        "+381693593407",
+        "+38145678921"
+      ]
+    },
+    "USA": {
+      "address": [
+        "Čikago",
+        "Njujork",
+        "Los Angeles"
+      ],
+      "email": [
+        "usa1@email.com"
+      ],
+      "telephone": [
+        "+11234567890"
+      ]
+    }
+  }
+}

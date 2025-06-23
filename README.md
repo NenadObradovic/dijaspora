@@ -1,14 +1,8 @@
-# Astro Starter Kit: Minimal
+# Dijaspora Project
 
-```sh
-npm create astro@latest -- --template minimal
-```
+The **Dijaspora** project is a modern web application built using the **Astro framework**. It serves as a tool to provide information about embassies, including their locations, emails, and contact details, categorized by country and city.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
 ## 🚀 Project Structure
 
@@ -29,6 +23,8 @@ There's nothing special about `src/components/`, but that's where we like to put
 
 Any static assets, like images, can be placed in the `public/` directory.
 
+---
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
@@ -42,6 +38,26 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 🛠️ Technologies & Tools
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project leverages the following key technologies:
+
+- **Astro Framework**: JavaScript web framework optimized for building fast, content-driven websites.
+- **React**: Powerful library for web and native user interfaces.
+- **Node.js**: JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+
+---
+
+## 📚 Documentation & Resources
+
+- [Astro Documentation](https://docs.astro.build)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Node.js Documentation](https://nodejs.org/en)
+
+---
+
+## 🌐 License
+
+This project is licensed under the [GPL License](./LICENSE).
+
+---

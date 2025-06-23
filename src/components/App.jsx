@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../utils/i18n';
 import VotingForm from './VotingForm.jsx';
 import EmailTemplate from './EmailTemplate.jsx';
 import { generateDocx } from '../utils/generateDocx.js';
@@ -13,24 +14,24 @@ const App = () => {
 		setFormData( data );
 		setUpdateVoter( isUpdateVoter );
 
-		if ( updateVoter ) {
+		if ( isUpdateVoter ) {
 			await Promise.all( [
 				generateDocx(
-					'/docs/zahtev-za-glasanje.docx',
+					'/data/zahtev-za-glasanje.docx',
 					data,
 					'Zahtev_za_glasanje_u_inostranstvu.docx'
 				),
 				generateDocx(
-					'/docs/zahtev-za-upis.docx',
+					'/data/zahtev-za-upis.docx',
 					data,
 					'Zahtev_za_upis_u_jedinstveni_biracki_spisak.docx'
 				),
 			] );
 		} else {
 			await generateDocx(
-				'/docs/zahtev-za-glasanje.docx',
+				'/data/zahtev-za-glasanje.docx',
 				data,
-				'Zahtev-za-glasanje-u-inostranstvu.docx'
+				'Zahtev_za_glasanje_u_inostranstvu.docx'
 			);
 		}
 
