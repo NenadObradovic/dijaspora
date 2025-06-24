@@ -1,0 +1,29 @@
+# Build outputs
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Generated files
+package-lock.json
+
+# Environment files
+.env
+.env.production
+
+# OS files
+.DS_Store
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Public assets
+public/data/
+
+# License file
+LICENSE

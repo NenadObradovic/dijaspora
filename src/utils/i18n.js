@@ -4,16 +4,16 @@ import { initReactI18next } from 'react-i18next';
 import sr from '../locales/sr/translation.json';
 import en from '../locales/en/translation.json';
 
-i18n.use( initReactI18next ).init( {
+i18n.use(initReactI18next).init({
 	resources: {
 		sr: { translation: sr },
-		en: { translation: en }
+		en: { translation: en },
 	},
 	lng: 'sr',
 	fallbackLng: 'sr',
 	interpolation: {
-		escapeValue: false
-	}
-} );
+		escapeValue: false,
+	},
+});
 
 export default i18n;
