@@ -1,6 +1,9 @@
 # Dijaspora Project
 
-The **Dijaspora** project is a modern web application built using the **Astro framework**. It serves as a tool to provide information about embassies, including their locations, emails, and contact details, categorized by country and city.
+The **Dijaspora** project is a modern web application built using the **Astro
+framework**. It serves as a tool to provide information about embassies,
+including their locations, emails, and contact details, categorized by country
+and city.
 
 ---
 
@@ -17,9 +20,11 @@ Inside of your Astro project, you'll see the following folders and files:
 └── package.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page
+is exposed as a route based on its file name.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+There's nothing special about `src/components/`, but that's where we like to put
+any Astro/React/Vue/Svelte/Preact components.
 
 Any static assets, like images, can be placed in the `public/` directory.
 
@@ -42,9 +47,11 @@ All commands are run from the root of the project, from a terminal:
 
 This project leverages the following key technologies:
 
-- **Astro Framework**: JavaScript web framework optimized for building fast, content-driven websites.
+- **Astro Framework**: JavaScript web framework optimized for building fast,
+  content-driven websites.
 - **React**: Powerful library for web and native user interfaces.
-- **Node.js**: JavaScript runtime environment that lets developers create servers, web apps, command line tools and scripts.
+- **Node.js**: JavaScript runtime environment that lets developers create
+  servers, web apps, command line tools and scripts.
 
 ---
 
