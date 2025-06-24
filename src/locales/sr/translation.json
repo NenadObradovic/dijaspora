@@ -1,5 +1,12 @@
 {
+  "language": {
+    "latin": "Latinica",
+    "cyrillic": "Ćirilica",
+    "english": "Engleski"
+  },
+  "form_title": "Glasanje iz inostranstva",
   "email_heading_example": "Predloženi tekst mejla:",
+  "email_button_example": "Pošalji mejl ambasadi",
   "check_tab": "Provera biračkog spiska",
   "personal_data_tab": "Lični podaci",
   "signature_tab": "Potpis i preuzimanje",

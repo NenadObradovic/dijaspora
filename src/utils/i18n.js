@@ -1,16 +1,18 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import sr from '../locales/sr/translation.json';
+import srLatn from '../locales/sr/translation.json';
+import srCyrl from '../locales/sr-cyrl/translation.json';
 import en from '../locales/en/translation.json';
 
 i18n.use(initReactI18next).init({
 	resources: {
-		sr: { translation: sr },
+		'sr-Latn': { translation: srLatn },
+		'sr-Cyrl': { translation: srCyrl },
 		en: { translation: en },
 	},
-	lng: 'sr',
-	fallbackLng: 'sr',
+	lng: 'sr-Latn',
+	fallbackLng: 'sr-Latn',
 	interpolation: {
 		escapeValue: false,
 	},

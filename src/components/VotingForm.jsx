@@ -27,7 +27,10 @@ const VotingForm = ({ onSubmit }) => {
 		fetch('/data/embassy.json')
 			.then((res) => res.json())
 			.then((json) => setEmbassyData(json))
-			.catch((err) => console.error('Greška pri učitavanju JSON-a:', err));
+			.catch((err) => {
+				// eslint-disable-next-line no-console
+				console.error('Greška pri učitavanju JSON-a:', err);
+			});
 	}, []);
 
 	const [availableCities, setAvailableCities] = useState();

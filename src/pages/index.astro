@@ -1,13 +1,8 @@
 ---
-import App from '../components/App.jsx';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<html>
-	<head>
-		<title>Glasanje u inostranstvu</title>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	</head>
-	<body>
-		<App client:only="react" />
-	</body>
-</html>
+<BaseLayout lang="sr-Latn">
+	<h1>Dobrodošli</h1>
+	<p>Ovo je početna strana na srpskom (latinica).</p>
+</BaseLayout>

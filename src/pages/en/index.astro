@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import enTranslations from '../../locales/en/translation.json';
+
+const pageTitle = enTranslations.page_title || 'Voting Handbook';
+---
+
+<BaseLayout lang="en" pageTitle={pageTitle}>
+	<h1>Welcome</h1>
+	<p>This is the homepage in English.</p>
+</BaseLayout>

@@ -25,7 +25,7 @@ export const generateDocx = async (templatePath, formData, fileName) => {
 		getImage(tagValue) {
 			return base64ToUint8Array(tagValue.split(',')[1]);
 		},
-		getSize(img, tagValue, tagName) {
+		getSize() {
 			return [154, 68];
 		},
 	});
@@ -72,6 +72,7 @@ export const generateDocx = async (templatePath, formData, fileName) => {
 
 		fileSaver.saveAs(out, fileName);
 	} catch (error) {
+		// eslint-disable-next-line no-console
 		console.error('Greška prilikom generisanja dokumenta: ', error);
 	}
 };

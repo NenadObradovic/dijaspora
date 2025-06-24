@@ -1,5 +1,13 @@
 {
+  "language": {
+    "latin": "Latin",
+    "cyrillic": "Cyrillic",
+    "english": "English"
+  },
+  "page_title": "Voting Handbook",
+  "form_title": "Voting from abroad",
   "email_heading_example": "Suggested email text:",
+  "email_button_example": "Send email to the embassy",
   "check_tab": "Voter list check",
   "personal_data_tab": "Personal information",
   "signature_tab": "Signature and download",
