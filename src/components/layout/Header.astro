@@ -1,0 +1,16 @@
+---
+import Navigation from '../navigation/Nav.astro'
+import LanguageSwitcher from '../navigation/LanguageSwitcher.jsx'
+
+const { lang } = Astro.props;
+---
+
+<header class="site-header">
+	<a class="site-logo" href={`/${lang}/`}>
+		<img src="/logo.svg" alt="Logo sajta" width="128" height="auto" />
+	</a>
+	<div class="site-header-inner">
+		<LanguageSwitcher />
+		<Navigation lang={lang} />
+	</div>
+</header>

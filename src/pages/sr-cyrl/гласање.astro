@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import App from "../../components/App"
+
+const pageTitle = 'Гласање';
+---
+
+<BaseLayout lang="sr-cyrl" pageTitle={pageTitle}>
+	<h1>Гласање</h1>
+	<p>Ово је страна за генерисање захтева.</p>
+	<App client:only="react" />
+</BaseLayout>

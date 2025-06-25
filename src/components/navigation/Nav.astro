@@ -1,0 +1,29 @@
+---
+import srLatn from '../../locales/sr/translation.json'
+import srCyrl from '../../locales/sr-cyrl/translation.json'
+import en from '../../locales/en/translation.json'
+
+let {lang} = Astro.props;
+
+const translationsMap = {
+	'en': en,
+	'sr': srLatn,
+	'sr-cyrl': srCyrl
+}
+
+const t = translationsMap[lang].header_nav
+---
+
+<nav class="nav">
+	<ul class="nav-list">
+		<li>
+			<a href={t.home_path}>{t.home}</a>
+		</li>
+		<li>
+			<a href={t.about_path}>{t.about}</a>
+		</li>
+		<li>
+			<a href={t.form_path}>{t.form}</a>
+		</li>
+	</ul>
+</nav>

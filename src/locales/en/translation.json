@@ -4,6 +4,14 @@
     "cyrillic": "Cyrillic",
     "english": "English"
   },
+  "header_nav": {
+    "home": "Home",
+    "home_path": "/en",
+    "about": "About Us",
+    "about_path": "/en/about",
+    "form": "Voting",
+    "form_path": "en/voting"
+  },
   "page_title": "Voting Handbook",
   "form_title": "Voting from abroad",
   "email_heading_example": "Suggested email text:",

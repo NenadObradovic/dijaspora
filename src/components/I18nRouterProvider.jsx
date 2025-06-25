@@ -6,11 +6,11 @@ const I18nRouterProvider = () => {
     const pathname = window.location.pathname
 
     if (pathname.startsWith('/sr-cyrl')) {
-      i18n.changeLanguage('sr-Cyrl')
+      i18n.changeLanguage('sr-cyrl')
     } else if (pathname.startsWith('/en')) {
       i18n.changeLanguage('en')
     } else {
-      i18n.changeLanguage('sr-Latn')
+      i18n.changeLanguage('sr')
     }
   }, [])
 

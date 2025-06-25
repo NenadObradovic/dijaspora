@@ -4,6 +4,14 @@
     "cyrillic": "Ћирилица",
     "english": "Енглески"
   },
+  "header_nav": {
+    "home": "Почетна",
+    "home_path": "/sr-cyrl",
+    "about": "О Нама",
+    "about_path": "/sr-cyrl/о-нама",
+    "form": "Гласање",
+    "form_path": "/sr-cyrl/гласање"
+  },
   "page_title": "Приручник за гласање у иностранству",
   "form_title": "Гласање из иностранства",
   "email_heading_example": "Предложени текст мејла:",

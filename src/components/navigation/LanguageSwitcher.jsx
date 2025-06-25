@@ -1,12 +1,12 @@
 import React from 'react'
-import '../utils/i18n'
+import '../../utils/i18n'
 import { useTranslation } from 'react-i18next'
 
 const LanguageSwitcher = () => {
   const { t } = useTranslation()
 
   return (
-    <nav>
+    <nav className="language-switcher">
       <ul>
         <li>
           <a href="/">{t('language.latin')}</a>

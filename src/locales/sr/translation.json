@@ -4,6 +4,14 @@
     "cyrillic": "Ćirilica",
     "english": "Engleski"
   },
+  "header_nav": {
+    "home": "Početna",
+    "home_path": "/",
+    "about": "O Nama",
+    "about_path": "/o-nama",
+    "form": "Glasanje",
+    "form_path": "/glasanje"
+  },
   "form_title": "Glasanje iz inostranstva",
   "email_heading_example": "Predloženi tekst mejla:",
   "email_button_example": "Pošalji mejl ambasadi",

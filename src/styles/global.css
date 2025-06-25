@@ -1,0 +1,26 @@
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.site-logo {
+  flex-shrink: 0;
+}
+
+.site-header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 30px;
+  width: 100%;
+}
+
+.site-header-inner nav ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}

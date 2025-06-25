@@ -7,12 +7,12 @@ import en from '../locales/en/translation.json'
 
 i18n.use(initReactI18next).init({
   resources: {
-    'sr-Latn': { translation: srLatn },
-    'sr-Cyrl': { translation: srCyrl },
+    sr: { translation: srLatn },
+    'sr-cyrl': { translation: srCyrl },
     en: { translation: en },
   },
-  lng: 'sr-Latn',
-  fallbackLng: 'sr-Latn',
+  lng: 'sr',
+  fallbackLng: 'sr',
   interpolation: {
     escapeValue: false,
   },

@@ -1,9 +1,9 @@
 ---
-import Header from '../components/Header.astro';
-import I18nRouterProvider from '../components/I18nRouterProvider.jsx';
-import LanguageSwitcher from '../components/LanguageSwitcher.jsx';
-import App from '../components/App.jsx';
-const { lang = 'sr-Latn', pageTitle = 'Priručnik za glasanje u inostranstvu', children } = Astro.props;
+import Header from '../components/layout/Header.astro'
+import I18nRouterProvider from '../components/I18nRouterProvider.jsx'
+import '../styles/global.css'
+
+const { lang = 'sr', pageTitle = 'Priručnik za glasanje u inostranstvu', children } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,11 +17,9 @@ const { lang = 'sr-Latn', pageTitle = 'Priručnik za glasanje u inostranstvu', c
 	</head>
 	<body>
 		<I18nRouterProvider client:only="react" />
-		<LanguageSwitcher />
-		<Header />
+		<Header lang={lang} />
 		<main>
-			{children}
-			<App client:only="react" />
+			<slot />
 		</main>
 	</body>
 </html>
