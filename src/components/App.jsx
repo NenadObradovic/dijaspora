@@ -58,7 +58,9 @@ const App = () => {
 
   return (
     <>
-      <h1>{t('form_title')}</h1>
+      <h1 className="title mb-6 bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 bg-clip-text text-3xl text-transparent dark:from-accent-two dark:via-accent-one dark:to-accent-two">
+        {t('form_title')}
+      </h1>
       <VotingForm onSubmit={handleFormSubmit} />
       {docGenerated && (
         <>

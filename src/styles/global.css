@@ -99,6 +99,11 @@
   h6 {
     @apply h-auto min-h-8 !important;
   }
+
+  p,
+  ul.list-content li {
+    @apply mb-2 text-base leading-relaxed text-[var(--theme-color-600)];
+  }
 }
 
 :root {
