@@ -41,5 +41,6 @@
   "clear_signature": "Obriši potpis",
   "generate_request": "Generiši zahtev",
   "previous_step": "⬅ Prethodni korak",
-  "next_step": "Sledeći korak ➡"
+  "next_step": "Sledeći korak ➡",
+  "footer_text": "© 2025 Sva prava zadržana"
 }
