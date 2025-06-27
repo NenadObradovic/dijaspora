@@ -6,6 +6,44 @@ const pageTitle = srCyrlTranslations.page_title || 'Приручник за гл
 ---
 
 <BaseLayout lang="sr-cyrl" pageTitle={pageTitle}>
-	<h1 class="title text-3xl bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 dark:from-accent-two dark:via-accent-one dark:to-accent-two bg-clip-text text-transparent">Добродошли</h1>
-	<p>Ово је почетна страна на српском (ћирилица).</p>
+	<section class="w-full">
+		<h1 class="title text-center bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 dark:from-accent-two dark:via-accent-one dark:to-accent-two bg-clip-text text-transparent">
+			Гласање из иностранства – једноставно, дигитално, безбедно
+		</h1>
+
+		<p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+			Алат за грађане Србије који живе ван земље и желе да се региструју за гласање.
+			Помажемо ти да попуниш формулар, приложиш пасош и пошаљеш пријаву амбасади – без муке.
+			<br /><br />
+			Процес који је раније захтевао штампање, скенирање и сате тражења информација сада се завршава за свега неколико минута.
+			Сви подаци се обрађују локално у твом рачунару, без икаквог чувања или слања на сервере – потпуно безбедно и транспарентно.
+		</p>
+	</section>
+
+	<section class="w-full mt-6">
+		<h2 class="title text-center mb-4 text-xl text-accent-two">
+			Важно обавештење
+		</h2>
+
+		<p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+			Овај сајт <strong>није званични сајт државне институције</strong>, већ независна иницијатива која има за циљ да помогне грађанима Србије у дијаспори при регистрацији за гласање.
+			<br /><br />
+			<strong>Не прикупљамо нити чувамо личне податке.</strong> Све информације се обрађују <strong>локално</strong> у твом уређају – не шаљу се на сервере и не остају сачуване на интернету.
+			<br /><br />
+			Коришћење овог сајта је <strong>потпуно необавезно</strong>. Формулар можеш попунити и ручно. Детаљна упутства за то можеш пронаћи на <a href="https://www.mfa.gov.rs" target="_blank" rel="noopener noreferrer" class="text-accent-one underline hover:text-accent-one/80">званичном сајту Министарства спољних послова</a> или затражити у најближој амбасади или конзулату.
+			<br /><br />
+			Наша мисија је да ти пружимо једноставнији и безбедан начин да оствариш своје бирачко право – уз потпуну контролу и транспарентност. Твој глас може бити кључан – искористи га.
+		</p>
+	</section>
+
+	<section class="w-full mt-12">
+		<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+			<a href="/sr-cyrl/о-нама" class="px-6 py-3 rounded-lg bg-accent-one text-white font-semibold shadow-md hover:bg-accent-one/90 transition duration-200">
+				Сазнај више
+			</a>
+			<a href="/sr-cyrl/гласање" class="px-6 py-3 rounded-lg border border-accent-one text-accent-one font-semibold hover:bg-accent-one hover:text-white transition duration-200">
+				Попуни захтев
+			</a>
+		</div>
+	</section>
 </BaseLayout>

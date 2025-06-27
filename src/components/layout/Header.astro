@@ -23,7 +23,7 @@ const { lang } = Astro.props;
 	</div>
 
 	<div class="w-full justify-between sm:flex-col">
-		<div class="flex items-center gap-x-2">
+		<div class="flex justify-between items-center gap-x-2">
 			<a
 				class="group flex h-8 items-center hover:filter-none sm:relative"
 				href={`/${lang}/`}
@@ -33,35 +33,36 @@ const { lang } = Astro.props;
 				</svg>
 			</a>
 			<Navigation lang={lang} />
-			<div class="w-fit">
-				<div id="buttons-panel" class="top-4 md:top-8 flex space-x-2">
-					<LanguageSwitcher lang={lang} />
-				</div>
-			</div>
 
-			<button
-				aria-expanded="false"
-				aria-haspopup="menu"
-				aria-label="Open main menu"
-				class="group relative h-8 w-8 rounded-lg bg-color-100 hover:bg-accent-base/10 text-accent-base md:invisible md:hidden"
-				id="toggle-nav-menu-mobile"
-				type="button"
-			>
-				<Icon
-					id="open-nav-menu-icon"
-					aria-hidden="true"
-					class="absolute start-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 transition-all"
-					focusable="false"
-					name="hugeicons:menu-01"
-				/>
-				<Icon
-					id="close-nav-menu-icon"
-					aria-hidden="true"
-					class="absolute start-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all"
-					focusable="false"
-					name="hugeicons:cancel-01"
-				/>
-			</button>
+			<div class="w-fit flex justify-between items-center gap-x-4">
+				<div id="buttons-panel" class="top-4 md:top-8 flex space-x-2">
+					<LanguageSwitcher lang={lang} client:load />
+				</div>
+
+				<button
+					aria-expanded="false"
+					aria-haspopup="menu"
+					aria-label="Open main menu"
+					class="group relative h-8 w-8 rounded-lg bg-color-100 hover:text-accent-two/80 text-accent-two md:invisible md:hidden"
+					id="toggle-nav-menu-mobile"
+					type="button"
+				>
+					<Icon
+						id="open-nav-menu-icon"
+						aria-hidden="true"
+						class="absolute start-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 scale-100 opacity-100 transition-all"
+						focusable="false"
+						name="hugeicons:menu-01"
+					/>
+					<Icon
+						id="close-nav-menu-icon"
+						aria-hidden="true"
+						class="absolute start-1/2 top-1/2 h-6 w-6 -translate-x-1/2 -translate-y-1/2 scale-0 opacity-0 transition-all"
+						focusable="false"
+						name="hugeicons:cancel-01"
+					/>
+				</button>
+			</div>
 		</div>
 	</div>
 </header>
@@ -83,7 +84,6 @@ const { lang } = Astro.props;
 		</div>
 
 		<MobileNavigation lang={lang} />
-		<LanguageSwitcher lang={lang} />
 	</div>
 </div>
 

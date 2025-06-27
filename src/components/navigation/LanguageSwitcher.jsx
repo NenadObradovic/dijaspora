@@ -1,9 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../../utils/i18n'
 import { useTranslation } from 'react-i18next'
 
+const pages = {
+  home: {
+    sr: '/o-nama',
+    'sr-cyrl': '/о-нама',
+    en: '/about',
+  },
+  voting: {
+    sr: '/glasanje',
+    'sr-cyrl': '/гласање',
+    en: '/voting',
+  },
+}
+
+function findPageKey(path, lang) {
+  return Object.entries(pages).find(([, langs]) => langs[lang] === path)?.[0]
+}
+
+function mapPath(pathname, fromLang, toLang) {
+  const langPrefix = fromLang === 'sr' ? '' : `/${fromLang}`
+  let pathWithoutLang = pathname.startsWith(langPrefix)
+    ? pathname.slice(langPrefix.length)
+    : pathname
+
+  if (!pathWithoutLang.startsWith('/')) pathWithoutLang = '/' + pathWithoutLang
+
+  if (pathWithoutLang === '/' || pathWithoutLang === '') {
+    return `/${toLang === 'sr' ? '' : toLang}`
+  }
+
+  const pageKey = findPageKey(pathWithoutLang, fromLang)
+
+  if (!pageKey) {
+    return `/${toLang === 'sr' ? '' : toLang}`
+  }
+
+  return `/${toLang === 'sr' ? '' : toLang}${pages[pageKey][toLang]}`
+}
+
 const LanguageSwitcher = ({ lang }) => {
   const { t } = useTranslation()
+  const [pathname, setPathname] = useState('/')
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setPathname(window.location.pathname)
+    }
+  }, [])
 
   const languages = [
     { code: 'sr', path: '/', label: t('language.latin') },
@@ -16,16 +61,19 @@ const LanguageSwitcher = ({ lang }) => {
       <ul className="inline-flex gap-x-4 text-sm font-medium text-accent-two">
         {languages
           .filter((langItem) => langItem.code !== lang)
-          .map((langItem) => (
-            <li key={langItem.code}>
-              <a
-                href={langItem.path}
-                className="underline-offset-2 hover:underline"
-              >
-                {langItem.label}
-              </a>
-            </li>
-          ))}
+          .map((langItem) => {
+            const newHref = mapPath(pathname, lang, langItem.code)
+            return (
+              <li key={langItem.code}>
+                <a
+                  href={newHref}
+                  className="underline-offset-2 hover:underline"
+                >
+                  {langItem.label}
+                </a>
+              </li>
+            )
+          })}
       </ul>
     </nav>
   )

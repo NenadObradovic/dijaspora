@@ -6,6 +6,44 @@ const pageTitle = enTranslations.page_title || 'Voting Handbook';
 ---
 
 <BaseLayout lang="en" pageTitle={pageTitle}>
-	<h1 class="title text-3xl bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 dark:from-accent-two dark:via-accent-one dark:to-accent-two bg-clip-text text-transparent">Welcome</h1>
-	<p>This is the homepage in English.</p>
+	<section class="w-full">
+		<h1 class="title text-center bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 dark:from-accent-two dark:via-accent-one dark:to-accent-two bg-clip-text text-transparent">
+			Voting from Abroad – Simple, Digital, Secure
+		</h1>
+
+		<p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+			A tool for Serbian citizens living abroad who wish to register to vote.
+			We help you fill out the form, attach your passport, and send the application to the embassy – hassle-free.
+			<br /><br />
+			A process that once required printing, scanning, and hours of searching for information now takes just a few minutes.
+			All data is processed locally on your device, with no storage or sending to servers – fully secure and transparent.
+		</p>
+	</section>
+
+	<section class="w-full mt-6">
+		<h2 class="title text-center mb-4 text-xl text-accent-two">
+			Important Notice
+		</h2>
+
+		<p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+			This website is <strong>not an official platform of any government institution</strong>, but an independent initiative aimed at helping Serbian citizens abroad register for voting more easily.
+			<br /><br />
+			<strong>We do not collect or store any personal data.</strong> All information is processed <strong>locally</strong> on your device – nothing is sent to servers or saved online.
+			<br /><br />
+			Using this website is <strong>completely optional</strong>. You can also fill out the registration form manually. Detailed instructions are available on the <a href="https://www.mfa.gov.rs" target="_blank" rel="noopener noreferrer" class="text-accent-one underline hover:text-accent-one/80">official website of the Ministry of Foreign Affairs</a> or through your nearest embassy or consulate.
+			<br /><br />
+			Our mission is to offer a simpler and more secure way to exercise your voting rights – with full control and transparency. Your vote can be crucial – use it.
+		</p>
+	</section>
+
+	<section class="w-full mt-12">
+		<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+			<a href="/en/about" class="px-6 py-3 rounded-lg bg-accent-one text-white font-semibold shadow-md hover:bg-accent-one/90 transition duration-200">
+				Learn More
+			</a>
+			<a href="/en/voting" class="px-6 py-3 rounded-lg border border-accent-one text-accent-one font-semibold hover:bg-accent-one hover:text-white transition duration-200">
+				Submit Request
+			</a>
+		</div>
+	</section>
 </BaseLayout>
