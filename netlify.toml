@@ -1,2 +1,15 @@
-[build.environment]
-  NODE_VERSION = "20"
+[build]
+  command = "npm run build"
+  publish = "dist"
+  environment = { NODE_VERSION = "20" }
+
+[dev]
+  command = "npm run dev"
+  targetPort = 4321
+  port = 8888
+  framework = "astro"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
