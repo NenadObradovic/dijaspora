@@ -7,8 +7,8 @@
   "header_nav": {
     "home": "Početna",
     "home_path": "/",
-    "about": "O Nama",
-    "about_path": "/o-nama",
+    "handbook": "Priručnik",
+    "handbook_path": "/prirucnik",
     "form": "Glasanje",
     "form_path": "/glasanje"
   },

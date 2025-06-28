@@ -4,13 +4,13 @@ import { useTranslation } from 'react-i18next'
 
 const pages = {
   home: {
-    sr: '/o-nama',
-    'sr-cyrl': '/о-нама',
-    en: '/about',
+    sr: '/prirucnik',
+    cyrl: '/приручник',
+    en: '/handbook',
   },
   voting: {
     sr: '/glasanje',
-    'sr-cyrl': '/гласање',
+    cyrl: '/гласање',
     en: '/voting',
   },
 }
@@ -27,6 +27,8 @@ function mapPath(pathname, fromLang, toLang) {
 
   if (!pathWithoutLang.startsWith('/')) pathWithoutLang = '/' + pathWithoutLang
 
+  pathWithoutLang = decodeURIComponent(pathWithoutLang)
+
   if (pathWithoutLang === '/' || pathWithoutLang === '') {
     return `/${toLang === 'sr' ? '' : toLang}`
   }
@@ -34,10 +36,13 @@ function mapPath(pathname, fromLang, toLang) {
   const pageKey = findPageKey(pathWithoutLang, fromLang)
 
   if (!pageKey) {
-    return `/${toLang === 'sr' ? '' : toLang}`
+    return toLang === 'sr' ? '/' : `/${toLang}`
   }
 
-  return `/${toLang === 'sr' ? '' : toLang}${pages[pageKey][toLang]}`
+  const langPrefixOut = toLang === 'sr' ? '' : `/${toLang}`
+  const targetPath = pages[pageKey][toLang]
+
+  return `${langPrefixOut}${targetPath}`
 }
 
 const LanguageSwitcher = ({ lang }) => {
@@ -52,7 +57,7 @@ const LanguageSwitcher = ({ lang }) => {
 
   const languages = [
     { code: 'sr', path: '/', label: t('language.latin') },
-    { code: 'sr-cyrl', path: '/sr-cyrl/', label: t('language.cyrillic') },
+    { code: 'cyrl', path: '/cyrl/', label: t('language.cyrillic') },
     { code: 'en', path: '/en/', label: t('language.english') },
   ]
 

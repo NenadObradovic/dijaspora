@@ -6,11 +6,11 @@
   },
   "header_nav": {
     "home": "Почетна",
-    "home_path": "/sr-cyrl",
-    "about": "О Нама",
-    "about_path": "/sr-cyrl/о-нама",
+    "home_path": "/cyrl",
+    "handbook": "Приручник",
+    "handbook_path": "/cyrl/приручник",
     "form": "Гласање",
-    "form_path": "/sr-cyrl/гласање"
+    "form_path": "/cyrl/гласање"
   },
   "page_title": "Приручник за гласање у иностранству",
   "form_title": "Гласање из иностранства",

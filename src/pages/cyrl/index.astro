@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import srCyrlTranslations from '../../locales/sr-cyrl/translation.json'
+import cyrlTranslations from '../../locales/cyrl/translation.json'
 
-const pageTitle = srCyrlTranslations.page_title || 'Приручник за гласање у иностранству';
+const pageTitle = cyrlTranslations.page_title || 'Приручник за гласање у иностранству';
 ---
 
-<BaseLayout lang="sr-cyrl" pageTitle={pageTitle}>
+<BaseLayout lang="cyrl" pageTitle={pageTitle}>
 	<section class="w-full">
 		<h1 class="title text-center bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 dark:from-accent-two dark:via-accent-one dark:to-accent-two bg-clip-text text-transparent">
 			Гласање из иностранства – једноставно, дигитално, безбедно
@@ -38,10 +38,10 @@ const pageTitle = srCyrlTranslations.page_title || 'Приручник за гл
 
 	<section class="w-full mt-12">
 		<div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
-			<a href="/sr-cyrl/о-нама" class="px-6 py-3 rounded-lg bg-accent-one text-white font-semibold shadow-md hover:bg-accent-one/90 transition duration-200">
+			<a href="/cyrl/приручник" class="px-6 py-3 rounded-lg bg-accent-one text-white font-semibold shadow-md hover:bg-accent-one/90 transition duration-200">
 				Сазнај више
 			</a>
-			<a href="/sr-cyrl/гласање" class="px-6 py-3 rounded-lg border border-accent-one text-accent-one font-semibold hover:bg-accent-one hover:text-white transition duration-200">
+			<a href="/cyrl/гласање" class="px-6 py-3 rounded-lg border border-accent-one text-accent-one font-semibold hover:bg-accent-one hover:text-white transition duration-200">
 				Попуни захтев
 			</a>
 		</div>

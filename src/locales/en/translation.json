@@ -7,8 +7,8 @@
   "header_nav": {
     "home": "Home",
     "home_path": "/en",
-    "about": "About Us",
-    "about_path": "/en/about",
+    "handbook": "Handbook",
+    "handbook_path": "/en/handbook",
     "form": "Voting",
     "form_path": "en/voting"
   },
