@@ -41,7 +41,7 @@
   "signature": "Signature",
   "clear_signature": "Clear signature",
   "generate_request": "Generate request",
-  "previous_step": "⬅ Previous step",
-  "next_step": "Next step ➡",
+  "previous_step": "Previous step",
+  "next_step": "Next step",
   "footer_text": "© 2025 All rights reserved"
 }

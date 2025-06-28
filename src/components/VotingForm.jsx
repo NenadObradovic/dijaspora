@@ -154,7 +154,7 @@ const VotingForm = ({ onSubmit }) => {
                 href={JEDINSTVEN_BIRACKI_SPISAK_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[color:var(--theme-link)] underline underline-offset-2 transition-colors hover:text-[color:var(--theme-accent)]"
+                className="text-accent-two underline-offset-2 hover:underline"
               >
                 {t('check_list_link')}
               </a>
@@ -358,11 +358,10 @@ const VotingForm = ({ onSubmit }) => {
               </button>
               {handleFieldError('signature')}
             </div>
-            <br />
             {data.signature && (
               <button
                 type="submit"
-                className="inline-flex items-center justify-center rounded-md bg-[color:var(--theme-accent)] px-6 py-2 text-white transition hover:bg-opacity-90 disabled:opacity-50"
+                className="rounded-lg bg-accent-one px-6 py-3 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90"
               >
                 {t('generate_request')}
               </button>
@@ -374,7 +373,7 @@ const VotingForm = ({ onSubmit }) => {
             <button
               type="button"
               onClick={goToPreviousTab}
-              className="text-sm text-[color:var(--theme-accent)] hover:underline"
+              className="rounded-lg bg-accent-one px-4 py-2 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90"
             >
               {t('previous_step')}
             </button>
@@ -383,7 +382,7 @@ const VotingForm = ({ onSubmit }) => {
             <button
               type="button"
               onClick={goToNextTab}
-              className="text-sm text-[color:var(--theme-accent)] hover:underline"
+              className="rounded-lg border border-accent-one px-4 py-2 font-semibold text-accent-one transition duration-200 hover:bg-accent-one hover:text-white"
             >
               {t('next_step')}
             </button>

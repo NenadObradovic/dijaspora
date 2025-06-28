@@ -65,7 +65,12 @@ const App = () => {
       {docGenerated && (
         <>
           <EmailTemplate updateVoter={updateVoter} />
-          <button onClick={handleSendEmail}>{t('email_button_example')}</button>
+          <button
+            onClick={handleSendEmail}
+            className="mt-6 rounded-lg bg-accent-one px-6 py-3 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90"
+          >
+            {t('email_button_example')}
+          </button>
         </>
       )}
     </>
