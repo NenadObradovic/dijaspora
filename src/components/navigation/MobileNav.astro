@@ -1,22 +1,27 @@
 ---
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import { tObject } from '../../utils/i18nStatic.js'
 
-let lang = Astro.currentLocale
+let lang = Astro.currentLocale ?? ''
 
 const t = tObject(lang ?? '', 'header_nav')
+
+const homePath = getRelativeLocaleUrl(lang, '/')
+const handbookPath = getRelativeLocaleUrl(lang, '/prirucnik')
+const formPath = getRelativeLocaleUrl(lang, '/glasanje')
 ---
 
 <nav
   id="nav-menu-mobile"
   class="absolute inset-0 flex flex-col items-center justify-center gap-y-4 text-center text-lg font-medium text-accent-two"
 >
-  <a href={t.home_path} class="underline-offset-2 hover:underline">
+  <a href={homePath} class="underline-offset-2 hover:underline">
     {t.home}
   </a>
-  <a href={t.handbook_path} class="underline-offset-2 hover:underline">
+  <a href={handbookPath} class="underline-offset-2 hover:underline">
     {t.handbook}
   </a>
-  <a href={t.form_path} class="underline-offset-2 hover:underline">
+  <a href={formPath} class="underline-offset-2 hover:underline">
     {t.form}
   </a>
 </nav>
