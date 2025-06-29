@@ -4,11 +4,11 @@ import Footer from '../components/layout/Footer.astro'
 import I18nRouterProvider from '../components/I18nRouterProvider.jsx'
 import '../styles/global.css'
 
-const { lang = 'sr', pageTitle = 'Priručnik za glasanje u inostranstvu' } = Astro.props;
+const { pageTitle = 'Priručnik za glasanje u inostranstvu' } = Astro.props;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={Astro.currentLocale}>
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -30,12 +30,12 @@ const { lang = 'sr', pageTitle = 'Priručnik za glasanje u inostranstvu' } = Ast
 		<div class="relative flex min-h-screen w-full">
 			<div id="container" class="relative mx-auto w-full max-w-4xl grow">
 				<div class="m-auto grid min-h-screen md:grid-rows-[auto_auto_1fr] px-4 md:px-8 md:pt-4">
-					<I18nRouterProvider client:load key={lang} initialLang={lang}>
-						<Header lang={lang} />
+					<I18nRouterProvider client:load initialLang={Astro.currentLocale}>
+						<Header />
 						<main id="main" class="relative flex-grow mt-32 md:mt-[3.5rem]">
 							<slot />
 						</main>
-						<Footer lang={lang} />
+						<Footer />
 					</I18nRouterProvider>
 				</div>
 			</div>
