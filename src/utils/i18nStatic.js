@@ -11,7 +11,7 @@ const translationsMap = {
 /**
  * Returns the translation object for the requested section (e.g. 'header_nav') in the specified language.
  *
- * @param {string} lang - 'sr', 'cyrl', 'en'
+ * @param {string} lang - 'sr-latn', 'sr-cyrl', 'en'
  * @param {string} section - npr. 'header_nav'
  * @returns {object}
  */
@@ -22,7 +22,7 @@ export function tObject(lang, section) {
 /**
  * Returns the translation string for the requested section (e.g. 'footer_text') in the specified language.
  *
- * @param {string} lang - 'sr', 'cyrl', 'en'
+ * @param {string} lang - 'sr-latn', 'sr-cyrl', 'en'
  * @param {string} section - npr. 'footer_text'
  * @returns {string}
  */

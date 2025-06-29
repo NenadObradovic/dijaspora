@@ -1,7 +1,7 @@
 ---
 import { tString } from '../../utils/i18nStatic.js'
 
-let { lang } = Astro.props
+let lang = Astro.currentLocale ?? ''
 ---
 
 <footer

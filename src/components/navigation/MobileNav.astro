@@ -1,9 +1,9 @@
 ---
 import { tObject } from '../../utils/i18nStatic.js'
 
-let { lang } = Astro.props
+let lang = Astro.currentLocale
 
-const t = tObject(lang, 'header_nav')
+const t = tObject(lang ?? '', 'header_nav')
 ---
 
 <nav
