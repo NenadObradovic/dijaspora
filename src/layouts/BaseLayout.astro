@@ -4,41 +4,71 @@ import Footer from '../components/layout/Footer.astro'
 import I18nRouterProvider from '../components/I18nRouterProvider.jsx'
 import '../styles/global.css'
 
-const { pageTitle = 'Priručnik za glasanje u inostranstvu' } = Astro.props;
+const { pageTitle = 'Priručnik za glasanje u inostranstvu' } = Astro.props
 ---
 
 <!doctype html>
 <html lang={Astro.currentLocale}>
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body class="relative m-auto min-h-screen w-full max-w-6xl px-4 sm:px-6 lg:px-8 bg-bgColor">
-		<div class="fixed top-0 left-1/2 -ml-[50vw] min-h-screen w-screen pointer-events-none blur-2xl hidden sm:block">
-			<div class="absolute top-[-90%] right-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-90%] left-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] right-[25%] w-[55%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] left-[25%] w-[55%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-40 dark:opacity-5"></div>
-			<div class="absolute top-[-75%] left-[-25%] w-[65%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
-			<div class="absolute top-[-75%] right-[-25%] w-[65%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-30 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] left-[-30%] w-[85%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
-			<div class="absolute top-[-85%] right-[-30%] w-[85%] h-full bg-gradient-to-b from-orange-300 via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"></div>
-		</div>
-		<div class="relative flex min-h-screen w-full">
-			<div id="container" class="relative mx-auto w-full max-w-4xl grow">
-				<div class="m-auto grid min-h-screen md:grid-rows-[auto_auto_1fr] px-4 md:px-8 md:pt-4">
-					<I18nRouterProvider client:load initialLang={Astro.currentLocale}>
-						<Header />
-						<main id="main" class="relative flex-grow mt-32 md:mt-[3.5rem]">
-							<slot />
-						</main>
-						<Footer />
-					</I18nRouterProvider>
-				</div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body
+    class="relative m-auto min-h-screen w-full max-w-6xl px-4 sm:px-6 lg:px-8 bg-bgColor"
+  >
+    <div
+      class="fixed top-0 left-1/2 -ml-[50vw] min-h-screen w-screen pointer-events-none blur-2xl hidden sm:block"
+    >
+      <div
+        class="absolute top-[-90%] right-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-90%] left-[25%] w-[75%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-40 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-85%] right-[25%] w-[55%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-40 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-85%] left-[25%] w-[55%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-40 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-75%] left-[-25%] w-[65%] h-full bg-gradient-to-b from-blue-300 via-pink-300 to-transparent rounded-full opacity-30 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-75%] right-[-25%] w-[65%] h-full bg-gradient-to-b from-purple-300 via-blue-300 to-transparent rounded-full opacity-30 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-85%] left-[-30%] w-[85%] h-full bg-gradient-to-b from-indigo-300 via-orange-300 to-transparent rounded-full opacity-60 dark:opacity-5"
+      >
+      </div>
+      <div
+        class="absolute top-[-85%] right-[-30%] w-[85%] h-full bg-gradient-to-b from-orange-300 via-indigo-300 to-transparent rounded-full opacity-60 dark:opacity-5"
+      >
+      </div>
+    </div>
+    <div class="relative flex min-h-screen w-full">
+      <div id="container" class="relative mx-auto w-full max-w-4xl grow">
+        <div
+          class="m-auto grid min-h-screen md:grid-rows-[auto_auto_1fr] px-4 md:px-8 md:pt-4"
+        >
+          <I18nRouterProvider client:load initialLang={Astro.currentLocale}>
+            <Header />
+            <main id="main" class="relative flex-grow mt-32 md:mt-[3.5rem]">
+              <slot />
+            </main>
+            <Footer />
+          </I18nRouterProvider>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

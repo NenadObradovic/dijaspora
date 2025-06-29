@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
-import App from "../../components/App"
+import App from '../../components/App'
 
-const pageTitle = 'Voting Handbook';
+const pageTitle = 'Voting Handbook'
 ---
+
 <BaseLayout lang="en" pageTitle={pageTitle}>
-	<App client:only="react" />
+  <App client:only="react" />
 </BaseLayout>

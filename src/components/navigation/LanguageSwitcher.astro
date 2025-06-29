@@ -14,23 +14,25 @@ const localesMap = new Map(
       name: t[locale],
       url: getRelativeLocaleUrl(locale, '/'),
     },
-  ])
+  ]),
 )
 ---
-<nav
-  id="language-switcher"
-  class="flex items-center gap-2">
+
+<nav id="language-switcher" class="flex items-center gap-2">
   <ul class="inline-flex gap-x-4 text-sm font-medium text-accent-two">
-    {locales.filter(locale => locale !== Astro.currentLocale).map((locale) => (
-      <li>
-         <a
-           href={localesMap.get(locale)?.url || '#'}
-           class="underline-offset-2 hover:underline"
-         >
-           {localesMap.get(locale)?.name}
-         </a>
-       </li>
-     ))}
+    {
+      locales
+        .filter((locale) => locale !== Astro.currentLocale)
+        .map((locale) => (
+          <li>
+            <a
+              href={localesMap.get(locale)?.url || '#'}
+              class="underline-offset-2 hover:underline"
+            >
+              {localesMap.get(locale)?.name}
+            </a>
+          </li>
+        ))
+    }
   </ul>
-  
 </nav>
