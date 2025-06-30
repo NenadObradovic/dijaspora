@@ -151,7 +151,7 @@ const VotingForm = ({ onSubmit }) => {
     )}`
 
     return (
-      <div className="mb-6 rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-4 shadow-sm">
+      <div className="rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-4 shadow-sm">
         <h2 className="mb-2 text-lg font-semibold text-[color:var(--theme-color-800)]">
           {countryData.country}
           {!isDefault && source.city ? ` – ${source.city}` : ''}
@@ -209,7 +209,7 @@ const VotingForm = ({ onSubmit }) => {
   }
 
   return (
-    <div className="relative w-full">
+    <div className="relative flex w-full flex-col-reverse gap-6 sm:flex-col">
       {renderEmbassyInfo()}
       <div className="flex w-full max-w-screen-lg flex-col gap-8 py-6 sm:grid sm:grid-cols-[250px_1fr]">
         <div className="flex flex-col gap-y-8">
