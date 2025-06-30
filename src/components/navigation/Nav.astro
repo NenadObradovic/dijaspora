@@ -1,27 +1,20 @@
 ---
-import { getRelativeLocaleUrl } from 'astro:i18n'
-import { tObject } from '../../utils/i18nStatic.js'
+import { getNavLinks } from '../../utils/nav'
 
 let lang = Astro.currentLocale ?? ''
 
-const t = tObject(lang, 'header_nav')
-
-const homePath = getRelativeLocaleUrl(lang, '/')
-const handbookPath = getRelativeLocaleUrl(lang, '/prirucnik')
-const formPath = getRelativeLocaleUrl(lang, '/glasanje')
+const navLinks = getNavLinks(lang)
 ---
 
 <nav
   id="main-navigation-menu"
   class="top-20 mx-auto ml-4 mr-auto hidden flex-col items-end justify-center gap-x-4 rounded-md bg-bgColor text-sm font-medium text-accent-two shadow backdrop-blur group-[.menu-open]:z-50 group-[.menu-open]:flex sm:static sm:z-auto sm:flex-row sm:items-center sm:rounded-none sm:bg-transparent sm:shadow-none sm:backdrop-blur-none md:flex"
 >
-  <a href={homePath} class="underline-offset-2 hover:underline">
-    {t.home}
-  </a>
-  <a href={handbookPath} class="underline-offset-2 hover:underline">
-    {t.handbook}
-  </a>
-  <a href={formPath} class="underline-offset-2 hover:underline">
-    {t.form}
-  </a>
+  {
+    navLinks.map((link) => (
+      <a href={link.path} class="underline-offset-2 hover:underline">
+        {link.label}
+      </a>
+    ))
+  }
 </nav>

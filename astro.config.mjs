@@ -10,7 +10,6 @@ export default defineConfig({
     defaultLocale: 'sr-latn',
     locales: ['sr-latn', 'sr-cyrl', 'en'],
   },
-  redirects: { '/en/glasanje': '/en/voting', '/en/prirucnik': '/en/handbook' },
   integrations: [
     react(),
     icon(),
