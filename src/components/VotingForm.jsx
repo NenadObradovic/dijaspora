@@ -184,7 +184,7 @@ const VotingForm = ({ onSubmit }) => {
             {phones.map((phone, idx) => (
               <a
                 key={idx}
-                href={`tel:${phone.replace(/\s/g, '')}`}
+                href={`tel:${phone.replace(/[^+\d]/g, '')}`}
                 className="text-accent-one hover:underline"
               >
                 {phone}
@@ -483,7 +483,7 @@ const VotingForm = ({ onSubmit }) => {
                       onEnd={saveSignature}
                     />
                   </div>
-                  <div className="mt-2 flex items-center justify-between">
+                  <div className="mt-4 flex items-center justify-between">
                     <button
                       type="button"
                       onClick={clearSignature}
