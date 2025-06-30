@@ -1,8 +1,8 @@
 {
   "language": {
-    "latin": "Latin",
-    "cyrillic": "Cyrillic",
-    "english": "English"
+    "sr-latn": "Latin",
+    "sr-cyrl": "Cyrillic",
+    "en": "English"
   },
   "header_nav": {
     "home": "Home",

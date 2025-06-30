@@ -1,13 +1,13 @@
 ---
 import { tString } from '../../utils/i18nStatic.js'
 
-let {lang} = Astro.props;
+let lang = Astro.currentLocale ?? ''
 ---
 
 <footer
-	class="semibold mt-auto flex w-full flex-col items-center justify-center pb-4 pt-8 text-center align-top text-accent sm:flex-row sm:text-sm"
+  class="semibold mt-auto flex w-full flex-col items-center justify-center pb-4 pt-8 text-center align-top text-accent sm:flex-row sm:text-sm"
 >
-	<div class="inline-flex items-center gap-x-4">
-		<span class="font-semibold">{tString(lang, 'footer_text')}</span>
-	</div>
+  <div class="inline-flex items-center gap-x-4">
+    <span class="font-semibold">{tString(lang, 'footer_text')}</span>
+  </div>
 </footer>

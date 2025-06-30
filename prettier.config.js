@@ -4,4 +4,5 @@ import { config as defaultConfig } from '@epic-web/config/prettier'
 export default {
   ...defaultConfig,
   useTabs: false,
+  plugins: ['prettier-plugin-astro', 'prettier-plugin-tailwindcss'],
 }

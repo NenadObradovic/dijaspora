@@ -27,3 +27,6 @@ public/data/
 
 # License file
 LICENSE
+
+tailwind.config.*
+tsconfig.json

@@ -1,8 +1,8 @@
 {
   "language": {
-    "latin": "Latinica",
-    "cyrillic": "Ćirilica",
-    "english": "Engleski"
+    "sr-latn": "Latinica",
+    "sr-cyrl": "Ćirilica",
+    "en": "Engleski"
   },
   "header_nav": {
     "home": "Početna",
