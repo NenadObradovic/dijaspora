@@ -1,35 +1,1242 @@
 {
-  "availableCountries": [
-    "Srbija",
-    "USA"
-  ],
+  "availableCountries": {
+    "azerbejdzan": "Азербејџан",
+    "albanija": "Албанија",
+    "alzir": "Алжир",
+    "angola": "Ангола",
+    "argentina": "Аргентина",
+    "australija": "Аустралија",
+    "austrija": "Аустрија",
+    "bahrein": "Бахреин",
+    "belgija": "Белгија",
+    "belorusija": "Белорусија",
+    "bosna-i-hercegovina": "Босна и Херцеговина",
+    "brazil": "Бразил",
+    "bugarska": "Бугарска",
+    "venecuela": "Венецуела",
+    "gana": "Гана",
+    "grcka": "Грчка",
+    "danska": "Данска",
+    "egipat": "Египат",
+    "zambija": "Замбија",
+    "zimbabve": "Зимбабве",
+    "izrael": "Израел",
+    "indija": "Индија",
+    "indonezija": "Индонезија",
+    "irak": "Ирак",
+    "iran": "Иран",
+    "italija": "Италија",
+    "japan": "Јапан",
+    "jermenija": "Јерменија",
+    "juzna-afrika": "Јужна Африка",
+    "kazahstan": "Казахстан",
+    "kanada": "Канада",
+    "katar": "Катар",
+    "kenija": "Кенија",
+    "kina": "Кина",
+    "kipar": "Кипар",
+    "kongo": "Конго, Демократска Република",
+    "koreja": "Кореја, Република",
+    "kuba": "Куба",
+    "kuvajt": "Кувајт",
+    "liban": "Либан",
+    "libija": "Либија",
+    "malta": "Малта",
+    "madarska": "Мађарска",
+    "maroko": "Мароко",
+    "meksiko": "Мексико",
+    "mjanmar": "Мијанмар",
+    "nemacka": "Немачка",
+    "nigerija": "Нигерија",
+    "norveska": "Норвешка",
+    "poljska": "Пољска",
+    "portugalija": "Португал",
+    "rumunija": "Румунија",
+    "rusija": "Руска Федерација",
+    "saudijska-arabija": "Саудијска Арабија",
+    "sveta-stolica": "Света Столица",
+    "severna-makedonija": "Северна Македонија",
+    "sirija": "Сирија",
+    "sad": "Сједињене Америчке Државе",
+    "slovacka": "Словачка",
+    "slovenija": "Словенија",
+    "tunis": "Тунис",
+    "turska": "Турска",
+    "uae": "Уједињени Арапски Емирати",
+    "uk": "Уједињено Краљевство",
+    "ukrajina": "Украјина",
+    "finska": "Финска",
+    "francuska": "Француска",
+    "holandija": "Холандија",
+    "hrvatska": "Хрватска",
+    "crna-gora": "Црна Гора",
+    "ceska": "Чешка",
+    "cile": "Чиле",
+    "svajcarska": "Швајцарска",
+    "svedska": "Шведска",
+    "spanija": "Шпанија"
+  },
   "citiesByCountry": {
-    "Srbija": {
-      "address": [
-        "Beograd",
-        "Novi Sad",
-        "Zagreb"
-      ],
+    "azerbejdzan": {
+      "country": "Азербејџан",
+      "address": "Farid Aliyev, 6, Icherisheher, AZ 1095, Baku",
       "email": [
-        "email@email.com",
-        "email1@email.com"
+        "serbianembassy.baku@azeurotel.com",
+        "serbianembassy.consular.baku@gmail.com"
       ],
       "telephone": [
-        "+381693593407",
-        "+38145678921"
+        "+994 124925080",
+        "+994 124925125"
       ]
     },
-    "USA": {
-      "address": [
-        "Čikago",
-        "Njujork",
-        "Los Angeles"
-      ],
+    "albanija": {
+      "country": "Албанија",
+      "address": "Rr. Donika Kastrioti 9/1, Tirana",
       "email": [
-        "usa1@email.com"
+        "srb.emb.albania@mfa.rs"
       ],
       "telephone": [
-        "+11234567890"
+        "+3554 / 2223-042",
+        "+3554 / 2232-091"
+      ]
+    },
+    "alzir": {
+      "country": "Алжир",
+      "address": "42, rue des Frères Benali Abdellah (ex rue Parmentier), B.P.366, Hydra",
+      "email": [
+        "ambasada@ambserbie-alger.com"
+      ],
+      "telephone": [
+        "+21323 / 47-41-50",
+        "+21323 / 47-41-51",
+        "+213 770 30 12 65"
+      ]
+    },
+    "angola": {
+      "country": "Ангола",
+      "address": "Comandante N'Zaji 25/27, Alvalade, Luanda",
+      "email": [
+        "srb.emb.angola@mfa.rs"
+      ],
+      "telephone": [
+        "+244 / 222-321-421",
+        "+244 / 222-327-240",
+        "+244 / 222-320-393"
+      ]
+    },
+    "argentina": {
+      "country": "Аргентина",
+      "address": "Montevideo 696, 1019 Buenos Aires",
+      "email": [
+        "srb.emb.argentina@mfa.rs",
+        "consuladoserbiabuenosaires@gmail.com"
+      ],
+      "telephone": [
+        "+5411/4371-1359",
+        "+5411/4371-1362",
+        "+5411/4371-1363"
+      ]
+    },
+    "australija": {
+      "country": "Аустралија",
+      "address": "4 Bulwara Close, O'Malley, ACT 2606, Kanbera",
+      "email": [
+        "embassy.canberra@mfa.rs"
+      ],
+      "telephone": [
+        "+612 / 6290-2630",
+        "+612 / 6290-2948"
+      ],
+      "consulate": {
+        "sidnej": {
+          "city": "Sidnej",
+          "address": "12, Trelawney Street, Woollahra, N.S.W.2025, P.O.Box 190 Edgecliff, N.S.W.2027",
+          "email": [
+            "srb.cons.sydney@mfa.rs"
+          ],
+          "telephone": [
+            "+612 / 9362-46-37",
+            "+612 / 9362-30-03",
+            "+612 / 9362-46-38"
+          ]
+        }
+      }
+    },
+    "austrija": {
+      "country": "Аустрија",
+      "address": "Ölzeltgasse 3, 1030 Beč",
+      "email": [
+        "srb.emb.austria@mfa.rs"
+      ],
+      "telephone": [
+        "+431 / 713-25-95",
+        "+431 / 712-12-05"
+      ],
+      "consulate": {
+        "salcburg": {
+          "city": "Salcburg",
+          "address": "Schallmooser Hauptstrasse 99, 5020 Salcburg",
+          "email": [
+            "genoonsulate.salzburg@mfa.rs"
+          ],
+          "telephone": [
+            "+43662 / 845-254"
+          ]
+        }
+      }
+    },
+    "bahrein": {
+      "country": "Бахреин",
+      "address": "Building 899, Road 3218, Block 332, BuAshirah, Manama, Kingdom of Bahrain"
+    },
+    "belgija": {
+      "country": "Белгија",
+      "address": "Boulevard Du Regent 53, 1000 Brisel",
+      "email": [
+        "srb.emb.belgium@mfa.rs"
+      ],
+      "telephone": [
+        "+322 / 647-2652",
+        "+322 / 647-5781",
+        "+322 / 649-6545"
+      ]
+    },
+    "belorusija": {
+      "country": "Белорусија",
+      "address": "Rumjanceva 4, 220034 Minsk",
+      "email": [
+        "embassy.minsk@mfa.rs"
+      ],
+      "telephone": [
+        "+375 / 17-284-29-84",
+        "+375 / 17-284-29-90"
+      ]
+    },
+    "bosna-i-hercegovina": {
+      "country": "Босна и Херцеговина",
+      "address": "Obala Maka Dizdara 3a, Sarajevo",
+      "email": [
+        "ambasada.sarajevo@mfa.rs"
+      ],
+      "telephone": [
+        "+38733 / 260-090",
+        "+38733 / 260-080"
+      ],
+      "consulate": {
+        "trebinje": {
+          "city": "Trebinje",
+          "address": "Njegoševa 4, 89101 Trebinje",
+          "email": [
+            "kk.trebinje@mfa.rs"
+          ],
+          "telephone": [
+            "+387 59 490 505",
+            "+387 59 490 506",
+            "+387 59 490 507"
+          ]
+        },
+        "drvar": {
+          "city": "Drvar",
+          "address": "Titova bb, 80260 Drvar",
+          "email": [
+            "kk.rs-dryar@teol.net"
+          ],
+          "telephone": [
+            "+387 (0)34 961 030",
+            "+387 (0)34 961 031"
+          ]
+        },
+        "mostar": {
+          "city": "Mostar",
+          "address": "Ulica Konak br.5, 88000 Mostar",
+          "email": [
+            "gk.mostar@mfa.rs"
+          ],
+          "telephone": [
+            "+387 36 556-001"
+          ]
+        },
+        "banja-luka": {
+          "city": "Banja Luka",
+          "address": "Vojvode Radomira Putnika 2, 78000 Banjaluka",
+          "email": [
+            "konzulat.bl@mfa.rs"
+          ],
+          "telephone": [
+            "+387 51 / 227-040",
+            "+387 51 / 227-060"
+          ]
+        }
+      }
+    },
+    "brazil": {
+      "country": "Бразил",
+      "address": "SES Avenida das Nacoes, Qd. 803, Lote 15, CEP 70409-900 Бразилija",
+      "email": [
+        "embaixadaservia@terra.com.br"
+      ],
+      "telephone": [
+        "+5561 / 3223-72-72",
+        "+5561 / 3223-19-94"
+      ]
+    },
+    "bugarska": {
+      "country": "Бугарска",
+      "address": "Veliko Trnovo 3, 1504 Sofija",
+      "email": [
+        "srb.emb.bulgaria@mfa.rs"
+      ],
+      "telephone": [
+        "+3592 / 946-16-35",
+        "+3592 / 946-16-33"
+      ]
+    },
+    "venecuela": {
+      "country": "Венецуела",
+      "address": "Zgrada Parke Kristal (Parque Cristal), Istočna kula (Torre Este), 6. sprat, Avenija Fransiska Miranda (Avenida Francisco Miranda), Los Palos Grandes (Los Palos Grandes), Karakas",
+      "email": [
+        "srb.emb.venezuela@mfa.rs"
+      ],
+      "telephone": [
+        "+58 / 424 272 9098"
+      ]
+    },
+    "gana": {
+      "country": "Гана",
+      "address": "3 Dade Close, GL-043-8875, Labone, Accra, Ghana",
+      "email": [
+        "milutin.stanojevic@mfa.rs"
+      ],
+      "telephone": [
+        "+233 30 396 5516"
+      ]
+    },
+    "grcka": {
+      "country": "Грчка",
+      "address": "106, Vasilissis Sofias Ave., 11527 Atina",
+      "email": [
+        "embassy.athens@mfa.rs",
+        "embassy.athens.consular@mfa.rs"
+      ],
+      "telephone": [
+        "+30210 / 777-43-44",
+        "+30210 / 777-43-55",
+        "+30210 / 747-23-60"
+      ],
+      "consulate": {
+        "solun": {
+          "city": "Solun",
+          "address": "Komninon 4, 54624 Solun",
+          "email": [
+            "srb.cons.thessaloniki@mfa.rs"
+          ],
+          "telephone": [
+            "+302310 / 244-265",
+            "+302310 / 244-266",
+            "+302310 / 244-267"
+          ]
+        }
+      }
+    },
+    "danska": {
+      "country": "Данска",
+      "address": "Svanevænget 36, 2100 Kopenhagen",
+      "email": [
+        "serbianemb@city.dk"
+      ],
+      "telephone": [
+        "+45 / 3929-7161",
+        "+45 / 3929-7784"
+      ]
+    },
+    "egipat": {
+      "country": "Египат",
+      "address": "33, Al Mansour Mohamed St., Zamalek, Kairo",
+      "email": [
+        "serbia@serbiaeg.com",
+        "konzul@serbiaeg.com"
+      ],
+      "telephone": [
+        "+202 / 2735-40-61",
+        "+202 / 2736-54-94",
+        "+202 / 2736-70-94"
+      ]
+    },
+    "zambija": {
+      "country": "Замбија",
+      "address": "5216, Diplomatic Triangle off Independence Av., Lusaka",
+      "email": [
+        "serbianemb.lusaka@gmail.com"
+      ],
+      "telephone": [
+        "+260 / 211-250-235",
+        "+260 / 977-173-244"
+      ]
+    },
+    "zimbabve": {
+      "country": "Зимбабве",
+      "address": "Lanark Road 1, Belgravia - Harare",
+      "email": [
+        "ambasadaharare@yahoo.com"
+      ],
+      "telephone": [
+        "+263 775 840 593"
+      ]
+    },
+    "izrael": {
+      "country": "Израел",
+      "address": "10, Bodenheimer St., 62008 Tel Aviv",
+      "email": [
+        "srb.emb.israel@mfa.rs",
+        "srbambil@netvision.net.ll",
+        "consular.srb@013net.net"
+      ],
+      "telephone": [
+        "+9723 / 604-55-35",
+        "+9723 / 604-93-72"
+      ]
+    },
+    "indija": {
+      "country": "Индија",
+      "address": "3/50 G Niti Marg Chanakyapuri 110021 Nju Delhi",
+      "email": [
+        "embassyofserbianewdelhi@hotmail.com",
+        "economy-embassyofserbiadelhi@hotmail.com",
+        "embassyofserbiadelhi@hotmail.com"
+      ],
+      "telephone": [
+        "+9111 / 2687-36-61",
+        "+9111 / 2687-20-73"
+      ]
+    },
+    "indonezija": {
+      "country": "Индонезија",
+      "address": "Jl. HOS Cokroaminoto 109, Menteng 10310, Džakarta Pusat",
+      "email": [
+        "consular.jakarta@mfa.rs",
+        "srb.emb.indonesia@mfa.rs"
+      ],
+      "telephone": [
+        "+6221 / 314-35-60",
+        "+6221 / 314-37-20"
+      ]
+    },
+    "irak": {
+      "country": "Ирак",
+      "address": "Jadriyah Mahala 923, Zukak 3, House 3, Hay Babil, Bagdad",
+      "email": [
+        "embsrbag@yahoo.com"
+      ],
+      "telephone": [
+        "+964 / 790-191-2334",
+        "+964 / 790-190-9495"
+      ]
+    },
+    "iran": {
+      "country": "Иран",
+      "address": "Sahrak E Qouds, North Falamak Street, 4th Alley, Building No 3, P.O. Box 19858, Teheran",
+      "email": [
+        "serbembteh@neda.net"
+      ],
+      "telephone": [
+        "+982188091529"
+      ]
+    },
+    "italija": {
+      "country": "Италија",
+      "address": "Via dei Monti Parioli 20, 00197 Rim",
+      "email": [
+        "info@ambroma.com",
+        "konzularno@ambroma.com"
+      ],
+      "telephone": [
+        "+3906 / 321-19-50"
+      ],
+      "consulate": {
+        "trst": {
+          "city": "Trst",
+          "address": "Strada del Friuli 54, 34136 Trst",
+          "email": [
+            "gkrstrst@spin.it"
+          ],
+          "telephone": [
+            "+39040 / 410-125",
+            "+39040 / 410-126"
+          ]
+        },
+        "milano": {
+          "city": "Milano",
+          "address": "Via Pantano 2, 20122 Milano",
+          "email": [
+            "info@gkrsmi.it"
+          ],
+          "telephone": [
+            "+3902875869",
+            "+393666816138 (hitni slučajevi)"
+          ]
+        }
+      }
+    },
+    "japan": {
+      "country": "Јапан",
+      "address": "4-16-12 Takanawa, Minato-ku, 108-0074 Tokio",
+      "email": [
+        "srb.emb.japan@mfa.rs"
+      ],
+      "telephone": [
+        "+813 / 3447-35-71",
+        "+813 / 3447-35-72"
+      ]
+    },
+    "jermenija": {
+      "country": "Јерменија",
+      "address": "10 Vazgen Sargsyan St., 0010 Yerevan, Piazza Grande Business Center, 1st floor, office 109",
+      "email": [
+        "embserbia.yerevan@gmail.com"
+      ],
+      "telephone": [
+        "+37460 / 380-116",
+        "+37460 / 380-117",
+        "+37460 / 380-119"
+      ]
+    },
+    "juzna-afrika": {
+      "country": "Јужна Африка",
+      "address": "Marais163, Brooklyn 0181, P.O.B 13026, Hatfield 0028, Pretorija",
+      "email": [
+        "info@srbembassy.org.za"
+      ],
+      "telephone": [
+        "+2712 / 460-5626",
+        "+2712 / 460-6103",
+        "+2712 / 346-4139"
+      ]
+    },
+    "kazahstan": {
+      "country": "Казахстан",
+      "address": "Sariarka 6, 010000 Astana",
+      "email": [
+        "amb.astana@mail.ru"
+      ],
+      "telephone": [
+        "+7 7172 790327",
+        "+7 7172 790328"
+      ]
+    },
+    "kanada": {
+      "country": "Канада",
+      "address": "21, Blackburn Avenue, Otava Ontario K1N 8A2",
+      "email": [
+        "communication.ottawa@mfa.rs"
+      ],
+      "telephone": [
+        "+1613 / 233-62-89",
+        "+1613 / 233-62-80",
+        "+1613 / 565-92-63"
+      ],
+      "consulate": {
+        "toronto": {
+          "city": "Toronto",
+          "address": "40 Eglinton Avenue East, 7 floor, unit 701 M4P 3A2, Toronto, ON M4P 3A2",
+          "email": [
+            "gkrstoronto@rogers.com"
+          ],
+          "telephone": [
+            "+1416 / 483-10-80"
+          ]
+        }
+      }
+    },
+    "katar": {
+      "country": "Катар",
+      "address": "Zone 66, West Bay, Um Al Seneem no.5, Doha, P.O. Box 22195",
+      "email": [
+        "srb.emb.qatar@mfa.rs"
+      ],
+      "telephone": [
+        "+974 / 44175181"
+      ]
+    },
+    "kenija": {
+      "country": "Кенија",
+      "address": "Fortis Tower, Woodvale Grove, 6th floor, 00100 Najrobi",
+      "email": [
+        "srb.emb.kenya@mfa.rs",
+        "srb.consular.kenya@mfa.rs"
+      ],
+      "telephone": [
+        "+254 794588515"
+      ]
+    },
+    "kina": {
+      "country": "Кина",
+      "address": "San Li Tun, Dong 6 Jie 1, 100600 Peking",
+      "email": [
+        "embserbia@embserbia.cn"
+      ],
+      "telephone": [
+        "+8610 / 6532-3516",
+        "+8610 / 6532-3016",
+        "+8610 / 6532-1693",
+        "+8610 / 6532-5413",
+        "+8610 / 6532-1628",
+        "+8610 / 6532-1562"
+      ],
+      "consulate": {
+        "sangaj": {
+          "city": "Šangaj",
+          "address": "Rm, 801, No.1, Lane 60, Lyon Garden, Ronghua East Road, Gu Bei New Area, Šangaj 201103",
+          "email": [
+            "srb.cons.shanghai@mfa.rs"
+          ],
+          "telephone": [
+            "+8621 / 6208-1388",
+            "+8621 / 6208-1899"
+          ]
+        }
+      }
+    },
+    "kipar": {
+      "country": "Кипар",
+      "address": "2, Vasilissis Olgas Street, 1101 Nikozlija",
+      "email": [
+        "nicosia@serbia.org.cy"
+      ],
+      "telephone": [
+        "+35722 / 777-511",
+        "+35722 / 772-924"
+      ]
+    },
+    "kongo": {
+      "country": "Конго, Демократска Република",
+      "address": "Avenue de 1 Etoile 112, Gombe, Kinšasa",
+      "email": [
+        "serbambakin@gmail.com"
+      ],
+      "telephone": [
+        "+243 / 97-159-4988",
+        "+243 / 99-104-5488"
+      ]
+    },
+    "koreja": {
+      "country": "Кореја, Република",
+      "address": "22nd Floor, Booyoung Taepyeong Building, 55 Sejong-daero, Jung-gu, Seul",
+      "email": [
+        "srb.emb.repkorea@mfa.rs"
+      ],
+      "telephone": [
+        "+822 / 797 51 09",
+        "+822 / 798 51 09"
+      ]
+    },
+    "kuba": {
+      "country": "Куба",
+      "address": "5ta Avenida, No. 4406, entre 44 y 46, Miramar Playa, Havana",
+      "email": [
+        "officesrbhav@gmail.com",
+        "ambasadorsrbhav@gmail.com",
+        "konzsrbhav@gmail.com"
+      ],
+      "telephone": [
+        "+53 / 7204-24-88",
+        "+53 / 7204-26-07"
+      ]
+    },
+    "kuvajt": {
+      "country": "Кувајт",
+      "address": "Bayan, Block No. 13, Street No. 1, Villa No.18, Safat 13066, P.O. Box 20511",
+      "email": [
+        "embrskw@gmail.com",
+        "serbkonzkw@gmail.com"
+      ],
+      "telephone": [
+        "+965 253 75 042",
+        "+965 253 75 045"
+      ]
+    },
+    "liban": {
+      "country": "Либан",
+      "address": "Jounieh-Kaslik Roundabout, Etoile Center (Zara Building), 2nd floor",
+      "email": [
+        "beirut.dkp@gmail.com"
+      ],
+      "telephone": [
+        "+961 922 1256",
+        "+961 922 1257",
+        "+961 766 28 206"
+      ]
+    },
+    "libija": {
+      "country": "Либија",
+      "address": "Kvart Ben Ašur, Abdal Ben Salam, P.O.Box 1087, Tripoli",
+      "email": [
+        "srb.emb.libya@mfa.rs"
+      ],
+      "telephone": [
+        "+21821 / 333-54-04",
+        "+21821 / 333-33-92",
+        "+21821 / 333-08-19",
+        "+21821 / 362-32-05",
+        "+21821 / 362-32-06"
+      ]
+    },
+    "malta": {
+      "country": "Малта",
+      "address": "Europa Centre, Level 3, Office 18/a, Triq Sant` Anna 58, Floriana, FRN,1400",
+      "email": [
+        "srb.office.valletta@mfa.rs"
+      ],
+      "telephone": [
+        "+356 / 2703 7921"
+      ]
+    },
+    "madarska": {
+      "country": "Мађарска",
+      "address": "Dozsa Gyorgy ut 92/b, H-1068 Budimpešta",
+      "email": [
+        "budapest@serbiaemb.t-online.hu",
+        "budapest-consulat@serbiaemb.t-online.hu"
+      ],
+      "telephone": [
+        "+361 / 342-85-12",
+        "+361 / 322-98-38",
+        "+361 / 342-05-66",
+        "+361 / 322-14-39",
+        "+361 / 322-14-36",
+        "+361 / 322-14-37"
+      ]
+    },
+    "maroko": {
+      "country": "Мароко",
+      "address": "24, Rue El Kadi Ahmed Mouline Souissi, Rabat, B.P.5014",
+      "email": [
+        "ambrsrabat@gmail.com"
+      ],
+      "telephone": [
+        "+212 537 752 201",
+        "+212 537 753 770"
+      ]
+    },
+    "meksiko": {
+      "country": "Мексико",
+      "address": "Av. Montanas Rocallosas No.515, Lomas de Chapultepec, 11000 Мексико, D.F.",
+      "email": [
+        "embajadaserbia@alestra.net.mx"
+      ],
+      "telephone": [
+        "+5255 / 5520-05-24",
+        "+5255 / 5520-25-23"
+      ]
+    },
+    "mjanmar": {
+      "country": "Мијанмар",
+      "address": "114-A Inya Road, Kamayut Township, Jangon",
+      "email": [
+        "serbemb@yangon.net.mm"
+      ],
+      "telephone": [
+        "+951 515-282",
+        "+951 515-283"
+      ]
+    },
+    "nemacka": {
+      "country": "Немачка",
+      "address": "Taubert Strasse 18, D-14193 Berlin",
+      "email": [
+        "info@botschaft-serbien.de"
+      ],
+      "telephone": [
+        "+4930 / 895-77-00",
+        "+4930 / 895-77-02"
+      ],
+      "consulate": {
+        "stutgart": {
+          "city": "Štutgart",
+          "address": "Taubenstrasse 4, D-70199 Štutgart",
+          "email": [
+            "gk-stutgart@t-online.de"
+          ],
+          "telephone": [
+            "+49711 / 601-706-0"
+          ]
+        },
+        "hamburg": {
+          "city": "Hamburg",
+          "address": "Harvestehuder Weg 101, D-20149 Hamburg",
+          "email": [
+            "info@gkrshamburg.de"
+          ],
+          "telephone": [
+            "+4940 / 416-22-60",
+            "+4940 / 416-22-612"
+          ]
+        },
+        "frankfurt": {
+          "city": "Frankfurt",
+          "address": "Thueringer Strasse 3, D-60316 Frankfurt",
+          "email": [
+            "info@gksrbfra.de"
+          ],
+          "telephone": [
+            "+4969 / 9043-6760"
+          ]
+        },
+        "minhen": {
+          "city": "Minhen",
+          "address": "Bohmenwaldplatz 2, D-81679 Minhen",
+          "email": [
+            "gk.muenchen@mfa.rs"
+          ],
+          "telephone": [
+            "+4989 / 982-475-21",
+            "+4989 / 982-47-50",
+            "+4989 / 982-475-72"
+          ]
+        },
+        "diseldorf": {
+          "city": "Diseldorf",
+          "address": "Klosterstrasse 79, D-40211 Diseldorf",
+          "email": [
+            "info.dusseldorf@mfa.rs"
+          ],
+          "telephone": [
+            "+49211 / 239-55-00"
+          ]
+        }
+      }
+    },
+    "nigerija": {
+      "country": "Нигерија",
+      "address": "11, Rio Negro Close, off Yedseram Street, Maitama District, Abudža",
+      "email": [
+        "serbconsabuja@gmail.com"
+      ],
+      "telephone": [
+        "+234 / 805-973-8141",
+        "+234 / 805-973-8145"
+      ]
+    },
+    "norveska": {
+      "country": "Норвешка",
+      "address": "Munkedamsveien 59B, 0270 Oslo",
+      "email": [
+        "ambasada@serbianembassy.no"
+      ],
+      "telephone": [
+        "+47 / 23 11 52 20"
+      ]
+    },
+    "poljska": {
+      "country": "Пољска",
+      "address": "Aleja Róż 5, 00-556 Varšava",
+      "email": [
+        "embassy.warsaw@mfa.rs"
+      ],
+      "telephone": [
+        "+4822 / 628-51-61",
+        "+4822 / 625-60-41"
+      ]
+    },
+    "portugalija": {
+      "country": "Португал",
+      "address": "Rua de Alcolena 11, 1400 – 004 Lisabon",
+      "email": [
+        "serviaemba@netcabo.pt"
+      ],
+      "telephone": [
+        "+35121 / 301-53-11",
+        "+35121 / 301-53-12"
+      ]
+    },
+    "rumunija": {
+      "country": "Румунија",
+      "address": "General Eremia Grigorescu nr. 12, Bukurešt",
+      "email": [
+        "srb.emb.romania@mfa.rs",
+        "consultate.bucharest@mfa.rs"
+      ],
+      "telephone": [
+        "+4021 / 211-98-71",
+        "+4021 / 211-98-72",
+        "+4021 / 211-98-73",
+        "+4021 / 211-49-80"
+      ],
+      "consulate": {
+        "temisvar": {
+          "city": "Temišvar",
+          "address": "Str.Remus No 4, Temišvar",
+          "email": [
+            "srb.cons.timisoara@mfa.rs"
+          ],
+          "telephone": [
+            "+40256 / 490-268",
+            "+40256 / 490-334",
+            "+40256 / 493-467"
+          ]
+        }
+      }
+    },
+    "rusija": {
+      "country": "Руска Федерација",
+      "address": "Mosfilmovskaja 46, R-119285 Moskva",
+      "email": [
+        "ambasada.moskva@mfa.rs",
+        "konzularno.moskva@mfa.rs"
+      ],
+      "telephone": [
+        "+7495 988-66-45"
+      ]
+    },
+    "saudijska-arabija": {
+      "country": "Саудијска Арабија",
+      "address": "Abdulqader Al Jaza'eri Street, Building No.26, Rijad",
+      "email": [
+        "srb.emb.saudiarabia@mfa.rs"
+      ],
+      "telephone": [
+        "+966114613010",
+        "+966555282559"
+      ]
+    },
+    "sveta-stolica": {
+      "country": "Света Столица",
+      "address": "Via dei Monti Parioli 20, 00197 Rim, Vatikan",
+      "email": [
+        "amb.serbia.vatican@ambroma.com"
+      ],
+      "telephone": [
+        "+39 / 06-322-3076"
+      ]
+    },
+    "severna-makedonija": {
+      "country": "Северна Македонија",
+      "address": "Pitu Guli 8, Skoplje",
+      "email": [
+        "srbamb@unet.com.mk"
+      ],
+      "telephone": [
+        "+3892 / 3129-298",
+        "+3892 / 3131-299",
+        "+3892 / 3128-422",
+        "+3892 / 3129-305"
+      ]
+    },
+    "sirija": {
+      "country": "Сирија",
+      "address": "Mazzeh Eastern Villas, Farabi Street, Damascus",
+      "email": [
+        "srb.emb.syria@mfa.rs"
+      ],
+      "telephone": [
+        "+96311 / 6120682",
+        "+96311 / 6120683"
+      ]
+    },
+    "sad": {
+      "country": "Сједињене Америчке Државе",
+      "address": "1333 16th St NW, Vašington, DC 20036",
+      "email": [
+        "info@serbiaembusa.org"
+      ],
+      "telephone": [
+        "+1 202 / 332-0333"
+      ],
+      "consulate": {
+        "cikago": {
+          "city": "Čikago",
+          "address": "201 East Ohio Street, Suite 200, Čikago, IL 60611",
+          "email": [
+            "info@segchicago.org"
+          ],
+          "telephone": [
+            "+1 (312) 670-6707"
+          ]
+        },
+        "njujork": {
+          "city": "Njujork",
+          "address": "62 West 45th Street, 7 Floor, Njujork, NY 10036",
+          "email": [
+            "consultate.newyork@mfa.rs"
+          ],
+          "telephone": [
+            "+1 (212) 5964 241"
+          ]
+        }
+      }
+    },
+    "slovacka": {
+      "country": "Словачка",
+      "address": "Budkova 38, 81104 Bratislava",
+      "email": [
+        "embassy.bratislava@mfa.rs"
+      ],
+      "telephone": [
+        "+4212 / 544-31-927",
+        "+4212 / 544-31-928",
+        "+4212 / 544-31-929",
+        "+4212 / 544-31-935"
+      ]
+    },
+    "slovenija": {
+      "country": "Словенија",
+      "address": "Slomškova 1, 1000 Ljubljana",
+      "email": [
+        "embassy.ljubljana@mfa.rs"
+      ],
+      "telephone": [
+        "+3861 / 438-01-11",
+        "+3861 / 438-01-10"
+      ]
+    },
+    "tunis": {
+      "country": "Тунис",
+      "address": "4, Rue du Lac Majeur, 1053 - Les Berges du Lac, Тунис",
+      "email": [
+        "amb.serbia@gnet.tn"
+      ],
+      "telephone": [
+        "+21671 / 966-088",
+        "+21671 / 658-427",
+        "+21671 / 966-084"
+      ]
+    },
+    "turska": {
+      "country": "Турска",
+      "address": "Yazanlar Sokak No. 1, P.K.28, 06691 Kavaklidere, Ankara",
+      "email": [
+        "embserank@gmail.com"
+      ],
+      "telephone": [
+        "+90312 / 426-02-36",
+        "+90312 / 426-24-32"
+      ],
+      "consulate": {
+        "istambul": {
+          "city": "Istanbul",
+          "address": "Sümbül Sk. No: 2, Levent Mah. Besiktas, 34330 Istanbul",
+          "email": [
+            "konzulat.istanbul@mfa.rs"
+          ],
+          "telephone": [
+            "+90212 / 213-76-86"
+          ]
+        }
+      }
+    },
+    "uae": {
+      "country": "Уједињени Арапски Емирати",
+      "address": "Mushref area, sector W31, Al Rafee street, Villa number 06 (opposite of Novotel hotel), Abu Dabi",
+      "email": [
+        "srb.emb.uae@mfa.rs"
+      ],
+      "telephone": [
+        "+9712 / 447-6444"
+      ]
+    },
+    "uk": {
+      "country": "Уједињено Краљевство",
+      "address": "28 Belgrave Square, London SW1X 8QB",
+      "email": [
+        "srb.emb.uk@mfa.rs",
+        "consular.london@mfa.rs"
+      ],
+      "telephone": [
+        "+44 / 207-235-9049"
+      ]
+    },
+    "ukrajina": {
+      "country": "Украјина",
+      "address": "Voloska 4, 04070 Kijev",
+      "email": [
+        "ambars@ukr.net",
+        "konzrs@ukr.net"
+      ],
+      "telephone": [
+        "+38044 / 425-60-60",
+        "+38044 / 425-60-15"
+      ]
+    },
+    "finska": {
+      "country": "Финска",
+      "address": "Kulosaarentie 36, 00570 Helsinki",
+      "email": [
+        "office@serbianembassy.fi",
+        "info@serbianembassy.fi"
+      ],
+      "telephone": [
+        "+3589 / 684-74-66",
+        "+3589 / 684-85-22"
+      ]
+    },
+    "francuska": {
+      "country": "Француска",
+      "address": "5, Rue Leonard de Vinci, 75116 Pariz",
+      "email": [
+        "ambassade.paris@mfa.rs",
+        "konzularno.pariz@mfa.rs"
+      ],
+      "telephone": [
+        "+331 / 40-72-24-24",
+        "+331 / 40-72-24-17"
+      ],
+      "consulate": {
+        "strazbur": {
+          "city": "Strazbur",
+          "address": "26, Avenue de la Forêt Noire, 67000 Strazbur",
+          "email": [
+            "consulate.strasbourg@mfa.rs"
+          ],
+          "telephone": [
+            "+33388 / 353-980"
+          ]
+        }
+      }
+    },
+    "holandija": {
+      "country": "Холандија",
+      "address": "Burgemeester van Kamebeeklaan 19, 2585 Hag",
+      "email": [
+        "srb.emb.netherlands@mfa.rs",
+        "konzularno.hag@mfa.rs"
+      ],
+      "telephone": [
+        "+31 70 / 363-23-97",
+        "+31 70 / 363-23-93",
+        "+31 70 / 363-68-00"
+      ]
+    },
+    "hrvatska": {
+      "country": "Хрватска",
+      "address": "Jabukovac 23, 10000 Zagreb (Ambasada), Katančićeva br. 3, 10000 Zagreb (Konzularno)",
+      "email": [
+        "srb.emb.croatia@mfa.rs",
+        "konzularno.zagreb@mfa.rs"
+      ],
+      "telephone": [
+        "+3851 / 457-33-30",
+        "+3851 / 457-33-37",
+        "+3851 / 457-90-67",
+        "+3851 / 457-90-68",
+        "+3851 / 457-33-31"
+      ],
+      "consulate": {
+        "rijeka": {
+          "city": "Rijeka",
+          "address": "Erazma Barčića 9, 51000 Rijeka",
+          "email": [
+            "konzulat-rijeka@ri.t-com.hr"
+          ],
+          "telephone": [
+            "+38551 / 337-420",
+            "+38551 / 337-421",
+            "+38551 / 337-343"
+          ]
+        },
+        "vukovar": {
+          "city": "Vukovar",
+          "address": "Ivana Gunduliča 19, Vukovar",
+          "email": [
+            "generalni.konzulat@gk-srbije-vukovar.hr"
+          ],
+          "telephone": [
+            "+38532 / 441-016",
+            "+38532 / 441-183",
+            "+38532 / 441-184"
+          ]
+        }
+      }
+    },
+    "crna-gora": {
+      "country": "Црна Гора",
+      "address": "Bulevar Ivana Crnojevića br. 10, Podgorica",
+      "email": [
+        "embassy.podgorica@mfa.rs"
+      ],
+      "telephone": [
+        "+382-20-667-305",
+        "+382-20-667-565",
+        "+382-20-667-306"
+      ],
+      "consulate": {
+        "herceg-novi": {
+          "city": "Herceg Novi",
+          "address": "Trg Hercega Stjepana (Belavista) 15, 85340 Herceg Novi",
+          "email": [],
+          "telephone": [
+            "+382-31 / 350-320",
+            "+382-31 / 350-340"
+          ]
+        }
+      }
+    },
+    "ceska": {
+      "country": "Чешка",
+      "address": "Mostecka 15, 118 00 Prag 1",
+      "email": [
+        "embassy.prague@mfa.rs",
+        "konzularno.prag@mfa.rs"
+      ],
+      "telephone": [
+        "+4202 / 57-53-20-75",
+        "+4202 / 57-53-15-82",
+        "+4202 / 57-53-39-49"
+      ]
+    },
+    "cile": {
+      "country": "Чиле",
+      "email": [
+        "srb.emb.chile@mfa.rs"
+      ]
+    },
+    "svajcarska": {
+      "country": "Швајцарска",
+      "address": "Seminarstrasse 5, CH-3006 Bern",
+      "email": [
+        "info@ambasadasrbije.ch"
+      ],
+      "telephone": [
+        "+4131 / 352-63-53",
+        "+4131 / 352-63-54",
+        "+4131 / 352-63-55"
+      ],
+      "consulate": {
+        "cirih": {
+          "city": "Cirih",
+          "address": "Alfred-Escher-Strasse 4, 8002 Cirih",
+          "email": [
+            "srb.cons.zurich@mfa.rs"
+          ],
+          "telephone": [
+            "+41 44 20 20 273",
+            "+41 44 20 20 274"
+          ]
+        }
+      }
+    },
+    "svedska": {
+      "country": "Шведска",
+      "address": "Hantverkargatan 26, 3rd floor, Box 529 101 30, Stockholm",
+      "email": [
+        "srb.emb.sweden@mfa.rs"
+      ],
+      "telephone": [
+        "+468 / 218-436",
+        "+468 / 218-482",
+        "+468 / 218-485",
+        "+468 / 247-748"
+      ]
+    },
+    "spanija": {
+      "country": "Шпанија",
+      "address": "c/Velazquez 3, Piso 2, 28001 Madrid",
+      "email": [
+        "srb.emb.spain@mfa.rs",
+        "konz.madrid@mfa.rs"
+      ],
+      "telephone": [
+        "+3491 / 563-50-45",
+        "+3491 / 563-50-46",
+        "+3491 / 562-60-40"
       ]
     }
   }

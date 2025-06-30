@@ -12,7 +12,7 @@
     "form": "Glasanje",
     "form_path": "/glasanje"
   },
-  "form_title": "Glasanje iz inostranstva",
+  "form_title": "Registracija za glasanje u inostranstvu",
   "email_heading_example": "Predloženi tekst mejla:",
   "email_button_example": "Pošalji mejl ambasadi",
   "check_tab": "Provera biračkog spiska",
@@ -42,5 +42,9 @@
   "generate_request": "Generiši zahtev",
   "previous_step": "Prethodni korak",
   "next_step": "Sledeći korak",
+  "address_info_title": "Adresa",
+  "email_info_title": "Email",
+  "phone_info_title": "Telefon",
+  "google_maps_info_title": "Otvori u Mapama",
   "footer_text": "© 2025 Sva prava zadržana"
 }

@@ -13,7 +13,7 @@
     "form_path": "en/voting"
   },
   "page_title": "Voting Handbook",
-  "form_title": "Voting from abroad",
+  "form_title": "Registration for voting abroad",
   "email_heading_example": "Suggested email text:",
   "email_button_example": "Send email to the embassy",
   "check_tab": "Voter list check",
@@ -43,5 +43,9 @@
   "generate_request": "Generate request",
   "previous_step": "Previous step",
   "next_step": "Next step",
+  "address_info_title": "Address",
+  "email_info_title": "Email",
+  "phone_info_title": "Telephone",
+  "google_maps_info_title": "Open in Maps",
   "footer_text": "© 2025 All rights reserved"
 }

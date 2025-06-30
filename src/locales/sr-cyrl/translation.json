@@ -13,7 +13,7 @@
     "form_path": "/cyrl/гласање"
   },
   "page_title": "Приручник за гласање у иностранству",
-  "form_title": "Гласање из иностранства",
+  "form_title": "Регистрација за гласање у иностранству",
   "email_heading_example": "Предложени текст мејла:",
   "email_button_example": "Пошаљи мејл амбасади",
   "check_tab": "Провера бирачког списка",
@@ -43,5 +43,9 @@
   "generate_request": "Генериши захтев",
   "previous_step": "Претходни корак",
   "next_step": "Следећи корак",
+  "address_info_title": "Адреса",
+  "email_info_title": "Имејл",
+  "phone_info_title": "Телефон",
+  "google_maps_info_title": "Отвори у Мапама",
   "footer_text": "© 2025 Сва права задржана"
 }
