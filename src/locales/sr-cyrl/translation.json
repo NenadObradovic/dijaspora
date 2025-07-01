@@ -6,11 +6,11 @@
   },
   "header_nav": {
     "home": "Почетна",
-    "home_path": "/cyrl",
+    "home_path": "/sr-cyrl",
     "handbook": "Приручник",
-    "handbook_path": "/cyrl/приручник",
+    "handbook_path": "/sr-cyrl/приручник",
     "form": "Гласање",
-    "form_path": "/cyrl/гласање"
+    "form_path": "/sr-cyrl/гласање"
   },
   "page_title": "Моја Србија - Мој Глас",
   "page_description": "Гласање из иностранства – једноставно, дигитално, безбедно",
