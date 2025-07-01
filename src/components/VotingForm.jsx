@@ -6,8 +6,18 @@ import { validateForm } from '../utils/validateForm.js'
 
 const VotingForm = ({ onSubmit }) => {
   const { t } = useTranslation()
+  const [isMobile, setIsMobile] = useState(false)
   const [errors, setErrors] = useState({})
   const [updateVoter, setUpdateVoter] = useState(false)
+
+  useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 640)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   const [data, setData] = useState({
     full_name: '',
@@ -211,44 +221,44 @@ const VotingForm = ({ onSubmit }) => {
   return (
     <div className="relative flex w-full flex-col-reverse gap-6 sm:flex-col">
       {renderEmbassyInfo()}
-      <div className="flex w-full max-w-screen-lg flex-col gap-8 py-6 sm:grid sm:grid-cols-[250px_1fr]">
-        <div className="flex flex-col gap-y-8">
+      <div className="flex w-full max-w-screen-lg flex-col gap-8 py-12 sm:grid sm:grid-cols-[250px_1fr] sm:py-6">
+        <div className="flex justify-between gap-8 sm:flex-col">
           {/* Tab Navigation */}
-          <div className="flex flex-col gap-y-4">
-            {tabs.map((tab, index) => (
-              <div key={index} className="relative flex items-center">
-                {/* Number Circle */}
-                <div
-                  className={`flex h-8 w-8 items-center justify-center rounded-full text-lg font-medium ${
-                    index === currentTabIndex
-                      ? 'bg-red-600 text-white'
-                      : index < currentTabIndex
-                        ? 'bg-black text-white'
-                        : 'bg-white text-black'
-                  } // Next tab cursor-pointer border border-gray-300`}
-                >
-                  {index + 1}
+          <div className="flex shrink-0 flex-col gap-y-4 sm:flex-col">
+            {tabs.map((tab, index) => {
+              if (isMobile && tab !== activeTab) {
+                return null
+              }
+
+              return (
+                <div key={index} className="relative flex items-center">
+                  {/* Number Circle */}
+                  <div
+                    className={`flex h-6 w-6 items-center justify-center rounded-full text-sm font-medium ${index === currentTabIndex ? 'bg-red-600 text-white' : 'bg-gray-300 text-gray-700'}`}
+                  >
+                    {index + 1}
+                  </div>
+                  <button
+                    onClick={() => setActiveTab(tab)}
+                    className={`rounded-t-md px-2 py-1 text-sm font-medium ${
+                      activeTab === tab
+                        ? 'text-[color:var(--theme-color-800)]'
+                        : 'hidden text-[color:var(--theme-color-500)] hover:text-[color:var(--theme-color-700)] sm:inline-block'
+                    }`}
+                  >
+                    {t(tab.replace('-', '_') + '_tab')}
+                  </button>
                 </div>
-                <button
-                  onClick={() => setActiveTab(tab)}
-                  className={`rounded-t-md px-4 py-2 text-sm font-medium ${
-                    activeTab === tab
-                      ? 'text-[color:var(--theme-color-800)]'
-                      : 'text-[color:var(--theme-color-500)] hover:text-[color:var(--theme-color-700)]'
-                  }`}
-                >
-                  {t(tab.replace('-', '_') + '_tab')}
-                </button>
-              </div>
-            ))}
+              )
+            })}
           </div>
-          {/* Tab Pagination */}
-          <div className="flex flex-col gap-y-4">
+          {/* Tab Pagination - Buttons */}
+          <div className="flex items-center justify-between gap-y-4 sm:flex-col">
             {currentTabIndex > 0 && (
               <button
                 type="button"
                 onClick={goToPreviousTab}
-                className="rounded-lg bg-accent-one px-4 py-2 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90"
+                className="hidden w-full rounded-lg bg-accent-one px-4 py-2 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90 sm:inline-block"
               >
                 {t('previous_step')}
               </button>
@@ -257,11 +267,38 @@ const VotingForm = ({ onSubmit }) => {
               <button
                 type="button"
                 onClick={goToNextTab}
-                className="rounded-lg border border-accent-one px-4 py-2 font-semibold text-accent-one transition duration-200 hover:bg-accent-one hover:text-white"
+                className="hidden w-full rounded-lg border border-accent-one px-4 py-2 font-semibold text-accent-one transition duration-200 hover:bg-accent-one hover:text-white sm:inline-block"
               >
                 {t('next_step')}
               </button>
             )}
+            {/* Tab Pagination - Arrows */}
+            <div className="relative flex w-full items-center justify-end gap-6 text-sm font-semibold text-[color:var(--theme-color-700)] sm:hidden">
+              <button
+                onClick={goToPreviousTab}
+                disabled={currentTabIndex === 0}
+                className={`text-sm transition-colors duration-200 hover:text-accent-two ${
+                  currentTabIndex === 0 ? 'hidden' : ''
+                }`}
+                aria-label={t('previous_step')}
+              >
+                &larr; {t('previous_step_mob')}
+              </button>
+              <button
+                onClick={goToNextTab}
+                disabled={currentTabIndex === tabs.length - 1}
+                className={`text-sm transition-colors duration-200 hover:text-accent-two ${
+                  currentTabIndex === tabs.length - 1 ? 'hidden' : ''
+                }`}
+                aria-label={t('next_step')}
+              >
+                {t('next_step_mob')} &rarr;
+              </button>
+              <span className="absolute -top-8 right-0">
+                {t('step_label')} {currentTabIndex + 1} {t('step_of')}{' '}
+                {tabs.length}
+              </span>
+            </div>
           </div>
         </div>
         {/* Tab Content */}
