@@ -52,15 +52,12 @@ const homePath = getRelativeLocaleUrl(lang, '/')
   </div>
   <div class="w-full justify-between sm:flex-col">
     <div class="flex items-center justify-between gap-x-2">
-      <a
-        class="group flex h-8 items-center hover:filter-none sm:relative"
-        href={homePath}
-      >
-        <svg
-          class="inline-block size-8 fill-current text-accent-base drop-shadow-[0px_2.5px_2.5px_rgba(0,0,0,0.35)] dark:text-accent-two"
-        >
-          <use href="/assets/img/logo.svg"></use>
-        </svg>
+      <a class="relative" href={homePath}>
+        <img
+          src="/assets/img/logo.webp"
+          alt="My Serbia - My Vote"
+          class="block w-32"
+        />
       </a>
       <Navigation />
 

@@ -12,6 +12,8 @@
     "form": "Glasanje",
     "form_path": "/glasanje"
   },
+  "page_title": "Moja Srbija - Moj Glas",
+  "page_description": "Приручник за гласање у иностранству",
   "form_title": "Registracija za glasanje u inostranstvu",
   "email_heading_example": "Predloženi tekst mejla:",
   "email_button_example": "Pošalji mejl ambasadi",
@@ -46,5 +48,6 @@
   "email_info_title": "Email",
   "phone_info_title": "Telefon",
   "google_maps_info_title": "Otvori u Mapama",
-  "footer_text": "© 2025 Sva prava zadržana"
+  "footer_text": "© 2025 Sva prava zadržana.",
+  "footer_github_text": "Izvorni kod"
 }

@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import App from '../../components/App'
+
+const pageDescription = 'Регистрација за гласање у иностранству'
+---
+
+<BaseLayout lang="sr-cyrl" pageDescription={pageDescription}>
+  <App client:only="react" />
+</BaseLayout>

@@ -1,8 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
+import srLatinTranslations from '../locales/sr-latn/translation.json'
+
+const pageTitle = srLatinTranslations.page_title || ''
+const pageDescription = srLatinTranslations.page_description || ''
 ---
 
-<BaseLayout lang="sr-latn">
+<BaseLayout
+  lang="sr-latn"
+  pageTitle={pageTitle}
+  pageDescription={pageDescription}
+>
   <section class="w-full">
     <h1
       class="title bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 bg-clip-text text-center text-transparent dark:from-accent-two dark:via-accent-one dark:to-accent-two"

@@ -12,7 +12,8 @@
     "form": "Гласање",
     "form_path": "/cyrl/гласање"
   },
-  "page_title": "Приручник за гласање у иностранству",
+  "page_title": "Моја Србија - Мој Глас",
+  "page_description": "Гласање из иностранства – једноставно, дигитално, безбедно",
   "form_title": "Регистрација за гласање у иностранству",
   "email_heading_example": "Предложени текст мејла:",
   "email_button_example": "Пошаљи мејл амбасади",
@@ -47,5 +48,6 @@
   "email_info_title": "Имејл",
   "phone_info_title": "Телефон",
   "google_maps_info_title": "Отвори у Мапама",
-  "footer_text": "© 2025 Сва права задржана"
+  "footer_text": "© 2025 Сва права задржана.",
+  "footer_github_text": "Изворни код"
 }

@@ -4,17 +4,36 @@ import Footer from '../components/layout/Footer.astro'
 import I18nRouterProvider from '../components/I18nRouterProvider.jsx'
 import '../styles/global.css'
 
-const { pageTitle = 'Priručnik za glasanje u inostranstvu' } = Astro.props
+const {
+  pageTitle = 'Moja Srbija - Moj Glas',
+  pageDescription = 'Glasanje iz inostranstva – jednostavno, digitalno, bezbedno',
+} = Astro.props
 ---
 
 <!doctype html>
 <html lang={Astro.currentLocale}>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
+
+    <title>{pageDescription} - {pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content="/assets/img/logo.webp" />
+    <meta property="og:url" content={Astro.url.toString()} />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Serbia Vote" />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body
     class="relative m-auto min-h-screen w-full max-w-6xl bg-bgColor px-4 sm:px-6 lg:px-8"

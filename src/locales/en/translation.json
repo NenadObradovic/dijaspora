@@ -12,7 +12,8 @@
     "form": "Voting",
     "form_path": "en/voting"
   },
-  "page_title": "Voting Handbook",
+  "page_title": "My Serbia - My Vote",
+  "page_description": "Voting from Abroad – Simple, Digital, Secure",
   "form_title": "Registration for voting abroad",
   "email_heading_example": "Suggested email text:",
   "email_button_example": "Send email to the embassy",
@@ -47,5 +48,6 @@
   "email_info_title": "Email",
   "phone_info_title": "Telephone",
   "google_maps_info_title": "Open in Maps",
-  "footer_text": "© 2025 All rights reserved"
+  "footer_text": "© 2025 All rights reserved.",
+  "footer_github_text": "Source code"
 }
