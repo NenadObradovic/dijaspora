@@ -253,7 +253,7 @@ const VotingForm = ({ onSubmit }) => {
             })}
           </div>
           {/* Tab Pagination - Buttons */}
-          <div className="flex items-center justify-between gap-y-4 sm:flex-col">
+          <div className="flex w-full items-center justify-between gap-y-4 sm:flex-col">
             {currentTabIndex > 0 && (
               <button
                 type="button"
