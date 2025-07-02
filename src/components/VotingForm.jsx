@@ -222,7 +222,7 @@ const VotingForm = ({ onSubmit }) => {
     <div className="relative flex w-full flex-col-reverse gap-6 sm:flex-col">
       {renderEmbassyInfo()}
       <div className="flex w-full max-w-screen-lg flex-col gap-8 py-6 sm:grid sm:grid-cols-[250px_1fr]">
-        <div className="flex flex-wrap justify-between gap-y-8 sm:flex-col">
+        <div className="flex flex-wrap justify-start gap-y-8 sm:flex-col sm:justify-between">
           {/* Tab Navigation */}
           <div className="flex w-[50%] shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
             {tabs.map((tab, index) => {
