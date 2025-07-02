@@ -221,10 +221,10 @@ const VotingForm = ({ onSubmit }) => {
   return (
     <div className="relative flex w-full flex-col-reverse gap-6 sm:flex-col">
       {renderEmbassyInfo()}
-      <div className="flex w-full max-w-screen-lg flex-col gap-8 py-12 sm:grid sm:grid-cols-[250px_1fr] sm:py-6">
-        <div className="flex justify-between gap-8 sm:flex-col">
+      <div className="flex w-full max-w-screen-lg flex-col gap-8 py-6 sm:grid sm:grid-cols-[250px_1fr]">
+        <div className="flex flex-wrap justify-between gap-y-8 sm:flex-col">
           {/* Tab Navigation */}
-          <div className="flex shrink-0 flex-col gap-y-4 sm:flex-col">
+          <div className="flex w-[50%] shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
             {tabs.map((tab, index) => {
               if (isMobile && tab !== activeTab) {
                 return null
@@ -253,7 +253,7 @@ const VotingForm = ({ onSubmit }) => {
             })}
           </div>
           {/* Tab Pagination - Buttons */}
-          <div className="flex w-full items-center justify-between gap-y-4 sm:flex-col">
+          <div className="flex w-[50%] items-center justify-between gap-y-4 sm:w-full sm:flex-col">
             {currentTabIndex > 0 && (
               <button
                 type="button"
@@ -272,33 +272,52 @@ const VotingForm = ({ onSubmit }) => {
                 {t('next_step')}
               </button>
             )}
-            {/* Tab Pagination - Arrows */}
-            <div className="relative flex w-full items-center justify-end gap-6 text-sm font-semibold text-[color:var(--theme-color-700)] sm:hidden">
-              <button
-                onClick={goToPreviousTab}
-                disabled={currentTabIndex === 0}
-                className={`text-sm transition-colors duration-200 hover:text-accent-two ${
-                  currentTabIndex === 0 ? 'hidden' : ''
-                }`}
-                aria-label={t('previous_step')}
+            {/* Tab Pagination - Count */}
+            <span className="relative flex w-full items-center justify-end gap-6 text-sm font-semibold text-[color:var(--theme-color-700)] sm:hidden">
+              {t('step_label')} {currentTabIndex + 1} {t('step_of')}{' '}
+              {tabs.length}
+            </span>
+          </div>
+          {/* Tab Pagination - Arrows */}
+          <div className="relative flex w-full items-center justify-between gap-6 sm:hidden">
+            <button
+              onClick={goToPreviousTab}
+              disabled={currentTabIndex === 0}
+              className={`align-center inline-flex text-sm text-accent-two underline-offset-2 transition-colors duration-200 hover:underline ${
+                currentTabIndex === 0 ? 'hidden' : ''
+              }`}
+              aria-label={t('previous_step')}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                className="relative top-[1px] h-auto w-5 fill-current"
+                viewBox="0 0 24 24"
               >
-                &larr; {t('previous_step_mob')}
-              </button>
-              <button
-                onClick={goToNextTab}
-                disabled={currentTabIndex === tabs.length - 1}
-                className={`text-sm transition-colors duration-200 hover:text-accent-two ${
-                  currentTabIndex === tabs.length - 1 ? 'hidden' : ''
-                }`}
-                aria-label={t('next_step')}
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+              </svg>
+              {t('previous_step')}
+            </button>
+            <button
+              onClick={goToNextTab}
+              disabled={currentTabIndex === tabs.length - 1}
+              className={`align-center ml-auto inline-flex text-sm text-accent-two underline-offset-2 transition-colors duration-200 hover:underline ${
+                currentTabIndex === tabs.length - 1 ? 'hidden' : ''
+              }`}
+              aria-label={t('next_step')}
+            >
+              {t('next_step')}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                className="relative top-[1px] h-auto w-5 fill-current"
+                viewBox="0 0 24 24"
               >
-                {t('next_step_mob')} &rarr;
-              </button>
-              <span className="absolute -top-8 right-0">
-                {t('step_label')} {currentTabIndex + 1} {t('step_of')}{' '}
-                {tabs.length}
-              </span>
-            </div>
+                <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+              </svg>
+            </button>
           </div>
         </div>
         {/* Tab Content */}

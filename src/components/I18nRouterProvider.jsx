@@ -8,7 +8,7 @@ const I18nRouterProvider = ({ children, initialLang }) => {
     let lang
 
     const pathname = window.location.pathname
-    if (pathname.startsWith('/cyrl')) lang = 'cyrl'
+    if (pathname.startsWith('/sr-cyrl')) lang = 'cyrl'
     else if (pathname.startsWith('/en')) lang = 'en'
     else lang = 'sr'
 

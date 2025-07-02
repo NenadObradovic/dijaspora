@@ -8,9 +8,9 @@
     "home": "Почетна",
     "home_path": "/sr-cyrl",
     "handbook": "Приручник",
-    "handbook_path": "/sr-cyrl/приручник",
+    "handbook_path": "/sr-cyrl/prirucnik",
     "form": "Гласање",
-    "form_path": "/sr-cyrl/гласање"
+    "form_path": "/sr-cyrl/glasanje"
   },
   "page_title": "Моја Србија - Мој Глас",
   "page_description": "Гласање из иностранства – једноставно, дигитално, безбедно",
@@ -44,8 +44,6 @@
   "generate_request": "Генериши захтев",
   "previous_step": "Претходни корак",
   "next_step": "Следећи корак",
-  "previous_step_mob": "Назад",
-  "next_step_mob": "Напред",
   "step_label": "Корак",
   "step_of": "од",
   "address_info_title": "Адреса",
