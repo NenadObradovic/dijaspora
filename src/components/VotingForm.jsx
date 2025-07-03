@@ -5,7 +5,7 @@ import { JEDINSTVEN_BIRACKI_SPISAK_URL } from '../constants/global.js'
 import { validateForm } from '../utils/validateForm.js'
 
 const VotingForm = ({ onSubmit }) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [isMobile, setIsMobile] = useState(false)
   const [errors, setErrors] = useState({})
   const [updateVoter, setUpdateVoter] = useState(false)
@@ -34,7 +34,12 @@ const VotingForm = ({ onSubmit }) => {
 
   const [embassyData, setEmbassyData] = useState(null)
   useEffect(() => {
-    fetch('/data/embassy.json')
+    const embassyData =
+      'cyrl' === i18n.language
+        ? '/data/embassy-cyrl.json'
+        : '/data/embassy.json'
+
+    fetch(embassyData)
       .then((res) => res.json())
       .then((json) => setEmbassyData(json))
       .catch((err) => {
@@ -224,7 +229,7 @@ const VotingForm = ({ onSubmit }) => {
       <div className="flex w-full max-w-screen-lg flex-col gap-8 py-6 sm:grid sm:grid-cols-[250px_1fr]">
         <div className="flex flex-wrap justify-between gap-y-8 sm:flex-col sm:justify-start">
           {/* Tab Navigation */}
-          <div className="flex w-[50%] shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
+          <div className="flex shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
             {tabs.map((tab, index) => {
               if (isMobile && tab !== activeTab) {
                 return null
@@ -253,12 +258,12 @@ const VotingForm = ({ onSubmit }) => {
             })}
           </div>
           {/* Tab Pagination - Buttons */}
-          <div className="flex w-[50%] items-center justify-between gap-y-4 sm:w-full sm:flex-col">
+          <div className="flex items-center justify-between gap-y-4 sm:w-full sm:flex-col">
             {currentTabIndex > 0 && (
               <button
                 type="button"
                 onClick={goToPreviousTab}
-                className="hidden w-full rounded-lg bg-accent-one px-4 py-2 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90 sm:inline-block"
+                className="hidden w-full rounded-lg border border-accent-one px-4 py-2 font-semibold text-accent-one transition duration-200 hover:bg-accent-one hover:text-white sm:inline-block"
               >
                 {t('previous_step')}
               </button>
@@ -267,7 +272,7 @@ const VotingForm = ({ onSubmit }) => {
               <button
                 type="button"
                 onClick={goToNextTab}
-                className="hidden w-full rounded-lg border border-accent-one px-4 py-2 font-semibold text-accent-one transition duration-200 hover:bg-accent-one hover:text-white sm:inline-block"
+                className="hidden w-full rounded-lg bg-accent-one px-4 py-2 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90 sm:inline-block"
               >
                 {t('next_step')}
               </button>
@@ -349,7 +354,7 @@ const VotingForm = ({ onSubmit }) => {
                   />
                   <label
                     htmlFor="generateVoter"
-                    className="text-sm text-[color:var(--theme-color-700)]"
+                    className="cursor-pointer text-sm text-[color:var(--theme-color-700)]"
                   >
                     {t('generate_request_for_list')}
                   </label>
@@ -366,7 +371,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.full_name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('full_name_description')}
@@ -380,7 +385,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.parent_name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('parent_name_description')}
@@ -397,7 +402,7 @@ const VotingForm = ({ onSubmit }) => {
                     min={13}
                     max={13}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('jmbg_description')}
@@ -412,7 +417,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.address}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('address_description')}
@@ -427,7 +432,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.address_abroad}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('address_abroad_description')}
@@ -440,7 +445,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.country}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                     style={{
                       color: data.country
                         ? 'var(--theme-color-800)'
@@ -469,7 +474,7 @@ const VotingForm = ({ onSubmit }) => {
                         value={data.city}
                         onChange={handleChange}
                         required
-                        className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                        className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                         style={{
                           color: data.city
                             ? 'var(--theme-color-800)'
@@ -498,7 +503,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.telephone}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('phone_description')}
@@ -513,7 +518,7 @@ const VotingForm = ({ onSubmit }) => {
                     value={data.email}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
+                    className="w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-2 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-400)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
                   />
                   <span className="text-sm text-[color:var(--theme-color-400)]">
                     {t('email_description')}
@@ -524,7 +529,7 @@ const VotingForm = ({ onSubmit }) => {
             )}
             {activeTab === 'signature' && (
               <>
-                <div className="mt-4">
+                <div className="relative">
                   <label className="mb-2 block text-sm font-medium text-[color:var(--theme-color-700)]">
                     {t('signature')}
                   </label>
@@ -533,30 +538,29 @@ const VotingForm = ({ onSubmit }) => {
                       canvasProps={{
                         width: 400,
                         height: 150,
-                        className: 'sigCanvas',
+                        className: 'sigCanvas max-w-full',
                       }}
                       ref={sigCanvasRef}
                       onEnd={saveSignature}
                     />
                   </div>
-                  <div className="mt-4 flex items-center justify-between">
-                    <button
-                      type="button"
-                      onClick={clearSignature}
-                      className="text-sm font-medium text-[color:var(--theme-accent)] underline underline-offset-2 transition-colors duration-150 hover:text-[color:var(--theme-color-700)]"
-                    >
-                      {t('clear_signature')}
-                    </button>
-
-                    {data.signature && (
+                  {data.signature && (
+                    <div className="mt-4 flex items-center justify-between">
+                      <button
+                        type="button"
+                        onClick={clearSignature}
+                        className="text-sm font-medium text-[color:var(--theme-accent)] underline underline-offset-2 transition-colors duration-150 hover:text-[color:var(--theme-color-700)]"
+                      >
+                        {t('clear_signature')}
+                      </button>
                       <button
                         type="submit"
                         className="rounded-lg bg-accent-one px-6 py-3 font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90"
                       >
                         {t('generate_request')}
                       </button>
-                    )}
-                  </div>
+                    </div>
+                  )}
                   {handleFieldError('signature')}
                 </div>
               </>

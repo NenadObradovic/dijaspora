@@ -1,84 +1,84 @@
 {
   "availableCountries": {
-    "azerbejdzan": "Azerbejdžan",
-    "albanija": "Albanija",
-    "alzir": "Alžir",
-    "angola": "Angola",
-    "argentina": "Argentina",
-    "australija": "Australija",
-    "austrija": "Austrija",
-    "bahrein": "Bahrein",
-    "belgija": "Belgija",
-    "belorusija": "Belorusija",
-    "bosna-i-hercegovina": "Bosna i Hercegovina",
-    "brazil": "Brazil",
-    "bugarska": "Bugarska",
-    "venecuela": "Venecuela",
-    "gana": "Gana",
-    "grcka": "Grčka",
-    "danska": "Danska",
-    "egipat": "Egipat",
-    "zambija": "Zambija",
-    "zimbabve": "Zimbabve",
-    "izrael": "Izrael",
-    "indija": "Indija",
-    "indonezija": "Indonezija",
-    "irak": "Irak",
-    "iran": "Iran",
-    "italija": "Italija",
-    "japan": "Japan",
-    "jermenija": "Jermenija",
-    "juzna-afrika": "Južna Afrika",
-    "kazahstan": "Kazahstan",
-    "kanada": "Kanada",
-    "katar": "Katar",
-    "kenija": "Kenija",
-    "kina": "Kina",
-    "kipar": "Kipar",
-    "kongo": "Kongo, Demokratska Republika",
-    "koreja": "Koreja, Republika",
-    "kuba": "Kuba",
-    "kuvajt": "Kuvajt",
-    "liban": "Liban",
-    "libija": "Libija",
-    "malta": "Malta",
-    "madarska": "Mađarska",
-    "maroko": "Maroko",
-    "meksiko": "Meksiko",
-    "mjanmar": "Mijanmar",
-    "nemacka": "Nemačka",
-    "nigerija": "Nigerija",
-    "norveska": "Norveška",
-    "poljska": "Poljska",
-    "portugalija": "Portugal",
-    "rumunija": "Rumunija",
-    "rusija": "Ruska Federacija",
-    "saudijska-arabija": "Saudijska Arabija",
-    "sveta-stolica": "Sveta Stolica",
-    "severna-makedonija": "Severna Makedonija",
-    "sirija": "Sirija",
-    "sad": "Sjedinjene Američke Države",
-    "slovacka": "Slovačka",
-    "slovenija": "Slovenija",
-    "tunis": "Tunis",
-    "turska": "Turska",
-    "uae": "Ujedinjeni Arapski Emirati",
-    "uk": "Ujedinjeno Kraljevstvo",
-    "ukrajina": "Ukrajina",
-    "finska": "Finska",
-    "francuska": "Francuska",
-    "holandija": "Holandija",
-    "hrvatska": "Hrvatska",
-    "crna-gora": "Crna Gora",
-    "ceska": "Češka",
-    "cile": "Čile",
-    "svajcarska": "Švajcarska",
-    "svedska": "Švedska",
-    "spanija": "Španija"
+    "azerbejdzan": "Азербејџан",
+    "albanija": "Албанија",
+    "alzir": "Алжир",
+    "angola": "Ангола",
+    "argentina": "Аргентина",
+    "australija": "Аустралија",
+    "austrija": "Аустрија",
+    "bahrein": "Бахреин",
+    "belgija": "Белгија",
+    "belorusija": "Белорусија",
+    "bosna-i-hercegovina": "Босна и Херцеговина",
+    "brazil": "Бразил",
+    "bugarska": "Бугарска",
+    "venecuela": "Венецуела",
+    "gana": "Гана",
+    "grcka": "Грчка",
+    "danska": "Данска",
+    "egipat": "Египат",
+    "zambija": "Замбија",
+    "zimbabve": "Зимбабве",
+    "izrael": "Израел",
+    "indija": "Индија",
+    "indonezija": "Индонезија",
+    "irak": "Ирак",
+    "iran": "Иран",
+    "italija": "Италија",
+    "japan": "Јапан",
+    "jermenija": "Јерменија",
+    "juzna-afrika": "Јужна Африка",
+    "kazahstan": "Казахстан",
+    "kanada": "Канада",
+    "katar": "Катар",
+    "kenija": "Кенија",
+    "kina": "Кина",
+    "kipar": "Кипар",
+    "kongo": "Конго, Демократска Република",
+    "koreja": "Кореја, Република",
+    "kuba": "Куба",
+    "kuvajt": "Кувајт",
+    "liban": "Либан",
+    "libija": "Либија",
+    "malta": "Малта",
+    "madarska": "Мађарска",
+    "maroko": "Мароко",
+    "meksiko": "Мексико",
+    "mjanmar": "Мијанмар",
+    "nemacka": "Немачка",
+    "nigerija": "Нигерија",
+    "norveska": "Норвешка",
+    "poljska": "Пољска",
+    "portugalija": "Португал",
+    "rumunija": "Румунија",
+    "rusija": "Руска Федерација",
+    "saudijska-arabija": "Саудијска Арабија",
+    "sveta-stolica": "Света Столица",
+    "severna-makedonija": "Северна Македонија",
+    "sirija": "Сирија",
+    "sad": "Сједињене Америчке Државе",
+    "slovacka": "Словачка",
+    "slovenija": "Словенија",
+    "tunis": "Тунис",
+    "turska": "Турска",
+    "uae": "Уједињени Арапски Емирати",
+    "uk": "Уједињено Краљевство",
+    "ukrajina": "Украјина",
+    "finska": "Финска",
+    "francuska": "Француска",
+    "holandija": "Холандија",
+    "hrvatska": "Хрватска",
+    "crna-gora": "Црна Гора",
+    "ceska": "Чешка",
+    "cile": "Чиле",
+    "svajcarska": "Швајцарска",
+    "svedska": "Шведска",
+    "spanija": "Шпанија"
   },
   "citiesByCountry": {
     "azerbejdzan": {
-      "country": "Azerbejdžan",
+      "country": "Азербејџан",
       "address": "Farid Aliyev, 6, Icherisheher, AZ 1095, Baku",
       "email": [
         "serbianembassy.baku@azeurotel.com",
@@ -90,7 +90,7 @@
       ]
     },
     "albanija": {
-      "country": "Albanija",
+      "country": "Албанија",
       "address": "Rr. Donika Kastrioti 9/1, Tirana",
       "email": [
         "srb.emb.albania@mfa.rs"
@@ -101,7 +101,7 @@
       ]
     },
     "alzir": {
-      "country": "Alžir",
+      "country": "Алжир",
       "address": "42, rue des Frères Benali Abdellah (ex rue Parmentier), B.P.366, Hydra",
       "email": [
         "ambasada@ambserbie-alger.com"
@@ -113,7 +113,7 @@
       ]
     },
     "angola": {
-      "country": "Angola",
+      "country": "Ангола",
       "address": "Comandante N'Zaji 25/27, Alvalade, Luanda",
       "email": [
         "srb.emb.angola@mfa.rs"
@@ -125,7 +125,7 @@
       ]
     },
     "argentina": {
-      "country": "Argentina",
+      "country": "Аргентина",
       "address": "Montevideo 696, 1019 Buenos Aires",
       "email": [
         "srb.emb.argentina@mfa.rs",
@@ -138,7 +138,7 @@
       ]
     },
     "australija": {
-      "country": "Australija",
+      "country": "Аустралија",
       "address": "4 Bulwara Close, O'Malley, ACT 2606, Kanbera",
       "email": [
         "embassy.canberra@mfa.rs"
@@ -163,7 +163,7 @@
       }
     },
     "austrija": {
-      "country": "Austrija",
+      "country": "Аустрија",
       "address": "Ölzeltgasse 3, 1030 Beč",
       "email": [
         "srb.emb.austria@mfa.rs"
@@ -186,11 +186,11 @@
       }
     },
     "bahrein": {
-      "country": "Bahrein",
+      "country": "Бахреин",
       "address": "Building 899, Road 3218, Block 332, BuAshirah, Manama, Kingdom of Bahrain"
     },
     "belgija": {
-      "country": "Belgija",
+      "country": "Белгија",
       "address": "Boulevard Du Regent 53, 1000 Brisel",
       "email": [
         "srb.emb.belgium@mfa.rs"
@@ -202,7 +202,7 @@
       ]
     },
     "belorusija": {
-      "country": "Belorusija",
+      "country": "Белорусија",
       "address": "Rumjanceva 4, 220034 Minsk",
       "email": [
         "embassy.minsk@mfa.rs"
@@ -213,7 +213,7 @@
       ]
     },
     "bosna-i-hercegovina": {
-      "country": "Bosna i Hercegovina",
+      "country": "Босна и Херцеговина",
       "address": "Obala Maka Dizdara 3a, Sarajevo",
       "email": [
         "ambasada.sarajevo@mfa.rs"
@@ -270,8 +270,8 @@
       }
     },
     "brazil": {
-      "country": "Brazil",
-      "address": "SES Avenida das Nacoes, Qd. 803, Lote 15, CEP 70409-900 Brazilija",
+      "country": "Бразил",
+      "address": "SES Avenida das Nacoes, Qd. 803, Lote 15, CEP 70409-900 Бразилija",
       "email": [
         "embaixadaservia@terra.com.br"
       ],
@@ -281,7 +281,7 @@
       ]
     },
     "bugarska": {
-      "country": "Bugarska",
+      "country": "Бугарска",
       "address": "Veliko Trnovo 3, 1504 Sofija",
       "email": [
         "srb.emb.bulgaria@mfa.rs"
@@ -292,7 +292,7 @@
       ]
     },
     "venecuela": {
-      "country": "Venecuela",
+      "country": "Венецуела",
       "address": "Zgrada Parke Kristal (Parque Cristal), Istočna kula (Torre Este), 6. sprat, Avenija Fransiska Miranda (Avenida Francisco Miranda), Los Palos Grandes (Los Palos Grandes), Karakas",
       "email": [
         "srb.emb.venezuela@mfa.rs"
@@ -302,7 +302,7 @@
       ]
     },
     "gana": {
-      "country": "Gana",
+      "country": "Гана",
       "address": "3 Dade Close, GL-043-8875, Labone, Accra, Ghana",
       "email": [
         "milutin.stanojevic@mfa.rs"
@@ -312,7 +312,7 @@
       ]
     },
     "grcka": {
-      "country": "Grčka",
+      "country": "Грчка",
       "address": "106, Vasilissis Sofias Ave., 11527 Atina",
       "email": [
         "embassy.athens@mfa.rs",
@@ -339,7 +339,7 @@
       }
     },
     "danska": {
-      "country": "Danska",
+      "country": "Данска",
       "address": "Svanevænget 36, 2100 Kopenhagen",
       "email": [
         "serbianemb@city.dk"
@@ -350,7 +350,7 @@
       ]
     },
     "egipat": {
-      "country": "Egipat",
+      "country": "Египат",
       "address": "33, Al Mansour Mohamed St., Zamalek, Kairo",
       "email": [
         "serbia@serbiaeg.com",
@@ -363,7 +363,7 @@
       ]
     },
     "zambija": {
-      "country": "Zambija",
+      "country": "Замбија",
       "address": "5216, Diplomatic Triangle off Independence Av., Lusaka",
       "email": [
         "serbianemb.lusaka@gmail.com"
@@ -374,7 +374,7 @@
       ]
     },
     "zimbabve": {
-      "country": "Zimbabve",
+      "country": "Зимбабве",
       "address": "Lanark Road 1, Belgravia - Harare",
       "email": [
         "ambasadaharare@yahoo.com"
@@ -384,7 +384,7 @@
       ]
     },
     "izrael": {
-      "country": "Izrael",
+      "country": "Израел",
       "address": "10, Bodenheimer St., 62008 Tel Aviv",
       "email": [
         "srb.emb.israel@mfa.rs",
@@ -397,7 +397,7 @@
       ]
     },
     "indija": {
-      "country": "Indija",
+      "country": "Индија",
       "address": "3/50 G Niti Marg Chanakyapuri 110021 Nju Delhi",
       "email": [
         "embassyofserbianewdelhi@hotmail.com",
@@ -410,7 +410,7 @@
       ]
     },
     "indonezija": {
-      "country": "Indonezija",
+      "country": "Индонезија",
       "address": "Jl. HOS Cokroaminoto 109, Menteng 10310, Džakarta Pusat",
       "email": [
         "consular.jakarta@mfa.rs",
@@ -422,7 +422,7 @@
       ]
     },
     "irak": {
-      "country": "Irak",
+      "country": "Ирак",
       "address": "Jadriyah Mahala 923, Zukak 3, House 3, Hay Babil, Bagdad",
       "email": [
         "embsrbag@yahoo.com"
@@ -433,7 +433,7 @@
       ]
     },
     "iran": {
-      "country": "Iran",
+      "country": "Иран",
       "address": "Sahrak E Qouds, North Falamak Street, 4th Alley, Building No 3, P.O. Box 19858, Teheran",
       "email": [
         "serbembteh@neda.net"
@@ -443,7 +443,7 @@
       ]
     },
     "italija": {
-      "country": "Italija",
+      "country": "Италија",
       "address": "Via dei Monti Parioli 20, 00197 Rim",
       "email": [
         "info@ambroma.com",
@@ -478,7 +478,7 @@
       }
     },
     "japan": {
-      "country": "Japan",
+      "country": "Јапан",
       "address": "4-16-12 Takanawa, Minato-ku, 108-0074 Tokio",
       "email": [
         "srb.emb.japan@mfa.rs"
@@ -489,7 +489,7 @@
       ]
     },
     "jermenija": {
-      "country": "Jermenija",
+      "country": "Јерменија",
       "address": "10 Vazgen Sargsyan St., 0010 Yerevan, Piazza Grande Business Center, 1st floor, office 109",
       "email": [
         "embserbia.yerevan@gmail.com"
@@ -501,7 +501,7 @@
       ]
     },
     "juzna-afrika": {
-      "country": "Južna Afrika",
+      "country": "Јужна Африка",
       "address": "Marais163, Brooklyn 0181, P.O.B 13026, Hatfield 0028, Pretorija",
       "email": [
         "info@srbembassy.org.za"
@@ -513,7 +513,7 @@
       ]
     },
     "kazahstan": {
-      "country": "Kazahstan",
+      "country": "Казахстан",
       "address": "Sariarka 6, 010000 Astana",
       "email": [
         "amb.astana@mail.ru"
@@ -524,7 +524,7 @@
       ]
     },
     "kanada": {
-      "country": "Kanada",
+      "country": "Канада",
       "address": "21, Blackburn Avenue, Otava Ontario K1N 8A2",
       "email": [
         "communication.ottawa@mfa.rs"
@@ -548,7 +548,7 @@
       }
     },
     "katar": {
-      "country": "Katar",
+      "country": "Катар",
       "address": "Zone 66, West Bay, Um Al Seneem no.5, Doha, P.O. Box 22195",
       "email": [
         "srb.emb.qatar@mfa.rs"
@@ -558,7 +558,7 @@
       ]
     },
     "kenija": {
-      "country": "Kenija",
+      "country": "Кенија",
       "address": "Fortis Tower, Woodvale Grove, 6th floor, 00100 Najrobi",
       "email": [
         "srb.emb.kenya@mfa.rs",
@@ -569,7 +569,7 @@
       ]
     },
     "kina": {
-      "country": "Kina",
+      "country": "Кина",
       "address": "San Li Tun, Dong 6 Jie 1, 100600 Peking",
       "email": [
         "embserbia@embserbia.cn"
@@ -597,7 +597,7 @@
       }
     },
     "kipar": {
-      "country": "Kipar",
+      "country": "Кипар",
       "address": "2, Vasilissis Olgas Street, 1101 Nikozlija",
       "email": [
         "nicosia@serbia.org.cy"
@@ -608,7 +608,7 @@
       ]
     },
     "kongo": {
-      "country": "Kongo, Demokratska Republika",
+      "country": "Конго, Демократска Република",
       "address": "Avenue de 1 Etoile 112, Gombe, Kinšasa",
       "email": [
         "serbambakin@gmail.com"
@@ -619,7 +619,7 @@
       ]
     },
     "koreja": {
-      "country": "Koreja, Republika",
+      "country": "Кореја, Република",
       "address": "22nd Floor, Booyoung Taepyeong Building, 55 Sejong-daero, Jung-gu, Seul",
       "email": [
         "srb.emb.repkorea@mfa.rs"
@@ -630,7 +630,7 @@
       ]
     },
     "kuba": {
-      "country": "Kuba",
+      "country": "Куба",
       "address": "5ta Avenida, No. 4406, entre 44 y 46, Miramar Playa, Havana",
       "email": [
         "officesrbhav@gmail.com",
@@ -643,7 +643,7 @@
       ]
     },
     "kuvajt": {
-      "country": "Kuvajt",
+      "country": "Кувајт",
       "address": "Bayan, Block No. 13, Street No. 1, Villa No.18, Safat 13066, P.O. Box 20511",
       "email": [
         "embrskw@gmail.com",
@@ -655,7 +655,7 @@
       ]
     },
     "liban": {
-      "country": "Liban",
+      "country": "Либан",
       "address": "Jounieh-Kaslik Roundabout, Etoile Center (Zara Building), 2nd floor",
       "email": [
         "beirut.dkp@gmail.com"
@@ -667,7 +667,7 @@
       ]
     },
     "libija": {
-      "country": "Libija",
+      "country": "Либија",
       "address": "Kvart Ben Ašur, Abdal Ben Salam, P.O.Box 1087, Tripoli",
       "email": [
         "srb.emb.libya@mfa.rs"
@@ -681,7 +681,7 @@
       ]
     },
     "malta": {
-      "country": "Malta",
+      "country": "Малта",
       "address": "Europa Centre, Level 3, Office 18/a, Triq Sant` Anna 58, Floriana, FRN,1400",
       "email": [
         "srb.office.valletta@mfa.rs"
@@ -691,7 +691,7 @@
       ]
     },
     "madarska": {
-      "country": "Mađarska",
+      "country": "Мађарска",
       "address": "Dozsa Gyorgy ut 92/b, H-1068 Budimpešta",
       "email": [
         "budapest@serbiaemb.t-online.hu",
@@ -707,7 +707,7 @@
       ]
     },
     "maroko": {
-      "country": "Maroko",
+      "country": "Мароко",
       "address": "24, Rue El Kadi Ahmed Mouline Souissi, Rabat, B.P.5014",
       "email": [
         "ambrsrabat@gmail.com"
@@ -718,8 +718,8 @@
       ]
     },
     "meksiko": {
-      "country": "Meksiko",
-      "address": "Av. Montanas Rocallosas No.515, Lomas de Chapultepec, 11000 Meksiko, D.F.",
+      "country": "Мексико",
+      "address": "Av. Montanas Rocallosas No.515, Lomas de Chapultepec, 11000 Мексико, D.F.",
       "email": [
         "embajadaserbia@alestra.net.mx"
       ],
@@ -729,7 +729,7 @@
       ]
     },
     "mjanmar": {
-      "country": "Mijanmar",
+      "country": "Мијанмар",
       "address": "114-A Inya Road, Kamayut Township, Jangon",
       "email": [
         "serbemb@yangon.net.mm"
@@ -740,7 +740,7 @@
       ]
     },
     "nemacka": {
-      "country": "Nemačka",
+      "country": "Немачка",
       "address": "Taubert Strasse 18, D-14193 Berlin",
       "email": [
         "info@botschaft-serbien.de"
@@ -806,7 +806,7 @@
       }
     },
     "nigerija": {
-      "country": "Nigerija",
+      "country": "Нигерија",
       "address": "11, Rio Negro Close, off Yedseram Street, Maitama District, Abudža",
       "email": [
         "serbconsabuja@gmail.com"
@@ -817,7 +817,7 @@
       ]
     },
     "norveska": {
-      "country": "Norveška",
+      "country": "Норвешка",
       "address": "Munkedamsveien 59B, 0270 Oslo",
       "email": [
         "ambasada@serbianembassy.no"
@@ -827,7 +827,7 @@
       ]
     },
     "poljska": {
-      "country": "Poljska",
+      "country": "Пољска",
       "address": "Aleja Róż 5, 00-556 Varšava",
       "email": [
         "embassy.warsaw@mfa.rs"
@@ -838,7 +838,7 @@
       ]
     },
     "portugalija": {
-      "country": "Portugal",
+      "country": "Португал",
       "address": "Rua de Alcolena 11, 1400 – 004 Lisabon",
       "email": [
         "serviaemba@netcabo.pt"
@@ -849,7 +849,7 @@
       ]
     },
     "rumunija": {
-      "country": "Rumunija",
+      "country": "Румунија",
       "address": "General Eremia Grigorescu nr. 12, Bukurešt",
       "email": [
         "srb.emb.romania@mfa.rs",
@@ -877,7 +877,7 @@
       }
     },
     "rusija": {
-      "country": "Ruska Federacija",
+      "country": "Руска Федерација",
       "address": "Mosfilmovskaja 46, R-119285 Moskva",
       "email": [
         "ambasada.moskva@mfa.rs",
@@ -888,7 +888,7 @@
       ]
     },
     "saudijska-arabija": {
-      "country": "Saudijska Arabija",
+      "country": "Саудијска Арабија",
       "address": "Abdulqader Al Jaza'eri Street, Building No.26, Rijad",
       "email": [
         "srb.emb.saudiarabia@mfa.rs"
@@ -899,7 +899,7 @@
       ]
     },
     "sveta-stolica": {
-      "country": "Sveta Stolica",
+      "country": "Света Столица",
       "address": "Via dei Monti Parioli 20, 00197 Rim, Vatikan",
       "email": [
         "amb.serbia.vatican@ambroma.com"
@@ -909,7 +909,7 @@
       ]
     },
     "severna-makedonija": {
-      "country": "Severna Makedonija",
+      "country": "Северна Македонија",
       "address": "Pitu Guli 8, Skoplje",
       "email": [
         "srbamb@unet.com.mk"
@@ -922,7 +922,7 @@
       ]
     },
     "sirija": {
-      "country": "Sirija",
+      "country": "Сирија",
       "address": "Mazzeh Eastern Villas, Farabi Street, Damascus",
       "email": [
         "srb.emb.syria@mfa.rs"
@@ -933,7 +933,7 @@
       ]
     },
     "sad": {
-      "country": "Sjedinjene Američke Države",
+      "country": "Сједињене Америчке Државе",
       "address": "1333 16th St NW, Vašington, DC 20036",
       "email": [
         "info@serbiaembusa.org"
@@ -965,7 +965,7 @@
       }
     },
     "slovacka": {
-      "country": "Slovačka",
+      "country": "Словачка",
       "address": "Budkova 38, 81104 Bratislava",
       "email": [
         "embassy.bratislava@mfa.rs"
@@ -978,7 +978,7 @@
       ]
     },
     "slovenija": {
-      "country": "Slovenija",
+      "country": "Словенија",
       "address": "Slomškova 1, 1000 Ljubljana",
       "email": [
         "embassy.ljubljana@mfa.rs"
@@ -989,7 +989,7 @@
       ]
     },
     "tunis": {
-      "country": "Tunis",
+      "country": "Тунис",
       "address": "4, Rue du Lac Majeur, 1053 - Les Berges du Lac, Tunis",
       "email": [
         "amb.serbia@gnet.tn"
@@ -1001,7 +1001,7 @@
       ]
     },
     "turska": {
-      "country": "Turska",
+      "country": "Турска",
       "address": "Yazanlar Sokak No. 1, P.K.28, 06691 Kavaklidere, Ankara",
       "email": [
         "embserank@gmail.com"
@@ -1024,7 +1024,7 @@
       }
     },
     "uae": {
-      "country": "Ujedinjeni Arapski Emirati",
+      "country": "Уједињени Арапски Емирати",
       "address": "Mushref area, sector W31, Al Rafee street, Villa number 06 (opposite of Novotel hotel), Abu Dabi",
       "email": [
         "srb.emb.uae@mfa.rs"
@@ -1034,7 +1034,7 @@
       ]
     },
     "uk": {
-      "country": "Ujedinjeno Kraljevstvo",
+      "country": "Уједињено Краљевство",
       "address": "28 Belgrave Square, London SW1X 8QB",
       "email": [
         "srb.emb.uk@mfa.rs",
@@ -1045,7 +1045,7 @@
       ]
     },
     "ukrajina": {
-      "country": "Ukrajina",
+      "country": "Украјина",
       "address": "Voloska 4, 04070 Kijev",
       "email": [
         "ambars@ukr.net",
@@ -1057,7 +1057,7 @@
       ]
     },
     "finska": {
-      "country": "Finska",
+      "country": "Финска",
       "address": "Kulosaarentie 36, 00570 Helsinki",
       "email": [
         "office@serbianembassy.fi",
@@ -1069,7 +1069,7 @@
       ]
     },
     "francuska": {
-      "country": "Francuska",
+      "country": "Француска",
       "address": "5, Rue Leonard de Vinci, 75116 Pariz",
       "email": [
         "ambassade.paris@mfa.rs",
@@ -1093,7 +1093,7 @@
       }
     },
     "holandija": {
-      "country": "Holandija",
+      "country": "Холандија",
       "address": "Burgemeester van Kamebeeklaan 19, 2585 Hag",
       "email": [
         "srb.emb.netherlands@mfa.rs",
@@ -1106,7 +1106,7 @@
       ]
     },
     "hrvatska": {
-      "country": "Hrvatska",
+      "country": "Хрватска",
       "address": "Jabukovac 23, 10000 Zagreb (Ambasada), Katančićeva br. 3, 10000 Zagreb (Konzularno)",
       "email": [
         "srb.emb.croatia@mfa.rs",
@@ -1147,7 +1147,7 @@
       }
     },
     "crna-gora": {
-      "country": "Crna Gora",
+      "country": "Црна Гора",
       "address": "Bulevar Ivana Crnojevića br. 10, Podgorica",
       "email": [
         "embassy.podgorica@mfa.rs"
@@ -1170,7 +1170,7 @@
       }
     },
     "ceska": {
-      "country": "Češka",
+      "country": "Чешка",
       "address": "Mostecka 15, 118 00 Prag 1",
       "email": [
         "embassy.prague@mfa.rs",
@@ -1183,13 +1183,13 @@
       ]
     },
     "cile": {
-      "country": "Čile",
+      "country": "Чиле",
       "email": [
         "srb.emb.chile@mfa.rs"
       ]
     },
     "svajcarska": {
-      "country": "Švajcarska",
+      "country": "Швајцарска",
       "address": "Seminarstrasse 5, CH-3006 Bern",
       "email": [
         "info@ambasadasrbije.ch"
@@ -1214,7 +1214,7 @@
       }
     },
     "svedska": {
-      "country": "Švedska",
+      "country": "Шведска",
       "address": "Hantverkargatan 26, 3rd floor, Box 529 101 30, Stockholm",
       "email": [
         "srb.emb.sweden@mfa.rs"
@@ -1227,7 +1227,7 @@
       ]
     },
     "spanija": {
-      "country": "Španija",
+      "country": "Шпанија",
       "address": "c/Velazquez 3, Piso 2, 28001 Madrid",
       "email": [
         "srb.emb.spain@mfa.rs",

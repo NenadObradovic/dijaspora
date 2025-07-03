@@ -39,7 +39,7 @@
   "city_description": "Select the city where you wish to vote",
   "phone_description": "Enter your contact phone number",
   "email_description": "Enter your email address",
-  "signature": "Signature",
+  "signature": "Your signature",
   "clear_signature": "Clear signature",
   "generate_request": "Generate request",
   "previous_step": "Previous step",

@@ -39,7 +39,7 @@
   "city_description": "Izaberite grad iz koga biste želeli da glasate",
   "phone_description": "Unesite svoj kontakt telefon",
   "email_description": "Unesite svoju email adresu",
-  "signature": "Potpis",
+  "signature": "Vaš potpis",
   "clear_signature": "Obriši potpis",
   "generate_request": "Generiši zahtev",
   "previous_step": "Prethodni korak",
