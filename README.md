@@ -40,7 +40,7 @@ nikada ne pošalju prijavu.
 1. Poseti [dijasporaglasa.org](https://effortless-alfajores-9be653.netlify.app/)
 2. Unesi sve tražene podatke (ime, JMBG, adresa u inostranstvu itd.)
 3. Digitalno se potpiši
-4. Dobijeni PDF sa automatski popunjenim formularom i tvojim podacima
+4. Dobijeni DOC sa automatski popunjenim formularom i tvojim podacima
 5. Uz to priloži i sliku pasoša
 6. Pošalji oba dokumenta na mejl adresu ambasade koju dobiješ na sajtu, u
    zavisnosti od zemlje prebivališta

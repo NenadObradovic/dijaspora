@@ -11,10 +11,12 @@ const EmailTemplate = ({ updateVoter }) => {
 
   return (
     <div className="mt-6 w-full">
-      <h3 className="text-l text-accent-three title mb-2">
+      <h3 className="text-l text-accent-three title mb-4">
         {t('email_heading_example')}
       </h3>
-      <p className="mt-6">{body}</p>
+      <pre className="max-w-full overflow-x-auto whitespace-pre-wrap break-words">
+        {body}
+      </pre>
     </div>
   )
 }
