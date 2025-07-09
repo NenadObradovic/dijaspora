@@ -2,6 +2,7 @@
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import config from '../../../astro.config.mjs'
 import { tObject } from '../../utils/i18nStatic'
+import { getPagePathForLocale } from '../../utils/nav'
 
 const t = tObject(Astro.currentLocale ?? '', 'language')
 
@@ -12,7 +13,10 @@ const localesMap = new Map(
     locale,
     {
       name: t[locale],
-      url: getRelativeLocaleUrl(locale, '/'),
+      url: getRelativeLocaleUrl(
+        locale,
+        getPagePathForLocale(Astro.url.pathname, locale),
+      ),
     },
   ]),
 )
