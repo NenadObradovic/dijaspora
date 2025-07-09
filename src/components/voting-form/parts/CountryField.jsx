@@ -27,7 +27,7 @@ const CountryField = ({
         >
           <option value="">{t('country')}</option>
           {Object.entries(availableCountries).map(([slug, countryName]) => (
-            <option key={slug} value={slug}>
+            <option key={slug} value={countryName}>
               {countryName}
             </option>
           ))}
@@ -51,7 +51,7 @@ const CountryField = ({
             >
               <option value="">{t('city')}</option>
               {availableCities.map((option) => (
-                <option key={option.value} value={option.value}>
+                <option key={option.value} value={option.label}>
                   {option.label}
                 </option>
               ))}
