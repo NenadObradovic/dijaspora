@@ -130,7 +130,25 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
     }
 
     if (Object.keys(formErrors).length === 0) {
-      onSubmit(data, updateVoter)
+      let formData = { ...data }
+      // Get real country and city names for DOC fields
+      let realCountryValue = availableCountries[formData.country] ?? ''
+
+      if (formData.city) {
+        let realCityValue
+        if ('default' === formData.city) {
+          realCityValue = citiesByCountry[formData.country].city ?? ''
+        } else {
+          realCityValue =
+            citiesByCountry[formData.country].consulate[formData.city].city ??
+            ''
+        }
+        formData.city = realCityValue
+      }
+
+      formData.country = realCountryValue
+
+      onSubmit(formData, updateVoter)
     }
   }
 

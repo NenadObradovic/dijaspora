@@ -27,7 +27,7 @@ const CountryField = ({
         >
           <option value="">{t('country')}</option>
           {Object.entries(availableCountries).map(([slug, countryName]) => (
-            <option key={slug} value={countryName}>
+            <option key={slug} value={slug}>
               {countryName}
             </option>
           ))}
