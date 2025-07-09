@@ -37,7 +37,7 @@
   "country_description": "Select the country from which you will be voting",
   "city": "Select a city",
   "city_description": "Select the city where you wish to vote",
-  "phone_description": "Enter your contact phone number",
+  "telephone_description": "Enter your contact phone number",
   "email_description": "Enter your email address",
   "signature": "Your signature",
   "clear_signature": "Clear signature",

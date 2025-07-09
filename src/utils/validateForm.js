@@ -47,5 +47,5 @@ export const validateForm = (data) => {
     newErrors.signature = 'Potpis je obavezan.'
   }
 
-  return Object.keys(newErrors).length === 0
+  return newErrors
 }

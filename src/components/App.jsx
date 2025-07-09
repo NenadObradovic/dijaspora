@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import '../utils/i18n'
-import VotingForm from './VotingForm.jsx'
+import VotingForm from './voting-form/VotingForm.jsx'
 import EmailTemplate from './EmailTemplate.jsx'
 import { generateDocx } from '../utils/generateDocx.js'
 

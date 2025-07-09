@@ -37,7 +37,7 @@
   "country_description": "Изаберите државу из које ћете гласати",
   "city": "Изаберите град",
   "city_description": "Изаберите град из кога бисте желели да гласате",
-  "phone_description": "Унесите свој контакт телефон",
+  "telephone_description": "Унесите свој контакт телефон",
   "email_description": "Унесите своју имејл адресу",
   "signature": "Ваш потпис",
   "clear_signature": "Обриши потпис",

@@ -173,3 +173,9 @@
     @apply bg-transparent;
   }
 }
+
+.voting-form-field:has(+ .error) {
+  &:not(:focus) {
+    border-color: #ef4444;
+  }
+}
