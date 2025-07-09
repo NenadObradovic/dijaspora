@@ -51,7 +51,7 @@ const CountryField = ({
             >
               <option value="">{t('city')}</option>
               {availableCities.map((option) => (
-                <option key={option.value} value={option.label}>
+                <option key={option.value} value={option.value}>
                   {option.label}
                 </option>
               ))}
