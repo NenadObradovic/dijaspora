@@ -83,6 +83,11 @@ registrovanih birača** u toj zemlji ili gradu.
 Ako se dovoljno građana prijavi, ambasada/konzulat u saradnji sa RIK-om ima
 obavezu da organizuje uslove za glasanje.
 
+### Kako proveriti da li sam upisan/a u jedinstveni birački spisak?
+
+Proveru možete izvršiti na:
+[upit.birackispisak.gov.rs](https://upit.birackispisak.gov.rs).
+
 ---
 
 ## 🧞 Tehnički detalji
