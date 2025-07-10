@@ -37,6 +37,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
     address: '',
     address_abroad: '',
     country: '',
+    embassy: '',
     city: '',
     telephone: '',
     email: '',
@@ -59,9 +60,9 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
       })
   }, [])
 
-  const [availableCities, setAvailableCities] = useState()
+  const [availableEmbassy, setAvailableEmbassy] = useState()
   const availableCountries = embassyData?.availableCountries || {}
-  const citiesByCountry = embassyData?.citiesByCountry || {}
+  const embassyByCountry = embassyData?.embassyByCountry || {}
 
   const [activeTab, setActiveTab] = useState('check')
   const tabs = ['check', 'personal-data', 'signature']
@@ -88,22 +89,22 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
     }))
 
     if (name === 'country') {
-      if (!citiesByCountry[value]) {
-        setAvailableCities([])
+      if (!embassyByCountry[value]) {
+        setAvailableEmbassy([])
         return
       }
 
-      const cityOptions = []
+      const embassyOptions = []
 
-      cityOptions.push({
+      embassyOptions.push({
         value: 'default',
-        label: citiesByCountry[value].address,
+        label: embassyByCountry[value].address,
       })
 
-      if (citiesByCountry[value].consulate) {
-        Object.entries(citiesByCountry[value].consulate).forEach(
+      if (embassyByCountry[value].consulate) {
+        Object.entries(embassyByCountry[value].consulate).forEach(
           ([slug, consulate]) => {
-            cityOptions.push({
+            embassyOptions.push({
               value: slug,
               label: consulate.address,
             })
@@ -111,14 +112,14 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
         )
       }
 
-      setAvailableCities(cityOptions)
+      setAvailableEmbassy(embassyOptions)
     }
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    const formErrors = validateForm(data)
+    const formErrors = validateForm(data, t)
 
     setErrors(formErrors)
 
@@ -131,22 +132,26 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
 
     if (Object.keys(formErrors).length === 0) {
       let formData = { ...data }
-      // Get real country and city names for DOC fields
+      // Get real country and embassy names for DOC fields
       let realCountryValue = availableCountries[formData.country] ?? ''
 
-      if (formData.city) {
+      if (formData.embassy) {
         let realCityValue
-        if ('default' === formData.city) {
-          realCityValue = citiesByCountry[formData.country].city ?? ''
+        if ('default' === formData.embassy) {
+          realCityValue = embassyByCountry[formData.country].embassy ?? ''
         } else {
           realCityValue =
-            citiesByCountry[formData.country].consulate[formData.city].city ??
-            ''
+            embassyByCountry[formData.country].consulate[formData.embassy]
+              .embassy ?? ''
         }
-        formData.city = realCityValue
+        formData.embassy = realCityValue
       }
 
       formData.country = realCountryValue
+
+      if (!formData.city) {
+        formData.city = formData.embassy
+      }
 
       onSubmit(formData, updateVoter)
     }
@@ -167,7 +172,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
       <EmbassyInfo
         embassyData={embassyData}
         countryKey={data.country}
-        cityKey={data.city}
+        embassyKey={data.embassy}
       />
       {!docGenerated && (
         <div className="flex w-full max-w-screen-lg flex-col gap-8 py-6 sm:grid sm:grid-cols-[250px_1fr]">
@@ -286,7 +291,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                   />
                   <CountryField
                     availableCountries={availableCountries}
-                    availableCities={availableCities}
+                    availableEmbassy={availableEmbassy}
                     data={data}
                     handleChange={handleChange}
                     handleFieldError={handleFieldError}

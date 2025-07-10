@@ -1,15 +1,15 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-const EmbassyInfo = ({ embassyData, countryKey, cityKey }) => {
+const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
   const { t } = useTranslation()
 
-  const countryData = embassyData?.citiesByCountry?.[countryKey]
+  const countryData = embassyData?.embassyByCountry?.[countryKey]
 
-  if (!countryData || !cityKey) return null
+  if (!countryData || !embassyKey) return null
 
-  const isDefault = !cityKey || cityKey === 'default'
-  const source = isDefault ? countryData : countryData.consulate?.[cityKey]
+  const isDefault = !embassyKey || embassyKey === 'default'
+  const source = isDefault ? countryData : countryData.consulate?.[embassyKey]
 
   if (!source) return null
 
@@ -28,7 +28,7 @@ const EmbassyInfo = ({ embassyData, countryKey, cityKey }) => {
     <div className="rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-4 shadow-sm">
       <h2 className="mb-2 text-lg font-semibold text-[color:var(--theme-color-800)]">
         {countryData.country}
-        {!isDefault && source.city ? ` – ${source.city}` : ''}
+        {!isDefault && source.embassy ? ` – ${source.embassy}` : ''}
       </h2>
 
       <p className="text-sm text-[color:var(--theme-color-700)]">
