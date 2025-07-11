@@ -45,7 +45,7 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
                 <a
                   key={idx}
                   href={`mailto:${email}`}
-                  className="text-accent-one hover:underline"
+                  className="text-accent-two underline-offset-2 hover:underline"
                 >
                   {email}
                   {idx < emails.length - 1 ? ', ' : ''}
@@ -64,7 +64,7 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
                 <a
                   key={idx}
                   href={`tel:${phone.replace(/[^+\d]/g, '')}`}
-                  className="text-accent-one hover:underline"
+                  className="text-accent-two underline-offset-2 hover:underline"
                 >
                   {phone}
                   {idx < phones.length - 1 ? ', ' : ''}
@@ -79,7 +79,7 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
           href={gmap}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-2 inline-block rounded-md bg-accent-one px-4 py-2 text-sm font-medium text-white hover:bg-accent-one/90"
+          className="mt-2 inline-block rounded-md bg-accent-two px-4 py-2 text-sm font-medium text-white hover:bg-accent-two/90"
         >
           {t('google_maps_info_title')}
         </a>

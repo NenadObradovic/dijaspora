@@ -1,16 +1,20 @@
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import '../utils/i18n'
-import VotingForm from './voting-form/VotingForm.jsx'
-import EmailTemplate from './EmailTemplate.jsx'
 import { generateDocx } from '../utils/generateDocx.js'
+
+import VotingForm from './voting-form/VotingForm.jsx'
+import NextSteps from './NextSteps.jsx'
+import EmailTemplate from './EmailTemplate.jsx'
 
 const App = () => {
   const { t } = useTranslation()
+  const [formData, setFormData] = useState(null)
   const [updateVoter, setUpdateVoter] = useState(false)
   const [docGenerated, setDocGenerated] = useState(false)
 
   const handleFormSubmit = async (data, isUpdateVoter) => {
+    setFormData(data)
     setUpdateVoter(isUpdateVoter)
 
     if (isUpdateVoter) {
@@ -45,6 +49,7 @@ const App = () => {
       <VotingForm onSubmit={handleFormSubmit} docGenerated={docGenerated} />
       {docGenerated && (
         <>
+          <NextSteps formData={formData} />
           <EmailTemplate updateVoter={updateVoter} />
         </>
       )}

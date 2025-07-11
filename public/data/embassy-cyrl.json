@@ -195,7 +195,11 @@
     "bahrein": {
       "country": "Бахреин",
       "embassy": "Манама",
-      "address": "Building 899, Road 3218, Block 332, BuAshirah, Manama"
+      "address": "Building 899, Road 3218, Block 332, BuAshirah, Manama",
+      "email": [
+        "embrskw@gmail.com",
+        "serbkonzkw@gmail.com"
+      ]
     },
     "belgija": {
       "country": "Белгија",

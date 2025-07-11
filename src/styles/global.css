@@ -160,7 +160,7 @@
   }
 
   pre {
-    @apply m-0 rounded-lg bg-[var(--code-bg)] p-3 text-sm leading-loose text-[var(--theme-text)];
+    @apply m-0 rounded-lg bg-white px-6 py-4 text-sm leading-loose text-[var(--theme-color-600)];
   }
 
   :not(pre) > code {

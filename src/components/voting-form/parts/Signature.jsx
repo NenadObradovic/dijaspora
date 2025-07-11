@@ -25,7 +25,7 @@ const Signature = ({ data, setData, handleFieldError }) => {
 
   return (
     <div className="relative">
-      <label className="mb-2 flex items-center gap-x-2 font-medium text-[color:var(--theme-color-700)]">
+      <label className="title mb-2 flex items-center gap-x-2 text-accent-two">
         <svg
           clipRule="evenodd"
           fillRule="evenodd"
@@ -64,7 +64,7 @@ const Signature = ({ data, setData, handleFieldError }) => {
           </button>
           <button
             type="submit"
-            className="rounded-lg bg-accent-one px-6 py-3 text-sm font-semibold text-white shadow-md transition duration-200 hover:bg-accent-one/90"
+            className="rounded-lg bg-accent-two px-6 py-3 text-sm font-semibold text-white shadow-md transition duration-200 hover:bg-accent-two/90"
           >
             {t('generate_request')}
           </button>
