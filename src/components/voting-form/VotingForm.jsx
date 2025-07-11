@@ -6,7 +6,6 @@ import VotingFormIntro from './VotingFormIntro.jsx'
 import EmbassyInfo from './parts/EmbassyInfo.jsx'
 import PaginationButtons from './pagination/PaginationButtons.jsx'
 import PaginationArrows from './pagination/PaginationArrows.jsx'
-import PaginationArrowsPersonalData from './pagination/PaginationArrowsPersonalData.jsx'
 import PaginationButtonsPersonalData from './pagination/PaginationButtonsPersonalData.jsx'
 import Signature from './parts/Signature.jsx'
 import InputTextField from './parts/InputTextField.jsx'
@@ -181,15 +180,13 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
   }
 
   return (
-    <div className="relative flex w-full flex-col-reverse gap-6 sm:flex-col">
+    <div className="relative flex w-full flex-col gap-6">
       {!docGenerated && activeTab === 'check' && <VotingFormIntro />}
-      {activeTab !== 'check' && (
-        <EmbassyInfo
-          embassyData={embassyData}
-          countryKey={data.country}
-          embassyKey={data.embassy}
-        />
-      )}
+      <EmbassyInfo
+        embassyData={embassyData}
+        countryKey={data.country}
+        embassyKey={data.embassy}
+      />
       {!docGenerated && (
         <>
           <div className="flex w-full max-w-screen-lg flex-col gap-8 pt-4 sm:grid sm:grid-cols-[250px_1fr]">
@@ -226,12 +223,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
               {updateVoter !== null && (
                 <>
                   <PaginationButtons
-                    tabs={tabs}
-                    currentTabIndex={currentTabIndex}
-                    goToPreviousTab={goToPreviousTab}
-                    goToNextTab={goToNextTab}
-                  />
-                  <PaginationArrows
                     tabs={tabs}
                     currentTabIndex={currentTabIndex}
                     goToPreviousTab={goToPreviousTab}
@@ -314,12 +305,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                       goToPreviousTab={goToPreviousTab}
                       goToNextTab={goToNextTab}
                     />
-                    <PaginationArrowsPersonalData
-                      tabs={tabs}
-                      currentTabIndex={currentTabIndex}
-                      goToPreviousTab={goToPreviousTab}
-                      goToNextTab={goToNextTab}
-                    />
                   </>
                 )}
                 {activeTab === 'signature' && (
@@ -330,6 +315,16 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                   />
                 )}
               </form>
+              {updateVoter !== null && (
+                <>
+                  <PaginationArrows
+                    tabs={tabs}
+                    currentTabIndex={currentTabIndex}
+                    goToPreviousTab={goToPreviousTab}
+                    goToNextTab={goToNextTab}
+                  />
+                </>
+              )}
             </div>
           </div>
         </>

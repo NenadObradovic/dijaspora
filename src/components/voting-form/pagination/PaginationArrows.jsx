@@ -10,11 +10,11 @@ const PaginationArrows = ({
   const { t } = useTranslation()
 
   return (
-    <div className="relative flex w-full items-center justify-between gap-6 sm:hidden">
+    <div className="relative mt-6 flex w-full items-center justify-between gap-6 sm:hidden">
       <button
         onClick={goToPreviousTab}
         disabled={currentTabIndex === 0}
-        className={`align-center inline-flex text-sm text-accent-two underline-offset-2 transition-colors duration-200 hover:underline ${
+        className={`align-center inline-flex text-accent-two underline-offset-2 transition-colors duration-200 hover:underline ${
           currentTabIndex === 0 ? 'hidden' : ''
         }`}
         aria-label={t('previous_step')}
@@ -33,7 +33,7 @@ const PaginationArrows = ({
       <button
         onClick={goToNextTab}
         disabled={currentTabIndex === tabs.length - 1}
-        className={`align-center ml-auto inline-flex text-sm text-accent-two underline-offset-2 transition-colors duration-200 hover:underline ${
+        className={`align-center ml-auto inline-flex text-accent-two underline-offset-2 transition-colors duration-200 hover:underline ${
           currentTabIndex === tabs.length - 1 ? 'hidden' : ''
         }`}
         aria-label={t('next_step')}

@@ -26,7 +26,7 @@ const NextSteps = ({ formData }) => {
               >
                 {email}
               </a>
-              {index < embassy_email.length - 1 && ', '}
+              {index < embassy_email.length - 1 && ' '}
             </React.Fragment>
           ))}
         </p>
