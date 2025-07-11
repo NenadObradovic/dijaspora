@@ -23,7 +23,7 @@
   "voting_intro_note": "Note: To open a polling station abroad, at least 100 registered voters must apply per location.",
   "check_list_info": "Check if you are registered in the unified voter list by clicking the button below, then return to this page:",
   "check_list_link": "Unified Voter List",
-  "generate_request_for_list": "Generate a request to register in the voter list?",
+  "generate_request_for_list": "Do you want to generate, along with the voting request, a request for registration (or change of information) in the Unified Voter Register?",
   "generate_request_label_yes": "Yes",
   "generate_request_label_no": "No",
   "full_name": "Full name",

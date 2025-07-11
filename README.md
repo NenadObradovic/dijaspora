@@ -28,7 +28,7 @@ akcentom na brzinu, bezbednost i jednostavnost korišćenja.
 5. Odštampaš formular
 6. Ručno ga popuniš
 7. Skenerom ili telefonom napraviš digitalnu kopiju
-8. Pošalješ formular i sken pasoša na ambasadu putem mejla
+8. Pošalješ formular i skeniran/slikan pasoš ili ličnu kartu na ambasadu putem mejla
 
 ⚠️ Problem: proces je dug, komplikovan, često obeshrabrujući – i mnogi zato
 nikada ne pošalju prijavu.
@@ -40,8 +40,8 @@ nikada ne pošalju prijavu.
 1. Poseti [dijasporaglasa.org](https://effortless-alfajores-9be653.netlify.app/)
 2. Unesi sve tražene podatke (ime, JMBG, adresa u inostranstvu itd.)
 3. Digitalno se potpiši
-4. Dobijeni DOC sa automatski popunjenim formularom i tvojim podacima
-5. Uz to priloži i sliku pasoša
+4. Na tvom računaru ćeš dobiti popunjen formular sa tvojim podacima
+5. Uz to priloži sliku pasoša ili lične karte
 6. Pošalji oba dokumenta na mejl adresu ambasade koju dobiješ na sajtu, u
    zavisnosti od zemlje prebivališta
 

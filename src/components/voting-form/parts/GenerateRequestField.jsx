@@ -21,7 +21,7 @@ const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
       <h4 className="text-accent-three title mt-6">
         {t('generate_request_for_list')}
       </h4>
-      <div className="flex gap-x-4">
+      <div className="mt-2 flex gap-x-6">
         <div className="flex items-center space-x-2">
           <input
             id="updateVoter-yes"

@@ -23,7 +23,7 @@
   "voting_intro_note": "Napomena: Da bi se otvorilo biračko mesto u inostranstvu, potrebno je da se prijavi najmanje 100 birača po lokaciji.",
   "check_list_info": "Proverite da li ste upisani u jedinstveni birački spisak klikom na dugme ispod i potom se vratite na ovu stranicu:",
   "check_list_link": "Jedinstveni birački spisak",
-  "generate_request_for_list": "Generiši zahtev za upis u birački spisak?",
+  "generate_request_for_list": "Da li želite da zajedno sa zahtevom za glasanje generišemo i zahtev za upis (ili promenu podataka) u Jedinstveni birački spisak?",
   "generate_request_label_yes": "Da",
   "generate_request_label_no": "Ne",
   "full_name": "Ime i prezime",
