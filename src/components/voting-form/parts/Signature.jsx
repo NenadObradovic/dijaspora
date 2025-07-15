@@ -1,10 +1,30 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import SignatureCanvas from 'react-signature-canvas'
 import { useTranslation } from 'react-i18next'
 
 const Signature = ({ data, setData, handleFieldError }) => {
   const { t } = useTranslation()
   const sigCanvasRef = useRef({})
+  const wrapperRef = useRef(null)
+  const [canvasSize, setCanvasSize] = React.useState({
+    width: 580,
+    height: 240,
+  })
+
+  useEffect(() => {
+    const updateCanvasSize = () => {
+      if (wrapperRef.current) {
+        const width = wrapperRef.current.offsetWidth
+        const height = Math.min(240, width * 0.5) // max 240px, ili 50% širine
+        setCanvasSize({ width, height })
+      }
+    }
+
+    updateCanvasSize()
+    window.addEventListener('resize', updateCanvasSize)
+
+    return () => window.removeEventListener('resize', updateCanvasSize)
+  }, [])
 
   const clearSignature = () => {
     sigCanvasRef.current.clear()
@@ -41,12 +61,16 @@ const Signature = ({ data, setData, handleFieldError }) => {
         </svg>
         {t('signature')}
       </label>
-      <div className="voting-form-field overflow-hidden rounded-md border border-[color:var(--theme-color-150)] bg-white shadow-sm">
+      <div
+        ref={wrapperRef}
+        className="voting-form-field overflow-hidden rounded-md border border-[color:var(--theme-color-150)] bg-white shadow-sm"
+      >
         <SignatureCanvas
           canvasProps={{
-            width: 400,
-            height: 150,
-            className: 'sigCanvas max-w-full',
+            width: canvasSize.width,
+            height: canvasSize.height,
+            className:
+              'sigCanvas max-w-full w-full h-full touch-none cursor-crosshair',
           }}
           ref={sigCanvasRef}
           onEnd={saveSignature}

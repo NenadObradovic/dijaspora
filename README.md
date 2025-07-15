@@ -72,21 +72,75 @@ Više o otvorenom kodu na
 
 ---
 
-## ❓ Često postavljana pitanja
+---
 
-### Šta ako u mojoj zemlji nema ambasade ili konzulata?
+## 🗂️ Priručnik: kako izgleda ceo proces glasanja iz dijaspore
 
-Prema Zakonu o izboru narodnih poslanika
-([član 52.](http://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2000/35/1/reg)),
-biračko mesto u inostranstvu može biti otvoreno ako postoji najmanje **100
-registrovanih birača** u toj zemlji ili gradu.  
-Ako se dovoljno građana prijavi, ambasada/konzulat u saradnji sa RIK-om ima
-obavezu da organizuje uslove za glasanje.
+Ovo su detalji celokupnog procesa, od provere dokumenata do dana izbora.
 
-### Kako proveriti da li sam upisan/a u jedinstveni birački spisak?
+### 📌 Pre raspisivanja izbora
 
-Proveru možete izvršiti na:
-[upit.birackispisak.gov.rs](https://upit.birackispisak.gov.rs).
+#### Biračko pravo
+
+Glasačko pravo imaju svi državljani Republike Srbije sa važećim pasošem ili ličnom kartom.  
+Ako ti je pasoš istekao, zahtev za novi dokument možeš podneti u najbližem diplomatsko-konzularnom predstavništvu (DKP).
+
+🔗 [Informacije o putnim ispravama – mfa.gov.rs](https://www.mfa.gov.rs/gradjani/usluge/putne-isprave)
+
+#### Provera upisa u birački spisak
+
+Proveri da li si upisan/a u Jedinstveni birački spisak:
+
+🔗 [upit.birackispisak.gov.rs](https://upit.birackispisak.gov.rs)
+
+Ako nisi upisan/a, zahtev se podnosi nakon raspisivanja izbora.
+
+#### Provera da li postoji ambasada u tvojoj zemlji
+
+🔗 [Spisak ambasada i konzulata Srbije](https://www.mfa.gov.rs/lat/predstavnistva/predstavnistva-srbije-u-svetu/ambasade)
+
+---
+
+### ❓ Šta ako u tvojoj zemlji **nema ambasade** ili **konzulata**?
+
+Ako ne postoji diplomatsko-konzularno predstavništvo Srbije u tvojoj zemlji:
+
+1. **Možeš otputovati do najbližeg DKP-a**, npr. ako si na Islandu, najbliže su Kopenhagen ili Oslo.
+2. **Možeš glasati u Srbiji**, ali moraš biti upisan u birački spisak i imati važeći dokument.
+
+> ⚠️ Da bi se otvorilo biračko mesto u ambasadi/konzulatu, mora se prijaviti **najmanje 100 birača**. Ako ih nema dovoljno, to biračko mesto neće biti otvoreno.
+
+---
+
+### 🗳️ Nakon raspisivanja izbora
+
+- **Zahtev za upis u birački spisak** se podnosi u DKP-u do 5 dana pre zatvaranja spiska.
+- **Zahtev za glasanje u inostranstvu** se podnosi bez obzira da li ste ranije glasali.
+- **Zahtev za potvrdu prijema** – preporučuje se slanje mejla DKP-u da potvrde da su primili tvoju prijavu.
+- **Redovno proveravaj status** putem kontakta sa DKP-om (mejl, telefon, lično).
+- **Biračko mesto** u inostranstvu se formira za 100–2500 birača (ili više/niže uz dozvolu RIK-a).
+
+📄 Obrasci:  
+🔗 [RIK formulari – eupropisi.com](https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx)
+
+---
+
+### 🗓️ Na dan izbora
+
+#### Prijavljivanje nepravilnosti
+
+Prijavljuju se sledeće situacije:
+
+- Propaganda na biračkom mestu
+- Glasanje bez dokumentacije
+- Uticaj članova biračkog odbora
+- Problemi sa glasačkim listićima
+- Prisutna policija bez osnova
+
+✅ Nepravilnosti se prijavljuju biračkom odboru i unose u zapisnik.  
+🕒 Rok za prijavu: do 24h nakon nepravilnosti.
+
+🔗 [CeSID vodič o zaštiti biračkog prava (PDF)](https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf)
 
 ---
 

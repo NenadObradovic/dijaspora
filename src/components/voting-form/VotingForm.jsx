@@ -6,7 +6,6 @@ import VotingFormIntro from './VotingFormIntro.jsx'
 import EmbassyInfo from './parts/EmbassyInfo.jsx'
 import PaginationButtons from './pagination/PaginationButtons.jsx'
 import PaginationArrows from './pagination/PaginationArrows.jsx'
-import PaginationButtonsPersonalData from './pagination/PaginationButtonsPersonalData.jsx'
 import Signature from './parts/Signature.jsx'
 import InputTextField from './parts/InputTextField.jsx'
 import InputNumberField from './parts/InputNumberField.jsx'
@@ -69,7 +68,14 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
   const currentTabIndex = tabs.indexOf(activeTab)
 
   const goToNextTab = () => {
-    if (currentTabIndex < tabs.length - 1) {
+    const formErrors = validateForm(data, activeTab, t)
+
+    setErrors(formErrors)
+
+    if (
+      Object.keys(formErrors).length === 0 &&
+      currentTabIndex < tabs.length - 1
+    ) {
       setActiveTab(tabs[currentTabIndex + 1])
     }
   }
@@ -119,7 +125,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
 
-    const formErrors = validateForm(data, t)
+    const formErrors = validateForm(data, 'all', t)
 
     setErrors(formErrors)
 
@@ -206,16 +212,15 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                       >
                         {index + 1}
                       </div>
-                      <button
-                        onClick={() => updateVoter && setActiveTab(tab)}
-                        className={`rounded-t-md px-2 py-1 text-sm font-medium ${
+                      <p
+                        className={`m-0 cursor-default rounded-t-md px-2 py-1 text-sm font-medium ${
                           activeTab === tab
                             ? 'text-[color:var(--theme-color-800)]'
-                            : 'hidden text-[color:var(--theme-color-500)] hover:text-[color:var(--theme-color-800)] sm:inline-block'
+                            : 'hidden text-[color:var(--theme-color-500)] sm:inline-block'
                         }`}
                       >
                         {t(tab.replace('-', '_') + '_tab')}
-                      </button>
+                      </p>
                     </div>
                   )
                 })}
@@ -297,13 +302,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
-                    />
-                    {/* Personal Data Tab Pagination */}
-                    <PaginationButtonsPersonalData
-                      tabs={tabs}
-                      currentTabIndex={currentTabIndex}
-                      goToPreviousTab={goToPreviousTab}
-                      goToNextTab={goToNextTab}
                     />
                   </>
                 )}
