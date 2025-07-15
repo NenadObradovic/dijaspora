@@ -4,7 +4,7 @@ import { tObject } from '../../utils/i18nStatic.js'
 
 let lang = Astro.currentLocale ?? ''
 
-const t = tObject(lang ?? '', 'header_nav')
+const t = tObject(lang, 'header_nav')
 
 const homePath = getRelativeLocaleUrl(lang, '/')
 const handbookPath = getRelativeLocaleUrl(lang, '/prirucnik')

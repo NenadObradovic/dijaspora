@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import srLatinTranslations from '../locales/sr-latn/translation.json'
+import { externalLinks } from '../data/links.jsx'
 
 const pageTitle = srLatinTranslations.page_title || ''
 const pageDescription = srLatinTranslations.page_description || ''
@@ -18,7 +19,7 @@ const pageDescription = srLatinTranslations.page_description || ''
       Glasanje iz inostranstva – jednostavno, digitalno, bezbedno
     </h1>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+    <p class="mt-6">
       Alat za građane Srbije koji žive van zemlje i žele da se registruju za
       glasanje. Pomažemo Vam da popunite formular, priložite pasoš i pošaljete
       prijavu ambasadi – bez muke.
@@ -35,7 +36,7 @@ const pageDescription = srLatinTranslations.page_description || ''
       Važno obaveštenje
     </h2>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+    <p class="mt-6">
       Ovaj sajt <strong>nije zvanični sajt državne institucije</strong>, već
       nezavisna inicijativa koja ima za cilj da pomogne građanima Srbije u
       dijaspori pri registraciji za glasanje.
@@ -46,7 +47,7 @@ const pageDescription = srLatinTranslations.page_description || ''
       <br /><br />
       Korišćenje ovog sajta <strong>nije obavezno</strong>. Formular možete
       popuniti i ručno. Detaljna uputstva za to možete pronaći na <a
-        href="https://www.mfa.gov.rs"
+        href={externalLinks.mfa}
         target="_blank"
         rel="noopener noreferrer"
         class="text-accent-two underline-offset-2 hover:underline"

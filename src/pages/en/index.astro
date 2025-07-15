@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import enTranslations from '../../locales/en/translation.json'
+import { externalLinks } from '../../data/links.jsx'
 
 const pageTitle = enTranslations.page_title || ''
 const pageDescription = enTranslations.page_description || ''
@@ -14,7 +15,7 @@ const pageDescription = enTranslations.page_description || ''
       Voting from Abroad – Simple, Digital, Secure
     </h1>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+    <p class="mt-6">
       This tool is designed for Serbian citizens living abroad who wish to
       register to vote. We assist You in filling out the form, attaching Your
       passport, and submitting the application to the embassy – without hassle.
@@ -31,7 +32,7 @@ const pageDescription = enTranslations.page_description || ''
       Important Notice
     </h2>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+    <p class="mt-6">
       This website is <strong
         >not an official platform of any government institution</strong
       >, but an independent initiative aimed at helping Serbian citizens abroad
@@ -44,7 +45,7 @@ const pageDescription = enTranslations.page_description || ''
       Use of this website is <strong>not mandatory</strong>. You may also fill
       out the registration form manually. Detailed instructions can be found on
       the <a
-        href="https://www.mfa.gov.rs"
+        href={externalLinks.mfa}
         target="_blank"
         rel="noopener noreferrer"
         class="text-accent-two underline-offset-2 hover:underline"

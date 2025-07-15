@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { externalLinks } from '../../../data/links.jsx'
 
 const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
   const { t } = useTranslation()
@@ -9,7 +10,7 @@ const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
       <div>
         <h4 className="text-accent-three title mb-6">{t('check_list_info')}</h4>
         <a
-          href="https://upit.birackispisak.gov.rs/"
+          href={externalLinks.electoral_roll}
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full rounded-lg bg-accent-two px-4 py-2 text-center text-sm font-semibold text-white shadow-md transition duration-200 hover:bg-accent-two/90"

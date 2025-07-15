@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
+import { externalLinks } from '../../data/links.jsx'
 
 const pageDescription = 'Voting Handbook'
 ---
@@ -64,7 +65,7 @@ const pageDescription = 'Voting Handbook'
       <p>
         More info: <a
           class="text-accent-two underline-offset-2 hover:underline"
-          href="https://www.mfa.gov.rs/gradjani/usluge/putne-isprave"
+          href={externalLinks.mfa_passport}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -78,7 +79,7 @@ const pageDescription = 'Voting Handbook'
       <p>
         You must be registered to vote. Check your status at: <a
           class="text-accent-two underline-offset-2 hover:underline"
-          href="https://upit.birackispisak.gov.rs"
+          href={externalLinks.electoral_roll}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -93,7 +94,7 @@ const pageDescription = 'Voting Handbook'
       <p>
         You can check them at: <a
           class="text-accent-two underline-offset-2 hover:underline"
-          href="https://www.mfa.gov.rs/lat/predstavnistva/predstavnistva-srbije-u-svetu/ambasade"
+          href={externalLinks.mfa_embassy}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -182,7 +183,7 @@ const pageDescription = 'Voting Handbook'
       <p>
         Forms: <a
           class="text-accent-two underline-offset-2 hover:underline"
-          href="https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx"
+          href={externalLinks.eu_standards}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -208,7 +209,7 @@ const pageDescription = 'Voting Handbook'
       <p>
         You can report within 24 hours. More info: <a
           class="text-accent-two underline-offset-2 hover:underline"
-          href="https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf"
+          href={externalLinks.cesid}
           target="_blank"
           rel="noopener noreferrer"
         >

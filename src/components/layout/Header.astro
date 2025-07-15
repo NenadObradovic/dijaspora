@@ -4,6 +4,7 @@ import Navigation from '../navigation/Nav.astro'
 import MobileNavigation from '../navigation/MobileNav.astro'
 import LanguageSwitcher from '../navigation/LanguageSwitcher.astro'
 import { getRelativeLocaleUrl } from 'astro:i18n'
+import { tString } from '../../utils/i18nStatic.js'
 
 const lang = Astro.currentLocale ?? ''
 
@@ -55,7 +56,7 @@ const homePath = getRelativeLocaleUrl(lang, '/')
       <a class="relative" href={homePath}>
         <img
           src="/assets/img/logo.webp"
-          alt="My Serbia - My Vote"
+          alt={tString(lang, 'page_title')}
           class="block w-32"
         />
       </a>

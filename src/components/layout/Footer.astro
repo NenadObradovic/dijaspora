@@ -1,5 +1,6 @@
 ---
 import { tString } from '../../utils/i18nStatic.js'
+import { externalLinks } from '../../data/links.jsx'
 
 let lang = Astro.currentLocale ?? ''
 ---
@@ -12,7 +13,7 @@ let lang = Astro.currentLocale ?? ''
   >
     <span>{tString(lang, 'footer_text')}</span>
     <a
-      href="https://github.com/NenadObradovic/dijaspora"
+      href={externalLinks.github}
       target="_blank"
       rel="noopener noreferrer"
       class="inline-flex items-center"

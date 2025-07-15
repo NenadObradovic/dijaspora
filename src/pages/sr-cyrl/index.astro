@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import cyrlTranslations from '../../locales/sr-cyrl/translation.json'
+import { externalLinks } from '../../data/links.jsx'
 
 const pageTitle = cyrlTranslations.page_title || ''
 const pageDescription = cyrlTranslations.page_description || ''
@@ -14,7 +15,7 @@ const pageDescription = cyrlTranslations.page_description || ''
       Гласање из иностранства – једноставно, дигитално, безбедно
     </h1>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+    <p class="mt-6">
       Алат за грађане Србије који живе ван земље и желе да се региструју за
       гласање. Помажемо Вам да попуните формулар, приложите пасош и пошаљете
       пријаву амбасади – без муке.
@@ -31,7 +32,7 @@ const pageDescription = cyrlTranslations.page_description || ''
       Важно обавештење
     </h2>
 
-    <p class="mt-6 text-lg text-gray-700 dark:text-gray-300">
+    <p class="mt-6">
       Овај сајт <strong>није званични сајт државне институције</strong>, већ
       независна иницијатива која има за циљ да помогне грађанима Србије у
       дијаспори при регистрацији за гласање.
@@ -42,7 +43,7 @@ const pageDescription = cyrlTranslations.page_description || ''
       <br /><br />
       Коришћење овог сајта <strong>није обавезно</strong>. Формулар можете
       попунити и ручно. Детаљна упутства за то можете пронаћи на <a
-        href="https://www.mfa.gov.rs"
+        href={externalLinks.mfa}
         target="_blank"
         rel="noopener noreferrer"
         class="text-accent-two underline-offset-2 hover:underline"

@@ -57,7 +57,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
         // eslint-disable-next-line no-console
         console.error('Greška pri učitavanju JSON-a:', err)
       })
-  }, [])
+  }, [i18n.language])
 
   const [availableEmbassy, setAvailableEmbassy] = useState()
   const availableCountries = embassyData?.availableCountries || {}
