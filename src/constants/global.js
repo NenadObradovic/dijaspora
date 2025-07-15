@@ -1,2 +1,0 @@
-export const JEDINSTVEN_BIRACKI_SPISAK_URL =
-  'https://upit.birackispisak.gov.rs/'

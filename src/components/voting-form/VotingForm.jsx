@@ -156,10 +156,10 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
           if (
             embassyByCountry[formData.country].consulate[formData.embassy].email
           ) {
-            formData.embassy_email =
-              embassyByCountry[formData.country].consulate[
-                formData.embassy
-              ].email
+            formData.embassy_email = formData.embassy_email.concat(
+              embassyByCountry[formData.country].consulate[formData.embassy]
+                .email,
+            )
           }
         }
         formData.embassy = realCityValue

@@ -74,6 +74,8 @@
   "next_steps_step_2": "Download the completed application form for voting abroad.\n If you selected the option to generate the request for voter list registration, it will also be downloaded.",
   "next_steps_step_3": "Send an email to the embassy and attach the downloaded forms along with the photo of the document.",
   "email_heading_example": "Suggested email text:",
+  "email_body_voter": "Dear Sir/Madam,\n\nI am applying to vote abroad, and for that purpose I am enclosing:\n1. a request for entry into the unified voter register of the Republic of Serbia;\n2. a request for entry of the information that I will vote abroad into the voter register;\n3. a copy of a valid identification document of the Republic of Serbia.\n\nAlso, pursuant to Paragraph 4 of Article 16 of the Law on the Unified Voter Register, I request to be informed about the data entered about me in the voter register.",
+  "email_body_non_voter": "Dear Sir/Madam,\n\nI am applying to vote abroad, and for that purpose I am enclosing:\n1. a request for entry into the unified voter register of the Republic of Serbia;\n2. a copy of a valid identification document of the Republic of Serbia.\n\nAlso, pursuant to Paragraph 4 of Article 16 of the Law on the Unified Voter Register, I request to be informed about the data entered about me in the voter register.",
   "email_button_example": "Send email to the embassy:",
   "footer_text": "© 2025 All rights reserved.",
   "footer_github_text": "Source code"

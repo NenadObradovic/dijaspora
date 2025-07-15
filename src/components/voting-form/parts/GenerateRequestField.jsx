@@ -1,6 +1,5 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { JEDINSTVEN_BIRACKI_SPISAK_URL } from '../../../constants/global.js'
 
 const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
   const { t } = useTranslation()
@@ -10,7 +9,7 @@ const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
       <div>
         <h4 className="text-accent-three title mb-6">{t('check_list_info')}</h4>
         <a
-          href={JEDINSTVEN_BIRACKI_SPISAK_URL}
+          href="https://upit.birackispisak.gov.rs/"
           target="_blank"
           rel="noopener noreferrer"
           className="block w-full rounded-lg bg-accent-two px-4 py-2 text-center text-sm font-semibold text-white shadow-md transition duration-200 hover:bg-accent-two/90"

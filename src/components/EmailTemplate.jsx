@@ -1,13 +1,9 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import {
-  EMAIL_BODY_NON_VOTER,
-  EMAIL_BODY_VOTER,
-} from '../constants/emailContants.js'
 
 const EmailTemplate = ({ updateVoter }) => {
   const { t } = useTranslation()
-  const body = updateVoter ? EMAIL_BODY_VOTER : EMAIL_BODY_NON_VOTER
+  const email_body = updateVoter ? 'email_body_voter' : 'email_body_non_voter'
 
   return (
     <div className="mt-6 w-full">
@@ -15,7 +11,7 @@ const EmailTemplate = ({ updateVoter }) => {
         {t('email_heading_example')}
       </h3>
       <pre className="max-w-full overflow-x-auto whitespace-pre-wrap break-words">
-        {body}
+        {t(email_body)}
       </pre>
     </div>
   )

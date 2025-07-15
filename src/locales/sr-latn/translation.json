@@ -74,6 +74,8 @@
   "next_steps_step_2": "Preuzmite popunjeni obrazac zahteva za glasanje u inostranstvu.\n Ako ste odabrali generisanje zahteva za upis u birački spisak, i on će biti preuzet.",
   "next_steps_step_3": "Pošaljite mejl ambasadi i priložiti preuzete zahteve zajedno sa slikom dokumenta.",
   "email_heading_example": "Predloženi tekst mejla:",
+  "email_body_voter": "Poštovani,\n\nApliciram za glasanje u inostranstvu i u tu svrhu prilažem:\n1. zahtev za upis u jedinstveni birački spisak u Republici Srbiji;\n2. zahtev za upis u birački spisak podatka da ću glasati u inostranstvu;\n3. fotokopiju važećeg identifikacionog dokumenta Republike Srbije.\n\nTakođe, prema stavu 4 člana 16 Zakona o jedinstvenom biračkom spisku, zahtevam da me obavestite o podacima koji su o meni upisani u birački spisak.",
+  "email_body_non_voter": "Poštovani,\n\nApliciram za glasanje u inostranstvu i u tu svrhu prilažem:\n1. zahtev za upis u jedinstveni birački spisak u Republici Srbiji;\n2. fotokopiju važećeg identifikacionog dokumenta Republike Srbije.\n\nTakođe, prema stavu 4 člana 16 Zakona o jedinstvenom biračkom spisku, zahtevam da me obavestite o podacima koji su o meni upisani u birački spisak.",
   "email_button_example": "Pošalji mejl ambasadi:",
   "footer_text": "© 2025 Sva prava zadržana.",
   "footer_github_text": "Izvorni kod"
