@@ -10,7 +10,7 @@ const PaginationButtons = ({
   const { t } = useTranslation()
 
   return (
-    <div className="sticky top-[40px] flex items-center justify-between gap-y-4 sm:w-full sm:flex-col">
+    <div className="flex items-center justify-between gap-y-4 sm:w-full sm:flex-col">
       {currentTabIndex > 0 && (
         <button
           type="button"

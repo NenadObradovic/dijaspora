@@ -10,14 +10,25 @@
     "bahrein": "Bahrein",
     "belgija": "Belgija",
     "belorusija": "Belorusija",
+    "benin": "Benin",
+    "bolivija": "Bolivija",
     "bosna-i-hercegovina": "Bosna i Hercegovina",
+    "bocvana": "Bocvana",
     "brazil": "Brazil",
     "bugarska": "Bugarska",
+    "vijetnam": "Vijetnam",
     "venecuela": "Venecuela",
+    "gambija": "Gambija",
     "gana": "Gana",
+    "gvatemala": "Gvatemala",
+    "gvineja": "Gvineja",
+    "gruzija": "Gruzija",
     "grcka": "Grčka",
     "danska": "Danska",
+    "dominikanska_republika": "Dominikanska Republika",
     "egipat": "Egipat",
+    "ekvador": "Ekvador",
+    "el_salvador": "El Salvador",
     "zambija": "Zambija",
     "zimbabve": "Zimbabve",
     "izrael": "Izrael",
@@ -25,46 +36,72 @@
     "indonezija": "Indonezija",
     "irak": "Irak",
     "iran": "Iran",
+    "island": "Island",
     "italija": "Italija",
+    "jamajka": "Jamajka",
     "japan": "Japan",
     "jermenija": "Jermenija",
     "juzna-afrika": "Južna Afrika",
+    "kabo_verde": "Kabo Verde",
     "kazahstan": "Kazahstan",
     "kanada": "Kanada",
     "katar": "Katar",
     "kenija": "Kenija",
     "kina": "Kina",
     "kipar": "Kipar",
+    "kolumbija": "Kolumbija",
     "kongo": "Kongo, Demokratska Republika",
     "koreja": "Koreja, Republika",
+    "kostarika": "Kostarika",
     "kuba": "Kuba",
     "kuvajt": "Kuvajt",
     "liban": "Liban",
     "libija": "Libija",
+    "madagaskar": "Madagaskar",
+    "malezija": "Malezija",
+    "mali": "Mali",
     "malta": "Malta",
     "madarska": "Mađarska",
     "maroko": "Maroko",
+    "mauricijus": "Mauricijus",
     "meksiko": "Meksiko",
     "mjanmar": "Mijanmar",
+    "mozambik": "Mozambik",
+    "monako": "Monako",
+    "mongolija": "Mongolija",
+    "namibija": "Namibija",
     "nemacka": "Nemačka",
+    "nepal": "Nepal",
     "nigerija": "Nigerija",
     "norveska": "Norveška",
+    "pakistan": "Pakistan",
+    "panama": "Panama",
+    "peru": "Peru",
     "poljska": "Poljska",
     "portugalija": "Portugal",
     "rumunija": "Rumunija",
     "rusija": "Ruska Federacija",
+    "sao_tome_and_principe": "Sao Tome i Principe",
     "saudijska-arabija": "Saudijska Arabija",
     "sveta-stolica": "Sveta Stolica",
     "severna-makedonija": "Severna Makedonija",
+    "sejseli": "Sejšeli",
+    "sijera_leone": "Sijera Leone",
+    "singapur": "Singapur",
     "sirija": "Sirija",
     "sad": "Sjedinjene Američke Države",
     "slovacka": "Slovačka",
     "slovenija": "Slovenija",
+    "sudan": "Sudan",
+    "tajland": "Tajland",
+    "togo": "Togo",
     "tunis": "Tunis",
     "turska": "Turska",
+    "uganda": "Uganda",
     "uae": "Ujedinjeni Arapski Emirati",
     "uk": "Ujedinjeno Kraljevstvo",
     "ukrajina": "Ukrajina",
+    "filipini": "Filipini",
     "finska": "Finska",
     "francuska": "Francuska",
     "holandija": "Holandija",
@@ -74,7 +111,8 @@
     "cile": "Čile",
     "svajcarska": "Švajcarska",
     "svedska": "Švedska",
-    "spanija": "Španija"
+    "spanija": "Španija",
+    "sri_lanka": "Šri Lanka"
   },
   "embassyByCountry": {
     "azerbejdzan": {
@@ -140,7 +178,21 @@
         "+5411/4371-1359",
         "+5411/4371-1362",
         "+5411/4371-1363"
-      ]
+      ],
+      "honorary_consulate": {
+        "provincia_de_chaco": {
+          "honor": "Marta Kristina Kapitanić",
+          "embassy": "Provincia de Chaco",
+          "address": "Pringles 714, Presidencia Roque Saenz Peña, CP 3700, Provincia de Chaco",
+          "email": [
+            "marta_capitanich@yahoo.com.ar"
+          ],
+          "telephone": [
+            "+54 3644 42 13 30",
+            "+54 3644 62 44 79"
+          ]
+        }
+      }
     },
     "australija": {
       "country": "Australija",
@@ -190,6 +242,19 @@
             "+43662 / 845-254"
           ]
         }
+      },
+      "honorary_consulate": {
+        "linz": {
+          "honor": "Aleksandar Čenić",
+          "embassy": "Linz",
+          "address": "Eduard-Sueß Strasse 19, 4020 Linz",
+          "email": [
+            "office@ca-group.net"
+          ],
+          "telephone": [
+            "+43 664 3820 524"
+          ]
+        }
       }
     },
     "bahrein": {
@@ -212,7 +277,21 @@
         "+322 / 647-2652",
         "+322 / 647-5781",
         "+322 / 649-6545"
-      ]
+      ],
+      "honorary_consulate": {
+        "mortsel": {
+          "honor": "Aleksandar Davidović",
+          "embassy": "Mortsel",
+          "address": "Statielei 5, Mortsel 2640, Belgija",
+          "email": [
+            "consulaat.rs@gmail.com"
+          ],
+          "telephone": [
+            "+32 3 443 96 88",
+            "+32 468 103 222"
+          ]
+        }
+      }
     },
     "belorusija": {
       "country": "Belorusija",
@@ -224,7 +303,53 @@
       "telephone": [
         "+375 / 17-284-29-84",
         "+375 / 17-284-29-90"
-      ]
+      ],
+      "honorary_consulate": {
+        "minsk": {
+          "honor": "Živorad Smiljković",
+          "embassy": "Minsk",
+          "address": "220123 Minsk, ul. Vere Haružej 22, kancelarija 1002",
+          "email": [
+            "zsdiplo@gmail.com"
+          ],
+          "telephone": [
+            "+375 17 210 10 07"
+          ]
+        }
+      }
+    },
+    "benin": {
+      "country": "Benin",
+      "honorary_consulate": {
+        "cotonou": {
+          "honor": "Uroš Popović",
+          "embassy": "Cotonou",
+          "address": "ILot 74, AKPAKPA Fifadji Houto, 04 BP 1261 Cotonou, Benin",
+          "email": [
+            "consulathonorairedserbie@gmail.com"
+          ],
+          "telephone": [
+            "+229 62 13 33 33"
+          ]
+        }
+      }
+    },
+    "bolivija": {
+      "country": "Bolivija",
+      "honorary_consulate": {
+        "la_paz": {
+          "honor": "Zana Petkovic Kuljaca de Rodriguez",
+          "embassy": "La Paz",
+          "address": "Pasaje Jauregui 2248, Edificio Quipus, piso 5, Sopocachi, LA PAZ",
+          "email": [
+            "petkovicrodriguezzana@gmail.com"
+          ],
+          "telephone": [
+            "+591 2279 7306",
+            "+591 767 86 999"
+          ]
+        }
+      }
     },
     "bosna-i-hercegovina": {
       "country": "Bosna i Hercegovina",
@@ -282,6 +407,35 @@
             "+387 51 / 227-060"
           ]
         }
+      },
+      "honorary_consulate": {
+        "pale": {
+          "honor": "Dejan Ljevnaić",
+          "embassy": "Pale",
+          "address": "Univerzitetska 24E, 71420 Pale, Bosna i Hercegovina",
+          "email": [
+            "kabinet@konzulatrs.com"
+          ],
+          "telephone": [
+            "+387 57 222 555"
+          ]
+        }
+      }
+    },
+    "bocvana": {
+      "country": "Bocvana",
+      "honorary_consulate": {
+        "gaborone": {
+          "honor": "Milivoje Nikolić",
+          "embassy": "Gaborone",
+          "address": "Plot 77191 Phakalane, Gaborone, Botswana",
+          "email": [
+            "serbianconsulbw@yahoo.com"
+          ],
+          "telephone": [
+            "+267 71304119"
+          ]
+        }
       }
     },
     "brazil": {
@@ -294,7 +448,62 @@
       "telephone": [
         "+5561 / 3223-72-72",
         "+5561 / 3223-19-94"
-      ]
+      ],
+      "honorary_consulate": {
+        "porto_alegre": {
+          "honor": "Dr. Édison Freitas de Siqueira",
+          "embassy": "Porto Alegre",
+          "address": "Rua Dom Pedro II, n° 1411, Ed. Consul Edison Freita de Siqueira, Bairro Higienópolis, Porto Alegre",
+          "email": [
+            "edisonsiqueira@edisonsiqueira.com.br"
+          ],
+          "telephone": [
+            "+55 51 3358 0500"
+          ]
+        },
+        "sao_paulo": {
+          "honor": "José Guilherme de Godoy Pinheiro",
+          "embassy": "Sao Paulo",
+          "address": "Rua Cordisburgo, n° 215, Bairro Jardim Guedala, Sao Paulo",
+          "email": [
+            "josegpinheiro@hotmail.com"
+          ],
+          "telephone": [
+            "+55 11 3667 3246"
+          ]
+        },
+        "curitiba": {
+          "honor": "Edson Josée Ramon",
+          "embassy": "Curitiba",
+          "address": "Av.Presidente Kennedy 860 Bairro Reboucas, Curitiba",
+          "email": [
+            "eramon@bighost.com.br",
+            "lucienne@bighost.com.br"
+          ],
+          "telephone": [
+            "+55 41 3342 7588"
+          ]
+        },
+        "rio_de_janeiro": {
+          "honor": "Dejan Petkovic",
+          "embassy": "Rio de Janeiro",
+          "address": "Rua Jose Maria Rodrigues 57, CEP 22.793-348 Barra da Tijuca, Rio de Janeiro",
+          "email": [
+            "consulriodeianeiro5521@gmail.com"
+          ]
+        },
+        "balneario_camboriu": {
+          "honor": "Sezar Šiljano",
+          "embassy": "Balneario Camboriu",
+          "address": "Rua 1001 Hr. 235 ap. 105, Balneário Camboriú",
+          "email": [
+            "sdprbrazil@outlook.com"
+          ],
+          "telephone": [
+            "+55 41 999634449"
+          ]
+        }
+      }
     },
     "bugarska": {
       "country": "Bugarska",
@@ -306,7 +515,31 @@
       "telephone": [
         "+3592 / 946-16-35",
         "+3592 / 946-16-33"
-      ]
+      ],
+      "honorary_consulate": {
+        "plovdiv": {
+          "honor": "Anastasija Rosenova Solakova",
+          "embassy": "Plovdiv",
+          "address": "gr. Plovdiv 4000, ul Krъstьo Pastuhov 14A",
+          "email": [
+            "office.honorary.consul@consulserbia.com"
+          ],
+          "telephone": [
+            "+359 89 99 00 371"
+          ]
+        },
+        "blagojevgrad": {
+          "honor": "Mitko Tonkov Solakov",
+          "embassy": "Blagojevgrad",
+          "address": "gr. Blagojevgrad 2700,trg (ploщad) \"Georgi Izmirliev-Makedonče\" 1",
+          "email": [
+            "consulate.serbia.bg@gmail.com"
+          ],
+          "telephone": [
+            "+359 882 000 444"
+          ]
+        }
+      }
     },
     "venecuela": {
       "country": "Venecuela",
@@ -319,6 +552,39 @@
         "+58 / 424 272 9098"
       ]
     },
+    "vijetnam": {
+      "country": "Vijetnam",
+      "honorary_consulate": {
+        "ho_chi_minh": {
+          "honor": "Dragan Mladenović",
+          "embassy": "Ho Chi Minh",
+          "address": "Level 12, 126 Nguyen Thi Minh Khai Street, District 1, Ho Chi Minh City",
+          "email": [
+            "serbianconsulatehcmc@gmail.com"
+          ],
+          "telephone": [
+            "+84 908052655"
+          ]
+        }
+      }
+    },
+    "gambija": {
+      "country": "Gambija",
+      "honorary_consulate": {
+        "banjul": {
+          "honor": "Omar M.O. Faal",
+          "embassy": "Banjul",
+          "address": "Fajara Booster Station Off Kairaba Avenue Fajara, Banjul",
+          "email": [
+            "srbconsbjl@gmail.com"
+          ],
+          "telephone": [
+            "+220 979 2598",
+            "+220 779 2598"
+          ]
+        }
+      }
+    },
     "gana": {
       "country": "Gana",
       "embassy": "Accra",
@@ -329,6 +595,57 @@
       "telephone": [
         "+233 30 396 5516"
       ]
+    },
+    "gvatemala": {
+      "country": "Gvatemala",
+      "honorary_consulate": {
+        "guatemala_city": {
+          "honor": "Marcela Arzu de Lozano",
+          "embassy": "Guatemala",
+          "address": "17 avenida 19-70 zona 10, Edificio Torino, oficina 1006, Guatemala, Ciudad",
+          "email": [
+            "marzudelozano@gmail.com"
+          ],
+          "telephone": [
+            "+502 23782613",
+            "+502 41514520"
+          ]
+        }
+      }
+    },
+    "gvineja": {
+      "country": "Gvineja",
+      "honorary_consulate": {
+        "conakry": {
+          "honor": "Jean Jacques Grenier",
+          "embassy": "Conakry",
+          "address": "Cite Chemin de fer Immeuble Kassa / Conakry, République de Guinée",
+          "telephone": [
+            "+224 13 40 46 74",
+            "+224 11 25 81 57",
+            "+224 628240000"
+          ],
+          "email": [
+            "JJ.GRENIER@africa-port.com"
+          ]
+        }
+      }
+    },
+    "gruzija": {
+      "country": "Gruzija",
+      "honorary_consulate": {
+        "tbilisi": {
+          "honor": "David Sirbiladze",
+          "embassy": "Tbilisi",
+          "address": "Tskneti Highway 20, Tbilisi",
+          "email": [
+            "d.sirbiladze@pcg.com.ge"
+          ],
+          "telephone": [
+            "+995 577 119393"
+          ]
+        }
+      }
     },
     "grcka": {
       "country": "Grčka",
@@ -356,6 +673,41 @@
             "+302310 / 244-267"
           ]
         }
+      },
+      "honorary_consulate": {
+        "corfu": {
+          "honor": "Spyridon Mastoras",
+          "embassy": "Krf",
+          "address": "Moustoxidi 19, 49 100 Corfu, PO Box 286",
+          "email": [
+            "smastoras@yahoo.com"
+          ],
+          "telephone": [
+            "+30 266 102 6724"
+          ]
+        },
+        "kefalonia": {
+          "honor": "Victor Rouchotas",
+          "embassy": "Kefalonia",
+          "address": "54 Ioannou Metaxa & Irakliou Street, Argostoli 281 00, Kefalonia",
+          "email": [
+            "vruhotas@yahoo.gr"
+          ],
+          "telephone": [
+            "+30 267 102 3941"
+          ]
+        },
+        "crete": {
+          "honor": "Nikolaos Papadantonakis",
+          "embassy": "Krit",
+          "address": "51 Dikeosinis Street, Heraklion, 712 02, Crete",
+          "email": [
+            "nikpapadantonakis@yahoo.gr"
+          ],
+          "telephone": [
+            "+30 2810 301188"
+          ]
+        }
       }
     },
     "danska": {
@@ -370,6 +722,22 @@
         "+45 / 3929-7784"
       ]
     },
+    "dominikanska_republika": {
+      "country": "Dominikanska republika",
+      "honorary_consulate": {
+        "santo_domingo": {
+          "honor": "Ivana Gavrilović",
+          "embassy": "Santo Domingo",
+          "address": "Avenida Winston Churchill, esquina Gustavo Mejía Ricart, Nro. 95, Torre Blue Mall, Piso 23, Oficina Nro. P16-02, SANTO DOMINGO",
+          "email": [
+            "ivana.gavrilovic.v@gmail.com"
+          ],
+          "telephone": [
+            "+1 809 769 9937"
+          ]
+        }
+      }
+    },
     "egipat": {
       "country": "Egipat",
       "embassy": "Kairo",
@@ -383,6 +751,38 @@
         "+202 / 2736-54-94",
         "+202 / 2736-70-94"
       ]
+    },
+    "ekvador": {
+      "country": "Ekvador",
+      "honorary_consulate": {
+        "guayaquil": {
+          "honor": "Dušan Drašković",
+          "embassy": "Guayaquil",
+          "address": "Calle Nuevo de Octuber y Cordoba, Eduficio San Francisco No.300. Piso 12, departamento 1, GUAYAQUIL",
+          "email": [
+            "dusandraskovicconsul@yahoo.com"
+          ],
+          "telephone": [
+            "+593 4256 1735"
+          ]
+        }
+      }
+    },
+    "el_salvador": {
+      "country": "El Salvador",
+      "honorary_consulate": {
+        "san_salvador": {
+          "honor": "Dr. Jose Luis Saca Melendez",
+          "embassy": "San Salvador",
+          "address": "69 ave. nte, entre 1ra y Zera Calle, pte# 213, Col Escalỏn, SAN SALVADOR",
+          "email": [
+            "presidencia@radiocorporacionfm.com.sv"
+          ],
+          "telephone": [
+            "+503 283 2222"
+          ]
+        }
+      }
     },
     "zambija": {
       "country": "Zambija",
@@ -405,7 +805,20 @@
       ],
       "telephone": [
         "+263 775 840 593"
-      ]
+      ],
+      "honorary_consulate": {
+        "harare": {
+          "honor": "Dr Vivek Savji Solanki",
+          "embassy": "Harare",
+          "address": "No 1 Borrowdale Lane, Cnr Kingsmead RD, Borrowdale, Harare",
+          "email": [
+            "hon.consulsrb@gmail.com"
+          ],
+          "telephone": [
+            "+263 783 836 686"
+          ]
+        }
+      }
     },
     "izrael": {
       "country": "Izrael",
@@ -419,7 +832,31 @@
       "telephone": [
         "+9723 / 604-55-35",
         "+9723 / 604-93-72"
-      ]
+      ],
+      "honorary_consulate": {
+        "jerusalem": {
+          "honor": "Boris Krasni",
+          "embassy": "Jerusalim",
+          "address": "Haim Katz Law Offices, 24 Emek Refaim St. 2nd floor, Jerusalem 9108201",
+          "email": [
+            "boris@policy-one.co.il"
+          ],
+          "telephone": [
+            "+972 2 625 8242"
+          ]
+        },
+        "beer_sheva": {
+          "honor": "Aleksandar Nikolić",
+          "embassy": "Be'er Sheva",
+          "address": "Middle East Tube Co.Ltd. (Gaon Group), Ne'ot Hovav Ind. Area Ramat Hovav, Be'er Sheva 8551600",
+          "email": [
+            "alexn@gaon.com"
+          ],
+          "telephone": [
+            "+972 89 274 393"
+          ]
+        }
+      }
     },
     "indija": {
       "country": "Indija",
@@ -433,7 +870,20 @@
       "telephone": [
         "+9111 / 2687-36-61",
         "+9111 / 2687-20-73"
-      ]
+      ],
+      "honorary_consulate": {
+        "bangalore": {
+          "honor": "Mr. Anuj Nautiyal",
+          "embassy": "Bangalore",
+          "address": "#403, \"The Estate\" 121, Dickenson Road, Bangalore",
+          "email": [
+            "anuj.nautiyal@redwoodscorp.com"
+          ],
+          "telephone": [
+            "+91 80 4907 8888"
+          ]
+        }
+      }
     },
     "indonezija": {
       "country": "Indonezija",
@@ -471,6 +921,22 @@
         "+982188091529"
       ]
     },
+    "island": {
+      "country": "Island",
+      "honorary_consulate": {
+        "reykjavik": {
+          "honor": "Mr. Arman Kojić",
+          "embassy": "Reykjavik",
+          "address": "Reynimelur 34, 107 Reykjavik",
+          "email": [
+            "konzul@island.rs"
+          ],
+          "telephone": [
+            "+354 445 2000"
+          ]
+        }
+      }
+    },
     "italija": {
       "country": "Italija",
       "embassy": "Rim",
@@ -505,6 +971,47 @@
             "+393666816138 (hitni slučajevi)"
           ]
         }
+      },
+      "honorary_consulate": {
+        "firenze": {
+          "honor": "Leandro Chiarelli",
+          "embassy": "Firenca",
+          "address": "Via Masaccio, 49 50132 Firenze",
+          "email": [
+            "console@consolatoserbiafi.com"
+          ],
+          "telephone": [
+            "+39 055 214 950"
+          ]
+        },
+        "bari": {
+          "honor": "Gabriella Gentile",
+          "embassy": "Bari",
+          "address": "Via Andrea da Bari, 103 - 70122 Bari",
+          "email": [
+            "consolatoserbiabari@gmail.com"
+          ],
+          "telephone": [
+            "+39 393 912 0000"
+          ]
+        }
+      }
+    },
+    "jamajka": {
+      "country": "Jamajka",
+      "honorary_consulate": {
+        "kingston": {
+          "honor": "Sr. John Issa",
+          "embassy": "Kingston",
+          "address": "P.O. Box 61, KINGSTON 4 W. I. SuperClubs Victoria Mutual Building, 4th Floor, 53 Knutsford Boulevard, KINGSTON 5",
+          "email": [
+            "john.issa@superclubs.com"
+          ],
+          "telephone": [
+            "+1 876 960-1750",
+            "+1 876 960-1751"
+          ]
+        }
       }
     },
     "japan": {
@@ -517,11 +1024,24 @@
       "telephone": [
         "+813 / 3447-35-71",
         "+813 / 3447-35-72"
-      ]
+      ],
+      "honorary_consulate": {
+        "osaka": {
+          "honor": "Naohide Ueyama",
+          "embassy": "Osaka",
+          "address": "1-4-11 Tosabori, Nishi-ku, Osaka",
+          "email": [
+            "serbia-hcg@kincho.co.jp"
+          ],
+          "telephone": [
+            "+81 6 6441-3158"
+          ]
+        }
+      }
     },
     "jermenija": {
       "country": "Jermenija",
-      "embassy": "Yerevan",
+      "embassy": "Jerevan",
       "address": "10 Vazgen Sargsyan St., 0010 Yerevan, Piazza Grande Business Center, 1st floor, office 109",
       "email": [
         "embserbia.yerevan@gmail.com"
@@ -530,7 +1050,21 @@
         "+37460 / 380-116",
         "+37460 / 380-117",
         "+37460 / 380-119"
-      ]
+      ],
+      "honorary_consulate": {
+        "yerevan": {
+          "honor": "Babken Simonyan",
+          "embassy": "Jerevan",
+          "address": "Nar-Dos 75/28, Yerevan",
+          "email": [
+            "konzulat-srbija@mail.ru",
+            "konzulat.srbija@gmail.com"
+          ],
+          "telephone": [
+            "+374 93 929651"
+          ]
+        }
+      }
     },
     "juzna-afrika": {
       "country": "Južna Afrika",
@@ -544,6 +1078,20 @@
         "+2712 / 460-6103",
         "+2712 / 346-4139"
       ]
+    },
+    "kabo_verde": {
+      "country": "Kabo Verde",
+      "honorary_consulate": {
+        "praia": {
+          "honor": "Keita Correia Silva Monteiro",
+          "embassy": "Praia",
+          "address": "Rua da UCLA n° 76, CP 142ª, A.S.A - Cidade da Praia",
+          "telephone": [
+            "+238 2621123",
+            "+238 9297669"
+          ]
+        }
+      }
     },
     "kazahstan": {
       "country": "Kazahstan",
@@ -578,6 +1126,43 @@
           ],
           "telephone": [
             "+1416 / 483-10-80"
+          ]
+        }
+      },
+      "honorary_consulate": {
+        "vancouver": {
+          "honor": "Peter Vladiković",
+          "embassy": "Vankuver",
+          "address": "7411 Vantage Way-Delta, Vancouver, BC, V4G 1C9",
+          "email": [
+            "consul@serbianconsulate.bc.ca"
+          ],
+          "telephone": [
+            "+1 604 940-3838"
+          ],
+          "website": "www.serbianconsulate.bc.ca"
+        },
+        "calgary": {
+          "honor": "Milica Prtilo-Opačić",
+          "embassy": "Calgary",
+          "address": "1330 Shannon Avenue SW, Calgary, AB, T2Y 4L6",
+          "email": [
+            "honoraryconsul@serbianconsulate-ab.ca"
+          ],
+          "telephone": [
+            "+1 403 852-8806"
+          ],
+          "website": "www.serbianconsulate-ab.ca"
+        },
+        "montreal": {
+          "honor": "Marina Gavanski-Zisis",
+          "embassy": "Montreal",
+          "address": "302-3713 St. Laurent Blvd., Montreal, QC, H2X 2V7",
+          "email": [
+            "serbiamontreal@gmail.com"
+          ],
+          "telephone": [
+            "+1 514 288-4375"
           ]
         }
       }
@@ -636,15 +1221,47 @@
     },
     "kipar": {
       "country": "Kipar",
-      "embassy": "Nikozlija",
-      "address": "2, Vasilissis Olgas Street, 1101 Nikozija",
+      "embassy": "Nikozija",
+      "address": "2, Vasilissis Olgas Street, 1101 Nicosia",
       "email": [
         "nicosia@serbia.org.cy"
       ],
       "telephone": [
         "+35722 / 777-511",
         "+35722 / 772-924"
-      ]
+      ],
+      "honorary_consulate": {
+        "nicosia": {
+          "honor": "Kypros V. Eliades",
+          "embassy": "Nikozija",
+          "address": "23, Lefkosias Street, Dhali Industrial Estate, 2540 Nicosia",
+          "email": [
+            "kveliades@vel.com.cy"
+          ],
+          "telephone": [
+            "+357 22 878 140",
+            "+357 22897335",
+            "+357 99 663273"
+          ]
+        }
+      }
+    },
+    "kolumbija": {
+      "country": "Kolumbija",
+      "honorary_consulate": {
+        "bogota": {
+          "honor": "Hernan Sanin Posada",
+          "embassy": "Bogota",
+          "address": "Calle 94A #13-08, Oficina 201, Colombia",
+          "email": [
+            "hernansanin@hotmail.com"
+          ],
+          "telephone": [
+            "+57 3153310028",
+            "+57 6166321"
+          ]
+        }
+      }
     },
     "kongo": {
       "country": "Kongo, Demokratska Republika",
@@ -669,6 +1286,23 @@
         "+822 / 797 51 09",
         "+822 / 798 51 09"
       ]
+    },
+    "kostarika": {
+      "country": "Kostarika",
+      "honorary_consulate": {
+        "heredia": {
+          "honor": "Stanko Trifunović",
+          "embassy": "Heredia",
+          "address": "AGRICOLA AMATA S.A, 300m este y 150m sur de la Clinica de Seguro Social SAN JOAQUIN DE FLORES, HEREDIA",
+          "email": [
+            "consulado.serbia@agramata.com"
+          ],
+          "telephone": [
+            "+506 2265 6760",
+            "+506 83730322"
+          ]
+        }
+      }
     },
     "kuba": {
       "country": "Kuba",
@@ -708,7 +1342,23 @@
         "+961 922 1256",
         "+961 922 1257",
         "+961 766 28 206"
-      ]
+      ],
+      "honorary_consulate": {
+        "kaslik": {
+          "honor": "Joseph Martinos",
+          "embassy": "Kaslik",
+          "address": "Kaslik Roundabout, Etoile Building, 2nd floor, Kaslik",
+          "email": [
+            "consul.martinos@hotmail.com",
+            "consul.j.martinos@gmail.com"
+          ],
+          "telephone": [
+            "+961 9637993",
+            "+961 3 322 000",
+            "+961 71 322 000"
+          ]
+        }
+      }
     },
     "libija": {
       "country": "Libija",
@@ -724,6 +1374,23 @@
         "+21821 / 362-32-05",
         "+21821 / 362-32-06"
       ]
+    },
+    "madagaskar": {
+      "country": "Madagaskar",
+      "honorary_consulate": {
+        "antananarivo": {
+          "honor": "Maminijaina Ravatomanga",
+          "embassy": "Antananarivo",
+          "address": "9e étage, Pradon Trade Center, Antanimena, Antananarivo",
+          "email": [
+            "consulatserbiemada@gmail.com",
+            "consulatserbiemada@yahoo.com"
+          ],
+          "telephone": [
+            "+261 20 222 1484"
+          ]
+        }
+      }
     },
     "malta": {
       "country": "Malta",
@@ -753,6 +1420,39 @@
         "+361 / 322-14-37"
       ]
     },
+    "malezija": {
+      "country": "Malezija",
+      "honorary_consulate": {
+        "kuala_lumpur": {
+          "honor": "Dato` Zulkifli Amin",
+          "embassy": "Kuala Lumpur",
+          "address": "Suite 35-2, Level 35, MOF Inc Tower, No 9 Persiaran KLOCC, Kuala Lumpur",
+          "email": [
+            "hc@rsconsulate.org"
+          ],
+          "telephone": [
+            "+603 21817422",
+            "+6012 3859497"
+          ]
+        }
+      }
+    },
+    "mali": {
+      "country": "Mali",
+      "honorary_consulate": {
+        "bamako": {
+          "honor": "Yaya Diakite",
+          "embassy": "Bamako",
+          "address": "Quartier du Fleuve rue 235 porte 313, Bamako",
+          "email": [
+            "dyaya21@yahoo.fr"
+          ],
+          "telephone": [
+            "+223 66733268"
+          ]
+        }
+      }
+    },
     "maroko": {
       "country": "Maroko",
       "embassy": "Rabat",
@@ -763,7 +1463,38 @@
       "telephone": [
         "+212 537 752 201",
         "+212 537 753 770"
-      ]
+      ],
+      "honorary_consulate": {
+        "casablanca": {
+          "honor": "Seddik Bargash",
+          "embassy": "Kazablanka",
+          "address": "84, Boulevard Sidi Abderrahmane - Beauséjour Ma 20200, Casablanca",
+          "email": [
+            "seddik_bargach@hotmail.com"
+          ],
+          "telephone": [
+            "+212 52-236-5426",
+            "+212 52-295-0728",
+            "+212 66-108-7049"
+          ]
+        }
+      }
+    },
+    "mauricijus": {
+      "country": "Mauricijus",
+      "honorary_consulate": {
+        "ebene": {
+          "honor": "Mahadua Paviš",
+          "embassy": "Ebene",
+          "address": "Ground floor ICONEBENE Rue de L'institut Ebene",
+          "email": [
+            "consulateserbiamauritis@gmail.com"
+          ],
+          "telephone": [
+            "+230 57249155"
+          ]
+        }
+      }
     },
     "meksiko": {
       "country": "Meksiko",
@@ -775,7 +1506,21 @@
       "telephone": [
         "+5255 / 5520-05-24",
         "+5255 / 5520-25-23"
-      ]
+      ],
+      "honorary_consulate": {
+        "zapopan": {
+          "honor": "Petar Joksimović",
+          "embassy": "Zapopan",
+          "address": "Aurora Boreal #3864-3, Col.Arboledas C.P.45070 Zapopan, Jalisco",
+          "email": [
+            "yumexz@hotmail.com"
+          ],
+          "telephone": [
+            "+52 33 3855 9009",
+            "+52 1 33 38 55 90"
+          ]
+        }
+      }
     },
     "mjanmar": {
       "country": "Mijanmar",
@@ -788,6 +1533,71 @@
         "+951 515-282",
         "+951 515-283"
       ]
+    },
+    "mozambik": {
+      "country": "Mozambik",
+      "honorary_consulate": {
+        "maputo": {
+          "honor": "John Kachamila",
+          "embassy": "Maputo",
+          "address": "Avenida Mao Tse Tung, 19 Maputo",
+          "email": [
+            "jwkacha@tvcabo.co.mz"
+          ],
+          "telephone": [
+            "+258 84 302 8500"
+          ]
+        }
+      }
+    },
+    "monako": {
+      "country": "Monako",
+      "honorary_consulate": {
+        "monaco": {
+          "honor": "Goran Đoković",
+          "embassy": "Monaco",
+          "address": "4. Boulevard des Moulins - Winter Palace, 98000 Monaco",
+          "email": [
+            "gorandjokovic@gmail.com"
+          ],
+          "telephone": [
+            "+377 99 901 523"
+          ]
+        }
+      }
+    },
+    "mongolija": {
+      "country": "Mongolija",
+      "honorary_consulate": {
+        "ulaanbaatar": {
+          "honor": "Bavuu Zorigt",
+          "embassy": "Ulaanbaatar",
+          "address": "suite 1501 Express Tower, Peace avenue 4, Ulaanbaatar 15160, Post box 1364",
+          "email": [
+            "zorigtbavuu@yahoo.co.jp"
+          ],
+          "telephone": [
+            "+976 99 109 192"
+          ]
+        }
+      }
+    },
+    "namibija": {
+      "country": "Namibija",
+      "honorary_consulate": {
+        "windhoek": {
+          "honor": "Kapewasha Marten Nenkete",
+          "embassy": "Windhoek",
+          "address": "12, Rabenweg, Hochland Park, P.O. Box 60157 Windhoek",
+          "email": [
+            "nenkete5@gmail.com"
+          ],
+          "telephone": [
+            "+264 816982413",
+            "+264 61 244511"
+          ]
+        }
+      }
     },
     "nemacka": {
       "country": "Nemačka",
@@ -856,6 +1666,23 @@
         }
       }
     },
+    "nepal": {
+      "country": "Nepal",
+      "honorary_consulate": {
+        "kathmandu": {
+          "honor": "Niravana Chaudhary",
+          "embassy": "Kathmandu",
+          "address": "Chaudhary House, Sanepa, Lalitpur, G.P.O. Box: 1073, Kathmandu",
+          "email": [
+            "consuloffice.serbia@chaudharygroup.com"
+          ],
+          "telephone": [
+            "+977 1 5525039",
+            "+977 1 5525041"
+          ]
+        }
+      }
+    },
     "nigerija": {
       "country": "Nigerija",
       "embassy": "Abudža",
@@ -866,7 +1693,32 @@
       "telephone": [
         "+234 / 805-973-8141",
         "+234 / 805-973-8145"
-      ]
+      ],
+      "honorary_consulate": {
+        "lagos": {
+          "honor": "Domingo Alaba John Obende",
+          "embassy": "Lagos",
+          "address": "12 Agoro Odiyan Street, Victoria Island, Lagos",
+          "email": [
+            "nigserbcc@gmail.com"
+          ],
+          "telephone": [
+            "+234 8098606060",
+            "+234 7082222222"
+          ]
+        },
+        "kano": {
+          "honor": "Farouk Adamu Aliyu",
+          "embassy": "Kano",
+          "address": "11 Babura Road, Nassarawa G.R.A Behind Magwan Water Restaurant, Kano State",
+          "email": [
+            "faroukaaliyu@yahoo.com"
+          ],
+          "telephone": [
+            "+234 8033110734"
+          ]
+        }
+      }
     },
     "norveska": {
       "country": "Norveška",
@@ -879,6 +1731,55 @@
         "+47 / 23 11 52 20"
       ]
     },
+    "pakistan": {
+      "country": "Pakistan",
+      "honorary_consulate": {
+        "karachi": {
+          "honor": "Tariq Rafi",
+          "embassy": "Karachi",
+          "address": "27th floor, Ocean Tower, Plot # G 3, Khayaban e Iqbal, Clifton block 9, Karachi",
+          "email": [
+            "tariqrafi@siddiqsons.com"
+          ],
+          "telephone": [
+            "+92 21 351 66571"
+          ]
+        }
+      }
+    },
+    "panama": {
+      "country": "Panama",
+      "honorary_consulate": {
+        "panama_city": {
+          "honor": "Aleksandar Aleksić Ivanis",
+          "embassy": "Panama",
+          "address": "Avenida Centenario PH Península; Office 802, Ciudad de Panamá",
+          "email": [
+            "consulado.serb.pan@gmail.com"
+          ],
+          "telephone": [
+            "+507 6672 5005"
+          ]
+        }
+      }
+    },
+    "peru": {
+      "country": "Peru",
+      "honorary_consulate": {
+        "lima": {
+          "honor": "Carmen Rosa Carhuancho Hurtado",
+          "embassy": "Lima",
+          "address": "Calle Jose Gomez 395, San Isidro - Lima",
+          "email": [
+            "consulado.h.republicadeserbia@gmail.com"
+          ],
+          "telephone": [
+            "+51 1 2637 978",
+            "+51 99 5434 585"
+          ]
+        }
+      }
+    },
     "poljska": {
       "country": "Poljska",
       "embassy": "Varšava",
@@ -889,7 +1790,43 @@
       "telephone": [
         "+4822 / 628-51-61",
         "+4822 / 625-60-41"
-      ]
+      ],
+      "honorary_consulate": {
+        "katowice": {
+          "honor": "Ranko Tomović",
+          "embassy": "Katowice",
+          "address": "Borowa 85, 41-253 Czeladź, Katowice",
+          "email": [
+            "sekretariat@konsulat-serbia.pl"
+          ],
+          "telephone": [
+            "+48 32 2658 166",
+            "+48 601 413 788"
+          ]
+        },
+        "bydgoszcz": {
+          "honor": "Maria Joanna Lorentowicz-Zagalak",
+          "embassy": "Bydgoszcz",
+          "address": "Obrońców Bydgoszczy 1, 85-054 Bydgoszcz",
+          "email": [
+            "konsulat@serbia.org.pl"
+          ],
+          "telephone": [
+            "+48 797 403 850"
+          ]
+        },
+        "bialystok": {
+          "honor": "Jaroslaw Antychowicz",
+          "embassy": "Bialystok",
+          "address": "Antoniukowska 7, 15-740 Bialystok",
+          "email": [
+            "konsulat@konsulatserbii.pl"
+          ],
+          "telephone": [
+            "+48 668 675 241"
+          ]
+        }
+      }
     },
     "portugalija": {
       "country": "Portugal",
@@ -901,7 +1838,29 @@
       "telephone": [
         "+35121 / 301-53-11",
         "+35121 / 301-53-12"
-      ]
+      ],
+      "honorary_consulate": {
+        "albufeira": {
+          "honor": "António José Paixão Pinto Marante",
+          "embassy": "Albufeira",
+          "address": "Rua do Índico - Ed. Altis C, 3º Q, 8200-139 Albufeira",
+          "email": [
+            "maranteantonio@gmail.com"
+          ],
+          "telephone": [
+            "+351 966 827 598"
+          ]
+        },
+        "porto": {
+          "honor": "Mário Rui Figueira de Campos Fontemanha",
+          "embassy": "Porto",
+          "address": "Avenida dos Combatentes da Grande Guerra, nº 455, 4200-189 Porto",
+          "telephone": [
+            "+351 226106228",
+            "+351 919633738"
+          ]
+        }
+      }
     },
     "rumunija": {
       "country": "Rumunija",
@@ -942,7 +1901,31 @@
       ],
       "telephone": [
         "+7495 988-66-45"
-      ]
+      ],
+      "honorary_consulate": {
+        "saint_petersburg": {
+          "honor": "Gennadiy Nikolaevich Timchenko",
+          "embassy": "Sankt-Peterburg",
+          "address": "Manježnaja plošad br. 4, 191011 Sankt-Peterburg",
+          "email": [
+            "mail@serbia.spb.ru"
+          ],
+          "telephone": [
+            "+7 812 3367570"
+          ]
+        },
+        "krasnogorsk": {
+          "honor": "Aleksandar Dibalj",
+          "embassy": "Krasnogorsk",
+          "address": "Moskovska oblast, gradski okrug Krasnogorsk, selo Putilkovo, teritorija Grinvuda, zgrada 35, kancelarija 411",
+          "email": [
+            "serbiaconsul@mail.ru"
+          ],
+          "telephone": [
+            "+7 495 760 06 32"
+          ]
+        }
+      }
     },
     "saudijska-arabija": {
       "country": "Saudijska Arabija",
@@ -956,6 +1939,23 @@
         "+966555282559"
       ]
     },
+    "sao_tome_and_principe": {
+      "country": "Sao Tome i Principe",
+      "honorary_consulate": {
+        "sao_tome": {
+          "honor": "Žorž Dias Koreja",
+          "embassy": "Sao Tome",
+          "address": "Avenija 12. Jul, Sao Tome",
+          "telephone": [
+            "+239 9906309",
+            "+239 9053101"
+          ],
+          "email": [
+            "conservia.jc@gmail.com"
+          ]
+        }
+      }
+    },
     "sveta-stolica": {
       "country": "Sveta Stolica",
       "embassy": "Vatikan",
@@ -966,6 +1966,24 @@
       "telephone": [
         "+39 / 06-322-3076"
       ]
+    },
+    "sejseli": {
+      "country": "Sejšeli",
+      "honorary_consulate": {
+        "glacis": {
+          "honor": "Dr Miodrag Todorović",
+          "embassy": "Glacis",
+          "address": "Mahe, Glacis, Main Road, Seychelles, P. O. Box 1001",
+          "email": [
+            "drtodo@gmail.com"
+          ],
+          "telephone": [
+            "+248 4321 310",
+            "+248 4261 175",
+            "+248 2712 333"
+          ]
+        }
+      }
     },
     "severna-makedonija": {
       "country": "Severna Makedonija",
@@ -979,7 +1997,66 @@
         "+3892 / 3131-299",
         "+3892 / 3128-422",
         "+3892 / 3129-305"
-      ]
+      ],
+      "honorary_consulate": {
+        "ohrid": {
+          "honor": "Mihajlo Filev",
+          "embassy": "Ohrid",
+          "address": "7 Noemvri br. 27, 6000 Ohrid",
+          "email": [
+            "mihajlo_filev@yahoo.com"
+          ],
+          "telephone": [
+            "+389 70 590822"
+          ]
+        },
+        "kumanovo": {
+          "honor": "Vladimir Stajić",
+          "embassy": "Kumanovo",
+          "address": "Ilindenska 37, 1300 Kumanovo",
+          "email": [
+            "vladimirstajic.rs@hc-ku.com",
+            "office.rs@kc-ku.com"
+          ],
+          "telephone": [
+            "+389 70 220280"
+          ]
+        }
+      }
+    },
+    "sijera_leone": {
+      "country": "Sijera Leone",
+      "honorary_consulate": {
+        "freetown": {
+          "honor": "Adonis Abboud",
+          "embassy": "Freetown",
+          "address": "62 Wilkinson Road, P.O.Box 552, Freetown",
+          "email": [
+            "serbiaconsulatesl@gmail.com",
+            "adonisabboud@gmail.com"
+          ],
+          "telephone": [
+            "+232 022234434",
+            "+232 076601176"
+          ]
+        }
+      }
+    },
+    "singapur": {
+      "country": "Singapur",
+      "honorary_consulate": {
+        "singapore": {
+          "honor": "Kelvin Čeng Ern Li",
+          "embassy": "Singapore",
+          "address": "7500E Beach Road, SINGAPORE 199595",
+          "email": [
+            "calvin@calvincheng.sg"
+          ],
+          "telephone": [
+            "+44 7903168255"
+          ]
+        }
+      }
     },
     "sirija": {
       "country": "Sirija",
@@ -991,7 +2068,22 @@
       "telephone": [
         "+96311 / 6120682",
         "+96311 / 6120683"
-      ]
+      ],
+      "honorary_consulate": {
+        "tartus": {
+          "honor": "Valid Rafoul",
+          "embassy": "Tartus",
+          "address": "Tartus, ulica Hanano, zgrada Al Saba, 4. sprat",
+          "email": [
+            "srb.tartus.consulate@gmail.com"
+          ],
+          "telephone": [
+            "00963 43 23 11 272",
+            "00963 43 23 17 792",
+            "00963 944 213 150"
+          ]
+        }
+      }
     },
     "sad": {
       "country": "Sjedinjene Američke Države",
@@ -1005,7 +2097,7 @@
       ],
       "consulate": {
         "cikago": {
-          "embassy": "Čikago",
+          "embassy": "Cikago",
           "address": "201 East Ohio Street, Suite 200, Čikago, IL 60611",
           "email": [
             "info@segchicago.org"
@@ -1015,13 +2107,81 @@
           ]
         },
         "njujork": {
-          "embassy": "Njujork",
+          "embassy": "Newyork",
           "address": "62 West 45th Street, 7 Floor, Njujork, NY 10036",
           "email": [
             "consultate.newyork@mfa.rs"
           ],
           "telephone": [
             "+1 (212) 5964 241"
+          ]
+        }
+      },
+      "honorary_consulate": {
+        "montana_washington": {
+          "honor": "Ronald W. Burkle",
+          "embassy": "Montana",
+          "address": "Yellowstone Club, 30 Meadow Camp Rd, Big Sky, MT 59716",
+          "email": [
+            "RonBurkle@Burklework.com"
+          ],
+          "telephone": [
+            "310-789-7200"
+          ]
+        },
+        "california": {
+          "honor": "Dr. Ryan Fredrick Osborne",
+          "embassy": "Los Angeles",
+          "address": "8631 W. Third Street, Suite 945E, Los Angeles, CA 90048",
+          "email": [
+            "osborneohni@gmail.com"
+          ],
+          "telephone": [
+            "310-657-0123"
+          ]
+        },
+        "louisiana": {
+          "honor": "Gregory Rusovich",
+          "embassy": "New Orleans",
+          "address": "1615 Poydras St., Suite 1255, New Orleans, LA 70122",
+          "email": [
+            "grusovich@tdintlgroup.com"
+          ],
+          "telephone": [
+            "504-526-2002"
+          ]
+        },
+        "ohio": {
+          "honor": "Alexander Machaskee",
+          "embassy": "Cleveland",
+          "address": "7803 Brookpark Road, Suite #3, Cleveland, Ohio 44129-1121",
+          "email": [
+            "alex2summit@gmail.com"
+          ],
+          "telephone": [
+            "216-716-4305"
+          ]
+        },
+        "colorado": {
+          "honor": "Steven H. Katich",
+          "embassy": "Denver",
+          "address": "2000 South Colorado Blvd, Tower One, Suite 12000, Denver, CO 80222",
+          "email": [
+            "steven.katich@jedunn.com"
+          ],
+          "telephone": [
+            "303-300-7887"
+          ]
+        },
+        "wyoming": {
+          "honor": "Jonathan L. Vinnik",
+          "embassy": "Cheyenne",
+          "address": "6305 Deer Avenue, Cheyenne, WY 82009",
+          "email": [
+            "jonathan@thevinnikcompanies.com"
+          ],
+          "telephone": [
+            "720-635-5811"
           ]
         }
       }
@@ -1038,7 +2198,34 @@
         "+4212 / 544-31-928",
         "+4212 / 544-31-929",
         "+4212 / 544-31-935"
-      ]
+      ],
+      "honorary_consulate": {
+        "martin": {
+          "honor": "Dr Mojmir Vrlik",
+          "embassy": "Martin",
+          "address": "Mudronova 12, 036 08 Martin",
+          "email": [
+            "mojmir.vrlik@gmail.com"
+          ],
+          "telephone": [
+            "+421 434304051",
+            "+421 903711869"
+          ]
+        },
+        "kosice": {
+          "honor": "Eva Dekanovska",
+          "embassy": "Košice",
+          "address": "Jesenskeho 12, 040 01 Košice",
+          "email": [
+            "festival@festival.sk",
+            "srb.hc@nasa.sk"
+          ],
+          "telephone": [
+            "+421 55 62 266 24",
+            "+421 905 966 649"
+          ]
+        }
+      }
     },
     "slovenija": {
       "country": "Slovenija",
@@ -1050,7 +2237,68 @@
       "telephone": [
         "+3861 / 438-01-11",
         "+3861 / 438-01-10"
-      ]
+      ],
+      "honorary_consulate": {
+        "vipava": {
+          "honor": "Tomaž Kavčič",
+          "embassy": "Vipava",
+          "address": "Zemono 7, 5271 Vipava, R. Slovenija",
+          "email": [
+            "zemono@zemono.si"
+          ],
+          "telephone": [
+            "+38640777726"
+          ]
+        }
+      }
+    },
+    "sudan": {
+      "country": "Sudan",
+      "honorary_consulate": {
+        "khartoum": {
+          "honor": "Ahmed Abdel Moneim Abdel Mouti",
+          "embassy": "Khartoum",
+          "address": "Honorary Consulate of Serbia, Gireif West, Block 1B, House No.195, Khartoum",
+          "email": [
+            "serbiasudancons@yahoo.com"
+          ],
+          "telephone": [
+            "+249155164516",
+            "+249912373130",
+            "+381621725553"
+          ]
+        }
+      }
+    },
+    "tajland": {
+      "country": "Tajland",
+      "honorary_consulate": {
+        "chonburi": {
+          "honor": "Aleksandar Radulović",
+          "embassy": "Chonburi",
+          "address": "189/95 Moo 1 1 Thepprasit Rd, Nongprue Banglamung, Chonburi 20150",
+          "email": [
+            "serbiaconsulate.thai@gmail.com"
+          ],
+          "telephone": [
+            "+66 89 66666 20"
+          ]
+        }
+      }
+    },
+    "togo": {
+      "country": "Togo",
+      "honorary_consulate": {
+        "lome": {
+          "honor": "Mr. Ziad Ammar",
+          "embassy": "Lome",
+          "address": "Marina bay tower, office 2C, P.O. BOX: 06 BP 6124, Lome",
+          "email": [
+            "consulateofserbia.togo@gmail.com"
+          ],
+          "telephone": []
+        }
+      }
     },
     "tunis": {
       "country": "Tunis",
@@ -1087,6 +2335,63 @@
             "+90212 / 213-76-86"
           ]
         }
+      },
+      "honorary_consulate": {
+        "antalya": {
+          "honor": "Fikret Öztürk",
+          "embassy": "Antalya",
+          "address": "Regnum Carya Golf And Spa Resort - Lobi Kat, Kadriye Mahallesi, Üçkum Teoesi Mevkii, 07500 Serik, Antalya",
+          "email": [
+            "fikretozturk@regnumhotels.com"
+          ],
+          "telephone": [
+            "+90 242 710 34 01"
+          ]
+        },
+        "izmir": {
+          "honor": "Metin Akdurak",
+          "embassy": "Izmir",
+          "address": "1434. Sokak No.9/5, ALSANCAK-IZMIR",
+          "email": [
+            "hksizm@makotrans.com"
+          ],
+          "telephone": [
+            "+90 232 441 91 81"
+          ]
+        },
+        "edirne": {
+          "honor": "Salih Akgül",
+          "embassy": "Edirne",
+          "address": "İstasyon Mahallesi Şehit Emniyet Müdürü Ertan Nezihi Turan Caddesi, Edirne Plaza no: 46/43, 22100 Edirne",
+          "email": [
+            "salih@salcano.com"
+          ],
+          "telephone": [
+            "+90 284 212 78 44"
+          ]
+        },
+        "bursa": {
+          "honor": "Zarif Alp",
+          "embassy": "Bursa",
+          "address": "29 Ekim Mahallesi Ümit Kaftancıoğlu Caddesi, Rumeli Sokak No:3, Özlüce-Nilüfer/Bursa",
+          "email": [
+            "zarif@izmakpar.com"
+          ],
+          "telephone": [
+            "+90 224 411 13 90"
+          ]
+        },
+        "alanya": {
+          "honor": "Oktay Karaca",
+          "embassy": "Alanya",
+          "address": "Rubi Platinum Spa Resort & Suites, Avsallar, İncekum Cd. No:38, 07410 Alanya",
+          "email": [
+            "info@rubiplatinum.com"
+          ],
+          "telephone": [
+            "+90 242 782 41 11"
+          ]
+        }
       }
     },
     "uae": {
@@ -1099,6 +2404,24 @@
       "telephone": [
         "+9712 / 447-6444"
       ]
+    },
+    "uganda": {
+      "country": "Uganda",
+      "honorary_consulate": {
+        "kampala": {
+          "honor": "Jovan Latinčić",
+          "embassy": "Kampala",
+          "address": "Plot 98 Luthuli Avenue, P.O.Box 7773, Kampala",
+          "email": [
+            "consulate@nca.co.ug"
+          ],
+          "telephone": [
+            "+256 414 232858",
+            "+256 414 235733",
+            "+256 772701017"
+          ]
+        }
+      }
     },
     "uk": {
       "country": "Ujedinjeno Kraljevstvo",
@@ -1124,6 +2447,22 @@
         "+38044 / 425-60-60",
         "+38044 / 425-60-15"
       ]
+    },
+    "filipini": {
+      "country": "Filipini",
+      "honorary_consulate": {
+        "makati": {
+          "honor": "Mr. Joaquin \"Jack\" Rodriguez",
+          "embassy": "Makati",
+          "address": "3rd Flr. BCS Prime Building, 2297 Chino Roces Avenue Extension, Brgy. Magallanes, Makati City",
+          "email": [
+            "jcrodriguez.sr@gmail.com"
+          ],
+          "telephone": [
+            "+63 2 8532 1042"
+          ]
+        }
+      }
     },
     "finska": {
       "country": "Finska",
@@ -1161,6 +2500,19 @@
             "+33388 / 353-980"
           ]
         }
+      },
+      "honorary_consulate": {
+        "nice": {
+          "honor": "Filip Manžar",
+          "embassy": "Nice",
+          "address": "164, avenue de la Clua, F-06100 Nice",
+          "email": [
+            "philippe@mangeard.fr"
+          ],
+          "telephone": [
+            "+33 3 88360081"
+          ]
+        }
       }
     },
     "holandija": {
@@ -1175,7 +2527,20 @@
         "+31 70 / 363-23-97",
         "+31 70 / 363-23-93",
         "+31 70 / 363-68-00"
-      ]
+      ],
+      "honorary_consulate": {
+        "amsterdam": {
+          "honor": "Mr. Vladimir Gogoljev",
+          "embassy": "Amsterdam",
+          "address": "Muiderstraat 1, 1011 PZ Amsterdam, office 9T",
+          "email": [
+            "serbian.consulate.ams@gmail.com"
+          ],
+          "telephone": [
+            "+31 657167760"
+          ]
+        }
+      }
     },
     "hrvatska": {
       "country": "Hrvatska",
@@ -1262,7 +2627,21 @@
       "embassy": "Santiago",
       "email": [
         "srb.emb.chile@mfa.rs"
-      ]
+      ],
+      "honorary_consulate": {
+        "santiago": {
+          "honor": "Damir Solar",
+          "embassy": "Santiago",
+          "address": "Arturo Matte Larraín 10.101, Las Condes CP 7600727, Mirador de los Dominicos, Santiago de Chile",
+          "email": [
+            "consuladodeserbia@yahoo.com"
+          ],
+          "telephone": [
+            "+569 9 0788 253",
+            "+569 4 092 04 81"
+          ]
+        }
+      }
     },
     "svajcarska": {
       "country": "Švajcarska",
@@ -1316,7 +2695,59 @@
         "+3491 / 563-50-45",
         "+3491 / 563-50-46",
         "+3491 / 562-60-40"
-      ]
+      ],
+      "honorary_consulate": {
+        "sevilla": {
+          "honor": "Juan Manuel Contreras Guyard",
+          "embassy": "Sevilla",
+          "address": "Calle Almendralejo 5, 41019 Sevilla, Andalucía",
+          "email": [
+            "consulserbiasevilla@gmail.com"
+          ],
+          "telephone": [
+            "+34 954999320"
+          ]
+        },
+        "canary_islands": {
+          "honor": "Jose Maria Dominguez Silva",
+          "embassy": "Las Palmas de Gran Canaria",
+          "address": "Calle Alonso Alvarado 13, 5 B, 35003 Las Palmas de Gran Canaria",
+          "email": [
+            "consulhonorarioserbia@lawyer.e.telefonica.net"
+          ],
+          "telephone": [
+            "+34 928372955",
+            "+34 928372489"
+          ]
+        },
+        "zaragoza": {
+          "honor": "Juan Carlos Trillo Baigorri",
+          "embassy": "Zaragoza",
+          "address": "Paseo de Sagasta 72, 4a planta, 50006 Zaragoza",
+          "email": [
+            "jctrillo@msfassociates.com"
+          ],
+          "telephone": [
+            "+34 976235502"
+          ]
+        }
+      }
+    },
+    "sri_lanka": {
+      "country": "Šri Lanka",
+      "honorary_consulate": {
+        "colombo": {
+          "honor": "Mr. Udaya Nanayakkara",
+          "embassy": "Colombo",
+          "address": "No.07, Siripa Lane Colombo 05",
+          "email": [
+            "serbian.consulate@dutholdings.com"
+          ],
+          "telephone": [
+            "+94 11 2584 104"
+          ]
+        }
+      }
     }
   }
 }

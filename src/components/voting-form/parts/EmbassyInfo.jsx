@@ -9,7 +9,18 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
   if (!countryData || !embassyKey) return null
 
   const isDefault = !embassyKey || embassyKey === 'default'
-  const source = isDefault ? countryData : countryData.consulate?.[embassyKey]
+  let isHonor = false
+  let source = countryData
+
+  if (!isDefault) {
+    if (countryData?.honorary_consulate?.[embassyKey]) {
+      source = countryData.honorary_consulate?.[embassyKey]
+
+      isHonor = true
+    } else {
+      source = countryData.consulate?.[embassyKey]
+    }
+  }
 
   if (!source) return null
 
@@ -26,10 +37,14 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
 
   return (
     <div className="rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-4 shadow-sm">
-      <h2 className="mb-2 text-lg font-semibold text-[color:var(--theme-color-800)]">
+      <h2 className="title mb-2 text-xl text-accent-two">
         {countryData.country}
         {!isDefault && source.embassy ? ` – ${source.embassy}` : ''}
       </h2>
+
+      {isHonor && source?.honor && (
+        <h4 className="text-accent-three title mb-4">{source.honor}</h4>
+      )}
 
       <p className="text-sm text-[color:var(--theme-color-700)]">
         <span className="font-medium">{t('address_info_title')}:</span>{' '}

@@ -118,6 +118,17 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
         )
       }
 
+      if (embassyByCountry[value].honorary_consulate) {
+        Object.entries(embassyByCountry[value].honorary_consulate).forEach(
+          ([slug, honorary_consulate]) => {
+            embassyOptions.push({
+              value: slug,
+              label: honorary_consulate.address,
+            })
+          },
+        )
+      }
+
       setAvailableEmbassy(embassyOptions)
     }
   }
@@ -143,25 +154,33 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
       let realCountryValue = availableCountries[formData.country] ?? ''
 
       if (formData.embassy) {
-        formData.embassy_email = embassyByCountry[formData.country].email ?? []
+        const embassyCountry = embassyByCountry[formData.country]
+
+        formData.embassy_email = embassyCountry.email ?? []
 
         let realCityValue
         if ('default' === formData.embassy) {
-          realCityValue = embassyByCountry[formData.country].embassy ?? ''
+          realCityValue = embassyCountry.embassy ?? ''
+        } else if (embassyCountry?.honorary_consulate[formData.embassy]) {
+          realCityValue =
+            embassyCountry.honorary_consulate[formData.embassy].embassy ?? ''
+
+          if (embassyCountry.honorary_consulate[formData.embassy].email) {
+            formData.embassy_email = formData.embassy_email.concat(
+              embassyCountry.honorary_consulate[formData.embassy].email,
+            )
+          }
         } else {
           realCityValue =
-            embassyByCountry[formData.country].consulate[formData.embassy]
-              .embassy ?? ''
+            embassyCountry.consulate[formData.embassy].embassy ?? ''
 
-          if (
-            embassyByCountry[formData.country].consulate[formData.embassy].email
-          ) {
+          if (embassyCountry.consulate[formData.embassy].email) {
             formData.embassy_email = formData.embassy_email.concat(
-              embassyByCountry[formData.country].consulate[formData.embassy]
-                .email,
+              embassyCountry.consulate[formData.embassy].email,
             )
           }
         }
+
         formData.embassy = realCityValue
       }
 
@@ -196,45 +215,45 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
       {!docGenerated && (
         <>
           <div className="flex w-full max-w-screen-lg flex-col gap-8 pt-4 sm:grid sm:grid-cols-[250px_1fr]">
-            <div className="flex flex-wrap justify-between gap-y-8 sm:flex-col sm:justify-start">
-              {/* Tab Navigation */}
-              <div className="flex shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
-                {tabs.map((tab, index) => {
-                  if (isMobile && tab !== activeTab) {
-                    return null
-                  }
+            <div>
+              <div className="sticky top-[40px] flex flex-wrap justify-between gap-y-8 sm:flex-col sm:justify-start">
+                {/* Tab Navigation */}
+                <div className="flex shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
+                  {tabs.map((tab, index) => {
+                    if (isMobile && tab !== activeTab) {
+                      return null
+                    }
 
-                  return (
-                    <div key={index} className="relative flex items-center">
-                      {/* Number Circle */}
-                      <div
-                        className={`flex h-6 w-6 items-center justify-center rounded-full text-sm font-medium ${index === currentTabIndex ? 'bg-accent-two text-white' : 'bg-gray-300 text-gray-700'}`}
-                      >
-                        {index + 1}
+                    return (
+                      <div key={index} className="relative flex items-center">
+                        {/* Number Circle */}
+                        <div
+                          className={`flex h-6 w-6 items-center justify-center rounded-full text-sm font-medium ${index === currentTabIndex ? 'bg-accent-two text-white' : 'bg-gray-300 text-gray-700'}`}
+                        >
+                          {index + 1}
+                        </div>
+                        <p
+                          className={`m-0 cursor-default rounded-t-md px-2 py-1 text-sm font-medium ${
+                            activeTab === tab
+                              ? 'text-[color:var(--theme-color-800)]'
+                              : 'hidden text-[color:var(--theme-color-500)] sm:inline-block'
+                          }`}
+                        >
+                          {t(tab.replace('-', '_') + '_tab')}
+                        </p>
                       </div>
-                      <p
-                        className={`m-0 cursor-default rounded-t-md px-2 py-1 text-sm font-medium ${
-                          activeTab === tab
-                            ? 'text-[color:var(--theme-color-800)]'
-                            : 'hidden text-[color:var(--theme-color-500)] sm:inline-block'
-                        }`}
-                      >
-                        {t(tab.replace('-', '_') + '_tab')}
-                      </p>
-                    </div>
-                  )
-                })}
-              </div>
-              {updateVoter !== null && (
-                <>
+                    )
+                  })}
+                </div>
+                {updateVoter !== null && (
                   <PaginationButtons
                     tabs={tabs}
                     currentTabIndex={currentTabIndex}
                     goToPreviousTab={goToPreviousTab}
                     goToNextTab={goToNextTab}
                   />
-                </>
-              )}
+                )}
+              </div>
             </div>
             {/* Tab Content */}
             <div>
