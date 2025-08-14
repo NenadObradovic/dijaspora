@@ -76,7 +76,8 @@
   "email_heading_example": "Suggested email text:",
   "email_body_voter": "Dear Sir/Madam,\n\nI am applying to vote abroad, and for that purpose I am enclosing:\n1. a request for entry into the unified voter register of the Republic of Serbia;\n2. a request for entry of the information that I will vote abroad into the voter register;\n3. a copy of a valid identification document of the Republic of Serbia.\n\nAlso, pursuant to Paragraph 4 of Article 16 of the Law on the Unified Voter Register, I request to be informed about the data entered about me in the voter register.",
   "email_body_non_voter": "Dear Sir/Madam,\n\nI am applying to vote abroad, and for that purpose I am enclosing:\n1. a request for entry into the unified voter register of the Republic of Serbia;\n2. a copy of a valid identification document of the Republic of Serbia.\n\nAlso, pursuant to Paragraph 4 of Article 16 of the Law on the Unified Voter Register, I request to be informed about the data entered about me in the voter register.",
-  "email_button_example": "Send email to the embassy:",
+  "email_button_example": "Send an email to the following addresses:",
   "footer_text": "© 2025 All rights reserved.",
-  "footer_github_text": "Source code"
+  "footer_github_text": "Source code",
+  "web_view_error": "If you weren’t able to generate the document from the Telegram, Instagram, or Facebook app, please open this website in your browser (e.g. Chrome, Safari) and try again."
 }

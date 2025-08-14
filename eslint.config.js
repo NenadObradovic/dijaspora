@@ -17,6 +17,8 @@ export default [
       globals: {
         window: 'readonly',
         document: 'readonly',
+        navigator: 'readonly',
+        URL: 'readonly',
         fetch: 'readonly',
         console: 'readonly',
         atob: 'readonly',

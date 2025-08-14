@@ -33,8 +33,8 @@ export const validateForm = (data, step, t) => {
       errors.country = t('country_error')
     }
 
-    if (!data.city) {
-      errors.city = t('embassy_error')
+    if (!data.embassy) {
+      errors.embassy = t('embassy_error')
     }
 
     if (!data.telephone.trim()) {

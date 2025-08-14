@@ -2,6 +2,7 @@ import PizZip from 'pizzip'
 import Docxtemplater from 'docxtemplater'
 import ImageModule from 'docxtemplater-image-module-free'
 import fileSaver from 'file-saver'
+import { isWebView } from './helper.js'
 
 export const generateDocx = async (templatePath, formData, fileName) => {
   const response = await fetch(templatePath)
@@ -71,7 +72,24 @@ export const generateDocx = async (templatePath, formData, fileName) => {
         'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     })
 
-    fileSaver.saveAs(out, fileName)
+    if (isWebView()) {
+      // Fallback za WebView – koristi ručni download
+      const blobUrl = URL.createObjectURL(out)
+      const downloadLink = document.createElement('a')
+
+      downloadLink.href = blobUrl
+      downloadLink.download = fileName
+      downloadLink.style.display = 'none'
+      document.body.appendChild(downloadLink)
+      downloadLink.click()
+
+      setTimeout(() => {
+        URL.revokeObjectURL(blobUrl)
+        document.body.removeChild(downloadLink)
+      }, 1000)
+    } else {
+      fileSaver.saveAs(out, fileName)
+    }
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Greška prilikom generisanja dokumenta: ', error)

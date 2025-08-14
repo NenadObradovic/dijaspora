@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+  :root,
+  :root[data-theme='light'] {
     color-scheme: light;
 
     --hue: 200deg;
@@ -34,6 +35,35 @@
     --theme-special-lighter: hsl(var(--hue), var(--saturation), 98%);
     --theme-special-light: hsl(var(--theme-bg));
     --theme-special: var(--theme-color-75);
+  }
+
+  :root[data-theme='dark'] {
+    color-scheme: dark;
+
+    --hue: 200deg;
+    --saturation: 53%;
+
+    --bg-hue: var(--hue);
+    --bg-saturation: var(--saturation);
+    --bg-brightness: 15%;
+
+    --fg-hue: var(--hue);
+    --fg-saturation: var(--saturation);
+    --fg-brightness: 98%;
+    --theme-text: var(--theme-color-500);
+
+    --theme-link: var(--hue) 61% 71%;
+    --theme-accent: var(--theme-color-600);
+    --theme-quote: var(--theme-text);
+
+    --theme-lightest: var(--theme-color-350);
+    --theme-lighter: var(--theme-color-400);
+    --theme-light: var(--theme-color-450);
+
+    --theme-special-lightest: var(--theme-color-250);
+    --theme-special-lighter: var(--theme-color-200);
+    --theme-special-light: var(--theme-color-150);
+    --theme-special: hsl(var(--hue) var(--saturation) 0% / 0.15);
   }
 
   :root {
@@ -178,4 +208,10 @@
   &:not(:focus) {
     border-color: #ef4444;
   }
+}
+
+/* Fallback style for Dark Reader */
+html[data-darkreader-mode] .title {
+  background: none !important;
+  color: #fff !important;
 }

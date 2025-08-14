@@ -21,7 +21,7 @@ const NextSteps = ({ formData }) => {
           {embassy_email.map((email, index) => (
             <React.Fragment key={index}>
               <a
-                className="text-accent-two underline-offset-2 hover:underline"
+                className="ml-2 text-accent-two underline-offset-2 hover:underline"
                 href={`mailto:${email}`}
               >
                 {email}
