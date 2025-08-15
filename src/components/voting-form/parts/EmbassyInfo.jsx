@@ -43,17 +43,21 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
       </h2>
 
       {isHonor && source?.honor && (
-        <h4 className="text-accent-three title mb-4">{source.honor}</h4>
+        <h4 className="text-accent-three title mb-4">
+          <span className="text-sm text-[color:var(--theme-color-700)]">
+            {t('honor_info_title')}
+          </span>{' '}
+          {source.honor}
+        </h4>
       )}
 
       <p className="text-sm text-[color:var(--theme-color-700)]">
-        <span className="font-medium">{t('address_info_title')}:</span>{' '}
-        {address}
+        <span className="font-medium">{t('address_info_title')}</span> {address}
       </p>
 
       {emails && emails.length > 0 && (
         <p className="text-sm text-[color:var(--theme-color-700)]">
-          <span className="font-medium">{t('email_info_title')}:</span>{' '}
+          <span className="font-medium">{t('email_info_title')}</span>{' '}
           {emails.map(
             (email, idx) =>
               email && (
@@ -72,7 +76,7 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
 
       {phones && phones.length > 0 && (
         <p className="text-sm text-[color:var(--theme-color-700)]">
-          <span className="font-medium">{t('phone_info_title')}:</span>{' '}
+          <span className="font-medium">{t('phone_info_title')}</span>{' '}
           {phones.map(
             (phone, idx) =>
               phone && (

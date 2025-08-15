@@ -73,7 +73,7 @@ export const generateDocx = async (templatePath, formData, fileName) => {
     })
 
     if (isWebView()) {
-      // Fallback za WebView – koristi ručni download
+      // Fallback for WebView – try manual download
       const blobUrl = URL.createObjectURL(out)
       const downloadLink = document.createElement('a')
 
