@@ -4,6 +4,7 @@ import { validateForm } from '../../utils/validateForm.js'
 
 import VotingFormIntro from './VotingFormIntro.jsx'
 import EmbassyInfo from './parts/EmbassyInfo.jsx'
+import UserInfo from './parts/UserInfo.jsx'
 import PaginationButtons from './pagination/PaginationButtons.jsx'
 import PaginationArrows from './pagination/PaginationArrows.jsx'
 import Signature from './parts/Signature.jsx'
@@ -206,14 +207,19 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
 
   return (
     <div className="relative flex w-full flex-col gap-6">
-      {!docGenerated && activeTab === 'check' && <VotingFormIntro />}
-      <EmbassyInfo
-        embassyData={embassyData}
-        countryKey={data.country}
-        embassyKey={data.embassy}
-      />
       {!docGenerated && (
         <>
+          {activeTab === 'check' && <VotingFormIntro />}
+          {activeTab === 'signature' && (
+            <>
+              <EmbassyInfo
+                embassyData={embassyData}
+                countryKey={data.country}
+                embassyKey={data.embassy}
+              />
+              <UserInfo data={data} />
+            </>
+          )}
           <div className="flex w-full max-w-screen-lg flex-col gap-8 pt-4 sm:grid sm:grid-cols-[250px_1fr]">
             <div>
               <div className="sticky top-[40px] flex flex-wrap justify-between gap-y-8 sm:flex-col sm:justify-start">
