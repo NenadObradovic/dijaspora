@@ -42,12 +42,12 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
         {!isDefault && source.embassy ? ` – ${source.embassy}` : ''}
       </h2>
 
-      {isHonor && source?.honor && (
+      {source?.ambassador && (
         <h4 className="text-accent-three title mb-4">
           <span className="text-sm text-[color:var(--theme-color-700)]">
-            {t('honor_info_title')}
+            {isHonor ? t('honor_info_title') : t('ambassador_info_title')}
           </span>{' '}
-          {source.honor}
+          {source.ambassador}
         </h4>
       )}
 

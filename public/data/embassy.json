@@ -117,6 +117,7 @@
   "embassyByCountry": {
     "azerbejdzan": {
       "country": "Azerbejdžan",
+      "ambassador": "Dragan Vladisavljević",
       "embassy": "Baku",
       "address": "Farid Aliyev, 6, Icherisheher, AZ 1095, Baku",
       "email": [
@@ -130,6 +131,7 @@
     },
     "albanija": {
       "country": "Albanija",
+      "ambassador": "Slobodan Vukčević",
       "embassy": "Tirana",
       "address": "Rr. Donika Kastrioti 9/1, Tirana",
       "email": [
@@ -142,6 +144,7 @@
     },
     "alzir": {
       "country": "Alžir",
+      "ambassador": "Ana Petković",
       "embassy": "Hydra",
       "address": "42, rue des Frères Benali Abdellah (ex rue Parmentier), B.P.366, Hydra",
       "email": [
@@ -155,6 +158,7 @@
     },
     "angola": {
       "country": "Angola",
+      "ambassador": "Miloš Perišić",
       "embassy": "Luanda",
       "address": "Comandante N'Zaji 25/27, Alvalade, Luanda",
       "email": [
@@ -168,6 +172,7 @@
     },
     "argentina": {
       "country": "Argentina",
+      "ambassador": "Veljko Lazić",
       "embassy": "Buenos Aires",
       "address": "Montevideo 696, 1019 Buenos Aires",
       "email": [
@@ -181,7 +186,7 @@
       ],
       "honorary_consulate": {
         "provincia_de_chaco": {
-          "honor": "Marta Kristina Kapitanić",
+          "ambassador": "Marta Kristina Kapitanić",
           "embassy": "Provincia de Chaco",
           "address": "Pringles 714, Presidencia Roque Saenz Peña, CP 3700, Provincia de Chaco",
           "email": [
@@ -196,6 +201,7 @@
     },
     "australija": {
       "country": "Australija",
+      "ambassador": "Rade Stefanović",
       "embassy": "Kanbera",
       "address": "4 Bulwara Close, O'Malley, ACT 2606, Kanbera",
       "email": [
@@ -207,6 +213,7 @@
       ],
       "consulate": {
         "sidnej": {
+          "ambassador": "Jakov Rogan",
           "embassy": "Sidnej",
           "address": "12, Trelawney Street, Woollahra, N.S.W.2025, P.O.Box 190 Edgecliff, N.S.W.2027",
           "email": [
@@ -222,6 +229,7 @@
     },
     "austrija": {
       "country": "Austrija",
+      "ambassador": "Marko Blagojević",
       "embassy": "Beč",
       "address": "Ölzeltgasse 3, 1030 Beč",
       "email": [
@@ -233,6 +241,7 @@
       ],
       "consulate": {
         "salcburg": {
+          "ambassador": "Vera Vukićević",
           "embassy": "Salcburg",
           "address": "Schallmooser Hauptstrasse 99, 5020 Salcburg",
           "email": [
@@ -245,7 +254,7 @@
       },
       "honorary_consulate": {
         "linz": {
-          "honor": "Aleksandar Čenić",
+          "ambassador": "Aleksandar Čenić",
           "embassy": "Linz",
           "address": "Eduard-Sueß Strasse 19, 4020 Linz",
           "email": [
@@ -259,6 +268,7 @@
     },
     "bahrein": {
       "country": "Bahrein",
+      "ambassador": "Tatjana Garčević",
       "embassy": "Manama",
       "address": "Building 899, Road 3218, Block 332, BuAshirah, Manama",
       "email": [
@@ -268,6 +278,7 @@
     },
     "belgija": {
       "country": "Belgija",
+      "ambassador": "Aleksandar Tasić",
       "embassy": "Brisel",
       "address": "Boulevard Du Regent 53, 1000 Brisel",
       "email": [
@@ -280,7 +291,7 @@
       ],
       "honorary_consulate": {
         "mortsel": {
-          "honor": "Aleksandar Davidović",
+          "ambassador": "Aleksandar Davidović",
           "embassy": "Mortsel",
           "address": "Statielei 5, Mortsel 2640, Belgija",
           "email": [
@@ -295,6 +306,7 @@
     },
     "belorusija": {
       "country": "Belorusija",
+      "ambassador": "Ilina Vukajlović",
       "embassy": "Minsk",
       "address": "Rumjanceva 4, 220034 Minsk",
       "email": [
@@ -306,7 +318,7 @@
       ],
       "honorary_consulate": {
         "minsk": {
-          "honor": "Živorad Smiljković",
+          "ambassador": "Živorad Smiljković",
           "embassy": "Minsk",
           "address": "220123 Minsk, ul. Vere Haružej 22, kancelarija 1002",
           "email": [
@@ -322,7 +334,7 @@
       "country": "Benin",
       "honorary_consulate": {
         "cotonou": {
-          "honor": "Uroš Popović",
+          "ambassador": "Uroš Popović",
           "embassy": "Cotonou",
           "address": "ILot 74, AKPAKPA Fifadji Houto, 04 BP 1261 Cotonou, Benin",
           "email": [
@@ -338,7 +350,7 @@
       "country": "Bolivija",
       "honorary_consulate": {
         "la_paz": {
-          "honor": "Zana Petkovic Kuljaca de Rodriguez",
+          "ambassador": "Zana Petkovic Kuljaca de Rodriguez",
           "embassy": "La Paz",
           "address": "Pasaje Jauregui 2248, Edificio Quipus, piso 5, Sopocachi, LA PAZ",
           "email": [
@@ -353,6 +365,7 @@
     },
     "bosna-i-hercegovina": {
       "country": "Bosna i Hercegovina",
+      "ambassador": "Ivan Todorov",
       "embassy": "Sarajevo",
       "address": "Obala Maka Dizdara 3a, Sarajevo",
       "email": [
@@ -364,6 +377,7 @@
       ],
       "consulate": {
         "trebinje": {
+          "ambassador": "Miodrag Džudžalija",
           "embassy": "Trebinje",
           "address": "Njegoševa 4, 89101 Trebinje",
           "email": [
@@ -376,6 +390,7 @@
           ]
         },
         "drvar": {
+          "ambassador": "Vesna Marinković",
           "embassy": "Drvar",
           "address": "Titova bb, 80260 Drvar",
           "email": [
@@ -387,6 +402,7 @@
           ]
         },
         "mostar": {
+          "ambassador": "Vaso Gujić",
           "embassy": "Mostar",
           "address": "Ulica Konak br.5, 88000 Mostar",
           "email": [
@@ -397,6 +413,7 @@
           ]
         },
         "banja-luka": {
+          "ambassador": "Miloš Vujić",
           "embassy": "Banja Luka",
           "address": "Vojvode Radomira Putnika 2, 78000 Banjaluka",
           "email": [
@@ -410,7 +427,7 @@
       },
       "honorary_consulate": {
         "pale": {
-          "honor": "Dejan Ljevnaić",
+          "ambassador": "Dejan Ljevnaić",
           "embassy": "Pale",
           "address": "Univerzitetska 24E, 71420 Pale, Bosna i Hercegovina",
           "email": [
@@ -426,7 +443,7 @@
       "country": "Bocvana",
       "honorary_consulate": {
         "gaborone": {
-          "honor": "Milivoje Nikolić",
+          "ambassador": "Milivoje Nikolić",
           "embassy": "Gaborone",
           "address": "Plot 77191 Phakalane, Gaborone, Botswana",
           "email": [
@@ -440,6 +457,7 @@
     },
     "brazil": {
       "country": "Brazil",
+      "ambassador": "Aleksandar Ristić",
       "embassy": "Brazilija",
       "address": "SES Avenida das Nacoes, Qd. 803, Lote 15, CEP 70409-900 Brazilija",
       "email": [
@@ -451,7 +469,7 @@
       ],
       "honorary_consulate": {
         "porto_alegre": {
-          "honor": "Dr. Édison Freitas de Siqueira",
+          "ambassador": "Dr. Édison Freitas de Siqueira",
           "embassy": "Porto Alegre",
           "address": "Rua Dom Pedro II, n° 1411, Ed. Consul Edison Freita de Siqueira, Bairro Higienópolis, Porto Alegre",
           "email": [
@@ -462,7 +480,7 @@
           ]
         },
         "sao_paulo": {
-          "honor": "José Guilherme de Godoy Pinheiro",
+          "ambassador": "José Guilherme de Godoy Pinheiro",
           "embassy": "Sao Paulo",
           "address": "Rua Cordisburgo, n° 215, Bairro Jardim Guedala, Sao Paulo",
           "email": [
@@ -473,7 +491,7 @@
           ]
         },
         "curitiba": {
-          "honor": "Edson Josée Ramon",
+          "ambassador": "Edson Josée Ramon",
           "embassy": "Curitiba",
           "address": "Av.Presidente Kennedy 860 Bairro Reboucas, Curitiba",
           "email": [
@@ -485,7 +503,7 @@
           ]
         },
         "rio_de_janeiro": {
-          "honor": "Dejan Petkovic",
+          "ambassador": "Dejan Petkovic",
           "embassy": "Rio de Janeiro",
           "address": "Rua Jose Maria Rodrigues 57, CEP 22.793-348 Barra da Tijuca, Rio de Janeiro",
           "email": [
@@ -493,7 +511,7 @@
           ]
         },
         "balneario_camboriu": {
-          "honor": "Sezar Šiljano",
+          "ambassador": "Sezar Šiljano",
           "embassy": "Balneario Camboriu",
           "address": "Rua 1001 Hr. 235 ap. 105, Balneário Camboriú",
           "email": [
@@ -507,6 +525,7 @@
     },
     "bugarska": {
       "country": "Bugarska",
+      "ambassador": "Milan Ravić",
       "embassy": "Sofija",
       "address": "Veliko Trnovo 3, 1504 Sofija",
       "email": [
@@ -518,7 +537,7 @@
       ],
       "honorary_consulate": {
         "plovdiv": {
-          "honor": "Anastasija Rosenova Solakova",
+          "ambassador": "Anastasija Rosenova Solakova",
           "embassy": "Plovdiv",
           "address": "gr. Plovdiv 4000, ul Krъstьo Pastuhov 14A",
           "email": [
@@ -529,7 +548,7 @@
           ]
         },
         "blagojevgrad": {
-          "honor": "Mitko Tonkov Solakov",
+          "ambassador": "Mitko Tonkov Solakov",
           "embassy": "Blagojevgrad",
           "address": "gr. Blagojevgrad 2700,trg (ploщad) \"Georgi Izmirliev-Makedonče\" 1",
           "email": [
@@ -543,6 +562,7 @@
     },
     "venecuela": {
       "country": "Venecuela",
+      "ambassador": "Katarina Andrić",
       "embassy": "Karakas",
       "address": "Zgrada Parke Kristal (Parque Cristal), Torre Este, 6. sprat, Avenida Francisco Miranda, Los Palos Grandes, Karakas",
       "email": [
@@ -556,7 +576,7 @@
       "country": "Vijetnam",
       "honorary_consulate": {
         "ho_chi_minh": {
-          "honor": "Dragan Mladenović",
+          "ambassador": "Dragan Mladenović",
           "embassy": "Ho Chi Minh",
           "address": "Level 12, 126 Nguyen Thi Minh Khai Street, District 1, Ho Chi Minh City",
           "email": [
@@ -572,7 +592,7 @@
       "country": "Gambija",
       "honorary_consulate": {
         "banjul": {
-          "honor": "Omar M.O. Faal",
+          "ambassador": "Omar M.O. Faal",
           "embassy": "Banjul",
           "address": "Fajara Booster Station Off Kairaba Avenue Fajara, Banjul",
           "email": [
@@ -587,6 +607,7 @@
     },
     "gana": {
       "country": "Gana",
+      "ambassador": "Milutin Stanojević",
       "embassy": "Accra",
       "address": "3 Dade Close, GL-043-8875, Labone, Accra",
       "email": [
@@ -600,7 +621,7 @@
       "country": "Gvatemala",
       "honorary_consulate": {
         "guatemala_city": {
-          "honor": "Marcela Arzu de Lozano",
+          "ambassador": "Marcela Arzu de Lozano",
           "embassy": "Guatemala",
           "address": "17 avenida 19-70 zona 10, Edificio Torino, oficina 1006, Guatemala, Ciudad",
           "email": [
@@ -617,7 +638,7 @@
       "country": "Gvineja",
       "honorary_consulate": {
         "conakry": {
-          "honor": "Jean Jacques Grenier",
+          "ambassador": "Jean Jacques Grenier",
           "embassy": "Conakry",
           "address": "Cite Chemin de fer Immeuble Kassa / Conakry, République de Guinée",
           "telephone": [
@@ -635,7 +656,7 @@
       "country": "Gruzija",
       "honorary_consulate": {
         "tbilisi": {
-          "honor": "David Sirbiladze",
+          "ambassador": "David Sirbiladze",
           "embassy": "Tbilisi",
           "address": "Tskneti Highway 20, Tbilisi",
           "email": [
@@ -649,6 +670,7 @@
     },
     "grcka": {
       "country": "Grčka",
+      "ambassador": "Nikola Nedeljković",
       "embassy": "Atina",
       "address": "106, Vasilissis Sofias Ave., 11527 Atina",
       "email": [
@@ -662,6 +684,7 @@
       ],
       "consulate": {
         "solun": {
+          "ambassador": "Jelena Vujić Obradović",
           "embassy": "Solun",
           "address": "Komninon 4, 54624 Solun",
           "email": [
@@ -676,7 +699,7 @@
       },
       "honorary_consulate": {
         "corfu": {
-          "honor": "Spyridon Mastoras",
+          "ambassador": "Spyridon Mastoras",
           "embassy": "Krf",
           "address": "Moustoxidi 19, 49 100 Corfu, PO Box 286",
           "email": [
@@ -687,7 +710,7 @@
           ]
         },
         "kefalonia": {
-          "honor": "Victor Rouchotas",
+          "ambassador": "Victor Rouchotas",
           "embassy": "Kefalonia",
           "address": "54 Ioannou Metaxa & Irakliou Street, Argostoli 281 00, Kefalonia",
           "email": [
@@ -698,7 +721,7 @@
           ]
         },
         "crete": {
-          "honor": "Nikolaos Papadantonakis",
+          "ambassador": "Nikolaos Papadantonakis",
           "embassy": "Krit",
           "address": "51 Dikeosinis Street, Heraklion, 712 02, Crete",
           "email": [
@@ -712,6 +735,7 @@
     },
     "danska": {
       "country": "Danska",
+      "ambassador": "Mirjana Živković",
       "embassy": "Kopenhagen",
       "address": "Svanevænget 36, 2100 Kopenhagen",
       "email": [
@@ -726,7 +750,7 @@
       "country": "Dominikanska republika",
       "honorary_consulate": {
         "santo_domingo": {
-          "honor": "Ivana Gavrilović",
+          "ambassador": "Ivana Gavrilović",
           "embassy": "Santo Domingo",
           "address": "Avenida Winston Churchill, esquina Gustavo Mejía Ricart, Nro. 95, Torre Blue Mall, Piso 23, Oficina Nro. P16-02, SANTO DOMINGO",
           "email": [
@@ -740,6 +764,7 @@
     },
     "egipat": {
       "country": "Egipat",
+      "ambassador": "Miroslav Šestović",
       "embassy": "Kairo",
       "address": "33, Al Mansour Mohamed St., Zamalek, Kairo",
       "email": [
@@ -756,7 +781,7 @@
       "country": "Ekvador",
       "honorary_consulate": {
         "guayaquil": {
-          "honor": "Dušan Drašković",
+          "ambassador": "Dušan Drašković",
           "embassy": "Guayaquil",
           "address": "Calle Nuevo de Octuber y Cordoba, Eduficio San Francisco No.300. Piso 12, departamento 1, GUAYAQUIL",
           "email": [
@@ -772,7 +797,7 @@
       "country": "El Salvador",
       "honorary_consulate": {
         "san_salvador": {
-          "honor": "Dr. Jose Luis Saca Melendez",
+          "ambassador": "Dr. Jose Luis Saca Melendez",
           "embassy": "San Salvador",
           "address": "69 ave. nte, entre 1ra y Zera Calle, pte# 213, Col Escalỏn, SAN SALVADOR",
           "email": [
@@ -786,6 +811,7 @@
     },
     "zambija": {
       "country": "Zambija",
+      "ambassador": "Jasna Zrnović",
       "embassy": "Lusaka",
       "address": "5216, Diplomatic Triangle off Independence Av., Lusaka",
       "email": [
@@ -798,6 +824,7 @@
     },
     "zimbabve": {
       "country": "Zimbabve",
+      "ambassador": "Radiša Grujić",
       "embassy": "Harare",
       "address": "Lanark Road 1, Belgravia - Harare",
       "email": [
@@ -808,7 +835,7 @@
       ],
       "honorary_consulate": {
         "harare": {
-          "honor": "Dr Vivek Savji Solanki",
+          "ambassador": "Dr Vivek Savji Solanki",
           "embassy": "Harare",
           "address": "No 1 Borrowdale Lane, Cnr Kingsmead RD, Borrowdale, Harare",
           "email": [
@@ -822,6 +849,7 @@
     },
     "izrael": {
       "country": "Izrael",
+      "ambassador": "Miroljub Petrović",
       "embassy": "Tel Aviv",
       "address": "10, Bodenheimer St., 62008 Tel Aviv",
       "email": [
@@ -835,7 +863,7 @@
       ],
       "honorary_consulate": {
         "jerusalem": {
-          "honor": "Boris Krasni",
+          "ambassador": "Boris Krasni",
           "embassy": "Jerusalim",
           "address": "Haim Katz Law Offices, 24 Emek Refaim St. 2nd floor, Jerusalem 9108201",
           "email": [
@@ -846,7 +874,7 @@
           ]
         },
         "beer_sheva": {
-          "honor": "Aleksandar Nikolić",
+          "ambassador": "Aleksandar Nikolić",
           "embassy": "Be'er Sheva",
           "address": "Middle East Tube Co.Ltd. (Gaon Group), Ne'ot Hovav Ind. Area Ramat Hovav, Be'er Sheva 8551600",
           "email": [
@@ -860,6 +888,7 @@
     },
     "indija": {
       "country": "Indija",
+      "ambassador": "Siniša Pavić",
       "embassy": "Nju Delhi",
       "address": "3/50 G Niti Marg Chanakyapuri 110021 Nju Delhi",
       "email": [
@@ -873,7 +902,7 @@
       ],
       "honorary_consulate": {
         "bangalore": {
-          "honor": "Mr. Anuj Nautiyal",
+          "ambassador": "Mr. Anuj Nautiyal",
           "embassy": "Bangalore",
           "address": "#403, \"The Estate\" 121, Dickenson Road, Bangalore",
           "email": [
@@ -887,6 +916,7 @@
     },
     "indonezija": {
       "country": "Indonezija",
+      "ambassador": "Ivana Golubović Duboka",
       "embassy": "Džakarta Pusat",
       "address": "Jl. HOS Cokroaminoto 109, Menteng 10310, Džakarta Pusat",
       "email": [
@@ -900,6 +930,7 @@
     },
     "irak": {
       "country": "Irak",
+      "ambassador": "Branislav Žeželj",
       "embassy": "Bagdad",
       "address": "Jadriyah Mahala 923, Zukak 3, House 3, Hay Babil, Bagdad",
       "email": [
@@ -912,6 +943,7 @@
     },
     "iran": {
       "country": "Iran",
+      "ambassador": "Damir Kovačević",
       "embassy": "Teheran",
       "address": "Sahrak E Qouds, North Falamak Street, 4th Alley, Building No 3, P.O. Box 19858, Teheran",
       "email": [
@@ -925,7 +957,7 @@
       "country": "Island",
       "honorary_consulate": {
         "reykjavik": {
-          "honor": "Mr. Arman Kojić",
+          "ambassador": "Mr. Arman Kojić",
           "embassy": "Reykjavik",
           "address": "Reynimelur 34, 107 Reykjavik",
           "email": [
@@ -939,6 +971,7 @@
     },
     "italija": {
       "country": "Italija",
+      "ambassador": "Mirjana Jeremić",
       "embassy": "Rim",
       "address": "Via dei Monti Parioli 20, 00197 Rim",
       "email": [
@@ -950,6 +983,7 @@
       ],
       "consulate": {
         "trst": {
+          "ambassador": "Nikola Paunović",
           "embassy": "Trst",
           "address": "Strada del Friuli 54, 34136 Trst",
           "email": [
@@ -961,6 +995,7 @@
           ]
         },
         "milano": {
+          "ambassador": "Nataša Savićević",
           "embassy": "Milano",
           "address": "Via Pantano 2, 20122 Milano",
           "email": [
@@ -974,7 +1009,7 @@
       },
       "honorary_consulate": {
         "firenze": {
-          "honor": "Leandro Chiarelli",
+          "ambassador": "Leandro Chiarelli",
           "embassy": "Firenca",
           "address": "Via Masaccio, 49 50132 Firenze",
           "email": [
@@ -985,7 +1020,7 @@
           ]
         },
         "bari": {
-          "honor": "Gabriella Gentile",
+          "ambassador": "Gabriella Gentile",
           "embassy": "Bari",
           "address": "Via Andrea da Bari, 103 - 70122 Bari",
           "email": [
@@ -1001,7 +1036,7 @@
       "country": "Jamajka",
       "honorary_consulate": {
         "kingston": {
-          "honor": "Sr. John Issa",
+          "ambassador": "Sr. John Issa",
           "embassy": "Kingston",
           "address": "P.O. Box 61, KINGSTON 4 W. I. SuperClubs Victoria Mutual Building, 4th Floor, 53 Knutsford Boulevard, KINGSTON 5",
           "email": [
@@ -1016,6 +1051,7 @@
     },
     "japan": {
       "country": "Japan",
+      "ambassador": "Aleksandra Kovač",
       "embassy": "Tokio",
       "address": "4-16-12 Takanawa, Minato-ku, 108-0074 Tokio",
       "email": [
@@ -1027,7 +1063,7 @@
       ],
       "honorary_consulate": {
         "osaka": {
-          "honor": "Naohide Ueyama",
+          "ambassador": "Naohide Ueyama",
           "embassy": "Osaka",
           "address": "1-4-11 Tosabori, Nishi-ku, Osaka",
           "email": [
@@ -1041,6 +1077,7 @@
     },
     "jermenija": {
       "country": "Jermenija",
+      "ambassador": "Tatjana Panajotović Cvetković",
       "embassy": "Jerevan",
       "address": "10 Vazgen Sargsyan St., 0010 Yerevan, Piazza Grande Business Center, 1st floor, office 109",
       "email": [
@@ -1053,7 +1090,7 @@
       ],
       "honorary_consulate": {
         "yerevan": {
-          "honor": "Babken Simonyan",
+          "ambassador": "Babken Simonyan",
           "embassy": "Jerevan",
           "address": "Nar-Dos 75/28, Yerevan",
           "email": [
@@ -1068,6 +1105,7 @@
     },
     "juzna-afrika": {
       "country": "Južna Afrika",
+      "ambassador": "Saša Mart",
       "embassy": "Pretorija",
       "address": "Marais163, Brooklyn 0181, P.O.B 13026, Hatfield 0028, Pretorija",
       "email": [
@@ -1083,7 +1121,7 @@
       "country": "Kabo Verde",
       "honorary_consulate": {
         "praia": {
-          "honor": "Keita Correia Silva Monteiro",
+          "ambassador": "Keita Correia Silva Monteiro",
           "embassy": "Praia",
           "address": "Rua da UCLA n° 76, CP 142ª, A.S.A - Cidade da Praia",
           "telephone": [
@@ -1095,6 +1133,7 @@
     },
     "kazahstan": {
       "country": "Kazahstan",
+      "ambassador": "Vladimir Jovičić",
       "embassy": "Astana",
       "address": "Sariarka 6, 010000 Astana",
       "email": [
@@ -1107,6 +1146,7 @@
     },
     "kanada": {
       "country": "Kanada",
+      "ambassador": "Dejan Ralević",
       "embassy": "Otava",
       "address": "21, Blackburn Avenue, Otava Ontario K1N 8A2",
       "email": [
@@ -1119,6 +1159,7 @@
       ],
       "consulate": {
         "toronto": {
+          "ambassador": "Jelena Srdanović Dželebdžić",
           "embassy": "Toronto",
           "address": "40 Eglinton Avenue East, 7 floor, unit 701 M4P 3A2, Toronto, ON M4P 3A2",
           "email": [
@@ -1131,7 +1172,7 @@
       },
       "honorary_consulate": {
         "vancouver": {
-          "honor": "Peter Vladiković",
+          "ambassador": "Peter Vladiković",
           "embassy": "Vankuver",
           "address": "7411 Vantage Way-Delta, Vancouver, BC, V4G 1C9",
           "email": [
@@ -1143,7 +1184,7 @@
           "website": "www.serbianconsulate.bc.ca"
         },
         "calgary": {
-          "honor": "Milica Prtilo-Opačić",
+          "ambassador": "Milica Prtilo-Opačić",
           "embassy": "Calgary",
           "address": "1330 Shannon Avenue SW, Calgary, AB, T2Y 4L6",
           "email": [
@@ -1155,7 +1196,7 @@
           "website": "www.serbianconsulate-ab.ca"
         },
         "montreal": {
-          "honor": "Marina Gavanski-Zisis",
+          "ambassador": "Marina Gavanski-Zisis",
           "embassy": "Montreal",
           "address": "302-3713 St. Laurent Blvd., Montreal, QC, H2X 2V7",
           "email": [
@@ -1169,6 +1210,7 @@
     },
     "katar": {
       "country": "Katar",
+      "ambassador": "Aca Petrović",
       "embassy": "Doha",
       "address": "Zone 66, West Bay, Um Al Seneem no.5, Doha, P.O. Box 22195",
       "email": [
@@ -1180,6 +1222,7 @@
     },
     "kenija": {
       "country": "Kenija",
+      "ambassador": "Danijela Čubrilo Martić",
       "embassy": "Najrobi",
       "address": "Fortis Tower, Woodvale Grove, 6th floor, 00100 Najrobi",
       "email": [
@@ -1192,6 +1235,7 @@
     },
     "kina": {
       "country": "Kina",
+      "ambassador": "Maja Stefanović",
       "embassy": "Peking",
       "address": "San Li Tun, Dong 6 Jie 1, 100600 Peking",
       "email": [
@@ -1207,6 +1251,7 @@
       ],
       "consulate": {
         "sangaj": {
+          "ambassador": "Ninoslav Erić",
           "embassy": "Šangaj",
           "address": "Rm, 801, No.1, Lane 60, Lyon Garden, Ronghua East Road, Gu Bei New Area, Šangaj 201103",
           "email": [
@@ -1221,6 +1266,7 @@
     },
     "kipar": {
       "country": "Kipar",
+      "ambassador": "Suzana Bošković Prodanović",
       "embassy": "Nikozija",
       "address": "2, Vasilissis Olgas Street, 1101 Nicosia",
       "email": [
@@ -1232,7 +1278,7 @@
       ],
       "honorary_consulate": {
         "nicosia": {
-          "honor": "Kypros V. Eliades",
+          "ambassador": "Kypros V. Eliades",
           "embassy": "Nikozija",
           "address": "23, Lefkosias Street, Dhali Industrial Estate, 2540 Nicosia",
           "email": [
@@ -1250,7 +1296,7 @@
       "country": "Kolumbija",
       "honorary_consulate": {
         "bogota": {
-          "honor": "Hernan Sanin Posada",
+          "ambassador": "Hernan Sanin Posada",
           "embassy": "Bogota",
           "address": "Calle 94A #13-08, Oficina 201, Colombia",
           "email": [
@@ -1265,6 +1311,7 @@
     },
     "kongo": {
       "country": "Kongo, Demokratska Republika",
+      "ambassador": "Miroljub Jevtić",
       "embassy": "Kinšasa",
       "address": "Avenue de 1 Etoile 112, Gombe, Kinšasa",
       "email": [
@@ -1277,6 +1324,7 @@
     },
     "koreja": {
       "country": "Koreja, Republika",
+      "ambassador": "Nemanja Grbić",
       "embassy": "Seul",
       "address": "22nd Floor, Booyoung Taepyeong Building, 55 Sejong-daero, Jung-gu, Seul",
       "email": [
@@ -1291,7 +1339,7 @@
       "country": "Kostarika",
       "honorary_consulate": {
         "heredia": {
-          "honor": "Stanko Trifunović",
+          "ambassador": "Stanko Trifunović",
           "embassy": "Heredia",
           "address": "AGRICOLA AMATA S.A, 300m este y 150m sur de la Clinica de Seguro Social SAN JOAQUIN DE FLORES, HEREDIA",
           "email": [
@@ -1306,6 +1354,7 @@
     },
     "kuba": {
       "country": "Kuba",
+      "ambassador": "Jelena Živojinović",
       "embassy": "Havana",
       "address": "5ta Avenida, No. 4406, entre 44 y 46, Miramar Playa, Havana",
       "email": [
@@ -1320,6 +1369,7 @@
     },
     "kuvajt": {
       "country": "Kuvajt",
+      "ambassador": "Filip Katić",
       "embassy": "Kuvajt",
       "address": "Bayan, Block No. 13, Street No. 1, Villa No.18, Safat 13066, P.O. Box 20511",
       "email": [
@@ -1333,6 +1383,7 @@
     },
     "liban": {
       "country": "Liban",
+      "ambassador": "Milan Trojanović",
       "embassy": "Kaslik",
       "address": "Jounieh-Kaslik Roundabout, Etoile Center (Zara Building), 2nd floor",
       "email": [
@@ -1345,7 +1396,7 @@
       ],
       "honorary_consulate": {
         "kaslik": {
-          "honor": "Joseph Martinos",
+          "ambassador": "Joseph Martinos",
           "embassy": "Kaslik",
           "address": "Kaslik Roundabout, Etoile Building, 2nd floor, Kaslik",
           "email": [
@@ -1362,6 +1413,7 @@
     },
     "libija": {
       "country": "Libija",
+      "ambassador": "Dragan Todorović",
       "embassy": "Tripoli",
       "address": "Kvart Ben Ašur, Abdal Ben Salam, P.O.Box 1087, Tripoli",
       "email": [
@@ -1379,7 +1431,7 @@
       "country": "Madagaskar",
       "honorary_consulate": {
         "antananarivo": {
-          "honor": "Maminijaina Ravatomanga",
+          "ambassador": "Maminijaina Ravatomanga",
           "embassy": "Antananarivo",
           "address": "9e étage, Pradon Trade Center, Antanimena, Antananarivo",
           "email": [
@@ -1394,6 +1446,7 @@
     },
     "malta": {
       "country": "Malta",
+      "ambassador": "Boško Šukić",
       "embassy": "Floriana",
       "address": "Europa Centre, Level 3, Office 18/a, Triq Sant` Anna 58, Floriana, FRN,1400",
       "email": [
@@ -1405,6 +1458,7 @@
     },
     "madarska": {
       "country": "Mađarska",
+      "ambassador": "Aleksandra Đurović",
       "embassy": "Budimpešta",
       "address": "Dozsa Gyorgy ut 92/b, H-1068 Budimpešta",
       "email": [
@@ -1424,7 +1478,7 @@
       "country": "Malezija",
       "honorary_consulate": {
         "kuala_lumpur": {
-          "honor": "Dato` Zulkifli Amin",
+          "ambassador": "Dato` Zulkifli Amin",
           "embassy": "Kuala Lumpur",
           "address": "Suite 35-2, Level 35, MOF Inc Tower, No 9 Persiaran KLOCC, Kuala Lumpur",
           "email": [
@@ -1441,7 +1495,7 @@
       "country": "Mali",
       "honorary_consulate": {
         "bamako": {
-          "honor": "Yaya Diakite",
+          "ambassador": "Yaya Diakite",
           "embassy": "Bamako",
           "address": "Quartier du Fleuve rue 235 porte 313, Bamako",
           "email": [
@@ -1455,6 +1509,7 @@
     },
     "maroko": {
       "country": "Maroko",
+      "ambassador": "Ivan Bauer",
       "embassy": "Rabat",
       "address": "24, Rue El Kadi Ahmed Mouline Souissi, Rabat, B.P.5014",
       "email": [
@@ -1466,7 +1521,7 @@
       ],
       "honorary_consulate": {
         "casablanca": {
-          "honor": "Seddik Bargash",
+          "ambassador": "Seddik Bargash",
           "embassy": "Kazablanka",
           "address": "84, Boulevard Sidi Abderrahmane - Beauséjour Ma 20200, Casablanca",
           "email": [
@@ -1484,7 +1539,7 @@
       "country": "Mauricijus",
       "honorary_consulate": {
         "ebene": {
-          "honor": "Mahadua Paviš",
+          "ambassador": "Mahadua Paviš",
           "embassy": "Ebene",
           "address": "Ground floor ICONEBENE Rue de L'institut Ebene",
           "email": [
@@ -1498,6 +1553,7 @@
     },
     "meksiko": {
       "country": "Meksiko",
+      "ambassador": "Miloš Marković",
       "embassy": "Meksiko City",
       "address": "Av. Montanas Rocallosas No.515, Lomas de Chapultepec, 11000 Meksiko, D.F.",
       "email": [
@@ -1509,7 +1565,7 @@
       ],
       "honorary_consulate": {
         "zapopan": {
-          "honor": "Petar Joksimović",
+          "ambassador": "Petar Joksimović",
           "embassy": "Zapopan",
           "address": "Aurora Boreal #3864-3, Col.Arboledas C.P.45070 Zapopan, Jalisco",
           "email": [
@@ -1524,6 +1580,7 @@
     },
     "mjanmar": {
       "country": "Mijanmar",
+      "ambassador": "Gordana Jakšić",
       "embassy": "Jangon",
       "address": "114-A Inya Road, Kamayut Township, Jangon",
       "email": [
@@ -1538,7 +1595,7 @@
       "country": "Mozambik",
       "honorary_consulate": {
         "maputo": {
-          "honor": "John Kachamila",
+          "ambassador": "John Kachamila",
           "embassy": "Maputo",
           "address": "Avenida Mao Tse Tung, 19 Maputo",
           "email": [
@@ -1554,7 +1611,7 @@
       "country": "Monako",
       "honorary_consulate": {
         "monaco": {
-          "honor": "Goran Đoković",
+          "ambassador": "Goran Đoković",
           "embassy": "Monaco",
           "address": "4. Boulevard des Moulins - Winter Palace, 98000 Monaco",
           "email": [
@@ -1570,7 +1627,7 @@
       "country": "Mongolija",
       "honorary_consulate": {
         "ulaanbaatar": {
-          "honor": "Bavuu Zorigt",
+          "ambassador": "Bavuu Zorigt",
           "embassy": "Ulaanbaatar",
           "address": "suite 1501 Express Tower, Peace avenue 4, Ulaanbaatar 15160, Post box 1364",
           "email": [
@@ -1586,7 +1643,7 @@
       "country": "Namibija",
       "honorary_consulate": {
         "windhoek": {
-          "honor": "Kapewasha Marten Nenkete",
+          "ambassador": "Kapewasha Marten Nenkete",
           "embassy": "Windhoek",
           "address": "12, Rabenweg, Hochland Park, P.O. Box 60157 Windhoek",
           "email": [
@@ -1601,6 +1658,7 @@
     },
     "nemacka": {
       "country": "Nemačka",
+      "ambassador": "dr. Snežana Janković",
       "embassy": "Berlin",
       "address": "Taubert Strasse 18, D-14193 Berlin",
       "email": [
@@ -1612,6 +1670,7 @@
       ],
       "consulate": {
         "stutgart": {
+          "ambassador": "Dragan Dimitrijević",
           "embassy": "Štutgart",
           "address": "Taubenstrasse 4, D-70199 Štutgart",
           "email": [
@@ -1622,6 +1681,7 @@
           ]
         },
         "hamburg": {
+          "ambassador": "Milena Nikolić",
           "embassy": "Hamburg",
           "address": "Harvestehuder Weg 101, D-20149 Hamburg",
           "email": [
@@ -1633,6 +1693,7 @@
           ]
         },
         "frankfurt": {
+          "ambassador": "Aleksandar Đurđić",
           "embassy": "Frankfurt",
           "address": "Thueringer Strasse 3, D-60316 Frankfurt",
           "email": [
@@ -1643,6 +1704,7 @@
           ]
         },
         "minhen": {
+          "ambassador": "Božidar Vučurović",
           "embassy": "Minhen",
           "address": "Bohmenwaldplatz 2, D-81679 Minhen",
           "email": [
@@ -1655,6 +1717,7 @@
           ]
         },
         "diseldorf": {
+          "ambassador": "Nebojša Tatomir",
           "embassy": "Diseldorf",
           "address": "Klosterstrasse 79, D-40211 Diseldorf",
           "email": [
@@ -1670,7 +1733,7 @@
       "country": "Nepal",
       "honorary_consulate": {
         "kathmandu": {
-          "honor": "Niravana Chaudhary",
+          "ambassador": "Niravana Chaudhary",
           "embassy": "Kathmandu",
           "address": "Chaudhary House, Sanepa, Lalitpur, G.P.O. Box: 1073, Kathmandu",
           "email": [
@@ -1685,6 +1748,7 @@
     },
     "nigerija": {
       "country": "Nigerija",
+      "ambassador": "Jugoslav Vukadinović",
       "embassy": "Abudža",
       "address": "11, Rio Negro Close, off Yedseram Street, Maitama District, Abudža",
       "email": [
@@ -1696,7 +1760,7 @@
       ],
       "honorary_consulate": {
         "lagos": {
-          "honor": "Domingo Alaba John Obende",
+          "ambassador": "Domingo Alaba John Obende",
           "embassy": "Lagos",
           "address": "12 Agoro Odiyan Street, Victoria Island, Lagos",
           "email": [
@@ -1708,7 +1772,7 @@
           ]
         },
         "kano": {
-          "honor": "Farouk Adamu Aliyu",
+          "ambassador": "Farouk Adamu Aliyu",
           "embassy": "Kano",
           "address": "11 Babura Road, Nassarawa G.R.A Behind Magwan Water Restaurant, Kano State",
           "email": [
@@ -1722,6 +1786,7 @@
     },
     "norveska": {
       "country": "Norveška",
+      "ambassador": "Dragan Petrović",
       "embassy": "Oslo",
       "address": "Munkedamsveien 59B, 0270 Oslo",
       "email": [
@@ -1735,7 +1800,7 @@
       "country": "Pakistan",
       "honorary_consulate": {
         "karachi": {
-          "honor": "Tariq Rafi",
+          "ambassador": "Tariq Rafi",
           "embassy": "Karachi",
           "address": "27th floor, Ocean Tower, Plot # G 3, Khayaban e Iqbal, Clifton block 9, Karachi",
           "email": [
@@ -1751,7 +1816,7 @@
       "country": "Panama",
       "honorary_consulate": {
         "panama_city": {
-          "honor": "Aleksandar Aleksić Ivanis",
+          "ambassador": "Aleksandar Aleksić Ivanis",
           "embassy": "Panama",
           "address": "Avenida Centenario PH Península; Office 802, Ciudad de Panamá",
           "email": [
@@ -1767,7 +1832,7 @@
       "country": "Peru",
       "honorary_consulate": {
         "lima": {
-          "honor": "Carmen Rosa Carhuancho Hurtado",
+          "ambassador": "Carmen Rosa Carhuancho Hurtado",
           "embassy": "Lima",
           "address": "Calle Jose Gomez 395, San Isidro - Lima",
           "email": [
@@ -1782,6 +1847,7 @@
     },
     "poljska": {
       "country": "Poljska",
+      "ambassador": "Nebojša Košutić",
       "embassy": "Varšava",
       "address": "Aleja Róż 5, 00-556 Varšava",
       "email": [
@@ -1793,7 +1859,7 @@
       ],
       "honorary_consulate": {
         "katowice": {
-          "honor": "Ranko Tomović",
+          "ambassador": "Ranko Tomović",
           "embassy": "Katowice",
           "address": "Borowa 85, 41-253 Czeladź, Katowice",
           "email": [
@@ -1805,7 +1871,7 @@
           ]
         },
         "bydgoszcz": {
-          "honor": "Maria Joanna Lorentowicz-Zagalak",
+          "ambassador": "Maria Joanna Lorentowicz-Zagalak",
           "embassy": "Bydgoszcz",
           "address": "Obrońców Bydgoszczy 1, 85-054 Bydgoszcz",
           "email": [
@@ -1816,7 +1882,7 @@
           ]
         },
         "bialystok": {
-          "honor": "Jaroslaw Antychowicz",
+          "ambassador": "Jaroslaw Antychowicz",
           "embassy": "Bialystok",
           "address": "Antoniukowska 7, 15-740 Bialystok",
           "email": [
@@ -1830,6 +1896,7 @@
     },
     "portugalija": {
       "country": "Portugal",
+      "ambassador": "Ana Ilić",
       "embassy": "Lisabon",
       "address": "Rua de Alcolena 11, 1400 – 004 Lisabon",
       "email": [
@@ -1841,7 +1908,7 @@
       ],
       "honorary_consulate": {
         "albufeira": {
-          "honor": "António José Paixão Pinto Marante",
+          "ambassador": "António José Paixão Pinto Marante",
           "embassy": "Albufeira",
           "address": "Rua do Índico - Ed. Altis C, 3º Q, 8200-139 Albufeira",
           "email": [
@@ -1852,7 +1919,7 @@
           ]
         },
         "porto": {
-          "honor": "Mário Rui Figueira de Campos Fontemanha",
+          "ambassador": "Mário Rui Figueira de Campos Fontemanha",
           "embassy": "Porto",
           "address": "Avenida dos Combatentes da Grande Guerra, nº 455, 4200-189 Porto",
           "telephone": [
@@ -1864,6 +1931,7 @@
     },
     "rumunija": {
       "country": "Rumunija",
+      "ambassador": "Stefan Tomašević",
       "embassy": "Bukurešt",
       "address": "General Eremia Grigorescu nr. 12, Bukurešt",
       "email": [
@@ -1878,6 +1946,7 @@
       ],
       "consulate": {
         "temisvar": {
+          "ambassador": "Ivana Jakšić Matović",
           "embassy": "Temišvar",
           "address": "Str.Remus No 4, Temišvar",
           "email": [
@@ -1893,6 +1962,7 @@
     },
     "rusija": {
       "country": "Ruska Federacija",
+      "ambassador": "Momčilo Babić",
       "embassy": "Moskva",
       "address": "Mosfilmovskaja 46, R-119285 Moskva",
       "email": [
@@ -1904,7 +1974,7 @@
       ],
       "honorary_consulate": {
         "saint_petersburg": {
-          "honor": "Gennadiy Nikolaevich Timchenko",
+          "ambassador": "Gennadiy Nikolaevich Timchenko",
           "embassy": "Sankt-Peterburg",
           "address": "Manježnaja plošad br. 4, 191011 Sankt-Peterburg",
           "email": [
@@ -1915,7 +1985,7 @@
           ]
         },
         "krasnogorsk": {
-          "honor": "Aleksandar Dibalj",
+          "ambassador": "Aleksandar Dibalj",
           "embassy": "Krasnogorsk",
           "address": "Moskovska oblast, gradski okrug Krasnogorsk, selo Putilkovo, teritorija Grinvuda, zgrada 35, kancelarija 411",
           "email": [
@@ -1929,6 +1999,7 @@
     },
     "saudijska-arabija": {
       "country": "Saudijska Arabija",
+      "ambassador": "Dragan Bisenić",
       "embassy": "Rijad",
       "address": "Abdulqader Al Jaza'eri Street, Building No.26, Rijad",
       "email": [
@@ -1943,7 +2014,7 @@
       "country": "Sao Tome i Principe",
       "honorary_consulate": {
         "sao_tome": {
-          "honor": "Žorž Dias Koreja",
+          "ambassador": "Žorž Dias Koreja",
           "embassy": "Sao Tome",
           "address": "Avenija 12. Jul, Sao Tome",
           "telephone": [
@@ -1958,6 +2029,7 @@
     },
     "sveta-stolica": {
       "country": "Sveta Stolica",
+      "ambassador": "Sima Avramović",
       "embassy": "Vatikan",
       "address": "Via dei Monti Parioli 20, 00197 Rim, Vatikan",
       "email": [
@@ -1971,7 +2043,7 @@
       "country": "Sejšeli",
       "honorary_consulate": {
         "glacis": {
-          "honor": "Dr Miodrag Todorović",
+          "ambassador": "Dr Miodrag Todorović",
           "embassy": "Glacis",
           "address": "Mahe, Glacis, Main Road, Seychelles, P. O. Box 1001",
           "email": [
@@ -1987,6 +2059,7 @@
     },
     "severna-makedonija": {
       "country": "Severna Makedonija",
+      "ambassador": "Nevena Jovanović",
       "embassy": "Skoplje",
       "address": "Pitu Guli 8, Skoplje",
       "email": [
@@ -2000,7 +2073,7 @@
       ],
       "honorary_consulate": {
         "ohrid": {
-          "honor": "Mihajlo Filev",
+          "ambassador": "Mihajlo Filev",
           "embassy": "Ohrid",
           "address": "7 Noemvri br. 27, 6000 Ohrid",
           "email": [
@@ -2011,7 +2084,7 @@
           ]
         },
         "kumanovo": {
-          "honor": "Vladimir Stajić",
+          "ambassador": "Vladimir Stajić",
           "embassy": "Kumanovo",
           "address": "Ilindenska 37, 1300 Kumanovo",
           "email": [
@@ -2028,7 +2101,7 @@
       "country": "Sijera Leone",
       "honorary_consulate": {
         "freetown": {
-          "honor": "Adonis Abboud",
+          "ambassador": "Adonis Abboud",
           "embassy": "Freetown",
           "address": "62 Wilkinson Road, P.O.Box 552, Freetown",
           "email": [
@@ -2046,7 +2119,7 @@
       "country": "Singapur",
       "honorary_consulate": {
         "singapore": {
-          "honor": "Kelvin Čeng Ern Li",
+          "ambassador": "Kelvin Čeng Ern Li",
           "embassy": "Singapore",
           "address": "7500E Beach Road, SINGAPORE 199595",
           "email": [
@@ -2060,6 +2133,7 @@
     },
     "sirija": {
       "country": "Sirija",
+      "ambassador": "Radovan Stojanović",
       "embassy": "Damask",
       "address": "Mazzeh Eastern Villas, Farabi Street, Damascus",
       "email": [
@@ -2071,7 +2145,7 @@
       ],
       "honorary_consulate": {
         "tartus": {
-          "honor": "Valid Rafoul",
+          "ambassador": "Valid Rafoul",
           "embassy": "Tartus",
           "address": "Tartus, ulica Hanano, zgrada Al Saba, 4. sprat",
           "email": [
@@ -2087,6 +2161,7 @@
     },
     "sad": {
       "country": "Sjedinjene Američke Države",
+      "ambassador": "Dragan Šutanovac",
       "embassy": "Vašington",
       "address": "1333 16th St NW, Vašington, DC 20036",
       "email": [
@@ -2097,6 +2172,7 @@
       ],
       "consulate": {
         "cikago": {
+          "ambassador": "Marko Nikolić",
           "embassy": "Cikago",
           "address": "201 East Ohio Street, Suite 200, Čikago, IL 60611",
           "email": [
@@ -2107,6 +2183,7 @@
           ]
         },
         "njujork": {
+          "ambassador": "Vladimir Božović",
           "embassy": "Newyork",
           "address": "62 West 45th Street, 7 Floor, Njujork, NY 10036",
           "email": [
@@ -2119,7 +2196,7 @@
       },
       "honorary_consulate": {
         "montana_washington": {
-          "honor": "Ronald W. Burkle",
+          "ambassador": "Ronald W. Burkle",
           "embassy": "Montana",
           "address": "Yellowstone Club, 30 Meadow Camp Rd, Big Sky, MT 59716",
           "email": [
@@ -2130,7 +2207,7 @@
           ]
         },
         "california": {
-          "honor": "Dr. Ryan Fredrick Osborne",
+          "ambassador": "Dr. Ryan Fredrick Osborne",
           "embassy": "Los Angeles",
           "address": "8631 W. Third Street, Suite 945E, Los Angeles, CA 90048",
           "email": [
@@ -2141,7 +2218,7 @@
           ]
         },
         "louisiana": {
-          "honor": "Gregory Rusovich",
+          "ambassador": "Gregory Rusovich",
           "embassy": "New Orleans",
           "address": "1615 Poydras St., Suite 1255, New Orleans, LA 70122",
           "email": [
@@ -2152,7 +2229,7 @@
           ]
         },
         "ohio": {
-          "honor": "Alexander Machaskee",
+          "ambassador": "Alexander Machaskee",
           "embassy": "Cleveland",
           "address": "7803 Brookpark Road, Suite #3, Cleveland, Ohio 44129-1121",
           "email": [
@@ -2163,7 +2240,7 @@
           ]
         },
         "colorado": {
-          "honor": "Steven H. Katich",
+          "ambassador": "Steven H. Katich",
           "embassy": "Denver",
           "address": "2000 South Colorado Blvd, Tower One, Suite 12000, Denver, CO 80222",
           "email": [
@@ -2174,7 +2251,7 @@
           ]
         },
         "wyoming": {
-          "honor": "Jonathan L. Vinnik",
+          "ambassador": "Jonathan L. Vinnik",
           "embassy": "Cheyenne",
           "address": "6305 Deer Avenue, Cheyenne, WY 82009",
           "email": [
@@ -2188,6 +2265,7 @@
     },
     "slovacka": {
       "country": "Slovačka",
+      "ambassador": "Aleksandar Nakić",
       "embassy": "Bratislava",
       "address": "Budkova 38, 81104 Bratislava",
       "email": [
@@ -2201,7 +2279,7 @@
       ],
       "honorary_consulate": {
         "martin": {
-          "honor": "Dr Mojmir Vrlik",
+          "ambassador": "Dr Mojmir Vrlik",
           "embassy": "Martin",
           "address": "Mudronova 12, 036 08 Martin",
           "email": [
@@ -2213,7 +2291,7 @@
           ]
         },
         "kosice": {
-          "honor": "Eva Dekanovska",
+          "ambassador": "Eva Dekanovska",
           "embassy": "Košice",
           "address": "Jesenskeho 12, 040 01 Košice",
           "email": [
@@ -2229,6 +2307,7 @@
     },
     "slovenija": {
       "country": "Slovenija",
+      "ambassador": "Ivo Vojvodić",
       "embassy": "Ljubljana",
       "address": "Slomškova 1, 1000 Ljubljana",
       "email": [
@@ -2240,7 +2319,7 @@
       ],
       "honorary_consulate": {
         "vipava": {
-          "honor": "Tomaž Kavčič",
+          "ambassador": "Tomaž Kavčič",
           "embassy": "Vipava",
           "address": "Zemono 7, 5271 Vipava, R. Slovenija",
           "email": [
@@ -2256,7 +2335,7 @@
       "country": "Sudan",
       "honorary_consulate": {
         "khartoum": {
-          "honor": "Ahmed Abdel Moneim Abdel Mouti",
+          "ambassador": "Ahmed Abdel Moneim Abdel Mouti",
           "embassy": "Khartoum",
           "address": "Honorary Consulate of Serbia, Gireif West, Block 1B, House No.195, Khartoum",
           "email": [
@@ -2274,7 +2353,7 @@
       "country": "Tajland",
       "honorary_consulate": {
         "chonburi": {
-          "honor": "Aleksandar Radulović",
+          "ambassador": "Aleksandar Radulović",
           "embassy": "Chonburi",
           "address": "189/95 Moo 1 1 Thepprasit Rd, Nongprue Banglamung, Chonburi 20150",
           "email": [
@@ -2290,7 +2369,7 @@
       "country": "Togo",
       "honorary_consulate": {
         "lome": {
-          "honor": "Mr. Ziad Ammar",
+          "ambassador": "Mr. Ziad Ammar",
           "embassy": "Lome",
           "address": "Marina bay tower, office 2C, P.O. BOX: 06 BP 6124, Lome",
           "email": [
@@ -2302,6 +2381,7 @@
     },
     "tunis": {
       "country": "Tunis",
+      "ambassador": "Dijana Ivančić",
       "embassy": "Tunis",
       "address": "4, Rue du Lac Majeur, 1053 - Les Berges du Lac, Tunis",
       "email": [
@@ -2315,6 +2395,7 @@
     },
     "turska": {
       "country": "Turska",
+      "ambassador": "Aca Jovanović",
       "embassy": "Ankara",
       "address": "Yazanlar Sokak No. 1, P.K.28, 06691 Kavaklidere, Ankara",
       "email": [
@@ -2326,6 +2407,7 @@
       ],
       "consulate": {
         "istambul": {
+          "ambassador": "Aleksandar Marjanović",
           "embassy": "Istanbul",
           "address": "Sümbül Sk. No: 2, Levent Mah. Besiktas, 34330 Istanbul",
           "email": [
@@ -2338,7 +2420,7 @@
       },
       "honorary_consulate": {
         "antalya": {
-          "honor": "Fikret Öztürk",
+          "ambassador": "Fikret Öztürk",
           "embassy": "Antalya",
           "address": "Regnum Carya Golf And Spa Resort - Lobi Kat, Kadriye Mahallesi, Üçkum Teoesi Mevkii, 07500 Serik, Antalya",
           "email": [
@@ -2349,7 +2431,7 @@
           ]
         },
         "izmir": {
-          "honor": "Metin Akdurak",
+          "ambassador": "Metin Akdurak",
           "embassy": "Izmir",
           "address": "1434. Sokak No.9/5, ALSANCAK-IZMIR",
           "email": [
@@ -2360,7 +2442,7 @@
           ]
         },
         "edirne": {
-          "honor": "Salih Akgül",
+          "ambassador": "Salih Akgül",
           "embassy": "Edirne",
           "address": "İstasyon Mahallesi Şehit Emniyet Müdürü Ertan Nezihi Turan Caddesi, Edirne Plaza no: 46/43, 22100 Edirne",
           "email": [
@@ -2371,7 +2453,7 @@
           ]
         },
         "bursa": {
-          "honor": "Zarif Alp",
+          "ambassador": "Zarif Alp",
           "embassy": "Bursa",
           "address": "29 Ekim Mahallesi Ümit Kaftancıoğlu Caddesi, Rumeli Sokak No:3, Özlüce-Nilüfer/Bursa",
           "email": [
@@ -2382,7 +2464,7 @@
           ]
         },
         "alanya": {
-          "honor": "Oktay Karaca",
+          "ambassador": "Oktay Karaca",
           "embassy": "Alanya",
           "address": "Rubi Platinum Spa Resort & Suites, Avsallar, İncekum Cd. No:38, 07410 Alanya",
           "email": [
@@ -2396,6 +2478,7 @@
     },
     "uae": {
       "country": "Ujedinjeni Arapski Emirati",
+      "ambassador": "Vladimir Marić",
       "embassy": "Abu Dabi",
       "address": "Mushref area, sector W31, Al Rafee street, Villa number 06 (opposite of Novotel hotel), Abu Dabi",
       "email": [
@@ -2409,7 +2492,7 @@
       "country": "Uganda",
       "honorary_consulate": {
         "kampala": {
-          "honor": "Jovan Latinčić",
+          "ambassador": "Jovan Latinčić",
           "embassy": "Kampala",
           "address": "Plot 98 Luthuli Avenue, P.O.Box 7773, Kampala",
           "email": [
@@ -2425,6 +2508,7 @@
     },
     "uk": {
       "country": "Ujedinjeno Kraljevstvo",
+      "ambassador": "Goran Aleksić",
       "embassy": "London",
       "address": "28 Belgrave Square, London SW1X 8QB",
       "email": [
@@ -2437,6 +2521,7 @@
     },
     "ukrajina": {
       "country": "Ukrajina",
+      "ambassador": "Andon Sapundži",
       "embassy": "Kijev",
       "address": "Voloska 4, 04070 Kijev",
       "email": [
@@ -2452,7 +2537,7 @@
       "country": "Filipini",
       "honorary_consulate": {
         "makati": {
-          "honor": "Mr. Joaquin \"Jack\" Rodriguez",
+          "ambassador": "Mr. Joaquin \"Jack\" Rodriguez",
           "embassy": "Makati",
           "address": "3rd Flr. BCS Prime Building, 2297 Chino Roces Avenue Extension, Brgy. Magallanes, Makati City",
           "email": [
@@ -2466,6 +2551,7 @@
     },
     "finska": {
       "country": "Finska",
+      "ambassador": "Aleksandar Janković",
       "embassy": "Helsinki",
       "address": "Kulosaarentie 36, 00570 Helsinki",
       "email": [
@@ -2479,6 +2565,7 @@
     },
     "francuska": {
       "country": "Francuska",
+      "ambassador": "Ana Hrustanović",
       "embassy": "Pariz",
       "address": "5, Rue Leonard de Vinci, 75116 Pariz",
       "email": [
@@ -2491,6 +2578,7 @@
       ],
       "consulate": {
         "strazbur": {
+          "ambassador": "Slavoljub Carić",
           "embassy": "Strazbur",
           "address": "26, Avenue de la Forêt Noire, 67000 Strazbur",
           "email": [
@@ -2503,7 +2591,7 @@
       },
       "honorary_consulate": {
         "nice": {
-          "honor": "Filip Manžar",
+          "ambassador": "Filip Manžar",
           "embassy": "Nice",
           "address": "164, avenue de la Clua, F-06100 Nice",
           "email": [
@@ -2517,6 +2605,7 @@
     },
     "holandija": {
       "country": "Holandija",
+      "ambassador": "Dušan Vukić",
       "embassy": "Hag",
       "address": "Burgemeester van Kamebeeklaan 19, 2585 Hag",
       "email": [
@@ -2530,7 +2619,7 @@
       ],
       "honorary_consulate": {
         "amsterdam": {
-          "honor": "Mr. Vladimir Gogoljev",
+          "ambassador": "Mr. Vladimir Gogoljev",
           "embassy": "Amsterdam",
           "address": "Muiderstraat 1, 1011 PZ Amsterdam, office 9T",
           "email": [
@@ -2544,6 +2633,7 @@
     },
     "hrvatska": {
       "country": "Hrvatska",
+      "ambassador": "Dejana Peruničić",
       "embassy": "Zagreb",
       "address": "Jabukovac 23, 10000 Zagreb",
       "email": [
@@ -2559,6 +2649,7 @@
       ],
       "consulate": {
         "rijeka": {
+          "ambassador": "Ivana Stojiljković",
           "embassy": "Rijeka",
           "address": "Erazma Barčića 9, 51000 Rijeka",
           "email": [
@@ -2571,6 +2662,7 @@
           ]
         },
         "vukovar": {
+          "ambassador": "Vladimir Marjanović",
           "embassy": "Vukovar",
           "address": "Ivana Gunduliča 19, Vukovar",
           "email": [
@@ -2586,6 +2678,7 @@
     },
     "crna-gora": {
       "country": "Crna Gora",
+      "ambassador": "Nebojša Rodić",
       "embassy": "Podgorica",
       "address": "Bulevar Ivana Crnojevića br. 10, Podgorica",
       "email": [
@@ -2598,6 +2691,7 @@
       ],
       "consulate": {
         "herceg-novi": {
+          "ambassador": "Mićo Rogović",
           "embassy": "Herceg Novi",
           "address": "Trg Hercega Stjepana (Belavista) 15, 85340 Herceg Novi",
           "email": [],
@@ -2610,6 +2704,7 @@
     },
     "ceska": {
       "country": "Češka",
+      "ambassador": "Berislav Vekić",
       "embassy": "Prag",
       "address": "Mostecka 15, 118 00 Prag",
       "email": [
@@ -2624,13 +2719,14 @@
     },
     "cile": {
       "country": "Čile",
+      "ambassador": "Mirjana Kotlajić",
       "embassy": "Santiago",
       "email": [
         "srb.emb.chile@mfa.rs"
       ],
       "honorary_consulate": {
         "santiago": {
-          "honor": "Damir Solar",
+          "ambassador": "Damir Solar",
           "embassy": "Santiago",
           "address": "Arturo Matte Larraín 10.101, Las Condes CP 7600727, Mirador de los Dominicos, Santiago de Chile",
           "email": [
@@ -2645,6 +2741,7 @@
     },
     "svajcarska": {
       "country": "Švajcarska",
+      "ambassador": "Ivan Trifunović",
       "embassy": "Bern",
       "address": "Seminarstrasse 5, CH-3006 Bern",
       "email": [
@@ -2657,6 +2754,7 @@
       ],
       "consulate": {
         "cirih": {
+          "ambassador": "Mihajlo Šaulić",
           "embassy": "Cirih",
           "address": "Alfred-Escher-Strasse 4, 8002 Cirih",
           "email": [
@@ -2671,6 +2769,7 @@
     },
     "svedska": {
       "country": "Švedska",
+      "ambassador": "Jelena Čukić Matić",
       "embassy": "Stockholm",
       "address": "Hantverkargatan 26, 3rd floor, Box 529 101 30, Stockholm",
       "email": [
@@ -2685,6 +2784,7 @@
     },
     "spanija": {
       "country": "Španija",
+      "ambassador": "Irena Šarac",
       "embassy": "Madrid",
       "address": "Velazquez 3, Piso 2, 28001 Madrid",
       "email": [
@@ -2698,7 +2798,7 @@
       ],
       "honorary_consulate": {
         "sevilla": {
-          "honor": "Juan Manuel Contreras Guyard",
+          "ambassador": "Juan Manuel Contreras Guyard",
           "embassy": "Sevilla",
           "address": "Calle Almendralejo 5, 41019 Sevilla, Andalucía",
           "email": [
@@ -2709,7 +2809,7 @@
           ]
         },
         "canary_islands": {
-          "honor": "Jose Maria Dominguez Silva",
+          "ambassador": "Jose Maria Dominguez Silva",
           "embassy": "Las Palmas de Gran Canaria",
           "address": "Calle Alonso Alvarado 13, 5 B, 35003 Las Palmas de Gran Canaria",
           "email": [
@@ -2721,7 +2821,7 @@
           ]
         },
         "zaragoza": {
-          "honor": "Juan Carlos Trillo Baigorri",
+          "ambassador": "Juan Carlos Trillo Baigorri",
           "embassy": "Zaragoza",
           "address": "Paseo de Sagasta 72, 4a planta, 50006 Zaragoza",
           "email": [
@@ -2737,7 +2837,7 @@
       "country": "Šri Lanka",
       "honorary_consulate": {
         "colombo": {
-          "honor": "Mr. Udaya Nanayakkara",
+          "ambassador": "Mr. Udaya Nanayakkara",
           "embassy": "Colombo",
           "address": "No.07, Siripa Lane Colombo 05",
           "email": [
