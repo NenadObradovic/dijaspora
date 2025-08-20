@@ -61,7 +61,14 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
   }, [i18n.language])
 
   const [availableEmbassy, setAvailableEmbassy] = useState()
-  const availableCountries = embassyData?.availableCountries || {}
+  const availableCountries =
+    i18n.language === 'cyrl'
+      ? embassyData?.availableCountries || {}
+      : Object.fromEntries(
+          Object.entries(embassyData?.availableCountries || {}).sort((a, b) =>
+            a[1].localeCompare(b[1], 'en', { sensitivity: 'base' }),
+          ),
+        )
   const embassyByCountry = embassyData?.embassyByCountry || {}
 
   const [activeTab, setActiveTab] = useState('check')
@@ -103,18 +110,22 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
 
       const embassyOptions = []
 
-      embassyOptions.push({
-        value: 'default',
-        label: embassyByCountry[value].address,
-      })
+      if (embassyByCountry[value].address) {
+        embassyOptions.push({
+          value: 'default',
+          label: embassyByCountry[value].address,
+        })
+      }
 
       if (embassyByCountry[value].consulate) {
         Object.entries(embassyByCountry[value].consulate).forEach(
           ([slug, consulate]) => {
-            embassyOptions.push({
-              value: slug,
-              label: consulate.address,
-            })
+            if (consulate.address) {
+              embassyOptions.push({
+                value: slug,
+                label: consulate.address,
+              })
+            }
           },
         )
       }
@@ -122,10 +133,12 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
       if (embassyByCountry[value].honorary_consulate) {
         Object.entries(embassyByCountry[value].honorary_consulate).forEach(
           ([slug, honorary_consulate]) => {
-            embassyOptions.push({
-              value: slug,
-              label: honorary_consulate.address,
-            })
+            if (honorary_consulate.address) {
+              embassyOptions.push({
+                value: slug,
+                label: honorary_consulate.address,
+              })
+            }
           },
         )
       }
