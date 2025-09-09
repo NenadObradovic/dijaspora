@@ -60,12 +60,14 @@ export const generateDocx = async (
   let parentName = formData.parent_name
   let address = formData.address
   let addressAbroad = formData.address_abroad
+  let city = formData.city
 
   if ('sr' === language) {
     fullName = latinToCyrillic(fullName)
     parentName = latinToCyrillic(parentName)
     address = latinToCyrillic(address)
     addressAbroad = latinToCyrillic(addressAbroad)
+    city = latinToCyrillic(city)
   }
 
   doc.setData({
@@ -74,7 +76,7 @@ export const generateDocx = async (
     ...jmbgParts,
     adresa: address,
     adresa_inostranstvo: addressAbroad,
-    grad: `${formData.city}, ${formData.country}`,
+    grad: `${city}, ${formData.country}`,
     telefon: formData.telephone,
     email: formData.email,
     datum: getCurrentDate(),
