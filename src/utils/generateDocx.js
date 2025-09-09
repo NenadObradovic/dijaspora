@@ -2,9 +2,14 @@ import PizZip from 'pizzip'
 import Docxtemplater from 'docxtemplater'
 import ImageModule from 'docxtemplater-image-module-free'
 import fileSaver from 'file-saver'
-import { isWebView } from './helper.js'
+import { isWebView, latinToCyrillic } from './helper.js'
 
-export const generateDocx = async (templatePath, formData, fileName) => {
+export const generateDocx = async (
+  templatePath,
+  formData,
+  fileName,
+  language,
+) => {
   const response = await fetch(templatePath)
   const content = await response.arrayBuffer()
 
@@ -51,12 +56,24 @@ export const generateDocx = async (templatePath, formData, fileName) => {
     return `${day}.${month}.${year}`
   }
 
+  let fullName = formData.full_name
+  let parentName = formData.parent_name
+  let address = formData.address
+  let addressAbroad = formData.address_abroad
+
+  if ('sr' === language) {
+    fullName = latinToCyrillic(fullName)
+    parentName = latinToCyrillic(parentName)
+    address = latinToCyrillic(address)
+    addressAbroad = latinToCyrillic(addressAbroad)
+  }
+
   doc.setData({
-    ime_prezime: formData.full_name,
-    ime_roditelja: formData.parent_name,
+    ime_prezime: fullName,
+    ime_roditelja: parentName,
     ...jmbgParts,
-    adresa: formData.address,
-    adresa_inostranstvo: formData.address_abroad,
+    adresa: address,
+    adresa_inostranstvo: addressAbroad,
     grad: `${formData.city}, ${formData.country}`,
     telefon: formData.telephone,
     email: formData.email,

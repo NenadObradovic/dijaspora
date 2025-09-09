@@ -9,7 +9,7 @@ import EmailTemplate from './EmailTemplate.jsx'
 import { isWebView } from '../utils/helper.js'
 
 const App = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [formData, setFormData] = useState(null)
   const [updateVoter, setUpdateVoter] = useState(false)
   const [docGenerated, setDocGenerated] = useState(false)
@@ -24,11 +24,13 @@ const App = () => {
           '/data/zahtev-za-glasanje.docx',
           data,
           'Zahtev_za_glasanje_u_inostranstvu.docx',
+          i18n.language,
         ),
         generateDocx(
           '/data/zahtev-za-upis.docx',
           data,
           'Zahtev_za_upis_u_jedinstveni_biracki_spisak.docx',
+          i18n.language,
         ),
       ])
     } else {
@@ -36,6 +38,7 @@ const App = () => {
         '/data/zahtev-za-glasanje.docx',
         data,
         'Zahtev_za_glasanje_u_inostranstvu.docx',
+        i18n.language,
       )
     }
 

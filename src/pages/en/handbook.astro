@@ -42,11 +42,6 @@ const pageDescription = 'Voting Handbook'
         their rights but also contributes to protecting their identity and the
         integrity of the election process.
       </p>
-      <p>
-        Voting rights are not only exercised by voting itself but also through a
-        responsible and engaged approach to elections. An active diaspora can be
-        an important factor in the democratic development of our country.
-      </p>
     </section>
 
     <section class="mt-6 w-full">
@@ -58,9 +53,22 @@ const pageDescription = 'Voting Handbook'
         Voting eligibility
       </h3>
       <p>
-        Citizens of Serbia with valid ID or passport are eligible to vote. If
-        your passport has expired, you must apply for a new one at the nearest
-        consulate.
+        The right to vote is granted to citizens of the Republic of Serbia who
+        possess valid documents (a national ID card or a passport of the
+        Republic of Serbia).
+      </p>
+      <p>
+        If your passport has expired, you must personally submit a request for
+        the issuance of a new one at the nearest diplomatic or consular mission
+        of the Republic of Serbia. Along with the request, you should submit the
+        old passport (or an ID card, or another public document that can be used
+        to verify your identity, if you do not have the old passport). According
+        to the procedure, a birth certificate is also required (as well as proof
+        of citizenship of the Republic of Serbia, if you have never had a
+        biometric passport before), but this is obtained ex officio – so you do
+        not need to worry about that. The legal deadline for processing the
+        request is 60 days, so we urge you not to delay in submitting it, as the
+        procedure is fairly lengthy.
       </p>
       <p>
         More info: <a
@@ -77,7 +85,9 @@ const pageDescription = 'Voting Handbook'
         Check the electoral roll
       </h3>
       <p>
-        You must be registered to vote. Check your status at: <a
+        In order to exercise your right to vote, you must be registered in the
+        Unified Voters' Register. You can check your registration status via the
+        following link: <a
           class="text-accent-two underline-offset-2 hover:underline"
           href={externalLinks.electoral_roll}
           target="_blank"
@@ -86,13 +96,16 @@ const pageDescription = 'Voting Handbook'
           upit.birackispisak.gov.rs
         </a>
       </p>
-      <p>If not listed, you can register only after elections are announced.</p>
+      <p>
+        If you are not listed in the voters' register, you can submit a
+        registration request only after the elections have been called.
+      </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         Check Serbian Diplomatic Missions Worldwide
       </h3>
       <p>
-        You can check them at: <a
+        You can check them via the following link: <a
           class="text-accent-two underline-offset-2 hover:underline"
           href={externalLinks.mfa_embassy}
           target="_blank"
@@ -115,10 +128,10 @@ const pageDescription = 'Voting Handbook'
       </h4>
       <p>
         The most common solution is to travel to the nearest country where a
-        Serbian diplomatic-consular mission (DKP) exists. For example, if you
-        live in Iceland (which has no embassy), the nearest location might be
-        Copenhagen or Oslo. In this case, when applying to vote, you indicate
-        that location as your voting place.
+        Serbian diplomatic-consular mission exists. For example, if you live in
+        Iceland (which has no embassy), the nearest location might be Copenhagen
+        or Oslo. In this case, when applying to vote, you indicate that location
+        as your voting place.
       </p>
       <h4 class="title mb-2 mt-4">
         2. Traveling to Serbia and voting within the Republic
@@ -145,49 +158,133 @@ const pageDescription = 'Voting Handbook'
         Registering in the electoral roll
       </h3>
       <p>
-        If you're not already registered, you must submit a request at least
-        five days before the roll is finalized.
+        A request for registration in the Unified Voters' Register should be
+        submitted only if you are not already registered. Diplomatic and
+        consular missions are required to publish the request form on their
+        website. The request must be sent via email to the respective diplomatic
+        or consular mission no later than five days before the closing of the
+        Unified Voters' Register.
+      </p>
+      <p>
+        More information can be found in the <a
+          class="text-accent-two underline-offset-2 hover:underline"
+          href={externalLinks.unified_voters_law}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Law on the Unified Voters' Register
+        </a> (“Official Gazette of RS”, Nos. 104/2009, 99/2011, and 44/2024).
       </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         Voting from abroad
       </h3>
       <p>
-        You must submit a request to vote from abroad regardless of previous
-        participation. See the Law on the Unified Electoral Roll for details.
+        A request to register the information in the Voters' Register indicating
+        that a voter will vote abroad must be submitted in order to vote from
+        abroad. Diplomatic and consular missions are required to publish the
+        request form on their website. The request must be sent via email to the
+        respective diplomatic or consular mission no later than five days before
+        the closing of the Unified Voters' Register. The request must be
+        submitted regardless of whether you have voted abroad in the past.
+      </p>
+      <p>
+        More information can be found in the <a
+          class="text-accent-two underline-offset-2 hover:underline"
+          href={externalLinks.unified_voters_law}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Law on the Unified Voters' Register
+        </a> (“Official Gazette of RS”, Nos. 104/2009, 99/2011, and 44/2024).
       </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         Request for voter information
       </h3>
       <p>
-        It’s highly recommended to email the consulate requesting confirmation
-        of your registration, even though it's not legally required.
+        Submitting a request for notification about the data entered in the
+        Voters' Register regarding a voter is not mandatory, but it is highly
+        recommended, as it increases your chances of receiving feedback
+        confirming that you can vote abroad. Otherwise, the competent
+        authorities are not legally obligated to inform you of any changes in
+        the Voters' Register. There is no official form for this request; it is
+        sufficient to send an email (ideally using the same email used for the
+        previously mentioned requests), asking to receive information about any
+        changes in the Voters' Register based on Paragraph 4 of Article 16 of
+        the law referenced in the following paragraph. The request must be sent
+        to the diplomatic or consular mission no later than five days before the
+        closing of the Unified Voters' Register.
+      </p>
+      <p>
+        More information can be found in the <a
+          class="text-accent-two underline-offset-2 hover:underline"
+          href={externalLinks.unified_voters_law}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Law on the Unified Voters' Register
+        </a> (“Official Gazette of RS”, Nos. 104/2009, 99/2011, and 44/2024).
       </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         Follow up on requests
       </h3>
       <p>
-        Make sure your request was received by contacting the consulate (email,
-        phone, or in person).
+        To ensure that your request has been received, you should check every
+        day until the deadline for submission. You can contact the
+        diplomatic-consular mission via email, phone, or by visiting in person.
+      </p>
+      <p>
+        It is advisable that people from the same location keep a record of who
+        has submitted requests, so that it is clear whether the quota for
+        establishing a polling station has been met.
       </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         Polling station determination
       </h3>
       <p>
-        Polling stations are formed for 100–2,500 voters (with exceptions
-        allowed by the RIK).
+        A polling station may be established for a minimum of 100 and a maximum
+        of 2,500 voters. In exceptional cases, with the consent of the Republic
+        Electoral Commission (RIK), a polling station may also be established
+        for fewer than 100 voters if, due to distance or unfavorable geographic
+        conditions, it would be significantly difficult for the residents of a
+        specific area to vote at another polling station, or for more than 2,500
+        voters if there is no physical capacity to open additional polling
+        stations.
       </p>
       <p>
-        Forms: <a
+        The Ministry of Foreign Affairs submits to RIK a proposal for
+        establishing polling stations abroad no later than 22 days before
+        election day. RIK then issues a decision on the polling stations no
+        later than 20 days before election day. Since the voters' register is
+        finalized 15 days before election day, if the proposed list of polling
+        stations is unsatisfactory, and there is legal basis to establish new or
+        relocate existing stations, the issue should be made public immediately
+        after RIK announces it on its website, in order to encourage amendments
+        and/or additions.
+      </p>
+      <p>
+        More information on how polling station proposals are determined, their
+        accessibility, and the characteristics of the facilities can be found in
+        the <a
+          class="text-accent-two underline-offset-2 hover:underline"
+          href={externalLinks.determining_polling_instructions}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instructions on the Method of Determining Polling Stations
+        </a> (“Official Gazette of RS”, No. 91/2023 – consolidated text). The following
+        link contains the forms that the Ministry of Foreign Affairs must complete
+        when submitting its proposal to RIK:
+        <a
           class="text-accent-two underline-offset-2 hover:underline"
           href={externalLinks.eu_standards}
           target="_blank"
           rel="noopener noreferrer"
         >
-          Official template
+          Ministry forms
         </a>
       </p>
     </section>
@@ -198,22 +295,52 @@ const pageDescription = 'Voting Handbook'
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         How to report irregularities
       </h3>
-      <ul class="list-content list-inside list-disc" role="list">
-        <li>Campaign materials near polling station</li>
-        <li>Voting without proper ID</li>
-        <li>Pressure by polling board members</li>
-        <li>Unmarked voter lists or tampering</li>
-        <li>Police presence without cause</li>
-      </ul>
-      <p>Request all irregularities to be noted in the official record.</p>
       <p>
-        You can report within 24 hours. More info: <a
+        Some of the irregularities you may encounter at a polling station
+        include:
+      </p>
+      <ul class="list-content list-inside list-disc" role="list">
+        <li>
+          presence of campaign materials at the polling station or within 50
+          meters of it
+        </li>
+        <li>
+          voting outside the polling station without a certificate granting the
+          right to vote outside the polling station
+        </li>
+        <li>voting without a valid identity document</li>
+        <li>
+          failure to mark the voter's name in the voters' list or marking the
+          name of another voter
+        </li>
+        <li>
+          influencing the voter's choice by members of the polling board or
+          third parties
+        </li>
+        <li>absence of the control slip in the ballot box</li>
+        <li>
+          more ballots in the box than the number of voters who have voted
+        </li>
+        <li>
+          presence of police officers at the polling station without a request
+          from the president of the polling board, unless public order and peace
+          have been disturbed
+        </li>
+      </ul>
+      <p>
+        If you notice any of the above irregularities, ask the members of the
+        polling board to record it in the Official Report on the Work of the
+        Polling Board.
+      </p>
+      <p>
+        You can report the irregularity no later than 24 hours from the moment
+        it occurred. More info: <a
           class="text-accent-two underline-offset-2 hover:underline"
-          href={externalLinks.cesid}
+          href={externalLinks.protection_guide}
           target="_blank"
           rel="noopener noreferrer"
         >
-          CeSID Guide
+          Guide for the Protection of Voters' Electoral Rights
         </a>
       </p>
     </section>

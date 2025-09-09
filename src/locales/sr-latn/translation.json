@@ -41,7 +41,7 @@
   "address_description": "Unesite adresu prebivališta iz dokumenta",
   "address_error": "Molimo vas upišite vašu adresu u Srbiji.",
   "address_abroad": "Adresa boravišta u inostranstvu",
-  "address_abroad_description": "Unesite adresu na kojoj boravite u inostranstvu",
+  "address_abroad_description": "Unesite adresu na kojoj boravite u inostranstvu, npr. 20 Vest 26. ulica, Njujork",
   "address_abroad_error": "Molimo vas upišite vašu adresu u inostranstvu.",
   "country": "Izaberite državu",
   "country_description": "Izaberite državu iz koje ćete glasati",

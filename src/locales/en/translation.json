@@ -41,7 +41,7 @@
   "address_description": "Enter the address from your official document",
   "address_error": "Please enter your residence address in Serbia.",
   "address_abroad": "Address abroad",
-  "address_abroad_description": "Enter the address where you currently reside abroad",
+  "address_abroad_description": "Enter the address where you currently reside abroad, e.g. 20 West 26th Street, New York",
   "address_abroad_error": "Please enter your address abroad.",
   "country": "Select a country",
   "country_description": "Choose the country from which you will vote",

@@ -5,7 +5,11 @@ export const externalLinks = {
     'https://www.mfa.gov.rs/lat/predstavnistva/predstavnistva-srbije-u-svetu/ambasade/',
   mfa_passport: 'https://www.mfa.gov.rs/gradjani/usluge/putne-isprave/',
   electoral_roll: 'https://upit.birackispisak.gov.rs/',
-  cesid:
-    'https://www.cesid.rs/wp-content/uploads/2021/06/Vodi%C4%8D-za-za%C5%A1titu-izbornog-prava.pdf/',
-  eu_standards: 'https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx/',
+  unified_voters_law:
+    'https://www.paragraf.rs/propisi/zakon_o_jedinstvenom_birackom_spisku.html/',
+  protection_guide:
+    'https://biraci.parlament.gov.rs/extfile/sr/1617/Vodic%20zastita%20SRP.pdf/',
+  determining_polling_instructions:
+    'http://demo.paragraf.rs/demo/combined/Old/t/t2023_10/SG_091_2023_002.htm',
+  eu_standards: 'https://www.eupropisi.com/dokumenti/SG_091_2023_002.docx',
 }

@@ -45,6 +45,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
   })
 
   const [embassyData, setEmbassyData] = useState(null)
+  const [embassyCyrlData, setEmbassyCyrlData] = useState(null)
   useEffect(() => {
     const embassyData =
       'cyrl' === i18n.language
@@ -58,11 +59,24 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
         // eslint-disable-next-line no-console
         console.error('Greška pri učitavanju JSON-a:', err)
       })
+
+    // TODO - Refactor this code to use a single data source or a single request
+    if ('sr' === i18n.language) {
+      const embassyCyrlData = '/data/embassy-cyrl.json'
+
+      fetch(embassyCyrlData)
+        .then((res) => res.json())
+        .then((json) => setEmbassyCyrlData(json))
+        .catch((err) => {
+          // eslint-disable-next-line no-console
+          console.error('Greška pri učitavanju JSON-a:', err)
+        })
+    }
   }, [i18n.language])
 
   const [availableEmbassy, setAvailableEmbassy] = useState()
   const availableCountries =
-    i18n.language === 'cyrl'
+    'cyrl' === i18n.language
       ? embassyData?.availableCountries || {}
       : Object.fromEntries(
           Object.entries(embassyData?.availableCountries || {}).sort((a, b) =>
@@ -167,8 +181,20 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
       // Get real country and embassy names for DOC fields
       let realCountryValue = availableCountries[formData.country] ?? ''
 
+      if ('sr' === i18n.language) {
+        realCountryValue = embassyCyrlData?.availableCountries
+          ? embassyCyrlData?.availableCountries[formData.country]
+          : realCountryValue
+      }
+
       if (formData.embassy) {
-        const embassyCountry = embassyByCountry[formData.country]
+        let embassyCountry = embassyByCountry[formData.country]
+
+        if ('sr' === i18n.language) {
+          embassyCountry = embassyCyrlData?.embassyByCountry
+            ? embassyCyrlData?.embassyByCountry[formData.country]
+            : embassyCountry
+        }
 
         formData.embassy_email = embassyCountry.email ?? []
 
