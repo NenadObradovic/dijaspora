@@ -1,6 +1,9 @@
 export const isWebView = () => {
-  const ua = navigator.userAgent || navigator?.vendor || window.opera
-  return /Telegram|FB_IAB|FBAN|FBAV|Instagram/i.test(ua)
+  const ua = navigator.userAgent || navigator?.vendor || window.opera || ''
+  const knownWebViews =
+    /Telegram|FB_IAB|FBAN|FBAV|Instagram|WeChat|Line|TikTok|KAKAOTALK|QQBrowser/i
+  const androidWebView = /Android.*WebView|wv\)/i.test(ua)
+  return knownWebViews.test(ua) || androidWebView
 }
 
 export const latinToCyrillic = (text) => {

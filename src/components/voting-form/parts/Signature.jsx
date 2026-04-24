@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import SignatureCanvas from 'react-signature-canvas'
 import { useTranslation } from 'react-i18next'
 
-const Signature = ({ data, setData, handleFieldError }) => {
+const Signature = ({ data, setData, handleFieldError, isGenerating }) => {
   const { t } = useTranslation()
   const sigCanvasRef = useRef({})
   const wrapperRef = useRef(null)
@@ -15,7 +15,7 @@ const Signature = ({ data, setData, handleFieldError }) => {
     const updateCanvasSize = () => {
       if (wrapperRef.current) {
         const width = wrapperRef.current.offsetWidth
-        const height = Math.min(240, width * 0.5) // max 240px, ili 50% širine
+        const height = Math.min(240, width * 0.5)
         setCanvasSize({ width, height })
       }
     }
@@ -37,7 +37,6 @@ const Signature = ({ data, setData, handleFieldError }) => {
         process.env.NODE_ENV === 'development'
           ? sigCanvasRef.current.getCanvas()
           : sigCanvasRef.current.getTrimmedCanvas()
-
       const base64 = canvas.toDataURL('image/png')
       setData((prev) => ({ ...prev, signature: base64 }))
     }
@@ -82,13 +81,15 @@ const Signature = ({ data, setData, handleFieldError }) => {
           <button
             type="button"
             onClick={clearSignature}
-            className="text-sm font-medium text-[color:var(--theme-accent)] underline underline-offset-2 transition-colors duration-150 hover:text-[color:var(--theme-color-700)]"
+            disabled={isGenerating}
+            className="text-sm font-medium text-[color:var(--theme-accent)] underline underline-offset-2 transition-colors duration-150 hover:text-[color:var(--theme-color-700)] disabled:opacity-50"
           >
             {t('clear_signature')}
           </button>
           <button
             type="submit"
-            className="rounded-lg bg-accent-two px-6 py-3 text-sm font-semibold text-white shadow-md transition duration-200 hover:bg-accent-two/90"
+            disabled={isGenerating}
+            className="rounded-lg bg-accent-two px-6 py-3 text-sm font-semibold text-white shadow-md transition duration-200 hover:bg-accent-two/90 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {t('generate_request')}
           </button>

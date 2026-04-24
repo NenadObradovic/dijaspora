@@ -29,7 +29,10 @@ export const generateDocx = async (
   const imageModule = new ImageModule({
     centered: false,
     getImage(tagValue) {
-      return base64ToUint8Array(tagValue.split(',')[1])
+      const match = tagValue.match(/^data:image\/(png|jpeg|jpg);base64,(.+)$/)
+      if (!match || !match[2]) throw new Error('Invalid image data format')
+      if (match[2].length > 500000) throw new Error('Image data too large')
+      return base64ToUint8Array(match[2])
     },
     getSize() {
       return [154, 68]
@@ -83,34 +86,29 @@ export const generateDocx = async (
     potpis: formData.signature,
   })
 
-  try {
-    doc.render()
-    const out = doc.getZip().generate({
-      type: 'blob',
-      mimeType:
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-    })
+  doc.render()
+  const out = doc.getZip().generate({
+    type: 'blob',
+    mimeType:
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+  })
 
-    if (isWebView()) {
-      // Fallback for WebView – try manual download
-      const blobUrl = URL.createObjectURL(out)
-      const downloadLink = document.createElement('a')
+  if (isWebView()) {
+    // Fallback for WebView – try manual download
+    const blobUrl = URL.createObjectURL(out)
+    const downloadLink = document.createElement('a')
 
-      downloadLink.href = blobUrl
-      downloadLink.download = fileName
-      downloadLink.style.display = 'none'
-      document.body.appendChild(downloadLink)
-      downloadLink.click()
+    downloadLink.href = blobUrl
+    downloadLink.download = fileName
+    downloadLink.style.display = 'none'
+    document.body.appendChild(downloadLink)
+    downloadLink.click()
 
-      setTimeout(() => {
-        URL.revokeObjectURL(blobUrl)
-        document.body.removeChild(downloadLink)
-      }, 1000)
-    } else {
-      fileSaver.saveAs(out, fileName)
-    }
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error('Greška prilikom generisanja dokumenta: ', error)
+    setTimeout(() => {
+      URL.revokeObjectURL(blobUrl)
+      document.body.removeChild(downloadLink)
+    }, 3000)
+  } else {
+    fileSaver.saveAs(out, fileName)
   }
 }

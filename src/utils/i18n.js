@@ -14,6 +14,7 @@ i18n.use(initReactI18next).init({
   lng: 'sr',
   fallbackLng: 'sr',
   interpolation: {
+    // Safe: translations are static JSON files, never user-controlled
     escapeValue: false,
   },
 })

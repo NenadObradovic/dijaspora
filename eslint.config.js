@@ -20,6 +20,7 @@ export default [
         navigator: 'readonly',
         URL: 'readonly',
         fetch: 'readonly',
+        AbortController: 'readonly',
         console: 'readonly',
         atob: 'readonly',
         btoa: 'readonly',

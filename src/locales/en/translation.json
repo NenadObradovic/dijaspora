@@ -81,5 +81,8 @@
   "email_button_example": "Send an email to the following addresses:",
   "footer_text": "© 2025 All rights reserved.",
   "footer_github_text": "Source code",
-  "web_view_error": "If you weren’t able to generate the document from the Telegram, Instagram, or Facebook app, please open this website in your browser (e.g. Chrome, Safari) and try again."
+  "web_view_error": "If you weren’t able to generate the document from the Telegram, Instagram, or Facebook app, please open this website in your browser (e.g. Chrome, Safari) and try again.",
+  "generating_docs": "Generating documents, please wait...",
+  "generate_error": "An error occurred while generating documents. Please try again.",
+  "app_error": "An unexpected error occurred. Please reload the page and try again."
 }

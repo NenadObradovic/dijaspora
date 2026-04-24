@@ -6,21 +6,26 @@ const InputNumberField = ({
   data,
   handleChange,
   handleFieldError,
-  min,
-  max,
+  maxLength,
 }) => {
   const { t } = useTranslation()
 
   return (
     <div>
       <input
-        type="number"
+        type="text"
+        inputMode="numeric"
         name={field_name}
         placeholder={t(field_name)}
         value={data[field_name]}
-        onChange={handleChange}
-        min={min}
-        max={max}
+        onChange={(e) => {
+          const cleaned = e.target.value.replace(/[^0-9]/g, '')
+          handleChange({
+            ...e,
+            target: { ...e.target, name: field_name, value: cleaned },
+          })
+        }}
+        maxLength={maxLength}
         required
         className="voting-form-field w-full rounded-md border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] px-4 py-3 text-sm text-[color:var(--theme-color-800)] placeholder-[color:var(--theme-color-500)] focus:outline-none focus:ring-2 focus:ring-[color:var(--theme-accent)]"
       />

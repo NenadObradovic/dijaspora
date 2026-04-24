@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { validateForm } from '../../utils/validateForm.js'
+import { buildEmbassyOptions } from '../../utils/buildEmbassyOptions.js'
+import { useEmbassyData } from '../../hooks/useEmbassyData.js'
+import { useFormTabs } from '../../hooks/useFormTabs.js'
 
 import VotingFormIntro from './VotingFormIntro.jsx'
 import EmbassyInfo from './parts/EmbassyInfo.jsx'
@@ -15,10 +18,9 @@ import InputEmailField from './parts/InputEmailField.jsx'
 import CountryField from './parts/CountryField.jsx'
 import GenerateRequestField from './parts/GenerateRequestField.jsx'
 
-const VotingForm = ({ onSubmit, docGenerated }) => {
+const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
   const { t, i18n } = useTranslation()
   const [isMobile, setIsMobile] = useState(false)
-  const [errors, setErrors] = useState({})
   const [updateVoter, setUpdateVoter] = useState(null)
 
   useEffect(() => {
@@ -44,69 +46,21 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
     signature: '',
   })
 
-  const [embassyData, setEmbassyData] = useState(null)
-  const [embassyCyrlData, setEmbassyCyrlData] = useState(null)
-  useEffect(() => {
-    const embassyData =
-      'cyrl' === i18n.language
-        ? '/data/embassy-cyrl.json'
-        : '/data/embassy.json'
+  const { embassyData, embassyCyrlData, availableCountries, embassyByCountry } =
+    useEmbassyData(i18n.language)
 
-    fetch(embassyData)
-      .then((res) => res.json())
-      .then((json) => setEmbassyData(json))
-      .catch((err) => {
-        // eslint-disable-next-line no-console
-        console.error('Greška pri učitavanju JSON-a:', err)
-      })
-
-    // TODO - Refactor this code to use a single data source or a single request
-    if ('sr' === i18n.language) {
-      const embassyCyrlData = '/data/embassy-cyrl.json'
-
-      fetch(embassyCyrlData)
-        .then((res) => res.json())
-        .then((json) => setEmbassyCyrlData(json))
-        .catch((err) => {
-          // eslint-disable-next-line no-console
-          console.error('Greška pri učitavanju JSON-a:', err)
-        })
-    }
-  }, [i18n.language])
+  const {
+    tabs,
+    activeTab,
+    setActiveTab,
+    currentTabIndex,
+    errors,
+    setErrors,
+    goToNextTab,
+    goToPreviousTab,
+  } = useFormTabs(data, t)
 
   const [availableEmbassy, setAvailableEmbassy] = useState()
-  const availableCountries =
-    'cyrl' === i18n.language
-      ? embassyData?.availableCountries || {}
-      : Object.fromEntries(
-          Object.entries(embassyData?.availableCountries || {}).sort((a, b) =>
-            a[1].localeCompare(b[1], 'en', { sensitivity: 'base' }),
-          ),
-        )
-  const embassyByCountry = embassyData?.embassyByCountry || {}
-
-  const [activeTab, setActiveTab] = useState('check')
-  const tabs = ['check', 'personal-data', 'signature']
-  const currentTabIndex = tabs.indexOf(activeTab)
-
-  const goToNextTab = () => {
-    const formErrors = validateForm(data, activeTab, t)
-
-    setErrors(formErrors)
-
-    if (
-      Object.keys(formErrors).length === 0 &&
-      currentTabIndex < tabs.length - 1
-    ) {
-      setActiveTab(tabs[currentTabIndex + 1])
-    }
-  }
-
-  const goToPreviousTab = () => {
-    if (currentTabIndex > 0) {
-      setActiveTab(tabs[currentTabIndex - 1])
-    }
-  }
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -117,47 +71,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
     }))
 
     if (name === 'country') {
-      if (!embassyByCountry[value]) {
-        setAvailableEmbassy([])
-        return
-      }
-
-      const embassyOptions = []
-
-      if (embassyByCountry[value].address) {
-        embassyOptions.push({
-          value: 'default',
-          label: embassyByCountry[value].address,
-        })
-      }
-
-      if (embassyByCountry[value].consulate) {
-        Object.entries(embassyByCountry[value].consulate).forEach(
-          ([slug, consulate]) => {
-            if (consulate.address) {
-              embassyOptions.push({
-                value: slug,
-                label: consulate.address,
-              })
-            }
-          },
-        )
-      }
-
-      if (embassyByCountry[value].honorary_consulate) {
-        Object.entries(embassyByCountry[value].honorary_consulate).forEach(
-          ([slug, honorary_consulate]) => {
-            if (honorary_consulate.address) {
-              embassyOptions.push({
-                value: slug,
-                label: honorary_consulate.address,
-              })
-            }
-          },
-        )
-      }
-
-      setAvailableEmbassy(embassyOptions)
+      setAvailableEmbassy(buildEmbassyOptions(value, embassyByCountry))
     }
   }
 
@@ -165,35 +79,31 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
     e.preventDefault()
 
     const formErrors = validateForm(data, 'all', t)
-
     setErrors(formErrors)
 
-    let handleErrorsActiveTab = { ...formErrors }
-    delete handleErrorsActiveTab.signature
-
-    if (Object.keys(handleErrorsActiveTab).length > 0) {
+    const nonSignatureErrors = Object.keys(formErrors).filter(
+      (k) => k !== 'signature',
+    )
+    if (nonSignatureErrors.length > 0) {
       setActiveTab('personal-data')
     }
 
     if (Object.keys(formErrors).length === 0) {
       let formData = { ...data }
 
-      // Get real country and embassy names for DOC fields
       let realCountryValue = availableCountries[formData.country] ?? ''
-
       if ('sr' === i18n.language) {
-        realCountryValue = embassyCyrlData?.availableCountries
-          ? embassyCyrlData?.availableCountries[formData.country]
-          : realCountryValue
+        realCountryValue =
+          embassyCyrlData?.availableCountries?.[formData.country] ??
+          realCountryValue
       }
 
       if (formData.embassy) {
         let embassyCountry = embassyByCountry[formData.country]
-
         if ('sr' === i18n.language) {
-          embassyCountry = embassyCyrlData?.embassyByCountry
-            ? embassyCyrlData?.embassyByCountry[formData.country]
-            : embassyCountry
+          embassyCountry =
+            embassyCyrlData?.embassyByCountry?.[formData.country] ??
+            embassyCountry
         }
 
         formData.embassy_email = embassyCountry.email ?? []
@@ -201,10 +111,9 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
         let realCityValue
         if ('default' === formData.embassy) {
           realCityValue = embassyCountry.embassy ?? ''
-        } else if (embassyCountry?.honorary_consulate[formData.embassy]) {
+        } else if (embassyCountry?.honorary_consulate?.[formData.embassy]) {
           realCityValue =
             embassyCountry.honorary_consulate[formData.embassy].embassy ?? ''
-
           if (embassyCountry.honorary_consulate[formData.embassy].email) {
             formData.embassy_email = formData.embassy_email.concat(
               embassyCountry.honorary_consulate[formData.embassy].email,
@@ -213,7 +122,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
         } else {
           realCityValue =
             embassyCountry.consulate[formData.embassy].embassy ?? ''
-
           if (embassyCountry.consulate[formData.embassy].email) {
             formData.embassy_email = formData.embassy_email.concat(
               embassyCountry.consulate[formData.embassy].email,
@@ -262,7 +170,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
           <div className="flex w-full max-w-screen-lg flex-col gap-8 pt-4 sm:grid sm:grid-cols-[250px_1fr]">
             <div>
               <div className="sticky top-[40px] flex flex-wrap justify-between gap-y-8 sm:flex-col sm:justify-start">
-                {/* Tab Navigation */}
                 <div className="flex shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
                   {tabs.map((tab, index) => {
                     if (isMobile && tab !== activeTab) {
@@ -271,7 +178,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
 
                     return (
                       <div key={index} className="relative flex items-center">
-                        {/* Number Circle */}
                         <div
                           className={`flex h-6 w-6 items-center justify-center rounded-full text-sm font-medium ${index === currentTabIndex ? 'bg-accent-two text-white' : 'bg-gray-300 text-gray-700'}`}
                         >
@@ -300,7 +206,6 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                 )}
               </div>
             </div>
-            {/* Tab Content */}
             <div>
               <form
                 onSubmit={handleSubmit}
@@ -331,8 +236,7 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
-                      min={13}
-                      max={13}
+                      maxLength={13}
                     />
                     <InputTextField
                       field_name="address"
@@ -374,18 +278,17 @@ const VotingForm = ({ onSubmit, docGenerated }) => {
                     data={data}
                     setData={setData}
                     handleFieldError={handleFieldError}
+                    isGenerating={isGenerating}
                   />
                 )}
               </form>
               {updateVoter !== null && (
-                <>
-                  <PaginationArrows
-                    tabs={tabs}
-                    currentTabIndex={currentTabIndex}
-                    goToPreviousTab={goToPreviousTab}
-                    goToNextTab={goToNextTab}
-                  />
-                </>
+                <PaginationArrows
+                  tabs={tabs}
+                  currentTabIndex={currentTabIndex}
+                  goToPreviousTab={goToPreviousTab}
+                  goToNextTab={goToNextTab}
+                />
               )}
             </div>
           </div>

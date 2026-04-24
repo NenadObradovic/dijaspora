@@ -18,17 +18,19 @@ const NextSteps = ({ formData }) => {
       {embassy_email.length > 0 && (
         <p className="mt-4 font-medium">
           {t('email_button_example')}{' '}
-          {embassy_email.map((email, index) => (
-            <React.Fragment key={index}>
-              <a
-                className="ml-2 text-accent-two underline-offset-2 hover:underline"
-                href={`mailto:${email}`}
-              >
-                {email}
-              </a>
-              {index < embassy_email.length - 1 && ' '}
-            </React.Fragment>
-          ))}
+          {embassy_email
+            .filter((email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+            .map((email, index, arr) => (
+              <React.Fragment key={index}>
+                <a
+                  className="ml-2 text-accent-two underline-offset-2 hover:underline"
+                  href={`mailto:${email}`}
+                >
+                  {email}
+                </a>
+                {index < arr.length - 1 && ' '}
+              </React.Fragment>
+            ))}
         </p>
       )}
     </section>
