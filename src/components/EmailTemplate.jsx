@@ -24,17 +24,24 @@ const EmailTemplate = ({ updateVoter }) => {
 
   const handleCopy = async () => {
     setCopyError(false)
+
+    let success = false
+
     try {
       if (navigator.clipboard?.writeText && window.isSecureContext) {
         await navigator.clipboard.writeText(emailText)
+        success = true
       } else {
-        const ok = fallbackCopy(emailText)
-        if (!ok) throw new Error('fallback-copy-failed')
+        success = fallbackCopy(emailText)
       }
+    } catch {
+      success = false
+    }
 
+    if (success) {
       setCopied(true)
       window.setTimeout(() => setCopied(false), 2000)
-    } catch {
+    } else {
       setCopyError(true)
       window.setTimeout(() => setCopyError(false), 2500)
       if (preRef.current) {
