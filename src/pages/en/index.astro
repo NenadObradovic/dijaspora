@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro'
 import enTranslations from '../../locales/en/translation.json'
 import { externalLinks } from '../../data/links.jsx'
+import { ELECTION_DATE_ISO } from '../../config/election'
 
 const pageTitle = enTranslations.page_title || ''
 const pageDescription = enTranslations.page_description || ''
@@ -26,6 +27,47 @@ const pageDescription = enTranslations.page_description || ''
       device. The application does not send data to our servers; the document is generated
       in your browser and downloaded to your device.
     </p>
+
+    {
+      ELECTION_DATE_ISO && (
+        <div
+          class="mt-6 overflow-hidden rounded-xl border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] shadow-sm"
+          data-component="election-countdown"
+          data-election-date={ELECTION_DATE_ISO}
+          data-title="Countdown to election day"
+          data-days-label="Days left:"
+          data-day-word="day"
+          data-days-word="days"
+          data-hours-label="Time:"
+        >
+          <div class="bg-gradient-to-r from-accent-two/10 via-accent-one/10 to-accent-two/10 p-4">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex items-center gap-2">
+                <div class="h-2.5 w-2.5 rounded-full bg-accent-two" />
+                <div
+                  class="font-semibold tracking-tight text-[color:var(--theme-color-900)]"
+                  data-role="title"
+                />
+              </div>
+              <div
+                class="inline-flex w-fit items-center rounded-full border border-[color:var(--theme-color-150)] bg-white/60 px-3 py-1 text-xs font-medium text-[color:var(--theme-color-700)] dark:bg-black/10"
+                data-role="days"
+              />
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-xs font-medium text-[color:var(--theme-color-500)]">
+              Countdown
+            </div>
+            <div
+              class="mt-1 font-mono text-2xl font-semibold tracking-tight text-[color:var(--theme-color-900)] sm:text-3xl"
+              data-role="timer"
+            />
+          </div>
+          <script type="module" src="/scripts/electionCountdown.js" />
+        </div>
+      )
+    }
   </section>
 
   <section class="mt-6 w-full">

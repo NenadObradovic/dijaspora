@@ -2,6 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro'
 import srLatinTranslations from '../locales/sr-latn/translation.json'
 import { externalLinks } from '../data/links.jsx'
+import { ELECTION_DATE_ISO } from '../config/election'
 
 const pageTitle = srLatinTranslations.page_title || ''
 const pageDescription = srLatinTranslations.page_description || ''
@@ -29,6 +30,47 @@ const pageDescription = srLatinTranslations.page_description || ''
       Vašem računaru. Aplikacija ne šalje podatke na naše servere; dokument se generiše
       u pregledaču i preuzimate ga na svoj uređaj.
     </p>
+
+    {
+      ELECTION_DATE_ISO && (
+        <div
+          class="mt-6 overflow-hidden rounded-xl border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] shadow-sm"
+          data-component="election-countdown"
+          data-election-date={ELECTION_DATE_ISO}
+          data-title="Odbrojavanje do izbora"
+          data-days-label="Preostalo dana:"
+          data-day-word="dan"
+          data-days-word="dana"
+          data-hours-label="Vreme:"
+        >
+          <div class="bg-gradient-to-r from-accent-two/10 via-accent-one/10 to-accent-two/10 p-4">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <div class="flex items-center gap-2">
+                <div class="h-2.5 w-2.5 rounded-full bg-accent-two" />
+                <div
+                  class="font-semibold tracking-tight text-[color:var(--theme-color-900)]"
+                  data-role="title"
+                />
+              </div>
+              <div
+                class="inline-flex w-fit items-center rounded-full border border-[color:var(--theme-color-150)] bg-white/60 px-3 py-1 text-xs font-medium text-[color:var(--theme-color-700)] dark:bg-black/10"
+                data-role="days"
+              />
+            </div>
+          </div>
+          <div class="p-4">
+            <div class="text-xs font-medium text-[color:var(--theme-color-500)]">
+              Odbrojavanje
+            </div>
+            <div
+              class="mt-1 font-mono text-2xl font-semibold tracking-tight text-[color:var(--theme-color-900)] sm:text-3xl"
+              data-role="timer"
+            />
+          </div>
+          <script type="module" src="/scripts/electionCountdown.js" />
+        </div>
+      )
+    }
   </section>
 
   <section class="mt-6 w-full">
