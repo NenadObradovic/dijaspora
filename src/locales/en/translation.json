@@ -10,7 +10,7 @@
     "handbook": "Handbook",
     "handbook_path": "/en/handbook",
     "form": "Voting",
-    "form_path": "en/voting"
+    "form_path": "/en/voting"
   },
   "page_title": "My Serbia - My Vote",
   "page_description": "Voting from Abroad – Simple, Digital, Secure",
@@ -19,7 +19,7 @@
   "personal_data_tab": "Personal information",
   "signature_tab": "Signature and download",
   "voting_intro_paragraph_1": "This form allows citizens of the Republic of Serbia who are abroad to submit a request to vote outside the country. The process includes checking registration in the electoral roll, entering personal information, and selecting the diplomatic-consular mission (embassy or consulate) where they wish to vote.",
-  "voting_intro_paragraph_2": "Please fill out all information carefully to ensure your request is valid. After successful completion, the system will automatically generate a document that you can download and submit to the appropriate diplomatic mission.",
+  "voting_intro_paragraph_2": "Please fill out all information carefully to ensure your request is valid. After successful completion, the system will automatically generate a document that you can download and submit to the appropriate diplomatic mission. The document is generated in your browser; you submit it to the relevant mission yourself.",
   "voting_intro_note": "Note: To open a polling station abroad, at least 100 registered voters must apply per location.",
   "check_list_info": "Check if you are registered in the unified voter list by clicking the button below, then return to this page:",
   "check_list_link": "Unified Voter List",
@@ -47,7 +47,7 @@
   "country_description": "Choose the country from which you will vote",
   "country_error": "Country is required.",
   "embassy": "Select a consular office",
-  "embassy_description": "Choose the consular office where you want to submit your request",
+  "embassy_description": "Select the mission responsible for your request",
   "embassy_error": "Please select a consular office.",
   "city": "Enter city",
   "city_description": "Enter the city you wish to vote from, or leave it blank if it matches the selected consular",
@@ -73,9 +73,9 @@
   "google_maps_info_title": "Open in Maps",
   "next_steps_title": "Next steps",
   "next_steps_step_1": "Take a photo of both sides of your ID card or the first page of your passport.",
-  "next_steps_step_2": "Download the completed application form for voting abroad.\n If you selected the option to generate the request for voter list registration, it will also be downloaded.",
-  "next_steps_step_3": "Send an email to the embassy and attach the downloaded forms along with the photo of the document.",
-  "email_heading_example": "Suggested email text:",
+  "next_steps_step_2": "Download the completed application form for voting abroad. If you selected the option to generate the request for voter register registration, it will also be downloaded.",
+  "next_steps_step_3": "Send an email to the relevant mission and attach the downloaded forms along with a photo of your document.",
+  "email_heading_example": "Suggested email text (copy and adjust as needed):",
   "email_body_voter": "Dear Sir/Madam,\n\nI am applying to vote abroad, and for that purpose I am enclosing:\n1. a request for entry into the unified voter register of the Republic of Serbia;\n2. a request for entry of the information that I will vote abroad into the voter register;\n3. a copy of a valid identification document of the Republic of Serbia.\n\nAlso, pursuant to Paragraph 4 of Article 16 of the Law on the Unified Voter Register, I request to be informed about the data entered about me in the voter register.",
   "email_body_non_voter": "Dear Sir/Madam,\n\nI am applying to vote abroad, and for that purpose I am enclosing:\n1. a request for entry into the unified voter register of the Republic of Serbia;\n2. a copy of a valid identification document of the Republic of Serbia.\n\nAlso, pursuant to Paragraph 4 of Article 16 of the Law on the Unified Voter Register, I request to be informed about the data entered about me in the voter register.",
   "email_button_example": "Send an email to the following addresses:",
@@ -89,5 +89,6 @@
   "check_list_return_hint": "After checking, please return to this page to continue.",
   "signature_saved": "Signature saved",
   "copy_email": "Copy email text",
-  "copied": "Copied!"
+  "copied": "Copied!",
+  "copy_failed": "Copy failed. Please select and copy manually."
 }

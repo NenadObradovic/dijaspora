@@ -21,14 +21,14 @@ akcentom na brzinu, bezbednost i jednostavnost korišćenja.
 
 ## ❌ Kako je izgledao stari proces registracije?
 
-1. Pronađi stranicu ambasade putem sajta Ministarstva spoljnih poslova
-2. Nađeš uputstva za skidanje formulara za registraciju
-3. Pronađeš mejl adresu na sajtu ambasade
-4. Skineš formular (često lošeg kvaliteta)
-5. Odštampaš formular
-6. Ručno ga popuniš
-7. Skenerom ili telefonom napraviš digitalnu kopiju
-8. Pošalješ formular i skeniran/slikan pasoš ili ličnu kartu na ambasadu putem mejla
+1. Pronađete stranicu nadležnog DKP-a putem sajta Ministarstva spoljnih poslova
+2. Pronađete uputstva i preuzmete formular za registraciju
+3. Pronađete mejl adresu na sajtu DKP-a
+4. Preuzmete formular (često u formatu koji nije pogodan za digitalno popunjavanje)
+5. Odštampate formular
+6. Ručno ga popunite
+7. Skenerom ili telefonom napravite digitalnu kopiju
+8. Pošaljete formular i fotografiju/skeniranu kopiju pasoša ili lične karte na DKP putem mejla
 
 ⚠️ Problem: proces je dug, komplikovan, često obeshrabrujući – i mnogi zato
 nikada ne pošalju prijavu.
@@ -37,12 +37,12 @@ nikada ne pošalju prijavu.
 
 ## ✅ Novi proces uz pomoć ovog alata
 
-1. Poseti [dijasporaglasa.org](https://effortless-alfajores-9be653.netlify.app/)
-2. Unesi sve tražene podatke (ime, JMBG, adresa u inostranstvu itd.)
-3. Digitalno se potpiši
-4. Na tvom računaru ćeš dobiti popunjen formular sa tvojim podacima
-5. Uz to priloži sliku pasoša ili lične karte
-6. Pošalji oba dokumenta na mejl adresu ambasade koju dobiješ na sajtu, u
+1. Posetite web aplikaciju: [https://dijasporaglasa.app/](https://effortless-alfajores-9be653.netlify.app/)
+2. Unesite tražene podatke (ime, JMBG, adresa u inostranstvu itd.)
+3. Potpišite se digitalno
+4. Na Vašem uređaju biće generisan popunjen dokument sa unetim podacima
+5. Priložite fotografiju pasoša ili lične karte
+6. Pošaljite dokumente na mejl adresu nadležnog DKP-a, u
    zavisnosti od zemlje prebivališta
 
 🎯 Rezultat: brz, tačan i jednostavan proces bez štampanja, skeniranja ili
@@ -54,10 +54,12 @@ gubljenja vremena.
 
 ### Da li čuvate moje podatke?
 
-**Ne.** Podaci se obrađuju isključivo na vašem uređaju, u pregledaču
+**Ne.** Podaci se obrađuju isključivo na Vašem uređaju, u pregledaču
 (browseru).  
-Čim zatvorite sajt ili preuzmete generisani dokument, svi uneti podaci
-nestaju.  
+Podaci se ne skladište na našim serverima. Dokument se generiše u pregledaču i
+preuzimate ga na svoj uređaj.  
+Napomena: preuzeti dokument i poslati imejl ostaju u Vašem sistemu/imejl klijentu,
+u skladu sa njihovim pravilima.
 Kod je potpuno transparentan i može se proveriti na GitHub-u.
 
 ### Kako mogu da budem siguran/na?
@@ -83,30 +85,30 @@ Ovo su detalji celokupnog procesa, od provere dokumenata do dana izbora.
 #### Biračko pravo
 
 Glasačko pravo imaju svi državljani Republike Srbije sa važećim pasošem ili ličnom kartom.  
-Ako ti je pasoš istekao, zahtev za novi dokument možeš podneti u najbližem diplomatsko-konzularnom predstavništvu (DKP).
+Ako Vam je pasoš istekao, zahtev za novi dokument možete podneti u najbližem diplomatsko-konzularnom predstavništvu (DKP).
 
 🔗 [Informacije o putnim ispravama – mfa.gov.rs](https://www.mfa.gov.rs/gradjani/usluge/putne-isprave)
 
 #### Provera upisa u birački spisak
 
-Proveri da li si upisan/a u Jedinstveni birački spisak:
+Proverite da li ste upisani u Jedinstveni birački spisak:
 
 🔗 [upit.birackispisak.gov.rs](https://upit.birackispisak.gov.rs)
 
-Ako nisi upisan/a, zahtev se podnosi nakon raspisivanja izbora.
+Ako niste upisani, zahtev se podnosi nakon raspisivanja izbora.
 
-#### Provera da li postoji ambasada u tvojoj zemlji
+#### Provera da li postoji ambasada u Vašoj zemlji
 
 🔗 [Spisak ambasada i konzulata Srbije](https://www.mfa.gov.rs/lat/predstavnistva/predstavnistva-srbije-u-svetu/ambasade)
 
 ---
 
-### ❓ Šta ako u tvojoj zemlji **nema ambasade** ili **konzulata**?
+### ❓ Šta ako u Vašoj zemlji **nema ambasade** ili **konzulata**?
 
-Ako ne postoji diplomatsko-konzularno predstavništvo Srbije u tvojoj zemlji:
+Ako ne postoji diplomatsko-konzularno predstavništvo Srbije u Vašoj zemlji:
 
-1. **Možeš otputovati do najbližeg DKP-a**, npr. ako si na Islandu, najbliže su Kopenhagen ili Oslo.
-2. **Možeš glasati u Srbiji**, ali moraš biti upisan u birački spisak i imati važeći dokument.
+1. **Možete otputovati do najbližeg DKP-a**, npr. ako ste na Islandu, najbliže su Kopenhagen ili Oslo.
+2. **Možete glasati u Srbiji**, ali morate biti upisani u birački spisak i imati važeći dokument.
 
 > ⚠️ Da bi se otvorilo biračko mesto u ambasadi/konzulatu, mora se prijaviti **najmanje 100 birača**. Ako ih nema dovoljno, to biračko mesto neće biti otvoreno.
 
@@ -116,8 +118,8 @@ Ako ne postoji diplomatsko-konzularno predstavništvo Srbije u tvojoj zemlji:
 
 - **Zahtev za upis u birački spisak** se podnosi u DKP-u do 5 dana pre zatvaranja spiska.
 - **Zahtev za glasanje u inostranstvu** se podnosi bez obzira da li ste ranije glasali.
-- **Zahtev za potvrdu prijema** – preporučuje se slanje mejla DKP-u da potvrde da su primili tvoju prijavu.
-- **Redovno proveravaj status** putem kontakta sa DKP-om (mejl, telefon, lično).
+- **Zahtev za potvrdu prijema** – preporučuje se slanje mejla DKP-u radi potvrde prijema Vaše prijave.
+- **Redovno proveravajte status** putem kontakta sa DKP-om (mejl, telefon, lično).
 - **Biračko mesto** u inostranstvu se formira za 100–2500 birača (ili više/niže uz dozvolu RIK-a).
 
 📄 Obrasci:  
@@ -157,6 +159,8 @@ lokalno:
 | `npm run preview`         | Pregled gotovog build-a pre produkcije             |
 | `npm run astro ...`       | Pokreće razne Astro CLI komande                    |
 | `npm run astro -- --help` | Prikazuje pomoć za rad sa Astro CLI                |
+
+Napomena: Projekat je statički frontend; nema serverski backend koji prima ili čuva lične podatke.
 
 ---
 

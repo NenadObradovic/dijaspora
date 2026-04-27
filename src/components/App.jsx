@@ -58,7 +58,7 @@ const App = () => {
 
   return (
     <>
-      <h1 className="title mb-6 bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 bg-clip-text text-center text-3xl text-transparent dark:from-accent-two dark:via-accent-one dark:to-accent-two">
+      <h1 className="title mt-6 bg-gradient-to-r from-accent-two/85 via-accent-one/85 to-accent-two/85 bg-clip-text text-center !text-2xl text-transparent dark:from-accent-two dark:via-accent-one dark:to-accent-two sm:mt-0 sm:text-4xl">
         {t('form_title')}
       </h1>
       {!docGenerated && isWebView() && (
