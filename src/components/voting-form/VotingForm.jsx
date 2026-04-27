@@ -22,6 +22,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
   const { t, i18n } = useTranslation()
   const [isMobile, setIsMobile] = useState(false)
   const [updateVoter, setUpdateVoter] = useState(null)
+  const [checkError, setCheckError] = useState(null)
 
   useEffect(() => {
     function handleResize() {
@@ -60,6 +61,46 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
     goToPreviousTab,
   } = useFormTabs(data, t)
 
+  const focusFirstFieldError = (formErrors) => {
+    const priorityOrder = [
+      'full_name',
+      'parent_name',
+      'jmbg',
+      'address',
+      'address_abroad',
+      'country',
+      'embassy',
+      'city',
+      'telephone',
+      'email',
+      'signature',
+    ]
+
+    const keys = Object.keys(formErrors || {})
+    const firstKey =
+      priorityOrder.find((k) => keys.includes(k)) ?? (keys[0] || null)
+    if (!firstKey || firstKey === 'signature') return
+
+    window.requestAnimationFrame(() => {
+      const el =
+        document.getElementById(firstKey) ||
+        document.querySelector(`[name="${firstKey}"]`)
+      if (el && typeof el.focus === 'function') {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        el.focus()
+      }
+    })
+  }
+
+  const handleGoToNextTab = () => {
+    if (activeTab === 'check' && updateVoter === null) {
+      setCheckError(t('select_option_error'))
+      return
+    }
+    setCheckError(null)
+    goToNextTab()
+  }
+
   const [availableEmbassy, setAvailableEmbassy] = useState()
 
   const handleChange = (e) => {
@@ -86,6 +127,9 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
     )
     if (nonSignatureErrors.length > 0) {
       setActiveTab('personal-data')
+    }
+    if (Object.keys(formErrors).length > 0) {
+      focusFirstFieldError(formErrors)
     }
 
     if (Object.keys(formErrors).length === 0) {
@@ -142,11 +186,24 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
     }
   }
 
-  const handleFieldError = (field, hasDefault = true) => {
+  const handleFieldError = (
+    field,
+    { helperId, errorId } = {},
+    hasDefault = true,
+  ) => {
     return errors[field] ? (
-      <div className="error text-sm text-red-500">{errors[field]}</div>
+      <div
+        id={errorId}
+        className="error text-sm text-red-500"
+        aria-live="polite"
+      >
+        {errors[field]}
+      </div>
     ) : hasDefault ? (
-      <span className="text-sm text-[color:var(--theme-color-400)]">
+      <span
+        id={helperId}
+        className="text-sm text-[color:var(--theme-color-400)]"
+      >
         {t(field + '_description')}
       </span>
     ) : null
@@ -170,7 +227,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
           <div className="flex w-full max-w-screen-lg flex-col gap-8 pt-4 sm:grid sm:grid-cols-[250px_1fr]">
             <div>
               <div className="sticky top-[40px] flex flex-wrap justify-between gap-y-8 sm:flex-col sm:justify-start">
-                <div className="flex shrink-0 flex-col gap-y-4 sm:w-full sm:flex-col">
+                <div className="flex w-full shrink-0 items-center justify-between gap-y-4 sm:w-full sm:flex-col sm:items-stretch">
                   {tabs.map((tab, index) => {
                     if (isMobile && tab !== activeTab) {
                       return null
@@ -196,14 +253,12 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                     )
                   })}
                 </div>
-                {updateVoter !== null && (
-                  <PaginationButtons
-                    tabs={tabs}
-                    currentTabIndex={currentTabIndex}
-                    goToPreviousTab={goToPreviousTab}
-                    goToNextTab={goToNextTab}
-                  />
-                )}
+                <PaginationButtons
+                  tabs={tabs}
+                  currentTabIndex={currentTabIndex}
+                  goToPreviousTab={goToPreviousTab}
+                  goToNextTab={handleGoToNextTab}
+                />
               </div>
             </div>
             <div>
@@ -215,6 +270,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                   <GenerateRequestField
                     updateVoter={updateVoter}
                     setUpdateVoter={setUpdateVoter}
+                    checkError={checkError}
                   />
                 )}
                 {activeTab === 'personal-data' && (
@@ -224,12 +280,14 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                     <InputTextField
                       field_name="parent_name"
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                     <InputNumberField
                       field_name="jmbg"
@@ -237,18 +295,21 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
                       maxLength={13}
+                      hasError={errors}
                     />
                     <InputTextField
                       field_name="address"
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                     <InputTextField
                       field_name="address_abroad"
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                     <CountryField
                       availableCountries={availableCountries}
@@ -256,6 +317,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                     <InputTelField
                       field_name="telephone"
@@ -263,6 +325,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                     <InputEmailField
                       field_name="email"
@@ -270,6 +333,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}
+                      hasError={errors}
                     />
                   </>
                 )}
@@ -282,14 +346,12 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                   />
                 )}
               </form>
-              {updateVoter !== null && (
-                <PaginationArrows
-                  tabs={tabs}
-                  currentTabIndex={currentTabIndex}
-                  goToPreviousTab={goToPreviousTab}
-                  goToNextTab={goToNextTab}
-                />
-              )}
+              <PaginationArrows
+                tabs={tabs}
+                currentTabIndex={currentTabIndex}
+                goToPreviousTab={goToPreviousTab}
+                goToNextTab={handleGoToNextTab}
+              />
             </div>
           </div>
         </>

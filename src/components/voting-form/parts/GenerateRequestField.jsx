@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { externalLinks } from '../../../data/links.jsx'
 
-const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
+const GenerateRequestField = ({ updateVoter, setUpdateVoter, checkError }) => {
   const { t } = useTranslation()
 
   return (
@@ -17,6 +17,9 @@ const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
         >
           {t('check_list_link')}
         </a>
+        <p className="mt-3 text-sm text-[color:var(--theme-color-500)]">
+          {t('check_list_return_hint')}
+        </p>
       </div>
       <h4 className="text-accent-three title mt-6">
         {t('generate_request_for_list')}
@@ -58,6 +61,9 @@ const GenerateRequestField = ({ updateVoter, setUpdateVoter }) => {
           </label>
         </div>
       </div>
+      {checkError && (
+        <div className="error mt-1 text-sm text-red-500">{checkError}</div>
+      )}
     </div>
   )
 }

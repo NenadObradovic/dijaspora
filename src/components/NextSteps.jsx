@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { toSafeMailto } from '../utils/toSafeMailto.js'
 
 const NextSteps = ({ formData }) => {
   const { t } = useTranslation()
@@ -19,12 +20,13 @@ const NextSteps = ({ formData }) => {
         <p className="mt-4 font-medium">
           {t('email_button_example')}{' '}
           {embassy_email
-            .filter((email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
-            .map((email, index, arr) => (
-              <React.Fragment key={index}>
+            .map((email) => ({ email, href: toSafeMailto(email) }))
+            .filter((x) => Boolean(x.href))
+            .map(({ email, href }, index, arr) => (
+              <React.Fragment key={`${email}-${index}`}>
                 <a
                   className="ml-2 text-accent-two underline-offset-2 hover:underline"
-                  href={`mailto:${email}`}
+                  href={href}
                 >
                   {email}
                 </a>

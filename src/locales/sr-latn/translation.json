@@ -84,5 +84,10 @@
   "web_view_error": "Ako niste uspeli da generišete dokument iz Telegram, Instagram ili Facebook aplikacije, molimo vas da otvorite ovaj sajt u vašem internet pregledaču (npr. Chrome, Safari) i pokušate ponovo.",
   "generating_docs": "Generisanje dokumenata, molimo sačekajte...",
   "generate_error": "Došlo je do greške pri generisanju dokumenata. Molimo pokušajte ponovo.",
-  "app_error": "Došlo je do neočekivane greške. Molimo osvežite stranicu i pokušajte ponovo."
+  "app_error": "Došlo je do neočekivane greške. Molimo osvežite stranicu i pokušajte ponovo.",
+  "select_option_error": "Molimo vas odaberite opciju.",
+  "check_list_return_hint": "Nakon provere, molimo vas vratite se na ovu stranicu da nastavite.",
+  "signature_saved": "Potpis sačuvan",
+  "copy_email": "Kopiraj tekst mejla",
+  "copied": "Kopirano!"
 }

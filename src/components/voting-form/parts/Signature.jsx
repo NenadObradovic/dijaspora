@@ -15,7 +15,7 @@ const Signature = ({ data, setData, handleFieldError, isGenerating }) => {
     const updateCanvasSize = () => {
       if (wrapperRef.current) {
         const width = wrapperRef.current.offsetWidth
-        const height = Math.min(240, width * 0.5)
+        const height = Math.min(300, Math.max(180, width * 0.65))
         setCanvasSize({ width, height })
       }
     }
@@ -33,10 +33,7 @@ const Signature = ({ data, setData, handleFieldError, isGenerating }) => {
 
   const saveSignature = () => {
     if (!sigCanvasRef.current.isEmpty()) {
-      const canvas =
-        process.env.NODE_ENV === 'development'
-          ? sigCanvasRef.current.getCanvas()
-          : sigCanvasRef.current.getTrimmedCanvas()
+      const canvas = sigCanvasRef.current.getTrimmedCanvas()
       const base64 = canvas.toDataURL('image/png')
       setData((prev) => ({ ...prev, signature: base64 }))
     }
@@ -77,7 +74,12 @@ const Signature = ({ data, setData, handleFieldError, isGenerating }) => {
       </div>
       {handleFieldError('signature')}
       {data.signature && (
-        <div className="mt-4 flex items-center justify-between">
+        <p className="mt-2 text-sm font-medium text-green-600">
+          ✓ {t('signature_saved')}
+        </p>
+      )}
+      {data.signature && (
+        <div className="mt-3 flex items-center justify-between">
           <button
             type="button"
             onClick={clearSignature}

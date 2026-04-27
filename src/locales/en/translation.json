@@ -84,5 +84,10 @@
   "web_view_error": "If you weren’t able to generate the document from the Telegram, Instagram, or Facebook app, please open this website in your browser (e.g. Chrome, Safari) and try again.",
   "generating_docs": "Generating documents, please wait...",
   "generate_error": "An error occurred while generating documents. Please try again.",
-  "app_error": "An unexpected error occurred. Please reload the page and try again."
+  "app_error": "An unexpected error occurred. Please reload the page and try again.",
+  "select_option_error": "Please select an option.",
+  "check_list_return_hint": "After checking, please return to this page to continue.",
+  "signature_saved": "Signature saved",
+  "copy_email": "Copy email text",
+  "copied": "Copied!"
 }

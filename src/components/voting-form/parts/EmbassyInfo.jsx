@@ -1,5 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
+import { toSafeMailto } from '../../../utils/toSafeMailto.js'
 
 const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
   const { t } = useTranslation()
@@ -58,19 +59,22 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
       {emails && emails.length > 0 && (
         <p className="text-sm text-[color:var(--theme-color-700)]">
           <span className="font-medium">{t('email_info_title')}</span>{' '}
-          {emails.map(
-            (email, idx) =>
-              email && (
-                <a
-                  key={idx}
-                  href={`mailto:${email}`}
-                  className="text-accent-two underline-offset-2 hover:underline"
-                >
-                  {email}
-                  {idx < emails.length - 1 ? ', ' : ''}
-                </a>
-              ),
-          )}
+          {emails.map((email, idx) => {
+            if (!email) return null
+            const href = toSafeMailto(email)
+            if (!href) return null
+
+            return (
+              <a
+                key={idx}
+                href={href}
+                className="text-accent-two underline-offset-2 hover:underline"
+              >
+                {email}
+                {idx < emails.length - 1 ? ', ' : ''}
+              </a>
+            )
+          })}
         </p>
       )}
 

@@ -27,6 +27,7 @@
     "danska": "Danska",
     "dominikanska_republika": "Dominikanska Republika",
     "egipat": "Egipat",
+    "etiopija": "Etiopija",
     "ekvador": "Ekvador",
     "el_salvador": "El Salvador",
     "zambija": "Zambija",
@@ -65,7 +66,7 @@
     "maroko": "Maroko",
     "mauricijus": "Mauricijus",
     "meksiko": "Meksiko",
-    "mjanmar": "Mijanmar",
+    "mjanmar": "Mjanmar",
     "mozambik": "Mozambik",
     "monako": "Monako",
     "mongolija": "Mongolija",
@@ -775,6 +776,17 @@
         "+202 / 2735-40-61",
         "+202 / 2736-54-94",
         "+202 / 2736-70-94"
+      ]
+    },
+    "etiopija": {
+      "country": "Etiopija",
+      "embassy": "Adis Abeba",
+      "address": "",
+      "email": [
+        "serbambadis@yahoo.com"
+      ],
+      "telephone": [
+        "+251 911 253 956"
       ]
     },
     "ekvador": {
@@ -1579,7 +1591,7 @@
       }
     },
     "mjanmar": {
-      "country": "Mijanmar",
+      "country": "Mjanmar",
       "ambassador": "Gordana Jakšić",
       "embassy": "Jangon",
       "address": "114-A Inya Road, Kamayut Township, Jangon",
