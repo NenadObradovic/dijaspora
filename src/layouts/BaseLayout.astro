@@ -3,7 +3,6 @@ import Header from '../components/layout/Header.astro'
 import Footer from '../components/layout/Footer.astro'
 import I18nRouterProvider from '../components/I18nRouterProvider.jsx'
 import '../styles/global.css'
-import mobileMenu from '../scripts/mobileMenu.js?url'
 
 const {
   pageTitle = 'Moja Srbija - Moj Glas',
@@ -88,7 +87,7 @@ const {
         </I18nRouterProvider>
       </div>
     </div>
-    <script type="module" src={mobileMenu}></script>
+    <script type="module" src="/scripts/mobileMenu.js"></script>
     <script type="module" src="/scripts/electionCountdown.js"></script>
   </body>
 </html>
