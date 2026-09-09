@@ -2,7 +2,12 @@
 import { getNavLinks } from '../../utils/nav'
 
 let lang = Astro.currentLocale ?? ''
-const currentPath = Astro.url.pathname
+// Normalize away a trailing slash so the active link still matches
+// regardless of whether the current URL has one (e.g. a direct visit to
+// "/glasanje" vs. following a nav link to "/glasanje/").
+const normalizePath = (path: string) =>
+  path.length > 1 ? path.replace(/\/+$/, '') : path
+const currentPath = normalizePath(Astro.url.pathname)
 
 const navLinks = getNavLinks(lang)
 ---
@@ -13,7 +18,7 @@ const navLinks = getNavLinks(lang)
 >
   {
     navLinks.map((link) => {
-      const isActive = link.path === currentPath
+      const isActive = normalizePath(link.path) === currentPath
 
       return (
         <a

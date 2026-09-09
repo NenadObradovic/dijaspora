@@ -31,6 +31,7 @@ function setupMobileMenu() {
         drawer.classList.add('hidden')
       }, 300)
 
+      drawer.setAttribute('aria-hidden', 'true')
       openMenuIcon.classList.add('scale-100', 'opacity-100')
       closeMenuIcon.classList.add('scale-0', 'opacity-0')
       closeMenuIcon.classList.remove('scale-100', 'opacity-100')
@@ -39,6 +40,7 @@ function setupMobileMenu() {
       drawerBody.classList.add('translate-y-0')
       drawerBody.classList.remove('opacity-0', '-translate-y-full')
 
+      drawer.setAttribute('aria-hidden', 'false')
       openMenuIcon.classList.add('scale-0', 'opacity-0')
       closeMenuIcon.classList.add('scale-100', 'opacity-100')
       openMenuIcon.classList.remove('scale-100', 'opacity-100')
