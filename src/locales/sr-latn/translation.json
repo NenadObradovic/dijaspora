@@ -49,6 +49,7 @@
   "embassy": "Izaberite predstavništvo",
   "embassy_description": "Izaberite predstavništvo nadležno za vaš zahtev",
   "embassy_error": "Molimo vas odaberite neko predstavništvo.",
+  "non_resident_note": "Srbija nema rezidentno predstavništvo u ovoj državi. Vaš zahtev se podnosi nadležnom predstavništvu prikazanom ispod.",
   "city": "Unesite grad",
   "city_description": "Upišite grad iz koga biste želeli da glasate ili ostavite prazno ako je isti kao predstavništvo koje ste odabrali",
   "telephone_description": "Unesite svoj kontakt telefon",

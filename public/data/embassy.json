@@ -1,119 +1,200 @@
 {
   "availableCountries": {
-    "azerbejdzan": "Azerbejdžan",
     "albanija": "Albanija",
     "alzir": "Alžir",
+    "andora": "Andora",
     "angola": "Angola",
+    "antigva-i-barbuda": "Antigva i Barbuda",
     "argentina": "Argentina",
     "australija": "Australija",
     "austrija": "Austrija",
+    "avganistan": "Avganistan",
+    "azerbejdzan": "Azerbejdžan",
+    "bahami": "Bahami",
     "bahrein": "Bahrein",
+    "banglades": "Bangladeš",
+    "barbados": "Barbados",
     "belgija": "Belgija",
+    "belize": "Belize",
     "belorusija": "Belorusija",
     "benin": "Benin",
+    "bocvana": "Bocvana",
     "bolivija": "Bolivija",
     "bosna-i-hercegovina": "Bosna i Hercegovina",
-    "bocvana": "Bocvana",
     "brazil": "Brazil",
+    "bruneji": "Brunej Darusalam",
     "bugarska": "Bugarska",
-    "vijetnam": "Vijetnam",
-    "venecuela": "Venecuela",
+    "burkina-faso": "Burkina Faso",
+    "burundi": "Burundi",
+    "butan": "Butan",
+    "centralnoafricka-republika": "Centralnoafrička Republika",
+    "crna-gora": "Crna Gora",
+    "cad": "Čad",
+    "ceska": "Češka",
+    "cile": "Čile",
+    "danska": "Danska",
+    "dominika": "Dominika",
+    "dominikanska_republika": "Dominikanska Republika",
+    "dzibuti": "Džibuti",
+    "egipat": "Egipat",
+    "ekvador": "Ekvador",
+    "ekvatorijalna-gvineja": "Ekvatorijalna Gvineja",
+    "el_salvador": "El Salvador",
+    "eritreja": "Eritreja",
+    "estonija": "Estonija",
+    "esvatini": "Esvatini",
+    "etiopija": "Etiopija",
+    "fidzi": "Fidži",
+    "filipini": "Filipini",
+    "finska": "Finska",
+    "francuska": "Francuska",
+    "gabon": "Gabon",
     "gambija": "Gambija",
     "gana": "Gana",
+    "grcka": "Grčka",
+    "grenada": "Grenada",
+    "gruzija": "Gruzija",
+    "gvajana": "Gvajana",
     "gvatemala": "Gvatemala",
     "gvineja": "Gvineja",
-    "gruzija": "Gruzija",
-    "grcka": "Grčka",
-    "danska": "Danska",
-    "dominikanska_republika": "Dominikanska Republika",
-    "egipat": "Egipat",
-    "etiopija": "Etiopija",
-    "ekvador": "Ekvador",
-    "el_salvador": "El Salvador",
-    "zambija": "Zambija",
-    "zimbabve": "Zimbabve",
-    "izrael": "Izrael",
+    "gvineja-bisao": "Gvineja Bisao",
+    "haiti": "Haiti",
+    "holandija": "Holandija",
+    "honduras": "Honduras",
+    "hrvatska": "Hrvatska",
     "indija": "Indija",
     "indonezija": "Indonezija",
     "irak": "Irak",
     "iran": "Iran",
+    "irska": "Irska",
     "island": "Island",
+    "istocni-timor": "Istočni Timor",
     "italija": "Italija",
+    "izrael": "Izrael",
     "jamajka": "Jamajka",
     "japan": "Japan",
+    "jemen": "Jemen",
     "jermenija": "Jermenija",
+    "jordan": "Jordan",
     "juzna-afrika": "Južna Afrika",
+    "juzni-sudan": "Južni Sudan",
     "kabo_verde": "Kabo Verde",
-    "kazahstan": "Kazahstan",
+    "kambodza": "Kambodža",
+    "kamerun": "Kamerun",
     "kanada": "Kanada",
     "katar": "Katar",
+    "kazahstan": "Kazahstan",
     "kenija": "Kenija",
     "kina": "Kina",
     "kipar": "Kipar",
+    "kirgiska-republika": "Kirgiska Republika",
+    "kiribati": "Kiribati",
     "kolumbija": "Kolumbija",
     "kongo": "Kongo, Demokratska Republika",
+    "kongo-republika": "Kongo, Republika",
+    "koreja-dnr": "Koreja, DNR",
     "koreja": "Koreja, Republika",
     "kostarika": "Kostarika",
+    "republika-kot-d-ivoar": "Kot d' Ivoar",
     "kuba": "Kuba",
     "kuvajt": "Kuvajt",
+    "laos": "Laos",
+    "lesoto": "Lesoto",
+    "letonija": "Letonija",
     "liban": "Liban",
+    "liberija": "Liberija",
     "libija": "Libija",
+    "lihtenstajn": "Lihtenštajn",
+    "litvanija": "Litvanija",
+    "luksemburg": "Luksemburg",
     "madagaskar": "Madagaskar",
+    "madarska": "Mađarska",
+    "malavi": "Malavi",
+    "maldivi": "Maldivi",
     "malezija": "Malezija",
     "mali": "Mali",
     "malta": "Malta",
-    "madarska": "Mađarska",
     "maroko": "Maroko",
+    "marsalova-ostrva": "Maršalova ostrva",
     "mauricijus": "Mauricijus",
+    "mauritanija": "Mauritanija",
     "meksiko": "Meksiko",
+    "mikronezija": "Mikronezija",
     "mjanmar": "Mjanmar",
-    "mozambik": "Mozambik",
+    "moldavija-republika": "Moldavija",
     "monako": "Monako",
     "mongolija": "Mongolija",
+    "mozambik": "Mozambik",
     "namibija": "Namibija",
+    "nauru": "Nauru",
     "nemacka": "Nemačka",
     "nepal": "Nepal",
+    "niger": "Niger",
     "nigerija": "Nigerija",
+    "nikaragva": "Nikaragva",
     "norveska": "Norveška",
+    "novi-zeland": "Novi Zeland",
+    "oman": "Oman",
     "pakistan": "Pakistan",
+    "palau": "Palau",
+    "palestina": "Palestina",
     "panama": "Panama",
+    "papua-nova-gvineja": "Papua Nova Gvineja",
+    "paragvaj": "Paragvaj",
     "peru": "Peru",
     "poljska": "Poljska",
     "portugalija": "Portugal",
+    "ruanda": "Ruanda",
     "rumunija": "Rumunija",
     "rusija": "Ruska Federacija",
+    "samoa": "Samoa",
+    "san-marino": "San Marino",
     "sao_tome_and_principe": "Sao Tome i Principe",
     "saudijska-arabija": "Saudijska Arabija",
-    "sveta-stolica": "Sveta Stolica",
-    "severna-makedonija": "Severna Makedonija",
     "sejseli": "Sejšeli",
+    "senegal": "Senegal",
+    "sent-kits-i-nevis": "Sent Kits i Nevis",
+    "severna-makedonija": "Severna Makedonija",
     "sijera_leone": "Sijera Leone",
     "singapur": "Singapur",
     "sirija": "Sirija",
     "sad": "Sjedinjene Američke Države",
     "slovacka": "Slovačka",
     "slovenija": "Slovenija",
+    "solomonska-ostrva": "Solomonova Ostrva",
+    "somalija": "Somalija",
     "sudan": "Sudan",
+    "surinam": "Surinam",
+    "suvereni-malteski-red": "Suvereni Vojni Malteški Red",
+    "sveta-lucija": "Sveta Lucija",
+    "sveta-stolica": "Sveta Stolica",
+    "sveti-vinsent-i-grenadini": "Sveti Vinsent i Grenadini",
+    "spanija": "Španija",
+    "sri_lanka": "Šri Lanka",
+    "svajcarska": "Švajcarska",
+    "svedska": "Švedska",
+    "tadzikistan-republika": "Tadžikistan",
     "tajland": "Tajland",
+    "tanzanija": "Tanzanija",
     "togo": "Togo",
+    "tonga": "Tonga",
+    "trinidad-i-tobago": "Trinidad i Tobago",
     "tunis": "Tunis",
+    "turkmenistan": "Turkmenistan",
     "turska": "Turska",
+    "tuvalu": "Tuvalu",
     "uganda": "Uganda",
     "uae": "Ujedinjeni Arapski Emirati",
     "uk": "Ujedinjeno Kraljevstvo",
     "ukrajina": "Ukrajina",
-    "filipini": "Filipini",
-    "finska": "Finska",
-    "francuska": "Francuska",
-    "holandija": "Holandija",
-    "hrvatska": "Hrvatska",
-    "crna-gora": "Crna Gora",
-    "ceska": "Češka",
-    "cile": "Čile",
-    "svajcarska": "Švajcarska",
-    "svedska": "Švedska",
-    "spanija": "Španija",
-    "sri_lanka": "Šri Lanka"
+    "unija-komora": "Unija Komora",
+    "urugvaj": "Urugvaj",
+    "uzbekistan-republika": "Uzbekistan, Republika",
+    "vanuatu": "Vanuatu",
+    "venecuela": "Venecuela",
+    "vijetnam": "Vijetnam",
+    "zambija": "Zambija",
+    "zimbabve": "Zimbabve"
   },
   "embassyByCountry": {
     "azerbejdzan": {
@@ -145,7 +226,7 @@
     },
     "alzir": {
       "country": "Alžir",
-      "ambassador": "Ana Petković",
+      "ambassador": "Biljana Ranković Bekić",
       "embassy": "Hydra",
       "address": "42, rue des Frères Benali Abdellah (ex rue Parmentier), B.P.366, Hydra",
       "email": [
@@ -178,12 +259,12 @@
       "address": "Montevideo 696, 1019 Buenos Aires",
       "email": [
         "srb.emb.argentina@mfa.rs",
-        "consuladoserbiabuenosaires@gmail.com"
+        "consuladoserbiabuenosaires@gmail.com",
+        "consulado.argentina@mfa.rs"
       ],
       "telephone": [
-        "+5411/4371-1359",
-        "+5411/4371-1362",
-        "+5411/4371-1363"
+        "+54 11 4835 0195",
+        "+54 11 4835 0196"
       ],
       "honorary_consulate": {
         "provincia_de_chaco": {
@@ -246,7 +327,7 @@
           "embassy": "Salcburg",
           "address": "Schallmooser Hauptstrasse 99, 5020 Salcburg",
           "email": [
-            "genoonsulate.salzburg@mfa.rs"
+            "genconsulate.salzburg@mfa.rs"
           ],
           "telephone": [
             "+43662 / 845-254"
@@ -273,8 +354,12 @@
       "embassy": "Manama",
       "address": "Building 899, Road 3218, Block 332, BuAshirah, Manama",
       "email": [
-        "embrskw@gmail.com",
-        "serbkonzkw@gmail.com"
+        "serbian.embassy.bahrain@mfa.rs",
+        "serbia.consular.bahrain@mfa.rs"
+      ],
+      "telephone": [
+        "+973/133-00336",
+        "+973/133-00335"
       ]
     },
     "belgija": {
@@ -283,12 +368,13 @@
       "embassy": "Brisel",
       "address": "Boulevard Du Regent 53, 1000 Brisel",
       "email": [
-        "srb.emb.belgium@mfa.rs"
+        "srb.emb.belgium@mfa.rs",
+        "konzularno.brisel@mfa.rs"
       ],
       "telephone": [
-        "+322 / 647-2652",
-        "+322 / 647-5781",
-        "+322 / 649-6545"
+        "+322 / 204-7870",
+        "+322 / 649-6731",
+        "+322 / 649-8349"
       ],
       "honorary_consulate": {
         "mortsel": {
@@ -395,7 +481,7 @@
           "embassy": "Drvar",
           "address": "Titova bb, 80260 Drvar",
           "email": [
-            "kk.rs-dryar@teol.net"
+            "kk.rs-drvar@teol.net"
           ],
           "telephone": [
             "+387 (0)34 961 030",
@@ -425,19 +511,6 @@
             "+387 51 / 227-060"
           ]
         }
-      },
-      "honorary_consulate": {
-        "pale": {
-          "ambassador": "Dejan Ljevnaić",
-          "embassy": "Pale",
-          "address": "Univerzitetska 24E, 71420 Pale, Bosna i Hercegovina",
-          "email": [
-            "kabinet@konzulatrs.com"
-          ],
-          "telephone": [
-            "+387 57 222 555"
-          ]
-        }
       }
     },
     "bocvana": {
@@ -465,61 +538,16 @@
         "embaixadaservia@terra.com.br"
       ],
       "telephone": [
-        "+5561 / 3223-72-72",
-        "+5561 / 3223-19-94"
+        "+55 61 20 99 22 78",
+        "+55 61 20 99 22 79"
       ],
       "honorary_consulate": {
-        "porto_alegre": {
-          "ambassador": "Dr. Édison Freitas de Siqueira",
-          "embassy": "Porto Alegre",
-          "address": "Rua Dom Pedro II, n° 1411, Ed. Consul Edison Freita de Siqueira, Bairro Higienópolis, Porto Alegre",
-          "email": [
-            "edisonsiqueira@edisonsiqueira.com.br"
-          ],
-          "telephone": [
-            "+55 51 3358 0500"
-          ]
-        },
-        "sao_paulo": {
-          "ambassador": "José Guilherme de Godoy Pinheiro",
-          "embassy": "Sao Paulo",
-          "address": "Rua Cordisburgo, n° 215, Bairro Jardim Guedala, Sao Paulo",
-          "email": [
-            "josegpinheiro@hotmail.com"
-          ],
-          "telephone": [
-            "+55 11 3667 3246"
-          ]
-        },
-        "curitiba": {
-          "ambassador": "Edson Josée Ramon",
-          "embassy": "Curitiba",
-          "address": "Av.Presidente Kennedy 860 Bairro Reboucas, Curitiba",
-          "email": [
-            "eramon@bighost.com.br",
-            "lucienne@bighost.com.br"
-          ],
-          "telephone": [
-            "+55 41 3342 7588"
-          ]
-        },
         "rio_de_janeiro": {
           "ambassador": "Dejan Petkovic",
           "embassy": "Rio de Janeiro",
           "address": "Rua Jose Maria Rodrigues 57, CEP 22.793-348 Barra da Tijuca, Rio de Janeiro",
           "email": [
             "consulriodeianeiro5521@gmail.com"
-          ]
-        },
-        "balneario_camboriu": {
-          "ambassador": "Sezar Šiljano",
-          "embassy": "Balneario Camboriu",
-          "address": "Rua 1001 Hr. 235 ap. 105, Balneário Camboriú",
-          "email": [
-            "sdprbrazil@outlook.com"
-          ],
-          "telephone": [
-            "+55 41 999634449"
           ]
         }
       }
@@ -659,12 +687,12 @@
         "tbilisi": {
           "ambassador": "David Sirbiladze",
           "embassy": "Tbilisi",
-          "address": "Tskneti Highway 20, Tbilisi",
+          "address": "Merab Kostavas 43, Tbilisi, Georgia",
           "email": [
-            "d.sirbiladze@pcg.com.ge"
+            "davitsirbiladze7@gmail.com"
           ],
           "telephone": [
-            "+995 577 119393"
+            "+995 599 170990"
           ]
         }
       }
@@ -689,7 +717,7 @@
           "embassy": "Solun",
           "address": "Komninon 4, 54624 Solun",
           "email": [
-            "srb.cons.thessaloniki@mfa.rs"
+            "srbcons@otenet.gr"
           ],
           "telephone": [
             "+302310 / 244-265",
@@ -780,14 +808,7 @@
     },
     "etiopija": {
       "country": "Etiopija",
-      "embassy": "Adis Abeba",
-      "address": "",
-      "email": [
-        "serbambadis@yahoo.com"
-      ],
-      "telephone": [
-        "+251 911 253 956"
-      ]
+      "covered_by": "kenija"
     },
     "ekvador": {
       "country": "Ekvador",
@@ -866,7 +887,7 @@
       "address": "10, Bodenheimer St., 62008 Tel Aviv",
       "email": [
         "srb.emb.israel@mfa.rs",
-        "srbambil@netvision.net.ll",
+        "srbambil@netvision.net.il",
         "consular.srb@013net.net"
       ],
       "telephone": [
@@ -959,27 +980,13 @@
       "embassy": "Teheran",
       "address": "Sahrak E Qouds, North Falamak Street, 4th Alley, Building No 3, P.O. Box 19858, Teheran",
       "email": [
-        "serbembteh@neda.net"
+        "embassy@serbiatehran.com",
+        "konzularno@serbiatehran.com",
+        "visa@serbiatehran.com"
       ],
       "telephone": [
         "+982188091529"
       ]
-    },
-    "island": {
-      "country": "Island",
-      "honorary_consulate": {
-        "reykjavik": {
-          "ambassador": "Mr. Arman Kojić",
-          "embassy": "Reykjavik",
-          "address": "Reynimelur 34, 107 Reykjavik",
-          "email": [
-            "konzul@island.rs"
-          ],
-          "telephone": [
-            "+354 445 2000"
-          ]
-        }
-      }
     },
     "italija": {
       "country": "Italija",
@@ -995,7 +1002,7 @@
       ],
       "consulate": {
         "trst": {
-          "ambassador": "Nikola Paunović",
+          "ambassador": "Nemanja Sekicki",
           "embassy": "Trst",
           "address": "Strada del Friuli 54, 34136 Trst",
           "email": [
@@ -1158,7 +1165,7 @@
     },
     "kanada": {
       "country": "Kanada",
-      "ambassador": "Dejan Ralević",
+      "ambassador": "Stefan Tomašević",
       "embassy": "Otava",
       "address": "21, Blackburn Avenue, Otava Ontario K1N 8A2",
       "email": [
@@ -1171,11 +1178,11 @@
       ],
       "consulate": {
         "toronto": {
-          "ambassador": "Jelena Srdanović Dželebdžić",
+          "ambassador": "Dejan Eraković",
           "embassy": "Toronto",
           "address": "40 Eglinton Avenue East, 7 floor, unit 701 M4P 3A2, Toronto, ON M4P 3A2",
           "email": [
-            "gkrstoronto@rogers.com"
+            "office.toronto@mfa.rs"
           ],
           "telephone": [
             "+1416 / 483-10-80"
@@ -1222,7 +1229,7 @@
     },
     "katar": {
       "country": "Katar",
-      "ambassador": "Aca Petrović",
+      "ambassador": "Marija Jović",
       "embassy": "Doha",
       "address": "Zone 66, West Bay, Um Al Seneem no.5, Doha, P.O. Box 22195",
       "email": [
@@ -1259,7 +1266,8 @@
         "+8610 / 6532-1693",
         "+8610 / 6532-5413",
         "+8610 / 6532-1628",
-        "+8610 / 6532-1562"
+        "+8610 / 6532-1562",
+        "+8610 / 6532-6248"
       ],
       "consulate": {
         "sangaj": {
@@ -1336,7 +1344,7 @@
     },
     "koreja": {
       "country": "Koreja, Republika",
-      "ambassador": "Nemanja Grbić",
+      "ambassador": "Aleksandar Đorđević",
       "embassy": "Seul",
       "address": "22nd Floor, Booyoung Taepyeong Building, 55 Sejong-daero, Jung-gu, Seul",
       "email": [
@@ -1403,8 +1411,8 @@
       ],
       "telephone": [
         "+961 922 1256",
-        "+961 922 1257",
-        "+961 766 28 206"
+        "+961 922 1063",
+        "+961 788 93 054"
       ],
       "honorary_consulate": {
         "kaslik": {
@@ -1438,23 +1446,6 @@
         "+21821 / 362-32-05",
         "+21821 / 362-32-06"
       ]
-    },
-    "madagaskar": {
-      "country": "Madagaskar",
-      "honorary_consulate": {
-        "antananarivo": {
-          "ambassador": "Maminijaina Ravatomanga",
-          "embassy": "Antananarivo",
-          "address": "9e étage, Pradon Trade Center, Antanimena, Antananarivo",
-          "email": [
-            "consulatserbiemada@gmail.com",
-            "consulatserbiemada@yahoo.com"
-          ],
-          "telephone": [
-            "+261 20 222 1484"
-          ]
-        }
-      }
     },
     "malta": {
       "country": "Malta",
@@ -1599,25 +1590,9 @@
         "serbemb@yangon.net.mm"
       ],
       "telephone": [
-        "+951 515-282",
-        "+951 515-283"
+        "+951 7515-282",
+        "+951 7515-283"
       ]
-    },
-    "mozambik": {
-      "country": "Mozambik",
-      "honorary_consulate": {
-        "maputo": {
-          "ambassador": "John Kachamila",
-          "embassy": "Maputo",
-          "address": "Avenida Mao Tse Tung, 19 Maputo",
-          "email": [
-            "jwkacha@tvcabo.co.mz"
-          ],
-          "telephone": [
-            "+258 84 302 8500"
-          ]
-        }
-      }
     },
     "monako": {
       "country": "Monako",
@@ -1718,7 +1693,7 @@
         "minhen": {
           "ambassador": "Božidar Vučurović",
           "embassy": "Minhen",
-          "address": "Bohmenwaldplatz 2, D-81679 Minhen",
+          "address": "Bohmerwaldplatz 2, D-81679 Minhen",
           "email": [
             "gk.muenchen@mfa.rs"
           ],
@@ -1760,7 +1735,7 @@
     },
     "nigerija": {
       "country": "Nigerija",
-      "ambassador": "Jugoslav Vukadinović",
+      "ambassador": "Petar Vulić",
       "embassy": "Abudža",
       "address": "11, Rio Negro Close, off Yedseram Street, Maitama District, Abudža",
       "email": [
@@ -1798,7 +1773,7 @@
     },
     "norveska": {
       "country": "Norveška",
-      "ambassador": "Dragan Petrović",
+      "ambassador": "Jasmina Mitrović Marić",
       "embassy": "Oslo",
       "address": "Munkedamsveien 59B, 0270 Oslo",
       "email": [
@@ -1879,7 +1854,8 @@
           ],
           "telephone": [
             "+48 32 2658 166",
-            "+48 601 413 788"
+            "+48 601 413 788",
+            "+48 32 2656 533 ext. 250"
           ]
         },
         "bydgoszcz": {
@@ -1943,12 +1919,12 @@
     },
     "rumunija": {
       "country": "Rumunija",
-      "ambassador": "Stefan Tomašević",
+      "ambassador": "Dragan Simeunović",
       "embassy": "Bukurešt",
       "address": "General Eremia Grigorescu nr. 12, Bukurešt",
       "email": [
         "srb.emb.romania@mfa.rs",
-        "consultate.bucharest@mfa.rs"
+        "consulate.bucharest@mfa.rs"
       ],
       "telephone": [
         "+4021 / 211-98-71",
@@ -2073,7 +2049,7 @@
       "country": "Severna Makedonija",
       "ambassador": "Nevena Jovanović",
       "embassy": "Skoplje",
-      "address": "Pitu Guli 8, Skoplje",
+      "address": "Samoilova br. 34, Skoplje",
       "email": [
         "srbamb@unet.com.mk"
       ],
@@ -2188,7 +2164,8 @@
           "embassy": "Cikago",
           "address": "201 East Ohio Street, Suite 200, Čikago, IL 60611",
           "email": [
-            "info@segchicago.org"
+            "info@scgchicago.org",
+            "srb.cons.chicago@mfa.rs"
           ],
           "telephone": [
             "+1 (312) 670-6707"
@@ -2202,7 +2179,8 @@
             "consultate.newyork@mfa.rs"
           ],
           "telephone": [
-            "+1 (212) 5964 241"
+            "+1 (212) 5964 241",
+            "+1 (917) 519-741"
           ]
         }
       },
@@ -2321,7 +2299,7 @@
       "country": "Slovenija",
       "ambassador": "Ivo Vojvodić",
       "embassy": "Ljubljana",
-      "address": "Slomškova 1, 1000 Ljubljana",
+      "address": "Ciril - Metodov trg 1, 1000 Ljubljana",
       "email": [
         "embassy.ljubljana@mfa.rs"
       ],
@@ -2535,14 +2513,14 @@
       "country": "Ukrajina",
       "ambassador": "Andon Sapundži",
       "embassy": "Kijev",
-      "address": "Voloska 4, 04070 Kijev",
+      "address": "Ulica Bogdana Hmeljnickog 48, treći sprat, 01045 Kijev",
       "email": [
         "ambars@ukr.net",
         "konzrs@ukr.net"
       ],
       "telephone": [
-        "+38044 / 425-60-60",
-        "+38044 / 425-60-15"
+        "+380 99 / 261-34-00",
+        "+380 50 0282547"
       ]
     },
     "filipini": {
@@ -2617,7 +2595,7 @@
     },
     "holandija": {
       "country": "Holandija",
-      "ambassador": "Dušan Vukić",
+      "ambassador": "Marina Jovićević",
       "embassy": "Hag",
       "address": "Burgemeester van Kamebeeklaan 19, 2585 Hag",
       "email": [
@@ -2665,7 +2643,7 @@
           "embassy": "Rijeka",
           "address": "Erazma Barčića 9, 51000 Rijeka",
           "email": [
-            "konzulat-rijeka@ri.t-com.hr"
+            "konzulat.srbije.rijeka@gmail.com"
           ],
           "telephone": [
             "+38551 / 337-420",
@@ -2703,10 +2681,12 @@
       ],
       "consulate": {
         "herceg-novi": {
-          "ambassador": "Mićo Rogović",
+          "ambassador": "Jasmina Milačić",
           "embassy": "Herceg Novi",
           "address": "Trg Hercega Stjepana (Belavista) 15, 85340 Herceg Novi",
-          "email": [],
+          "email": [
+            "gkh.novi@mfa.rs"
+          ],
           "telephone": [
             "+382-31 / 350-320",
             "+382-31 / 350-340"
@@ -2727,7 +2707,20 @@
         "+4202 / 57-53-20-75",
         "+4202 / 57-53-15-82",
         "+4202 / 57-53-39-49"
-      ]
+      ],
+      "honorary_consulate": {
+        "brno": {
+          "ambassador": "Miodrag Škrbić",
+          "embassy": "Brno",
+          "address": "Cejl 476/5, 602 00 Brno-střed-Zábrdovice",
+          "email": [
+            "konzul.srb.brno@gmail.com"
+          ],
+          "telephone": [
+            "+420 601 007 698"
+          ]
+        }
+      }
     },
     "cile": {
       "country": "Čile",
@@ -2750,7 +2743,10 @@
             "+569 4 092 04 81"
           ]
         }
-      }
+      },
+      "telephone": [
+        "+569 6 608 54 39"
+      ]
     },
     "svajcarska": {
       "country": "Švajcarska",
@@ -2861,6 +2857,342 @@
           ]
         }
       }
+    },
+    "island": {
+      "country": "Island",
+      "covered_by": "norveska"
+    },
+    "madagaskar": {
+      "country": "Madagaskar",
+      "covered_by": "juzna-afrika"
+    },
+    "mozambik": {
+      "country": "Mozambik",
+      "covered_by": "juzna-afrika"
+    },
+    "avganistan": {
+      "country": "Avganistan",
+      "covered_by": "iran"
+    },
+    "andora": {
+      "country": "Andora",
+      "covered_by": "spanija"
+    },
+    "antigva-i-barbuda": {
+      "country": "Antigva i Barbuda",
+      "covered_by": "sad"
+    },
+    "banglades": {
+      "country": "Bangladeš",
+      "covered_by": "indija"
+    },
+    "barbados": {
+      "country": "Barbados",
+      "covered_by": "sad"
+    },
+    "bahami": {
+      "country": "Bahami",
+      "covered_by": "sad"
+    },
+    "belize": {
+      "country": "Belize",
+      "covered_by": "sad"
+    },
+    "bruneji": {
+      "country": "Brunej Darusalam",
+      "covered_by": "indonezija"
+    },
+    "burkina-faso": {
+      "country": "Burkina Faso",
+      "covered_by": "nigerija"
+    },
+    "burundi": {
+      "country": "Burundi",
+      "covered_by": "kenija"
+    },
+    "butan": {
+      "country": "Butan",
+      "covered_by": "indija"
+    },
+    "vanuatu": {
+      "country": "Vanuatu",
+      "covered_by": "australija"
+    },
+    "gabon": {
+      "country": "Gabon",
+      "covered_by": "angola"
+    },
+    "gvajana": {
+      "country": "Gvajana",
+      "covered_by": "sad"
+    },
+    "gvineja-bisao": {
+      "country": "Gvineja Bisao",
+      "covered_by": "alzir"
+    },
+    "grenada": {
+      "country": "Grenada",
+      "covered_by": "sad"
+    },
+    "dominika": {
+      "country": "Dominika",
+      "covered_by": "sad"
+    },
+    "ekvatorijalna-gvineja": {
+      "country": "Ekvatorijalna Gvineja",
+      "covered_by": "angola"
+    },
+    "eritreja": {
+      "country": "Eritreja",
+      "covered_by": "kenija"
+    },
+    "esvatini": {
+      "country": "Esvatini",
+      "covered_by": "juzna-afrika"
+    },
+    "estonija": {
+      "country": "Estonija",
+      "covered_by": "finska"
+    },
+    "irska": {
+      "country": "Irska",
+      "covered_by": "uk"
+    },
+    "istocni-timor": {
+      "country": "Istočni Timor",
+      "covered_by": "indonezija"
+    },
+    "jemen": {
+      "country": "Jemen",
+      "covered_by": "kuvajt"
+    },
+    "jordan": {
+      "country": "Jordan",
+      "covered_by": "sirija"
+    },
+    "juzni-sudan": {
+      "country": "Južni Sudan",
+      "covered_by": "kenija"
+    },
+    "kambodza": {
+      "country": "Kambodža",
+      "covered_by": "indonezija"
+    },
+    "kamerun": {
+      "country": "Kamerun",
+      "covered_by": "kongo"
+    },
+    "kirgiska-republika": {
+      "country": "Kirgiska Republika",
+      "covered_by": "rusija"
+    },
+    "kiribati": {
+      "country": "Kiribati",
+      "covered_by": "australija"
+    },
+    "kongo-republika": {
+      "country": "Kongo, Republika",
+      "covered_by": "kongo"
+    },
+    "koreja-dnr": {
+      "country": "Koreja, DNR",
+      "covered_by": "kina"
+    },
+    "republika-kot-d-ivoar": {
+      "country": "Kot d' Ivoar",
+      "covered_by": "nigerija"
+    },
+    "laos": {
+      "country": "Laos",
+      "covered_by": "mjanmar"
+    },
+    "lesoto": {
+      "country": "Lesoto",
+      "covered_by": "juzna-afrika"
+    },
+    "letonija": {
+      "country": "Letonija",
+      "covered_by": "svedska"
+    },
+    "liberija": {
+      "country": "Liberija",
+      "covered_by": "nigerija"
+    },
+    "litvanija": {
+      "country": "Litvanija",
+      "covered_by": "poljska"
+    },
+    "lihtenstajn": {
+      "country": "Lihtenštajn",
+      "covered_by": "svajcarska"
+    },
+    "luksemburg": {
+      "country": "Luksemburg",
+      "covered_by": "belgija"
+    },
+    "malavi": {
+      "country": "Malavi",
+      "covered_by": "juzna-afrika"
+    },
+    "maldivi": {
+      "country": "Maldivi",
+      "covered_by": "indija"
+    },
+    "marsalova-ostrva": {
+      "country": "Maršalova ostrva",
+      "covered_by": "japan"
+    },
+    "mauritanija": {
+      "country": "Mauritanija",
+      "covered_by": "maroko"
+    },
+    "mikronezija": {
+      "country": "Mikronezija",
+      "covered_by": "japan"
+    },
+    "moldavija-republika": {
+      "country": "Moldavija",
+      "covered_by": "rumunija"
+    },
+    "nauru": {
+      "country": "Nauru",
+      "covered_by": "australija"
+    },
+    "niger": {
+      "country": "Niger",
+      "covered_by": "nigerija"
+    },
+    "nikaragva": {
+      "country": "Nikaragva",
+      "covered_by": "meksiko"
+    },
+    "novi-zeland": {
+      "country": "Novi Zeland",
+      "covered_by": "australija"
+    },
+    "oman": {
+      "country": "Oman",
+      "covered_by": "egipat"
+    },
+    "palau": {
+      "country": "Palau",
+      "covered_by": "japan"
+    },
+    "palestina": {
+      "country": "Palestina",
+      "covered_by": "egipat"
+    },
+    "papua-nova-gvineja": {
+      "country": "Papua Nova Gvineja",
+      "covered_by": "australija"
+    },
+    "paragvaj": {
+      "country": "Paragvaj",
+      "covered_by": "argentina"
+    },
+    "ruanda": {
+      "country": "Ruanda",
+      "covered_by": "kenija"
+    },
+    "samoa": {
+      "country": "Samoa",
+      "covered_by": "australija"
+    },
+    "san-marino": {
+      "country": "San Marino",
+      "covered_by": "italija"
+    },
+    "sveta-lucija": {
+      "country": "Sveta Lucija",
+      "covered_by": "sad"
+    },
+    "sveti-vinsent-i-grenadini": {
+      "country": "Sveti Vinsent i Grenadini",
+      "covered_by": "sad"
+    },
+    "senegal": {
+      "country": "Senegal",
+      "covered_by": "maroko"
+    },
+    "sent-kits-i-nevis": {
+      "country": "Sent Kits i Nevis",
+      "covered_by": "sad"
+    },
+    "solomonska-ostrva": {
+      "country": "Solomonova Ostrva",
+      "covered_by": "australija"
+    },
+    "somalija": {
+      "country": "Somalija",
+      "covered_by": "kenija"
+    },
+    "suvereni-malteski-red": {
+      "country": "Suvereni Vojni Malteški Red",
+      "covered_by": "sveta-stolica"
+    },
+    "surinam": {
+      "country": "Surinam",
+      "covered_by": "sad"
+    },
+    "tanzanija": {
+      "country": "Tanzanija",
+      "covered_by": "kenija"
+    },
+    "tadzikistan-republika": {
+      "country": "Tadžikistan",
+      "covered_by": "rusija"
+    },
+    "tonga": {
+      "country": "Tonga",
+      "covered_by": "australija"
+    },
+    "trinidad-i-tobago": {
+      "country": "Trinidad i Tobago",
+      "covered_by": "sad"
+    },
+    "tuvalu": {
+      "country": "Tuvalu",
+      "covered_by": "australija"
+    },
+    "turkmenistan": {
+      "country": "Turkmenistan",
+      "covered_by": "rusija"
+    },
+    "uzbekistan-republika": {
+      "country": "Uzbekistan, Republika",
+      "covered_by": "rusija"
+    },
+    "unija-komora": {
+      "country": "Unija Komora",
+      "covered_by": "kenija"
+    },
+    "urugvaj": {
+      "country": "Urugvaj",
+      "covered_by": "argentina"
+    },
+    "fidzi": {
+      "country": "Fidži",
+      "covered_by": "australija"
+    },
+    "haiti": {
+      "country": "Haiti",
+      "covered_by": "kuba"
+    },
+    "honduras": {
+      "country": "Honduras",
+      "covered_by": "meksiko"
+    },
+    "centralnoafricka-republika": {
+      "country": "Centralnoafrička Republika",
+      "covered_by": "kongo"
+    },
+    "cad": {
+      "country": "Čad",
+      "covered_by": "kongo"
+    },
+    "dzibuti": {
+      "country": "Džibuti",
+      "covered_by": "kenija"
     }
   }
 }

@@ -1,13 +1,18 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { toSafeMailto } from '../../../utils/toSafeMailto.js'
+import { resolveEmbassyCountry } from '../../../utils/buildEmbassyOptions.js'
 
 const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
   const { t } = useTranslation()
 
-  const countryData = embassyData?.embassyByCountry?.[countryKey]
+  const rawCountryData = embassyData?.embassyByCountry?.[countryKey]
 
-  if (!countryData || !embassyKey) return null
+  if (!rawCountryData || !embassyKey) return null
+
+  const countryData =
+    resolveEmbassyCountry(countryKey, embassyData?.embassyByCountry ?? {}) ??
+    rawCountryData
 
   const isDefault = !embassyKey || embassyKey === 'default'
   let isHonor = false
@@ -39,9 +44,14 @@ const EmbassyInfo = ({ embassyData, countryKey, embassyKey }) => {
   return (
     <div className="rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-4 shadow-sm">
       <h2 className="title mb-2 text-xl text-accent-two">
-        {countryData.country}
+        {rawCountryData.country}
         {!isDefault && source.embassy ? ` – ${source.embassy}` : ''}
       </h2>
+      {rawCountryData.covered_by && (
+        <p className="mb-3 text-sm text-[color:var(--theme-color-500)]">
+          {t('non_resident_note')}
+        </p>
+      )}
 
       {source?.ambassador && (
         <h4 className="text-accent-three title mb-4">

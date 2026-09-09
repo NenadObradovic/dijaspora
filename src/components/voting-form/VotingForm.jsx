@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { validateForm } from '../../utils/validateForm.js'
-import { buildEmbassyOptions } from '../../utils/buildEmbassyOptions.js'
+import {
+  buildEmbassyOptions,
+  resolveEmbassyCountry,
+} from '../../utils/buildEmbassyOptions.js'
 import { useEmbassyData } from '../../hooks/useEmbassyData.js'
 import { useFormTabs } from '../../hooks/useFormTabs.js'
 
@@ -92,6 +95,15 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
     })
   }
 
+  // Scroll to the check-step error (which has no focusable field) when it appears
+  useEffect(() => {
+    if (!checkError) return
+    const firstError = document.querySelector('.error')
+    if (firstError) {
+      firstError.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    }
+  }, [checkError])
+
   const handleGoToNextTab = () => {
     if (activeTab === 'check' && updateVoter === null) {
       setCheckError(t('select_option_error'))
@@ -143,11 +155,16 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
       }
 
       if (formData.embassy) {
-        let embassyCountry = embassyByCountry[formData.country]
+        let embassyCountry = resolveEmbassyCountry(
+          formData.country,
+          embassyByCountry,
+        )
         if ('sr' === i18n.language) {
           embassyCountry =
-            embassyCyrlData?.embassyByCountry?.[formData.country] ??
-            embassyCountry
+            resolveEmbassyCountry(
+              formData.country,
+              embassyCyrlData?.embassyByCountry ?? {},
+            ) ?? embassyCountry
         }
 
         formData.embassy_email = embassyCountry.email ?? []
@@ -314,6 +331,7 @@ const VotingForm = ({ onSubmit, docGenerated, isGenerating }) => {
                     <CountryField
                       availableCountries={availableCountries}
                       availableEmbassy={availableEmbassy}
+                      embassyByCountry={embassyByCountry}
                       data={data}
                       handleChange={handleChange}
                       handleFieldError={handleFieldError}

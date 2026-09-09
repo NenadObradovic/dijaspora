@@ -5,12 +5,15 @@ import InputTextField from './InputTextField.jsx'
 const CountryField = ({
   availableCountries,
   availableEmbassy,
+  embassyByCountry,
   data,
   handleChange,
   handleFieldError,
   hasError,
 }) => {
   const { t } = useTranslation()
+
+  const isNonResident = Boolean(embassyByCountry?.[data.country]?.covered_by)
 
   return (
     <>
@@ -46,6 +49,11 @@ const CountryField = ({
       </div>
       {data.country && availableEmbassy && (
         <>
+          {isNonResident && (
+            <p className="text-sm text-[color:var(--theme-color-500)]">
+              {t('non_resident_note')}
+            </p>
+          )}
           <div>
             <label htmlFor="embassy" className="mb-1 block text-sm font-medium">
               {t('embassy')}

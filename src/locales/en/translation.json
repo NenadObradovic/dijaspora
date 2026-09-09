@@ -49,6 +49,7 @@
   "embassy": "Select a consular office",
   "embassy_description": "Select the mission responsible for your request",
   "embassy_error": "Please select a consular office.",
+  "non_resident_note": "Serbia has no resident mission in this country. Your request is submitted to the responsible mission shown below.",
   "city": "Enter city",
   "city_description": "Enter the city you wish to vote from, or leave it blank if it matches the selected consular",
   "telephone_description": "Enter your contact phone number",

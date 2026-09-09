@@ -1,5 +1,16 @@
-export const buildEmbassyOptions = (country, embassyByCountry) => {
+export const resolveEmbassyCountry = (country, embassyByCountry) => {
   const countryData = embassyByCountry[country]
+  if (!countryData) return null
+
+  if (countryData.covered_by && embassyByCountry[countryData.covered_by]) {
+    return embassyByCountry[countryData.covered_by]
+  }
+
+  return countryData
+}
+
+export const buildEmbassyOptions = (country, embassyByCountry) => {
+  const countryData = resolveEmbassyCountry(country, embassyByCountry)
   if (!countryData) return []
 
   const options = []

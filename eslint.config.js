@@ -32,6 +32,7 @@ export default [
         clearTimeout: 'readonly',
         clearInterval: 'readonly',
         MutationObserver: 'readonly',
+        AbortController: 'readonly',
       },
       ecmaVersion: 'latest',
       sourceType: 'module',
