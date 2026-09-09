@@ -47,6 +47,12 @@
     --bg-saturation: var(--saturation);
     --bg-brightness: 15%;
 
+    /* Lighter/brighter than the light-theme values so headings, titles and
+       the red accent stay legible and vivid against the dark background. */
+    --theme-accent-base: var(--bg-hue) 65% 78%;
+    --theme-accent-one: var(--bg-hue) 65% 78%;
+    --theme-accent-two: 351deg 88% 68%;
+
     --fg-hue: var(--hue);
     --fg-saturation: var(--saturation);
     --fg-brightness: 98%;

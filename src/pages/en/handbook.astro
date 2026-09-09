@@ -3,6 +3,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro'
 import { externalLinks } from '../../data/links.jsx'
 
 const pageDescription = 'Voting Handbook'
+
+const sectionClass =
+  'mt-6 w-full scroll-mt-24 rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-6 shadow-sm'
+
+const navLinks = [
+  { href: '#before-election', label: 'Before the elections are announced' },
+  { href: '#after-election', label: 'After elections are announced' },
+  { href: '#election-day', label: 'On election day' },
+  { href: '#faq', label: 'Frequently asked questions' },
+]
 ---
 
 <BaseLayout lang="en" pageDescription={pageDescription}>
@@ -14,37 +24,43 @@ const pageDescription = 'Voting Handbook'
     </h1>
 
     <section class="mt-6 w-full">
-      <h2 class="title mb-4 text-xl text-accent-two">
-        Why It Is Important to Register to Vote and Participate in Elections
-      </h2>
       <p>
         Serbia is, according to its constitution, a democratic republic, and
-        elections represent the fundamental way for citizens to influence the
-        governance of the country. However, in recent times, there have been
-        various challenges related to the electoral process, which makes it
-        important for all citizens to be active participants.
+        elections are the fundamental way for citizens to choose their
+        representatives and influence the governance of the country. The right
+        to vote belongs to all adult citizens of the Republic of Serbia,
+        including those who live abroad temporarily or permanently.
       </p>
       <p>
-        Despite these challenges, parliamentary elections remain a key
-        instrument for expressing the will of the citizens and for the changes
-        we wish to see in society. Active participation can contribute to the
-        fulfillment of various demands and goals.
+        To exercise their voting right from abroad, citizens must be registered
+        in the Unified Voters' Register and, after the elections are called,
+        submit a request to vote from abroad. This request must be submitted
+        every time, regardless of whether you have voted abroad before.
       </p>
       <p>
-        One of the challenges is the transparency of voter registry management,
-        which makes it necessary for citizens, especially diaspora, to be
-        registered and informed to ensure the integrity of the electoral
-        process.
+        This handbook explains, step by step, what needs to be done before and
+        after the elections are called, as well as on election day itself, so
+        that the diaspora can exercise its right to vote simply and on time.
       </p>
-      <p>
-        Registering to vote allows voters to become active and registered
-        participants in elections. In this way, the diaspora not only exercises
-        their rights but also contributes to protecting their identity and the
-        integrity of the election process.
-      </p>
+
+      <nav
+        aria-label="Handbook contents"
+        class="mt-4 flex flex-wrap justify-center gap-2 text-sm"
+      >
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="rounded-full border border-[color:var(--theme-color-150)] px-3 py-1.5 font-medium text-accent-two no-underline transition-colors hover:bg-[color:var(--theme-color-100)]"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
     </section>
 
-    <section class="mt-6 w-full">
+    <section id="before-election" class={sectionClass}>
       <h2 class="title mb-4 text-xl text-accent-two">
         Before the elections are announced
       </h2>
@@ -56,6 +72,11 @@ const pageDescription = 'Voting Handbook'
         The right to vote is granted to citizens of the Republic of Serbia who
         possess valid documents (a national ID card or a passport of the
         Republic of Serbia).
+      </p>
+      <p>
+        Voting from abroad applies to parliamentary elections and presidential
+        elections. Local elections (for city and municipal councils) can only be
+        voted in at the polling station of your registered residence in Serbia.
       </p>
       <p>
         If your passport has expired, you must personally submit a request for
@@ -129,9 +150,15 @@ const pageDescription = 'Voting Handbook'
       <p>
         The most common solution is to travel to the nearest country where a
         Serbian diplomatic-consular mission exists. For example, if you live in
-        Iceland (which has no embassy), the nearest location might be Copenhagen
-        or Oslo. In this case, when applying to vote, you indicate that location
-        as your voting place.
+        Iceland (which has no embassy), the nearest location is the Embassy in
+        Oslo. In this case, when applying to vote, you indicate that location as
+        your voting place.
+      </p>
+      <p>
+        If there is no Serbian mission in your country, the request form on this
+        site automatically detects this and offers you the address of the
+        responsible mission that covers your country – you do not need to look
+        it up yourself.
       </p>
       <h4 class="title mb-2 mt-4">
         2. Traveling to Serbia and voting within the Republic
@@ -149,7 +176,7 @@ const pageDescription = 'Voting Handbook'
       </p>
     </section>
 
-    <section class="mt-6 w-full">
+    <section id="after-election" class={sectionClass}>
       <h2 class="title mb-4 text-xl text-accent-two">
         After elections are announced
       </h2>
@@ -289,8 +316,20 @@ const pageDescription = 'Voting Handbook'
       </p>
     </section>
 
-    <section class="mt-6 w-full">
+    <section id="election-day" class={sectionClass}>
       <h2 class="title mb-4 text-xl text-accent-two">On election day</h2>
+
+      <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
+        How voting works
+      </h3>
+      <p>
+        Voting from abroad is in person and secret. On election day, you must
+        personally go to the polling station (the embassy or consulate) you
+        indicated in your request, with a valid ID document (national ID card or
+        passport). Voting by mail or by proxy is not available. If you are not
+        sure exactly where your polling station is, you can get that information
+        from the diplomatic-consular mission where you submitted your request.
+      </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         How to report irregularities
@@ -343,6 +382,159 @@ const pageDescription = 'Voting Handbook'
           Guide for the Protection of Voters' Electoral Rights
         </a>
       </p>
+
+      <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
+        Complaints about violations of electoral rights
+      </h3>
+      <p>
+        If you believe your electoral right has been violated, or you notice an
+        irregularity in the conduct of the election, a complaint must be
+        submitted to the Republic Electoral Commission (RIK) no later than 24
+        hours from the moment the disputed decision, action, or omission
+        occurred. If you are not satisfied with RIK's decision on the complaint,
+        you may file an appeal with the Administrative Court, which decides
+        within 48 hours. A detailed guide to the procedure can be found in the <a
+          class="text-accent-two underline-offset-2 hover:underline"
+          href={externalLinks.protection_guide}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Guide for the Protection of Voters' Electoral Rights
+        </a>.
+      </p>
+
+      <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
+        Counting votes from abroad
+      </h3>
+      <p>
+        Polling boards at polling stations abroad are composed of
+        representatives of the electoral list proponents, just as at polling
+        stations in Serbia. After the polling station closes, the polling board
+        counts the votes and prepares a report, which is submitted to the
+        Republic Electoral Commission. RIK publishes the combined results from
+        all polling stations, including those abroad, on its website.
+      </p>
+    </section>
+
+    <section id="faq" class={sectionClass}>
+      <h2 class="title mb-4 text-xl text-accent-two">
+        Frequently asked questions
+      </h2>
+
+      <div class="divide-y divide-[color:var(--theme-color-150)]">
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            I'm turning 18 soon – can I vote?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Yes. If you will be 18 years old by election day at the latest, you
+            have the right to vote. The competent city or municipal
+            administration registers you in the voters' register ex officio – no
+            separate registration request is needed because of turning 18.
+          </p>
+        </details>
+
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            I have dual citizenship – can I vote?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Yes. If you hold citizenship of the Republic of Serbia and a valid
+            Serbian document (national ID card or passport), you have the right
+            to vote regardless of whether you also hold citizenship of another
+            country.
+          </p>
+        </details>
+
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            I submitted a request but received no confirmation – what should I
+            do?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            We recommend checking receipt of your request directly with the
+            diplomatic-consular mission (by email, phone, or in person), and
+            sending, along with your voting request, a request for notification
+            about the data entered in the voters' register (described above).
+            You can also check your status in the Unified Voters' Register
+            yourself, via <a
+              class="text-accent-two underline-offset-2 hover:underline"
+              href={externalLinks.electoral_roll}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              upit.birackispisak.gov.rs
+            </a>.
+          </p>
+        </details>
+
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            My ID card or passport is about to expire – what should I do?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Submit a request for a new document at the nearest
+            diplomatic-consular mission in good time. The legal deadline for
+            processing the request is 60 days, so it is important not to delay.
+          </p>
+        </details>
+      </div>
     </section>
   </article>
 </BaseLayout>

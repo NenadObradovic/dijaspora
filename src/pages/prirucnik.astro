@@ -3,6 +3,16 @@ import BaseLayout from '../layouts/BaseLayout.astro'
 import { externalLinks } from '../data/links.jsx'
 
 const pageDescription = 'Priručnik za glasanje u inostranstvu'
+
+const sectionClass =
+  'mt-6 w-full scroll-mt-24 rounded-lg border border-[color:var(--theme-color-150)] bg-[color:var(--theme-special-lightest)] p-6 shadow-sm'
+
+const navLinks = [
+  { href: '#pre-izbora', label: 'Pre raspisivanja izbora' },
+  { href: '#posle-izbora', label: 'Posle raspisivanja izbora' },
+  { href: '#dan-izbora', label: 'Na dan izbora' },
+  { href: '#faq', label: 'Najčešća pitanja' },
+]
 ---
 
 <BaseLayout lang="sr-latn" pageDescription={pageDescription}>
@@ -14,35 +24,43 @@ const pageDescription = 'Priručnik za glasanje u inostranstvu'
     </h1>
 
     <section class="mt-6 w-full">
-      <h2 class="title mb-4 text-xl text-accent-two">
-        Zašto je važno prijaviti se za glasanje i izaći na izbore
-      </h2>
       <p>
         Srbija je po svom ustavu demokratska republika, a izbori predstavljaju
-        osnovni način ostvarivanja prava građana da utiču na upravljanje
-        državom. Ipak, u proteklom periodu bilo je različitih izazova u vezi sa
-        sprovođenjem izbornih procesa, zbog čega je važno da svi građani budu
-        aktivni učesnici.
+        osnovni način na koji građani biraju svoje predstavnike i utiču na
+        upravljanje državom. Pravo glasa imaju svi punoletni državljani
+        Republike Srbije, uključujući i one koji privremeno ili trajno žive u
+        inostranstvu.
       </p>
       <p>
-        Uprkos svim poteškoćama, parlamentarni izbori ostaju ključni instrument
-        za izražavanje volje građana i promene koje želimo da vidimo u društvu.
-        Aktivno učešće može doprineti ostvarivanju različitih zahteva i ciljeva.
+        Da bi ostvarili svoje biračko pravo iz inostranstva, građani moraju biti
+        upisani u jedinstveni birački spisak i, nakon raspisivanja izbora,
+        podneti zahtev da će glasati van zemlje. Prijava se podnosi svaki put
+        iznova, bez obzira na to da li ste ranije glasali u inostranstvu.
       </p>
       <p>
-        Jedan od izazova je transparentnost vođenja biračkog spiska, zbog čega
-        je neophodno da građani, posebno dijaspora, budu registrovani i
-        informisani kako bi se osigurala pravilnost izbornog procesa.
+        Ovaj priručnik objašnjava, korak po korak, šta je potrebno uraditi pre i
+        posle raspisivanja izbora, kao i na sam dan glasanja, kako bi dijaspora
+        mogla jednostavno i na vreme da iskoristi svoje pravo glasa.
       </p>
-      <p>
-        Prijava za glasanje omogućava biračima da postanu aktivni i registrovani
-        učesnici u izborima. Na taj način dijaspora ne samo da koristi svoje
-        pravo, već i doprinosi zaštiti svog identiteta i integriteta izbornog
-        procesa.
-      </p>
+
+      <nav
+        aria-label="Sadržaj priručnika"
+        class="mt-4 flex flex-wrap justify-center gap-2 text-sm"
+      >
+        {
+          navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="rounded-full border border-[color:var(--theme-color-150)] px-3 py-1.5 font-medium text-accent-two no-underline transition-colors hover:bg-[color:var(--theme-color-100)]"
+            >
+              {link.label}
+            </a>
+          ))
+        }
+      </nav>
     </section>
 
-    <section class="mt-6 w-full">
+    <section id="pre-izbora" class={sectionClass}>
       <h2 class="title mb-4 text-xl text-accent-two">
         Pre raspisivanja izbora
       </h2>
@@ -53,6 +71,12 @@ const pageDescription = 'Priručnik za glasanje u inostranstvu'
       <p>
         Biračko pravo imaju državljani Republike Srbije sa važećim dokumentima
         (ličnom kartom ili pasošem Republike Srbije).
+      </p>
+      <p>
+        Iz inostranstva se glasa na izborima za narodne poslanike
+        (parlamentarnim) i na predsedničkim izborima. Za lokalne izbore
+        (odbornike u skupštinama gradova i opština) glasa se isključivo na
+        biračkom mestu u mestu prijavljenog prebivališta u Srbiji.
       </p>
       <p>
         Ukoliko Vam je pasoš istekao, neophodno je da uz lično prisustvo
@@ -126,9 +150,15 @@ const pageDescription = 'Priručnik za glasanje u inostranstvu'
       <p>
         Najčešće rešenje je da odeš u najbližu zemlju gde postoji
         diplomatsko-konzularnо predstavništvo Srbije. Na primer, ako živiš na
-        Islandu (gde nema ambasade), najbliže mesto može biti Kopenhagen ili
-        Oslo. U tom slučaju, prilikom prijave za glasanje navodiš to
-        predstavništvo kao mesto gde ćeš glasati.
+        Islandu (gde nema ambasade), najbliže mesto je Ambasada u Oslu. U tom
+        slučaju, prilikom prijave za glasanje navodiš to predstavništvo kao
+        mesto gde ćeš glasati.
+      </p>
+      <p>
+        Ako u vašoj zemlji nema predstavništva Srbije, alat za popunjavanje
+        zahteva na ovom sajtu to automatski prepoznaje i sam vam ponudi adresu
+        nadležnog predstavništva koje pokriva vašu zemlju – nije potrebno da
+        sami tražite koje je to predstavništvo.
       </p>
       <h4 class="title mb-2 mt-4">
         2. Putovanje u Srbiju i glasanje na teritoriji Republike
@@ -146,7 +176,7 @@ const pageDescription = 'Priručnik za glasanje u inostranstvu'
       </p>
     </section>
 
-    <section class="mt-6 w-full">
+    <section id="posle-izbora" class={sectionClass}>
       <h2 class="title mb-4 text-xl text-accent-two">
         Posle raspisivanja izbora
       </h2>
@@ -284,8 +314,20 @@ const pageDescription = 'Priručnik za glasanje u inostranstvu'
       </p>
     </section>
 
-    <section class="mt-6 w-full">
+    <section id="dan-izbora" class={sectionClass}>
       <h2 class="title mb-4 text-xl text-accent-two">Na dan izbora</h2>
+
+      <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
+        Kako se glasa
+      </h3>
+      <p>
+        Glasanje u inostranstvu je lično i tajno. Na dan izbora potrebno je da
+        lično dođete na biračko mesto (ambasadu ili konzulat) koje ste naveli u
+        zahtevu, sa važećim ličnim dokumentom (ličnom kartom ili pasošem).
+        Glasanje poštom ili preko punomoćnika nije predviđeno. Ako niste sigurni
+        gde se tačno nalazi vaše biračko mesto, tu informaciju možete dobiti od
+        diplomatsko-konzularnog predstavništva kome ste podneli zahtev.
+      </p>
 
       <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
         Kako prijavljivati nepravilnosti
@@ -335,6 +377,155 @@ const pageDescription = 'Priručnik za glasanje u inostranstvu'
           Vodič za zaštitu izbornog prava birača.
         </a>
       </p>
+
+      <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
+        Prigovor zbog povrede izbornog prava
+      </h3>
+      <p>
+        Ako smatrate da vam je povređeno izborno pravo ili primetite
+        nepravilnost u sprovođenju izbora, prigovor se podnosi Republičkoj
+        izbornoj komisiji (RIK) najkasnije u roku od 24 časa od časa kada je
+        doneta odluka, izvršena radnja ili učinjen propust koji osporavate. Ako
+        niste zadovoljni odlukom RIK-a po prigovoru, možete izjaviti žalbu
+        Upravnom sudu, koji odlučuje u roku od 48 časova. Detaljno uputstvo o
+        postupku možete naći u <a
+          class="text-accent-two underline-offset-2 hover:underline"
+          href={externalLinks.protection_guide}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Vodiču za zaštitu izbornog prava birača
+        </a>.
+      </p>
+
+      <h3 class="text-l text-accent-three title mb-2 mt-6 sm:mt-4">
+        Brojanje glasova iz inostranstva
+      </h3>
+      <p>
+        Biračke odbore na biračkim mestima u inostranstvu čine predstavnici
+        predlagača izbornih lista, isto kao i na biračkim mestima u Srbiji.
+        Nakon zatvaranja biračkog mesta, birački odbor prebrojava glasove i
+        sastavlja zapisnik, koji se dostavlja Republičkoj izbornoj komisiji. RIK
+        zbirne rezultate sa svih biračkih mesta, uključujući ona u inostranstvu,
+        objavljuje na svom veb-sajtu.
+      </p>
+    </section>
+
+    <section id="faq" class={sectionClass}>
+      <h2 class="title mb-4 text-xl text-accent-two">Najčešća pitanja</h2>
+
+      <div class="divide-y divide-[color:var(--theme-color-150)]">
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            Uskoro punim 18 godina – da li mogu da glasam?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Da. Ako ćete imati 18 godina najkasnije na dan izbora, imate biračko
+            pravo. Nadležna gradska ili opštinska uprava vas po službenoj
+            dužnosti upisuje u birački spisak – nije potrebna posebna prijava
+            povodom punoletstva.
+          </p>
+        </details>
+
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            Imam dvojno državljanstvo – da li mogu da glasam?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Da. Ako imate državljanstvo Republike Srbije i važeći srpski
+            dokument (ličnu kartu ili pasoš), imate biračko pravo bez obzira na
+            to da li imate i državljanstvo neke druge zemlje.
+          </p>
+        </details>
+
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            Poslao/la sam zahtev, a nisam dobio/la potvrdu – šta da radim?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Preporučujemo da prijem zahteva proveravate direktno kod
+            diplomatsko-konzularnog predstavništva (imejlom, telefonom ili
+            ličnim dolaskom), i da uz zahtev za glasanje pošaljete i zahtev za
+            obaveštenje o podacima upisanim u birački spisak (opisan iznad).
+            Svoj status u jedinstvenom biračkom spisku možete proveriti i
+            samostalno, putem <a
+              class="text-accent-two underline-offset-2 hover:underline"
+              href={externalLinks.electoral_roll}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              upit.birackispisak.gov.rs
+            </a>.
+          </p>
+        </details>
+
+        <details class="group py-3">
+          <summary
+            class="text-l text-accent-three title flex cursor-pointer list-none items-center justify-between gap-3 marker:content-none [&::-webkit-details-marker]:hidden"
+          >
+            Lična karta ili pasoš mi ističu uskoro – šta da radim?
+            <svg
+              class="h-4 w-4 shrink-0 text-accent-two transition-transform group-open:rotate-180"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="m6 9 6 6 6-6"></path>
+            </svg>
+          </summary>
+          <p class="mt-2">
+            Blagovremeno podnesite zahtev za izdavanje novog dokumenta u
+            najbližem diplomatsko-konzularnom predstavništvu. Zakonski rok za
+            rešavanje zahteva je 60 dana, pa je važno da ne odlažete podnošenje.
+          </p>
+        </details>
+      </div>
     </section>
   </article>
 </BaseLayout>

@@ -34,6 +34,20 @@ const {
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Serbia Vote" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <script is:inline>
+      try {
+        const stored = window.localStorage.getItem('theme')
+        const theme =
+          stored ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light')
+        document.documentElement.setAttribute('data-theme', theme)
+      } catch {
+        // ignore (private browsing, disabled storage, etc.)
+      }
+    </script>
   </head>
   <body
     class="relative m-auto min-h-screen w-full max-w-6xl bg-bgColor px-4 sm:px-6 lg:px-8"
@@ -89,5 +103,7 @@ const {
     </div>
     <script type="module" src="/scripts/mobileMenu.js"></script>
     <script type="module" src="/scripts/electionCountdown.js"></script>
+    <script type="module" src="/scripts/themeToggle.js"></script>
+    <script type="module" src="/scripts/registerServiceWorker.js"></script>
   </body>
 </html>

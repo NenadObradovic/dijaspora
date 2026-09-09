@@ -3,6 +3,7 @@ import { Icon } from 'astro-icon/components'
 import Navigation from '../navigation/Nav.astro'
 import MobileNavigation from '../navigation/MobileNav.astro'
 import LanguageSwitcher from '../navigation/LanguageSwitcher.astro'
+import ThemeToggle from '../navigation/ThemeToggle.astro'
 import { getRelativeLocaleUrl } from 'astro:i18n'
 import { tString } from '../../utils/i18nStatic.js'
 
@@ -57,14 +58,23 @@ const homePath = getRelativeLocaleUrl(lang, '/')
         <img
           src="/assets/img/logo.webp"
           alt={tString(lang, 'page_title')}
-          class="block w-32"
+          class="block w-32 dark:hidden"
+        />
+        <img
+          src="/assets/img/logo-dark.webp"
+          alt={tString(lang, 'page_title')}
+          class="hidden w-32 dark:block"
         />
       </a>
       <Navigation />
 
       <div class="flex w-fit items-center justify-between gap-x-4">
-        <div id="buttons-panel" class="top-4 flex space-x-2 md:top-8">
+        <div
+          id="buttons-panel"
+          class="top-4 flex items-center space-x-2 md:top-8"
+        >
           <LanguageSwitcher />
+          <ThemeToggle />
         </div>
 
         <button

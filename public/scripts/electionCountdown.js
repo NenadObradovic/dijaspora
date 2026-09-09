@@ -88,4 +88,3 @@ document.addEventListener('astro:after-swap', initAll)
 // Fallback: observe DOM insertions (islands render later)
 const observer = new MutationObserver(() => initAll())
 observer.observe(document.documentElement, { childList: true, subtree: true })
-

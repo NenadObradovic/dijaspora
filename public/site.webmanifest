@@ -1,6 +1,11 @@
 {
+  "id": "/",
   "name": "My Serbia - My Vote",
   "short_name": "Serbia Votes",
+  "description": "Glasanje iz inostranstva – jednostavno, digitalno, bezbedno",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "sr-Latn",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
